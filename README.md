@@ -8,3 +8,5 @@
 
   
 Artic workflow for sequence demultiplexing 
+
+![Alt text](/img/artic_wf.png)
