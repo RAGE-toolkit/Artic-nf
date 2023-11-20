@@ -3,7 +3,6 @@
 nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir");
-println(currDir);
 
 process guppy_basecaller {
 
@@ -24,12 +23,3 @@ process guppy_basecaller {
 	"""
 }
 
-/*
-workflow {
-
-	chnl = Channel.fromPath("${currDir}/${params.fast5_dir}")
-	guppy_basecaller(chnl)
-	guppy_basecaller.out.view()
-	
-}
-*/

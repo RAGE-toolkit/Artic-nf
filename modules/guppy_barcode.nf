@@ -11,7 +11,7 @@ process guppy_barcoder {
 	path input_dir
 
 	output:
-	path "fastq"
+	path "fastq", emit: summ
 
 	script:
 	"""

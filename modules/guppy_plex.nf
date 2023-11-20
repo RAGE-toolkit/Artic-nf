@@ -4,53 +4,45 @@ nextflow.enable.dsl=2
 
 import java.io.File
 
-def currDir = System.getProperty("user.dir")
+def currDir = System.getProperty("user.dir");
 
-// checking if the guppyplex directory exist or not
-def guppyDir = "guppyplex"
-
-if (!new File("$currDir/${params.output_dir}/$guppyDir").exists()) {
-  new File("$currDir/${params.output_dir}/$guppyDir").mkdirs()
-}
+meta_file = "$currDir/${params.meta_file}";
 
 /*
-
-// listing all the dirs inside fastq folder
-def barcodes = []; // all the barcode dirs stored here
-def folder = "${currDir}/${params.output_dir}/fastq"
-def baseDir = new File(folder);
-files = baseDir.listFiles();
-def pattern = /barcode\d+/
-
-for (item in files) {
-	if (item.toString().find(pattern)){
-			barcodes.add(item)
-		}
-	}
-
-print (barcodes)
-
+fq_channel = channel
+        .fromPath(meta_file)
+        .splitCsv(header: true, sep: "\t")
+        .map { row -> tuple(row.sampleId, row.barcode, row.scheme) }
 */
-
 process guppy_plex {
 
+	publishDir "${currDir}/${params.output_dir}/guppyplex/"
+
 	input:
-	path item
+	path input_dir
+	tuple val(sample_id), val(item)
 	val extension
 	
+	output:
+	path "${item}${extension}", emit: fastq
+
 	script:
 	"""
-	artic guppyplex --skip-quality-check \
+	artic guppyplex \
+		--skip-quality-check \
 		--min-length 350 \
-		--directory $currDir/${params.output_dir}/fastq/$item \
-		--output $currDir/${params.output_dir}/"guppyplex"/$item${extension}
+		--directory $input_dir/$item \
+		--output "${item}${extension}"
 	"""
+//--output "${item}${extension}"
 }
 
 /*
-barcode_ch = Channel.fromPath(barcodes)
 workflow {
-	extension = ".fastq"
-	guppy_plex(barcode_ch, extension)
+	guppy_plex("/export/home4/sk312p/projects/artic_nf_combine/results/fastq", fq_channel, ".fastq")
 }
 */
+
+
+
+

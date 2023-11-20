@@ -3,36 +3,26 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir")
 
-res_dirs = []
-
-def folder = "${currDir}/${params.output_dir}/medaka/";
-def baseDir = new File(folder);
-files = baseDir.listFiles();
-def cons = "consensus.fasta"
-
-// creating a empty concatinate dir
-def concat_dir = "${currDir}/${params.output_dir}/concat/"
-def concat_res_dir = new File(concat_dir)
-concat_res_dir.mkdirs()
-
-for (item in files) {
-	tmp_var = "${item}/${cons}"
-	res_dirs.add(tmp_var)
-        }
-
-def cons_files = res_dirs.join(' ')
-println(cons_files)
+def res_dir = new File("${currDir}/${params.output_dir}/concatenate")
+if (!res_dir.exists()) {
+        res_dir.mkdirs()
+}
 
 process concat {
 
-        script:
-        """
-	cat ${cons_files} > ${concat_res_dir}/genome.fasta
-        """
-}
+	publishDir "${currDir}/${params.output_dir}/concatenate"
 
+	input:
+	val "medaka_dir"
 
+	output:
+	val "genome.fasta", emit: genome_fa
 
-workflow {
-        concat()
+	script:
+	"""
+	python ${currDir}/${params.script}/concat_seq.py \
+		-d ${currDir}/${params.output_dir}/${medaka_dir} \
+		-m consensus.fasta \
+		-o ${currDir}/${params.output_dir}/concatenate/ -f "genome.fasta"
+	"""
 }
