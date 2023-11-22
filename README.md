@@ -1,12 +1,17 @@
 # Artic-nf
-# workflow is still on editing mode. The scripts may not work properly. This is not a ready version to try.
-## work to be done
-* connect the input and output of the each rule to the main workflow (todo)
-* make the config file more dynamic (todo)
-* develop a proper structure for config file (todo)
-* add the installation instruction to the workflow (todo)
+MinION basecalling and consensus generator.
+## Installation
+'''
+conda env create -f env.yml
+'''
+Activate the conda by running 
+'''
+conda activate artic-nf
+'''
+workflow can be run using below commad
+'''
+'''
 
-  
 Artic workflow for sequence demultiplexing 
 
 ![Alt text](/img/artic_wf.png)
