@@ -1,5 +1,5 @@
 # Artic-nf
-MinION basecalling and consensus generator.
+MinION basecalling and consensus sequence generator.
 ## Installation
 ```
 conda env create -f env.yml
