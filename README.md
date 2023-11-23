@@ -14,3 +14,10 @@ nextflow main.nf
 ```
 ### Following are the set of rules executed by artic_nf
 ![Alt text](/img/artic_wf.png)
+
+### to be implemented
+- Add run information to results
+- Customize primer schema
+- Add all the software version in a log file
+- Add coverage summary
+- Test it with real-time raw data
