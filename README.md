@@ -16,8 +16,10 @@ nextflow main.nf
 ![Alt text](/img/artic_wf.png)
 
 ### to be implemented
-- Add run information to results
-- Customize primer schema
-- Add all the software version in a log file
-- Add coverage summary
-- Test it with real-time raw data
+- Add run information to results (todo)
+- Customize primer schema (todo)
+- Add all the software version in a log file (todo)
+- Add coverage summary (todo)
+- Test it with real-time raw data (todo)
+- Add guppy basecaller CPU/GPU option (todo)
+- Add guppy config to the nextflow.config (done)
