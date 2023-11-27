@@ -4,9 +4,13 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir");
 
-process guppy_basecaller {
+def guppy_path = "${params.guppy_dir}/guppy_basecaller"
 
-	publishDir "${currDir}/${params.output_dir}"
+process GUPPY_BASECALLER {
+
+	label "guppy_basecaller"
+
+	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
 	input:
 	path fast5_dir
@@ -16,10 +20,9 @@ process guppy_basecaller {
 
 	script:
 	"""
-	$currDir/${params.guppy_dir}/guppy_basecaller --recursive \
-		-c dna_r9.4.1_450bps_fast.cfg \
-		-i ${fast5_dir}\
+	${guppy_path} --recursive \
+		-c ${params.guppy_config} \
+		-i ${fast5_dir} \
 		-s "guppy_basecaller"
 	"""
 }
-

@@ -1,36 +1,36 @@
+//medaka.nf
+
 nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir")
 
-process medaka {
+//checking if medaka dir exists
+def medaka_dir = new File("${currDir}/${params.output_dir}/medaka")
+if (!medaka_dir.exists()) {
+        medaka_dir.mkdirs()
+}
 
-	publishDir "${currDir}/${params.output_dir}/${params.medaka_outputdir}"
+
+process MEDAKA {
+
+	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
 	input:
-	path input_dir
-	tuple val(sampleid), val(item)
-	val extension
+	val input_dir
+	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "${params.medaka_outputdir}"
+	val "medaka/${sampleId}", emit: consensus
  
 	script:
 	"""
-	medaka_consensus -i "${currDir}/${params.output_dir}/guppyplex/${item}${extension}" \
-		-d ${currDir}/${params.medaka_schema} \
-		-m ${params.model} \
-		-o "${currDir}/${params.output_dir}/${params.medaka_outputdir}/${item}"
+	artic minion --medaka \
+		--medaka-model ${params.medaka_model} \
+		--normalise ${params.medaka_normalise} \
+		--threads ${params.threads} \
+		--scheme-directory ${params.primer_schema} \
+		--read-file ${currDir}/${input_dir}/${sampleId}_${item}${params.fq_extension} \
+		${scheme}/${version} ${currDir}/${params.output_dir}/medaka/${sampleId}
 	"""
+	// {params.scheme} medaka/{wildcards.sample}
 }
-
-//--normalise ${params.normalize} \
-//--threads ${params} \
-
-//fq_channel = Channel.fromPath("${currDir}/${params.output_dir}/guppyplex/barcode*.fastq")
-
-/*
-workflow {
-	medaka(fq_channel)
-}
-*/
-

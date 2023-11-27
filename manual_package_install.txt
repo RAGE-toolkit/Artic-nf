@@ -1,0 +1,29 @@
+conda create --name artic-nf
+
+conda activate artic-nf
+
+conda install nextflow
+
+conda install python=3.9.15
+
+git clone https://github.com/artic-network/fieldbioinformatics.git
+
+cd fieldbioinformatics
+
+conda install pyvcf=0.6.8
+
+python setup.py install
+
+conda install mamba
+
+mamba install minimap2=2.26
+
+mamba install samtools=1.17
+
+mamba install medaka=1.8.0
+
+mamba install muscle=3.8
+
+mamba install longshot=0.4.5
+
+mamba install mafft=7.520

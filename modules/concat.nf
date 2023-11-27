@@ -8,7 +8,7 @@ if (!res_dir.exists()) {
         res_dir.mkdirs()
 }
 
-process concat {
+process CONCAT {
 
 	publishDir "${currDir}/${params.output_dir}/concatenate"
 
@@ -16,13 +16,17 @@ process concat {
 	val "medaka_dir"
 
 	output:
-	val "genome.fasta", emit: genome_fa
+	val "concat_genome.fasta", emit: genome_fa
 
 	script:
 	"""
+	cat ${currDir}/${params.output_dir}/${medaka_dir}.consensus.fasta >> "${currDir}/${params.output_dir}/concatenate/concat_genome.fasta"
+	"""	
+
+/*	"""
 	python ${currDir}/${params.script}/concat_seq.py \
 		-d ${currDir}/${params.output_dir}/${medaka_dir} \
-		-m consensus.fasta \
 		-o ${currDir}/${params.output_dir}/concatenate/ -f "genome.fasta"
 	"""
+*/
 }

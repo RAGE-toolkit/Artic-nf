@@ -1,0 +1,8 @@
+name: artic_nf
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - nextflow
+  - artic

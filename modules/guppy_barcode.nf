@@ -4,27 +4,26 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir")
 
-process guppy_barcoder {
+def guppy_path = "${params.guppy_dir}/guppy_barcoder"
 
-	publishDir "${currDir}/${params.output_dir}"
+process GUPPY_BARCODER {
+
+	label 'guppy_barcoder'
+
+	publishDir "${currDir}/${params.output_dir}", mode : 'copy'
+
 	input:
 	path input_dir
 
 	output:
-	path "fastq", emit: summ
+	path "guppy_barcoder", emit: barcodes
 
 	script:
 	"""
-	$currDir/${params.guppy_dir}/guppy_barcoder --recursive \
+	${guppy_path} --recursive \
 		--require_barcodes_both_ends \
-		-i ${input_dir}\
-		-s "fastq" \
-		--barcode_kits EXP-NBD104
+		-i ${input_dir} \
+		-s "guppy_barcoder" \
+		--barcode_kits ${params.guppy_barcode_kits}
 	"""
 }
-
-/*
-workflow {
-	guppy_barcoder()
-}
-*/
