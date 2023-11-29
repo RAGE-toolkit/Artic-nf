@@ -4,14 +4,15 @@
 conda env create --name environment.yml
 conda activate artic_nf
 ```
-## If the above fails, then follow the manual_package_install.txt
+If the above fails, then follow the manual_package_install.txt
 
 If you want to save the paramets for long time (output_dir, fast5_dir, guppy_basecaller path) edit it in "nextflow.config" and run the below command. 
 ## Pipeline can be run as follows
 ```
  nextflow main.nf
 ```
-Other wise use the below command
+
+##Other wise use the below command
 ```
 nextflow main.nf \
  --params.meta_file "meta_data/sample_sheet.csv" \
