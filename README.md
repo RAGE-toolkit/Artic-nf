@@ -1,12 +1,15 @@
 # Artic-nf
-# workflow is still on editing mode. The scripts may not work properly. This is not a ready version to try.
-## work to be done
-* connect the input and output of the each rule to the main workflow (todo)
-* make the config file more dynamic (todo)
-* develop a proper structure for config file (todo)
-* add the installation instruction to the workflow (todo)
+## Installation instructions are as follows
+```
+conda env create --name environment.yml
+conda activate artic_nf
+```
+## If the above fails, then follow the manual_package_install.txt
 
-  
-Artic workflow for sequence demultiplexing 
+Before running the pipeline, make sure to set the working dirs and file paths, you can edit the nextflow.config accordingly.
+
+## Pipeline can be run as follows
+``` nextflow main.nf
+```
 
 ![Alt text](/img/workflow.png)
