@@ -9,7 +9,8 @@ conda activate artic_nf
 Before running the pipeline, make sure to set the working dirs and file paths, you can edit the nextflow.config accordingly.
 
 ## Pipeline can be run as follows
-``` nextflow main.nf
+```
+ nextflow main.nf
 ```
 
 ![Alt text](/img/workflow.png)
