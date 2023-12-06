@@ -1,76 +1,76 @@
-rabv_ea,57,79,rabv_ea_1_LEFT,1,+
-rabv_ea,437,459,rabv_ea_1_RIGHT,1,-
-rabv_ea,316,338,rabv_ea_2_LEFT,2,+
-rabv_ea,688,710,rabv_ea_2_RIGHT,2,-
-rabv_ea,613,636,rabv_ea_3_LEFT,1,+
-rabv_ea,1006,1032,rabv_ea_3_RIGHT,1,-
-rabv_ea,940,962,rabv_ea_4_LEFT,2,+
-rabv_ea,1312,1337,rabv_ea_4_RIGHT,2,-
-rabv_ea,1242,1264,rabv_ea_5_LEFT,1,+
-rabv_ea,1612,1634,rabv_ea_5_RIGHT,1,-
-rabv_ea,1551,1573,rabv_ea_6_LEFT,2,+
-rabv_ea,1933,1957,rabv_ea_6_RIGHT,2,-
-rabv_ea,1865,1893,rabv_ea_7_LEFT,1,+
-rabv_ea,2240,2262,rabv_ea_7_RIGHT,1,-
-rabv_ea,2171,2199,rabv_ea_8_LEFT,2,+
-rabv_ea,2546,2566,rabv_ea_8_RIGHT,2,-
-rabv_ea,2445,2469,rabv_ea_9_LEFT,1,+
-rabv_ea,2819,2843,rabv_ea_9_RIGHT,1,-
-rabv_ea,2733,2760,rabv_ea_10_LEFT,2,+
-rabv_ea,3127,3149,rabv_ea_10_RIGHT,2,-
-rabv_ea,3062,3084,rabv_ea_11_LEFT,1,+
-rabv_ea,3449,3471,rabv_ea_11_RIGHT,1,-
-rabv_ea,3385,3407,rabv_ea_12_LEFT,2,+
-rabv_ea,3768,3791,rabv_ea_12_RIGHT,2,-
-rabv_ea,3704,3727,rabv_ea_13_LEFT,1,+
-rabv_ea,4079,4100,rabv_ea_13_RIGHT,1,-
-rabv_ea,4004,4028,rabv_ea_14_LEFT,2,+
-rabv_ea,4399,4422,rabv_ea_14_RIGHT,2,-
-rabv_ea,4340,4362,rabv_ea_15_LEFT,1,+
-rabv_ea,4707,4730,rabv_ea_15_RIGHT,1,-
-rabv_ea,4632,4653,rabv_ea_16_LEFT,2,+
-rabv_ea,5026,5051,rabv_ea_16_RIGHT,2,-
-rabv_ea,4894,4916,rabv_ea_17_LEFT,1,+
-rabv_ea,5276,5298,rabv_ea_17_RIGHT,1,-
-rabv_ea,5197,5220,rabv_ea_18_LEFT,2,+
-rabv_ea,5584,5608,rabv_ea_18_RIGHT,2,-
-rabv_ea,5509,5531,rabv_ea_19_LEFT,1,+
-rabv_ea,5894,5916,rabv_ea_19_RIGHT,1,-
-rabv_ea,5821,5845,rabv_ea_20_LEFT,2,+
-rabv_ea,6201,6223,rabv_ea_20_RIGHT,2,-
-rabv_ea,6134,6162,rabv_ea_21_LEFT,1,+
-rabv_ea,6508,6528,rabv_ea_21_RIGHT,1,-
-rabv_ea,6424,6445,rabv_ea_22_LEFT,2,+
-rabv_ea,6812,6834,rabv_ea_22_RIGHT,2,-
-rabv_ea,6737,6761,rabv_ea_23_LEFT,1,+
-rabv_ea,7133,7155,rabv_ea_23_RIGHT,1,-
-rabv_ea,7061,7086,rabv_ea_24_LEFT,2,+
-rabv_ea,7446,7467,rabv_ea_24_RIGHT,2,-
-rabv_ea,7377,7406,rabv_ea_25_LEFT,1,+
-rabv_ea,7752,7776,rabv_ea_25_RIGHT,1,-
-rabv_ea,7690,7712,rabv_ea_26_LEFT,2,+
-rabv_ea,8058,8080,rabv_ea_26_RIGHT,2,-
-rabv_ea,7987,8010,rabv_ea_27_LEFT,1,+
-rabv_ea,8367,8389,rabv_ea_27_RIGHT,1,-
-rabv_ea,8283,8305,rabv_ea_28_LEFT,2,+
-rabv_ea,8670,8692,rabv_ea_28_RIGHT,2,-
-rabv_ea,8609,8634,rabv_ea_29_LEFT,1,+
-rabv_ea,8986,9015,rabv_ea_29_RIGHT,1,-
-rabv_ea,8927,8948,rabv_ea_30_LEFT,2,+
-rabv_ea,9303,9325,rabv_ea_30_RIGHT,2,-
-rabv_ea,9230,9252,rabv_ea_31_LEFT,1,+
-rabv_ea,9611,9633,rabv_ea_31_RIGHT,1,-
-rabv_ea,9536,9558,rabv_ea_32_LEFT,2,+
-rabv_ea,9917,9940,rabv_ea_32_RIGHT,2,-
-rabv_ea,9852,9874,rabv_ea_33_LEFT,1,+
-rabv_ea,10239,10261,rabv_ea_33_RIGHT,1,-
-rabv_ea,10164,10185,rabv_ea_34_LEFT,2,+
-rabv_ea,10554,10576,rabv_ea_34_RIGHT,2,-
-rabv_ea,10480,10503,rabv_ea_35_LEFT,1,+
-rabv_ea,10855,10879,rabv_ea_35_RIGHT,1,-
-rabv_ea,10780,10803,rabv_ea_36_LEFT,2,+
-rabv_ea,11164,11187,rabv_ea_36_RIGHT,2,-
-rabv_ea,11097,11119,rabv_ea_37_LEFT,1,+
-rabv_ea,11473,11494,rabv_ea_37_RIGHT,1,-
-rabv_ea,11392,11414,rabv_ea_38_LEFT,2,+
-rabv_ea,11773,11796,rabv_ea_38_RIGHT,2,-
+rabv_ea	58	79	rabv_ea_1_LEFT	1	+
+rabv_ea	438	459	rabv_ea_1_RIGHT	1	-
+rabv_ea	317	338	rabv_ea_2_LEFT	2	+
+rabv_ea	689	710	rabv_ea_2_RIGHT	2	-
+rabv_ea	614	636	rabv_ea_3_LEFT	1	+
+rabv_ea	1007	1032	rabv_ea_3_RIGHT	1	-
+rabv_ea	941	962	rabv_ea_4_LEFT	2	+
+rabv_ea	1313	1337	rabv_ea_4_RIGHT	2	-
+rabv_ea	1243	1264	rabv_ea_5_LEFT	1	+
+rabv_ea	1613	1634	rabv_ea_5_RIGHT	1	-
+rabv_ea	1552	1573	rabv_ea_6_LEFT	2	+
+rabv_ea	1934	1957	rabv_ea_6_RIGHT	2	-
+rabv_ea	1866	1893	rabv_ea_7_LEFT	1	+
+rabv_ea	2241	2262	rabv_ea_7_RIGHT	1	-
+rabv_ea	2172	2199	rabv_ea_8_LEFT	2	+
+rabv_ea	2547	2566	rabv_ea_8_RIGHT	2	-
+rabv_ea	2446	2469	rabv_ea_9_LEFT	1	+
+rabv_ea	2820	2843	rabv_ea_9_RIGHT	1	-
+rabv_ea	2734	2760	rabv_ea_10_LEFT	2	+
+rabv_ea	3128	3149	rabv_ea_10_RIGHT	2	-
+rabv_ea	3063	3084	rabv_ea_11_LEFT	1	+
+rabv_ea	3450	3471	rabv_ea_11_RIGHT	1	-
+rabv_ea	3386	3407	rabv_ea_12_LEFT	2	+
+rabv_ea	3769	3791	rabv_ea_12_RIGHT	2	-
+rabv_ea	3705	3727	rabv_ea_13_LEFT	1	+
+rabv_ea	4080	4100	rabv_ea_13_RIGHT	1	-
+rabv_ea	4005	4028	rabv_ea_14_LEFT	2	+
+rabv_ea	4400	4422	rabv_ea_14_RIGHT	2	-
+rabv_ea	4341	4362	rabv_ea_15_LEFT	1	+
+rabv_ea	4708	4730	rabv_ea_15_RIGHT	1	-
+rabv_ea	4633	4653	rabv_ea_16_LEFT	2	+
+rabv_ea	5027	5051	rabv_ea_16_RIGHT	2	-
+rabv_ea	4895	4916	rabv_ea_17_LEFT	1	+
+rabv_ea	5277	5298	rabv_ea_17_RIGHT	1	-
+rabv_ea	5198	5220	rabv_ea_18_LEFT	2	+
+rabv_ea	5585	5608	rabv_ea_18_RIGHT	2	-
+rabv_ea	5510	5531	rabv_ea_19_LEFT	1	+
+rabv_ea	5895	5916	rabv_ea_19_RIGHT	1	-
+rabv_ea	5822	5845	rabv_ea_20_LEFT	2	+
+rabv_ea	6202	6223	rabv_ea_20_RIGHT	2	-
+rabv_ea	6135	6162	rabv_ea_21_LEFT	1	+
+rabv_ea	6509	6528	rabv_ea_21_RIGHT	1	-
+rabv_ea	6425	6445	rabv_ea_22_LEFT	2	+
+rabv_ea	6813	6834	rabv_ea_22_RIGHT	2	-
+rabv_ea	6738	6761	rabv_ea_23_LEFT	1	+
+rabv_ea	7134	7155	rabv_ea_23_RIGHT	1	-
+rabv_ea	7062	7086	rabv_ea_24_LEFT	2	+
+rabv_ea	7447	7467	rabv_ea_24_RIGHT	2	-
+rabv_ea	7378	7406	rabv_ea_25_LEFT	1	+
+rabv_ea	7753	7776	rabv_ea_25_RIGHT	1	-
+rabv_ea	7691	7712	rabv_ea_26_LEFT	2	+
+rabv_ea	8059	8080	rabv_ea_26_RIGHT	2	-
+rabv_ea	7988	8010	rabv_ea_27_LEFT	1	+
+rabv_ea	8368	8389	rabv_ea_27_RIGHT	1	-
+rabv_ea	8284	8305	rabv_ea_28_LEFT	2	+
+rabv_ea	8671	8692	rabv_ea_28_RIGHT	2	-
+rabv_ea	8610	8634	rabv_ea_29_LEFT	1	+
+rabv_ea	8987	9015	rabv_ea_29_RIGHT	1	-
+rabv_ea	8928	8948	rabv_ea_30_LEFT	2	+
+rabv_ea	9304	9325	rabv_ea_30_RIGHT	2	-
+rabv_ea	9231	9252	rabv_ea_31_LEFT	1	+
+rabv_ea	9612	9633	rabv_ea_31_RIGHT	1	-
+rabv_ea	9537	9558	rabv_ea_32_LEFT	2	+
+rabv_ea	9918	9940	rabv_ea_32_RIGHT	2	-
+rabv_ea	9853	9874	rabv_ea_33_LEFT	1	+
+rabv_ea	10240	10261	rabv_ea_33_RIGHT	1	-
+rabv_ea	10165	10185	rabv_ea_34_LEFT	2	+
+rabv_ea	10555	10576	rabv_ea_34_RIGHT	2	-
+rabv_ea	10481	10503	rabv_ea_35_LEFT	1	+
+rabv_ea	10856	10879	rabv_ea_35_RIGHT	1	-
+rabv_ea	10781	10803	rabv_ea_36_LEFT	2	+
+rabv_ea	11165	11187	rabv_ea_36_RIGHT	2	-
+rabv_ea	11098	11119	rabv_ea_37_LEFT	1	+
+rabv_ea	11474	11494	rabv_ea_37_RIGHT	1	-
+rabv_ea	11393	11414	rabv_ea_38_LEFT	2	+
+rabv_ea	11774	11796	rabv_ea_38_RIGHT	2	-
