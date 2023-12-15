@@ -15,12 +15,12 @@ If you want to save the paramets for long time (output_dir, fast5_dir, guppy_bas
 ## Other wise execute the below command
 ```
 nextflow main.nf \
- --params.meta_file "meta_data/sample_sheet.csv" \
- --params.fast5_dir "projects/fast5/" \
- --params.guppy_dir "projects/ont-guppy-cpu/bin/" \
- --params.primer_schema "projects/Artic-nf/meta_data/primer-schemes/" \
- --params.guppy_barcode_kits "EXP-NBD104" \
- --params.output_dir "results"
+ --meta_file "meta_data/sample_sheet.csv" \
+ --fast5_dir "projects/fast5/" \
+ --guppy_dir "projects/ont-guppy-cpu/bin/" \
+ --primer_schema "projects/Artic-nf/meta_data/primer-schemes/" \
+ --guppy_barcode_kits "EXP-NBD104" \
+ --output_dir "results"
 ```
 
 ![Alt text](/img/workflow.png)
