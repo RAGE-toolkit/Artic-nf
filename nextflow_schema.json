@@ -1,0 +1,187 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/./master/nextflow_schema.json",
+    "title": "RAGE-toolkit/Artic-nf",
+    "workflow_title": "Artic-nf",
+    "description": "basecalling and consuses generation",
+    "url": "https://github.com/RAGE-toolkit/Artic-nf",
+    "type": "object",
+    "definitions": {
+        "input": {
+            "title": "Input Options",
+            "type": "object",
+            "fa_icon": "fas fa-arrow-right",
+            "description": "Setting the input and output directory/files for the analysis",
+            "properties": {
+                "fast5_pod5": {
+                    "type": "string",
+                    "format": "path",
+                    "title": "FAST5/POD5",
+                    "description": "FAST5/POD5 files to perform analysis."
+                },
+                "meta_file": {
+                    "type": "string",
+                    "format": "file-path",
+                    "description": "meta_file to use in the analysis.",
+                    "help_text": "The meta_file contains sampleID, barcode, schema and version columns in tab delimited format. It is ideal to keep the meta_file inside meta_data directory"
+                },
+                "primer_schema": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "description": "Path to a directory containing primer scheam information.",
+                    "help_text": "The primer schema can be found inside meta_data directory"
+                },
+				 "output_dir": {
+                    "type": "string",
+                    "format": "path",
+                    "title": "output direcotry",
+                    "description": "stores all the analysis results inside output directory."
+                }
+            },
+            "allOf": [
+                {
+                    "required": [
+                        "fast5_pod5"
+                    ]
+                },
+                {
+					"required": [
+						"meta_file"
+					]
+				},
+				{
+					"required": [
+						"primer_schema"
+					]
+				},
+				{
+					"required": [
+						"output_dir"
+					]
+				}
+            ]
+        },
+        "basecaller": {
+            "title": "Basecaller params",
+            "type": "object",
+            "fa_icon": "fas fa-vials",
+            "description": "Setting the basecaller path and parameters",
+            "properties": {
+				"minimap_preset": {
+					"type": "string",
+					"title": "Set the basecaller",
+					"description": "Select the basecaller suitable for the study",
+					"help_text": "Tool supports two basecallers: Dorado and Guppy",
+                    "enum": [
+                       	"Dorado",
+                       	"Guppy"
+                   	 ],
+                    "default": "Dorado"
+                },
+                "sample_sheet": {
+                    "type": "string",
+                    "format": "path",
+                    "description": "basecaller to path to set",
+                    "help_text": "example: /home/working_dir/guppy or /home/working_dir/dorado"
+                },
+                "basecalling_model": {
+                    "type": "string",
+                    "description": "set the model/config file according to the basecaller selectedi",
+					"default": "dna_r9.4.1_e8_fast@v3.4"
+                },
+				"barcode_kit_name": {
+					"type": "string",
+					"description": "set the barcode kit name"
+                }
+            }
+        },
+        "medaka": {
+            "title": "medaka params",
+            "type": "object",
+            "fa_icon": "fas fa-vials",
+            "description": "Setting the medaka parameters",
+            "properties": {
+                "model": {
+                    "type": "string",
+                    "description": "set the model",
+                    "default": "r941_min_fast_g303"
+                },
+                "normalise": {
+                    "type": "string",
+                    "description": "set the barcode kit name",
+					"default": "200"
+                }
+            }
+        },
+        "general_setting": {
+            "title": "General settings",
+            "type": "object",
+            "fa_icon": "fas fa-vials",
+            "description": "General hardware/software settings",
+            "properties": {
+				"minimap_preset": {
+					"type": "string",
+					"title": "Set the basecaller",
+					"description": "Select the basecaller suitable for the study",
+					"help_text": "Tool supports two basecallers: Dorado and Guppy",
+					"enum": [
+                        "cpu",
+                        "cuda:0",
+						"cuda:all"
+                     ],
+                    "default": "cpu"
+                },
+                "threads": {
+                    "type": "string",
+                    "description": "CPU threads to use",
+                    "default": "5"
+                }
+            }
+        },
+    "allOf": [
+        {
+            "$ref": "#/definitions/input"
+        },
+        {
+            "$ref": "#/definitions/basecaller"
+        },
+        {
+            "$ref": "#/definitions/medaka"
+        },
+        {
+            "$ref": "#/definitions/general_settings"
+        }
+    ],
+    "properties": {
+        "aws_image_prefix": {
+            "type": "string",
+            "hidden": true
+        },
+        "aws_queue": {
+            "type": "string",
+            "hidden": true
+        },
+        "monochrome_logs": {
+            "type": "boolean"
+        },
+        "validate_params": {
+            "type": "boolean",
+            "default": true
+        },
+        "show_hidden_params": {
+            "type": "boolean"
+        }
+    },
+    "resources": {
+        "recommended": {
+            "cpus": 10,
+            "memory": "32GB"
+        },
+        "minimum": {
+            "cpus": 5,
+            "memory": "12GB"
+        },
+        "run_time": "0.5-5 minutes per sample (depending on number of reads, length of reference, and available compute).",
+        "arm_support": true
+    }
+}
