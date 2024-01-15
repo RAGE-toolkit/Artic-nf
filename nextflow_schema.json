@@ -1,196 +1,155 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/./master/nextflow_schema.json",
-    "title": "epi2me-labs/wf-alignment",
-    "workflow_title": "Alignment workflow",
-    "description": "Align Nanopore reads and visualize mapping statistics.",
-    "demo_url": "https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-alignment/wf-alignment-demo.tar.gz",
-    "aws_demo_url": "https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-alignment/wf-alignment-demo/aws.nextflow.config",
-    "url": "https://github.com/epi2me-labs/wf-alignment",
+    "title": "RAGE-toolkit/Artic-nf",
+    "workflow_title": "Artic-nf",
+    "description": "basecalling and consuses generation",
+    "url": "https://github.com/RAGE-toolkit/Artic-nf",
     "type": "object",
     "definitions": {
         "input": {
             "title": "Input Options",
             "type": "object",
             "fa_icon": "fas fa-arrow-right",
-            "description": "Parameters for finding and handling input data for analysis.",
+            "description": "Setting the input and output directory/files for the analysis",
             "properties": {
-                "fastq": {
+                "fast5_pod5": {
                     "type": "string",
                     "format": "path",
-                    "title": "FASTQ",
-                    "description": "FASTQ files to use in the analysis.",
-                    "help_text": "This accepts one of three cases: (i) the path to a single FASTQ file; (ii) the path to a top-level directory containing FASTQ files; (iii) the path to a directory containing one level of sub-directories which in turn contain FASTQ files. In the first and second case, a sample name can be supplied with `--sample`. In the last case, the data is assumed to be multiplexed with the names of the sub-directories as barcodes. In this case, a sample sheet can be provided with `--sample_sheet`."
+                    "title": "FAST5/POD5",
+                    "description": "FAST5/POD5 files to perform analysis."
                 },
-                "bam": {
-                    "type": "string",
-                    "format": "path",
-                    "description": "BAM or unaligned BAM (uBAM) files to use in the analysis.",
-                    "help_text": "This accepts one of three cases: (i) the path to a single BAM file; (ii) the path to a top-level directory containing BAM files; (iii) the path to a directory containing one level of sub-directories which in turn contain BAM files. In the first and second case, a sample name can be supplied with `--sample`. In the last case, the data is assumed to be multiplexed with the names of the sub-directories as barcodes. In this case, a sample sheet can be provided with `--sample_sheet`."
-                },
-                "analyse_unclassified": {
-                    "type": "boolean",
-                    "default": false,
-                    "title": "Analyse unclassified reads",
-                    "description": "Analyse unclassified reads from input directory. By default the workflow will not process reads in the unclassified directory.",
-                    "help_text": "If selected and if the input is a multiplex directory the workflow will also process the unclassified directory."
-                },
-                "references": {
-                    "type": "string",
-                    "format": "directory-path",
-                    "description": "Path to a directory containing FASTA reference files.",
-                    "help_text": "Accepted file extensions are '.fasta', '.fna', '.ffn', '.faa', '.frn', '.fa', '.txt', '.fa.gz', '.fna.gz', '.frn.gz', '.ffn.gz', '.fasta.gz'."
-                },
-                "counts": {
+                "meta_file": {
                     "type": "string",
                     "format": "file-path",
-                    "description": "Path to a CSV file containing expected counts as a control.",
-                    "help_text": "The expected counts CSV file must contain columns named 'reference' and 'expected_counts' in order to be valid. the 'reference' column should contain names matching the names of reference sequences within the fasta files provided using --references."
+                    "description": "meta_file to use in the analysis.",
+                    "help_text": "The meta_file contains sampleID, barcode, schema and version columns in tab delimited format. It is ideal to keep the meta_file inside meta_data directory"
+                },
+                "primer_schema": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "description": "Path to a directory containing primer scheam information.",
+                    "help_text": "The primer schema can be found inside meta_data directory"
+                },
+				 "output_dir": {
+                    "type": "string",
+                    "format": "path",
+                    "title": "output direcotry",
+                    "description": "stores all the analysis results inside output directory."
                 }
             },
             "allOf": [
                 {
                     "required": [
-                        "references"
+                        "fast5_pod5"
                     ]
                 },
                 {
-                    "oneOf": [
-                        {
-                            "required": [
-                                "fastq"
-                            ]
-                        },
-                        {
-                            "required": [
-                                "bam"
-                            ]
-                        }
-                    ]
-                }
+					"required": [
+						"meta_file"
+					]
+				},
+				{
+					"required": [
+						"primer_schema"
+					]
+				},
+				{
+					"required": [
+						"output_dir"
+					]
+				}
             ]
         },
-        "samples": {
-            "title": "Sample Options",
+        "basecaller": {
+            "title": "Basecaller params",
             "type": "object",
             "fa_icon": "fas fa-vials",
-            "description": "Parameters that relate to samples such as sample sheets and sample names.",
+            "description": "Setting the basecaller path and parameters",
             "properties": {
+				"minimap_preset": {
+					"type": "string",
+					"title": "Set the basecaller",
+					"description": "Select the basecaller suitable for the study",
+					"help_text": "Tool supports two basecallers: Dorado and Guppy",
+                    "enum": [
+                       	"Dorado",
+                       	"Guppy"
+                   	 ],
+                    "default": "Dorado"
+                },
                 "sample_sheet": {
                     "type": "string",
-                    "format": "file-path",
-                    "description": "A CSV file used to map barcodes to sample aliases. The sample sheet can be provided when the input data is a directory containing sub-directories with FASTQ files.",
-                    "help_text": "The sample sheet is a CSV file with, minimally, columns named `barcode` and `alias`. Extra columns are allowed. A `type` column is required for certain workflows and should have the following values; `test_sample`, `positive_control`, `negative_control`, `no_template_control`."
+                    "format": "path",
+                    "description": "basecaller to path to set",
+                    "help_text": "example: /home/working_dir/guppy or /home/working_dir/dorado"
                 },
-                "sample": {
+                "basecalling_model": {
                     "type": "string",
-                    "description": "A single sample name for non-multiplexed data. Permissible if passing a single .fastq(.gz) file or directory of .fastq(.gz) files."
+                    "description": "set the model/config file according to the basecaller selectedi",
+					"default": "dna_r9.4.1_e8_fast@v3.4"
+                },
+				"barcode_kit_name": {
+					"type": "string",
+					"description": "set the barcode kit name"
                 }
             }
         },
-        "output": {
-            "title": "Output Options",
+        "medaka": {
+            "title": "medaka params",
             "type": "object",
-            "fa_icon": "fas fa-arrow-left",
-            "description": "Parameters for saving and naming workflow outputs.",
+            "fa_icon": "fas fa-vials",
+            "description": "Setting the medaka parameters",
             "properties": {
-                "out_dir": {
+                "model": {
                     "type": "string",
-                    "default": "output",
-                    "format": "directory-path",
-                    "description": "Directory for output of all workflow results."
+                    "description": "set the model",
+                    "default": "r941_min_fast_g303"
                 },
-                "prefix": {
+                "normalise": {
                     "type": "string",
-                    "title": "Output filename prefix",
-                    "description": "Optional prefix attached to each of the output filenames.",
-                    "help_text": "Output filename format will be `<prefix>-filename.ext`."
+                    "description": "set the barcode kit name",
+					"default": "200"
                 }
             }
         },
-        "advanced_options": {
-            "title": "Advanced options",
+        "general_setting": {
+            "title": "General settings",
             "type": "object",
-            "fa_icon": "far fa-question-circle",
-            "description": "Advanced options for configuring processes inside the workflow.",
-            "help_text": "These advanced options do not need to be changed for typical use, but allow fine tuning of workflows for users who want more control over the workflow.",
+            "fa_icon": "fas fa-vials",
+            "description": "General hardware/software settings",
             "properties": {
-                "depth_coverage": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Calculate depth coverage statistics and include them in the report.",
-                    "help_text": "This step can be a computational bottleneck. Set this to false if your reference sequences are >50mb to speed things up."
+				"minimap_preset": {
+					"type": "string",
+					"title": "Set the basecaller",
+					"description": "Select the basecaller suitable for the study",
+					"help_text": "Tool supports two basecallers: Dorado and Guppy",
+					"enum": [
+                        "cpu",
+                        "cuda:0",
+						"cuda:all"
+                     ],
+                    "default": "cpu"
                 },
-                "minimap_preset": {
-                    "type": "string",
-                    "title": "Minimap2 parameter preset",
-                    "description": "Pre-defined parameter sets for `minimap2`, covering most common use cases.",
-                    "help_text": "Available parameter sets are: 'dna' (`-ax map-ont`), 'rna' (`-ax splice -uf`).",
-                    "enum": [
-                        "dna",
-                        "rna"
-                    ],
-                    "default": "dna"
-                },
-                "minimap_args": {
-                    "type": "string",
-                    "title": "Minimap2 CLI arguments",
-                    "description": "String of command line arguments to be passed on to `minimap2`.",
-                    "help_text": "This overrides the options defined by `--minimap_preset` and allows for running the alignment step in a more customized way."
-                }
-            }
-        },
-        "misc": {
-            "title": "Miscellaneous Options",
-            "type": "object",
-            "description": "Everything else.",
-            "default": "",
-            "properties": {
                 "threads": {
-                    "type": "integer",
-                    "default": 4,
-                    "minimum": 4,
-                    "maximum": 20,
-                    "description": "Number of CPU threads to use for the alignment step.",
-                    "help_text": "The alignment process will run with this many threads (note that the memory used by minimap2 scales with the number of threads). The total CPU resources used by the workflow are constrained by the executor configuration and can be modified by changing `nextflow.config` or supplying an additional config file."
-                },
-                "disable_ping": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Enable to prevent sending a workflow ping."
-                },
-                "help": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Display help text.",
-                    "fa_icon": "fas fa-question-circle",
-                    "hidden": true
-                },
-                "version": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Display version and exit.",
-                    "fa_icon": "fas fa-question-circle",
-                    "hidden": true
+                    "type": "string",
+                    "description": "CPU threads to use",
+                    "default": "5"
                 }
             }
-        }
-    },
+        },
     "allOf": [
         {
             "$ref": "#/definitions/input"
         },
         {
-            "$ref": "#/definitions/samples"
+            "$ref": "#/definitions/basecaller"
         },
         {
-            "$ref": "#/definitions/output"
+            "$ref": "#/definitions/medaka"
         },
         {
-            "$ref": "#/definitions/advanced_options"
-        },
-        {
-            "$ref": "#/definitions/misc"
+            "$ref": "#/definitions/general_settings"
         }
     ],
     "properties": {
@@ -215,14 +174,15 @@
     },
     "resources": {
         "recommended": {
-            "cpus": 12,
+            "cpus": 10,
             "memory": "32GB"
         },
         "minimum": {
-            "cpus": 6,
+            "cpus": 5,
             "memory": "12GB"
         },
         "run_time": "0.5-5 minutes per sample (depending on number of reads, length of reference, and available compute).",
         "arm_support": true
     }
+}
 }
