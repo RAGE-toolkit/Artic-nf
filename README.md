@@ -24,7 +24,7 @@ The workflow can be run using two ways. Edit the file paths and other parameters
  nextflow main.nf -c nextflow.conf
 ```
 
-## Alternatively you can run the below command to execute the pipeline (change the path accordingly)
+## Alternate
 ```
 nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --rawfile_type "fastq" \
@@ -46,5 +46,6 @@ nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --fastq_dir "raw_files/fastq" \
 -resume
 ```
+Change parameters, file/folder path accordigly 
 
 ![Alt text](/img/workflow.png)
