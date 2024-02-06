@@ -44,18 +44,18 @@ fq_channel = channel
   .map { row -> tuple(row.sampleId, row.barcode, row.schema, row.version) }
 
 println(" ");
-println("Output file				:" + "${currDir}/${params.output_dir}");
-println("Meta file				:" + meta_file);
-println("Basecaller				:" + "${params.basecaller}");
-println("Rawfile directory				:" + "${params.rawfile_dir}");
-println("Rawfile type				:" + "${params.rawfile_type}");
-println("Output base dir				:" + "${params.output_dir}");
+println("Output file		:" + "${currDir}/${params.output_dir}");
+println("Meta file		:" + meta_file);
+println("Basecaller		:" + "${params.basecaller}");
+println("Rawfile directory	:" + "${params.rawfile_dir}");
+println("Rawfile type		:" + "${params.rawfile_type}");
+println("Output base dir	:" + "${params.output_dir}");
 
 if ("${params.basecaller}" == "Guppy") {
-  println("Basecaller path:				" + "${params.guppy_dir}");
+  println("Basecaller path	:" + "${params.guppy_dir}");
 }
 else {
-  println("Basecaller path:				" +  "${params.dorado_dir}");
+  println("Basecaller path	:" +  "${params.dorado_dir}");
 }
 
 rawfile_ch = Channel.fromPath("${params.rawfile_dir}")
