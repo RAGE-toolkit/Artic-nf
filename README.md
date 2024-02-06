@@ -18,10 +18,10 @@ git clone https://github.com/centre-for-virus-research/weeSAM.git
 ```
 If the above fails, then follow the manual_package_install.txt
 
-The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.config" and follow the below step. 
+The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
 ## Pipeline can be run as follows
 ```
- nextflow main.nf -c 
+ nextflow main.nf -c nextflow.conf
 ```
 
 ## Alternatively you can run the below command to execute the pipeline (change the path accordingly)
