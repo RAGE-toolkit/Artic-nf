@@ -4,7 +4,7 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir")
 
-def guppy_path = "${params.guppy_dir}/guppy_barcoder"
+def guppy_path = "${params.guppy_dir}/bin/guppy_barcoder"
 
 process GUPPY_BARCODER {
 
@@ -24,6 +24,6 @@ process GUPPY_BARCODER {
 		--require_barcodes_both_ends \
 		-i ${input_dir} \
 		-s "guppy_barcoder" \
-		--barcode_kits ${params.guppy_barcode_kits}
+		--barcode_kits ${params.kit_name}
 	"""
 }

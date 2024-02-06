@@ -4,7 +4,7 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir");
 
-def guppy_path = "${params.guppy_dir}/guppy_basecaller"
+def guppy_path = "${params.guppy_dir}/bin/guppy_basecaller"
 
 process GUPPY_BASECALLER {
 
@@ -25,4 +25,5 @@ process GUPPY_BASECALLER {
 		-i ${fast5_dir} \
 		-s "guppy_basecaller"
 	"""
+//-x ${params.guppy_run_mode}
 }

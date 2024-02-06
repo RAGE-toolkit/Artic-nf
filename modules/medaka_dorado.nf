@@ -10,8 +10,16 @@ if (!medaka_dir.exists()) {
         medaka_dir.mkdirs()
 }
 
+meta_file = "$currDir/${params.meta_file}";
 
-process MEDAKA {
+def hash = [:].withDefault { [] }
+
+new File(meta_file).eachLine { line ->
+    def (key, values) = line.split(',', 2)
+    hash[key] << values
+}
+
+process MEDAKA_DORADO{
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -21,16 +29,18 @@ process MEDAKA {
 
 	output:
 	val "medaka/${sampleId}", emit: consensus
+	val "medaka/${sampleId}.sorted.bam", emit: bam
  
 	script:
 	"""
-	echo "${input_dir}"
 	artic minion --medaka \
 		--medaka-model ${params.medaka_model} \
 		--normalise ${params.medaka_normalise} \
 		--threads ${params.threads} \
 		--scheme-directory ${params.primer_schema} \
-		--read-file ${input_dir} \
+		--no-frameshifts	\
+		--no-indels	\
+		--read-file ${currDir}/${params.fastq_dir}/${sampleId}_${item}${params.fq_extension} \
 		${scheme}/${version} ${currDir}/${params.output_dir}/medaka/${sampleId}
 	"""
 	// {params.scheme} medaka/{wildcards.sample}

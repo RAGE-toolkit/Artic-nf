@@ -4,14 +4,14 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir");
 
-process GUPPY_PLEX {
+process DEMULTIPLEX_DORADO {
 
 	label 'guppyplex'
 
 	publishDir "${currDir}/${params.fastq_dir}", mode: 'copy'
 
 	input:
-	path input_dir
+	val input_dir
 	tuple val(sample_id), val(item), val(scheme), val(version)
 	
 	output:
@@ -22,7 +22,7 @@ process GUPPY_PLEX {
 	artic guppyplex \
 		--skip-quality-check \
 		--min-length ${params.guppy_seq_len} \
-		--directory ${currDir}/${params.output_dir}/${input_dir}/${item} \
+		--directory ${input_dir}/ \
 		--output "${currDir}/${params.fastq_dir}/${sample_id}_${item}${params.fq_extension}"
 	"""
 }
