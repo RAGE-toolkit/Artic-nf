@@ -44,18 +44,18 @@ fq_channel = channel
   .map { row -> tuple(row.sampleId, row.barcode, row.schema, row.version) }
 
 println(" ");
-println("Output file				:" + "${currDir}/${params.output_dir}");
-println("Meta file				:" + meta_file);
-println("Basecaller				:" + "${params.basecaller}");
-println("Rawfile directory				:" + "${params.rawfile_dir}");
-println("Rawfile type				:" + "${params.rawfile_type}");
-println("Output base dir				:" + "${params.output_dir}");
+println("Output file		:" + "${currDir}/${params.output_dir}");
+println("Meta file		:" + meta_file);
+println("Basecaller		:" + "${params.basecaller}");
+println("Rawfile directory	:" + "${params.rawfile_dir}");
+println("Rawfile type		:" + "${params.rawfile_type}");
+println("Output base dir	:" + "${params.output_dir}");
 
 if ("${params.basecaller}" == "Guppy") {
-  println("Basecaller path:				" + "${params.guppy_dir}");
+  println("Basecaller path	:" + "${params.guppy_dir}");
 }
 else {
-  println("Basecaller path:				" +  "${params.dorado_dir}");
+  println("Basecaller path	:" +  "${params.dorado_dir}");
 }
 
 rawfile_ch = Channel.fromPath("${params.rawfile_dir}")
@@ -66,10 +66,10 @@ workflow {
 		DORADO_PLEX(input_dir="${params.rawfile_dir}", fq_channel)
 		MEDAKA_DORADO(input_dir=DORADO_PLEX.out, fq_channel)
 		CONCAT(medaka_dir=MEDAKA_DORADO.out.consensus)
-    ////CONCAT.out.collect().view()
-    MAFFT(concat_file=CONCAT.out)
-    SUMMARY_STATS(item=MEDAKA_DORADO.out.bam)
-    MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
+    		////CONCAT.out.collect().view()
+    		MAFFT(concat_file=CONCAT.out)
+    		SUMMARY_STATS(item=MEDAKA_DORADO.out.bam)
+    		MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
 		SUMMARY_STATS2(item=MEDAKA_DORADO.out.consensus)
 		}
 	else {
@@ -82,17 +82,17 @@ workflow {
 		MAFFT(concat_file=CONCAT.out)
 		SUMMARY_STATS(item=MEDAKA.out)
 		MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
-    }
-    else {
+    		}
+    		else 	{
 		DORADO_BASECALLER(fast5_or_pod5_dir="${params.rawfile_dir}")
 		DORADO_BARCODER(fastq_file=DORADO_BASECALLER.out)
 		DORADO_DEMUX(barcode_dir=DORADO_BARCODER.out.collect(), fq_channel)
-    MEDAKA_DORADO(input_dir=DORADO_DEMUX.out, fq_channel)
-    CONCAT(medaka_dir=MEDAKA_DORADO.out)
-    MAFFT(item=CONCAT.out)
-    SUMMARY_STATS(item=MEDAKA_DORADO.out)
-    MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
-		//SUMMARY_STATS2(item=MEDAKA_DORADO.out)
-    }
-  }
+    		MEDAKA_DORADO(input_dir=DORADO_DEMUX.out, fq_channel)
+    		CONCAT(medaka_dir=MEDAKA_DORADO.out)
+    		MAFFT(item=CONCAT.out)
+    		SUMMARY_STATS(item=MEDAKA_DORADO.out)
+    		MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
+		SUMMARY_STATS2(item=MEDAKA_DORADO.out)
+    		}
+  	}
 }

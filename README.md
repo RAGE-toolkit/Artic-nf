@@ -1,26 +1,50 @@
 # Artic-nf
-## Installation instructions are as follows
+## Installation (Linux/WSL)
 ```
 conda env create --name environment.yml
 conda activate artic_nf
 ```
+
+## Installation (Apple Silicon)
+```
+CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
+conda activate artic_nf
+conda config --env --set subdir osx-64
+```
+
+The workflow also requires weeSAM to be present to generate the summary stats. This need to be cloned seperately.
+```
+git clone https://github.com/centre-for-virus-research/weeSAM.git
+```
 If the above fails, then follow the manual_package_install.txt
 
-If you want to save the paramets for long time (output_dir, fast5_dir, guppy_basecaller path) edit it in "nextflow.config" and run the below command. 
+The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
 ## Pipeline can be run as follows
 ```
- nextflow main.nf
+ nextflow main.nf -c nextflow.conf
 ```
 
-## Other wise execute the below command
+## Alternatively you can run the below command to execute the pipeline (change the path accordingly)
 ```
-nextflow main.nf \
- --params.meta_file "meta_data/sample_sheet.csv" \
- --params.fast5_dir "projects/fast5/" \
- --params.guppy_dir "projects/ont-guppy-cpu/bin/" \
- --params.primer_schema "projects/Artic-nf/meta_data/primer-schemes/" \
- --params.guppy_barcode_kits "EXP-NBD104" \
- --params.output_dir "results"
+nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
+--rawfile_type "fastq" \
+--rawfile_dir "/home3/sk312p/task_dir/projects/Artic_nf_development_version/workshop/fastq_pass" \
+--dorado_dir "/home3/sk312p/task_dir/tools/dorado-0.4.3-linux-x64" \
+--primer_schema "/home3/sk312p/task_dir/projects/Artic_testing_Feb5/Artic-nf/meta_data/primer-schemes" \
+--kit_name "SQK-NBD114-24" \
+--output_dir "results" \
+--weeSAM "/home3/sk312p/task_dir/tools/weeSAM" \
+--dorado_config "dna_r10.4.1_e8.2_400bps_fast@v4.2.0" \
+--dorado_run_mode "cuda:0" \
+--seq_len 350 \
+--medaka_normalise 200 \
+--threads 5 \
+--medaka_model \
+"r941_min_fast_g303" \
+--fq_extension ".fastq" \
+--basecaller "Dorado" \
+--fastq_dir "raw_files/fastq" \
+-resume
 ```
 
 ![Alt text](/img/workflow.png)
