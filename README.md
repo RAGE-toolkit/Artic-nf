@@ -29,7 +29,7 @@ The workflow also requires weeSAM to be present to generate the summary stats. T
 git clone https://github.com/centre-for-virus-research/weeSAM.git
 ```
 
-## Handling CONDA installation Failure
+## Handling CONDA installation failure
 Follow the manual_package_install.txt if the conda installation fails.
 
 ## Running the workflow
