@@ -19,6 +19,7 @@ Mac users may need to reset the attribute to enable the dorado basecaller execut
 xattr -d com.apple.quarantine dorado
 ```
 
+### Downloading other modules/software
 The workflow also requires weeSAM to be present to generate the summary stats. This need to be cloned seperately.
 ```
 git clone https://github.com/centre-for-virus-research/weeSAM.git
