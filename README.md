@@ -1,7 +1,9 @@
 # Artic-nf
 ## Installation (Linux/WSL)
 ```
-conda env create --name environment.yml
+git clone https://github.com/RAGE-toolkit/Artic-nf.git
+cd Artic-nf
+conda env create --file environment.yml
 conda activate artic_nf
 ```
 
