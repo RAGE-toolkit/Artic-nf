@@ -12,8 +12,9 @@ conda activate artic_nf
 conda config --env --set subdir osx-64
 ```
 Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
-Download the Dorado from https://github.com/nanoporetech/dorado" and locate the to bin directory inside dorado folder.
-Then in terminal run the below as mentioned
+- Download the Dorado from https://github.com/nanoporetech/dorado"
+- Locate to bin directory inside dorado folder using terminal.
+- Execute below as mentioned
 ```
 xattr -d com.apple.quarantine dorado
 ```
