@@ -11,6 +11,12 @@ CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
 conda activate artic_nf
 conda config --env --set subdir osx-64
 ```
+Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
+Download the Dorado from https://github.com/nanoporetech/dorado" and locate the to bin directory inside dorado folder.
+Then in terminal run the below as mentioned
+```
+xattr -d com.apple.quarantine dorado
+```
 
 The workflow also requires weeSAM to be present to generate the summary stats. This need to be cloned seperately.
 ```
