@@ -16,7 +16,7 @@ The workflow also requires weeSAM to be present to generate the summary stats. T
 ```
 git clone https://github.com/centre-for-virus-research/weeSAM.git
 ```
-If the above fails, then follow the manual_package_install.txt
+Follow the manual_package_install.txt if the conda installation fails.
 
 The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
 ## Pipeline can be run as follows
