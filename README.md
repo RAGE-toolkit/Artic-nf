@@ -18,10 +18,10 @@ git clone https://github.com/centre-for-virus-research/weeSAM.git
 ```
 If the above fails, then follow the manual_package_install.txt
 
-If you want to save the paramets for long time (output_dir, fast5_dir, guppy_basecaller path) edit it in "nextflow.config" and run the below command. 
+The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.config" and follow the below step. 
 ## Pipeline can be run as follows
 ```
- nextflow main.nf
+ nextflow main.nf -c 
 ```
 
 ## Alternatively you can run the below command to execute the pipeline (change the path accordingly)
