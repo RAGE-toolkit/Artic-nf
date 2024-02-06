@@ -28,13 +28,14 @@ git clone https://github.com/centre-for-virus-research/weeSAM.git
 ## Handling CONDA installation Failure
 Follow the manual_package_install.txt if the conda installation fails.
 
+## Running the workflow
 The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
-## Pipeline can be run as follows
+### Pipeline can be run as follows
 ```
  nextflow main.nf -c nextflow.conf
 ```
 
-## Alternate
+### Alternate
 ```
 nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --rawfile_type "fastq" \
