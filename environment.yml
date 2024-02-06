@@ -6,3 +6,5 @@ channels:
 dependencies:
   - nextflow
   - artic
+  - pysam
+  - seaborn
