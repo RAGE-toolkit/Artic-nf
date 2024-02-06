@@ -1,9 +1,17 @@
 # Artic-nf
-## Installation instructions are as follows
+## Installation (Linux/WSL)
 ```
 conda env create --name environment.yml
 conda activate artic_nf
 ```
+
+## Installation (Apple Silicon)
+```
+CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
+conda activate artic_nf
+conda config --env --set subdir osx-64
+```
+
 The workflow also requires weeSAM to be present to generate the summary stats. This need to be cloned seperately.
 ```
 git clone https://github.com/centre-for-virus-research/weeSAM.git
