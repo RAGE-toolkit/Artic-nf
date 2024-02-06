@@ -9,6 +9,8 @@ conda activate artic_nf
 
 ## Installation (Apple Silicon)
 ```
+git clone https://github.com/RAGE-toolkit/Artic-nf.git
+cd Artic-nf
 CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
 conda activate artic_nf
 conda config --env --set subdir osx-64
