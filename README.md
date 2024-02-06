@@ -12,7 +12,7 @@ If you want to save the paramets for long time (output_dir, fast5_dir, guppy_bas
  nextflow main.nf
 ```
 
-## Other wise execute the below command
+## Alternatively you can run the below command to execute the pipeline
 ```
 nextflow main.nf \
  --params.meta_file "meta_data/sample_sheet.csv" \
