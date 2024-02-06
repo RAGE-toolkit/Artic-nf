@@ -14,7 +14,7 @@ conda config --env --set subdir osx-64
 Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
 - Download the Dorado from https://github.com/nanoporetech/dorado"
 - Locate to bin directory inside dorado folder using terminal.
-- Execute below as mentioned
+- Execute the below step as mentioned
 ```
 xattr -d com.apple.quarantine dorado
 ```
