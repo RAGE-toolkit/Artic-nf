@@ -31,9 +31,9 @@ include { DORADO_BARCODER         } from './modules/dorado_barcoder.nf'
 include { DORADO_DEMUX            } from './modules/dorado_demux.nf'
 include { DORADO_PLEX             } from './modules/dorado_plex.nf'
 include { MEDAKA_DORADO           } from './modules/medaka_dorado.nf'
-include { SUMMARY_STATS           } from './modules/summary_stats.nf'
-include { MERGE_SUMMARY_STATS     } from './modules/merge_stats.nf'
-include	{ SUMMARY_STATS2					} from './modules/summary_stats2.nf'
+//include { SUMMARY_STATS           } from './modules/summary_stats.nf'
+//include { MERGE_SUMMARY_STATS     } from './modules/merge_stats.nf'
+include	{ SUMMARY_STATS2		} from './modules/summary_stats2.nf'
 
 meta_file = "$currDir/${params.meta_file}";
 extension = ".fastq"
@@ -68,8 +68,8 @@ workflow {
 		CONCAT(medaka_dir=MEDAKA_DORADO.out.consensus)
     		////CONCAT.out.collect().view()
     		MAFFT(concat_file=CONCAT.out)
-    		SUMMARY_STATS(item=MEDAKA_DORADO.out.bam)
-    		MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
+    		//SUMMARY_STATS(item=MEDAKA_DORADO.out.bam)
+    		//MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
 		SUMMARY_STATS2(item=MEDAKA_DORADO.out.consensus)
 		}
 	else {
