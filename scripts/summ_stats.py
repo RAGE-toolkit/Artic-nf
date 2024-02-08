@@ -30,7 +30,7 @@ def process(args):
 				tmp_bam = join(args.input_dir, bam_file)
 				tmp_cons = join(args.input_dir, consesus_file)
 
-				reads = run_shell_command(f"samtools view " + tmp_bam + " | cut -f 1 | sort | uniq | wc -l")
+				reads = run_shell_command(f"samtools view " + tmp_bam + " | cut -f 1 | wc -l")
 				mapped = run_shell_command(f"samtools view -F 4 " + tmp_bam + " | cut -f 1 | sort | uniq | wc -l")
 				mean = run_shell_command(f"samtools depth -d 500000 -a " + tmp_bam + " | datamash mean 3 sstdev 3 median 3 min 3 max 3")
 				count = run_shell_command(f"fgrep -o N " + tmp_cons + " | wc -l")
