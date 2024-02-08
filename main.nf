@@ -31,7 +31,7 @@ include { DORADO_BARCODER         } from './modules/dorado_barcoder.nf'
 include { DORADO_DEMUX            } from './modules/dorado_demux.nf'
 include { DORADO_PLEX             } from './modules/dorado_plex.nf'
 include { MEDAKA_DORADO           } from './modules/medaka_dorado.nf'
-//include { SUMMARY_STATS           } from './modules/summary_stats.nf'
+include { SUMMARY_STATS           } from './modules/summary_stats.nf'
 //include { MERGE_SUMMARY_STATS     } from './modules/merge_stats.nf'
 include	{ SUMMARY_STATS2		} from './modules/summary_stats2.nf'
 
