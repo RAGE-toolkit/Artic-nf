@@ -68,7 +68,7 @@ workflow {
 		CONCAT(medaka_dir=MEDAKA_DORADO.out.consensus)
     		////CONCAT.out.collect().view()
     		MAFFT(concat_file=CONCAT.out)
-    		//SUMMARY_STATS(item=MEDAKA_DORADO.out.bam)
+    		SUMMARY_STATS(item=MEDAKA_DORADO.out.bam)
     		//MERGE_SUMMARY_STATS(item=SUMMARY_STATS.out.summary_dir)
 		SUMMARY_STATS2(item=MEDAKA_DORADO.out.consensus)
 		}
