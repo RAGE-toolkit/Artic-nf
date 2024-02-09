@@ -52,7 +52,7 @@
                     "type": "string",
                     "format": "path",
                     "title": "Basecaller program directory",
-                    "description": "Choose the basecaller progaram directory",
+                    "description": "Choose the basecaller progaram directory"
                 },
 		"kit_name": {
 			"type": "string",
