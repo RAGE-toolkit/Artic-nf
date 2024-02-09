@@ -4,7 +4,7 @@
     "title": "RAGE-toolkit/Artic-nf",
     "workflow_title": "Artic_nf",
     "description": "Raw data processing and consensus generation",
-    "url": "https://github.com/RAGE-toolkit/Artic-nf/",
+    "url": "https://github.com/RAGE-toolkit/Artic-nf",
     "type": "object",
     "definitions": {
         "input": {
