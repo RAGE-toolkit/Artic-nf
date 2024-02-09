@@ -1,0 +1,192 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/./master/nextflow_schema.json",
+    "title": "RAGE-toolkit/Artic-nf",
+    "workflow_title": "Artic_nf",
+    "description": "Raw data processing and consensus generation",
+    "url": "https://github.com/RAGE-toolkit/Artic-nf/",
+    "type": "object",
+    "definitions": {
+        "input": {
+            "title": "Input Options",
+            "type": "object",
+            "fa_icon": "fas fa-arrow-right",
+            "description": "Parameters for finding and handling input data for analysis.",
+            "properties": {
+                "fastq": {
+                    "type": "string",
+                    "format": "path",
+                    "title": "FASTQ",
+                    "description": "FASTQ/POD5/FAST5 files to upload.",
+                    "help_text": "FASTQ/POD5/FAST5 directories to upload."
+                },
+		"rawfile_type": {
+                    "type": "string",
+                    "title": "Raw file type",
+                    "description": "Choose the raw file type from a given list",
+                    "help_text": "Available file types are fastq and fast5_pod5.",
+                    "enum": [
+                        "fastq",
+                        "fast5_pod5"
+                    ],
+                    "default": "fastq"
+                },
+                "primer_schema": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "description": "Path to a primary schema",
+                    "help_text": "Accepted file extensions are '.fasta', '.fna', '.ffn', '.faa'."
+                },
+		"basecaller": {
+                    "type": "string",
+                    "title": "Basecaller to run",
+                    "description": "Choose the basecaller from given list",
+                    "help_text": "Available basecallers are Dorado and Guppy",
+                    "enum": [
+                        "Dorado",
+                        "Guppy"
+                    ],
+                    "default": "Dorado"
+                },
+		"basecaller_program_dir": {
+                    "type": "string",
+                    "format": "path",
+                    "title": "Basecaller program directory",
+                    "description": "Choose the basecaller progaram directory",
+                },
+		"kit_name": {
+			"type": "string",
+			"default": "SQK-NBD114-24",
+			"description": "Path to a primary schema", 
+			"help_text": "You can get the barcode list from Guppy or Dorado GitHub repo."
+                },
+            "allOf": [
+                {
+                    "required": [
+                        "primer_schema"
+                    ]
+                },
+                {
+                    "oneOf": [
+                        {
+                            "required": [
+                                "fastq"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "rawfile_type"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "samples": {
+            "title": "Sample Options",
+            "type": "object",
+            "fa_icon": "fas fa-vials",
+            "description": "Parameters relate to samples.",
+            "properties": {
+                "sample_sheet": {
+                    "type": "string",
+                    "format": "file-path",
+                    "description": "Workflow accepts the CSV file format",
+                    "help_text": "Refer the GitHub repo the have the correct format of the sample sheet."
+                },
+            }
+        },
+        "output": {
+            "title": "Output Options",
+            "type": "object",
+            "fa_icon": "fas fa-arrow-left",
+            "description": "Setting the output path",
+            "properties": {
+                "out_dir": {
+                    "type": "string",
+                    "default": "results",
+                    "format": "directory-path",
+                    "description": "Directory for output of all workflow results."
+                },
+                "prefix": {
+                    "type": "string",
+                    "title": "Output filename prefix",
+                    "description": "Optional prefix attached to each of the output filenames.",
+                    "help_text": "Output filename format will be `<prefix>-filename.ext`."
+                }
+            }
+        },
+        "advanced_options": {
+            "title": "Advanced options",
+            "type": "object",
+            "fa_icon": "far fa-question-circle",
+            "description": "Advanced options",
+            "help_text": "By default they do not need to be changed. Unless you need a tuning",
+            "properties": {
+                "processed_fa_files": {
+                    "type": "string",
+                    "default": "raw_files/fastq",
+                    "description": "Stores the guppyplexed fastq files for medaka",
+                    "help_text": "This directory will be autogenerated by the workflow"
+                },
+		"weeSAM_path": {
+                    "type": "string",
+                    "default": "weeSAM",
+                    "description": "Path to weeSAM program to calculate the stats",
+                    "help_text": "This program requires cloning from GitHub repo"
+                },
+		
+                "basecaller_config": {
+                    "type": "string",
+                    "title": "Config file for basecaller",
+		    "default": "dna_r10.4.1_e8.2_400bps_fast@v4.2.0",
+                    "description": "String of command line arguments to be passed on to `minimap2`.",
+                    "help_text": "This overrides the options defined by `--minimap_preset` and allows for running the alignment step in a more customized way."
+                }
+            }
+        },
+        "misc": {
+            "title": "Miscellaneous Options",
+            "type": "object",
+            "description": "Everything else.",
+            "default": "",
+            "properties": {
+                "threads": {
+                    "type": "integer",
+                    "default": 5,
+                    "minimum": 5,
+                    "description": "Number of CPU threads to use for the alignment step.",
+                    "help_text": "The alignment process will run with this many threads (note that the memory used by minimap2 scales with the number of threads). The total CPU resources used by the workflow are constrained by the executor configuration and can be modified by changing `nextflow.config` or supplying an additional config file."
+                },
+            }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/input"
+        },
+        {
+            "$ref": "#/definitions/samples"
+        },
+        {
+            "$ref": "#/definitions/output"
+        },
+        {
+            "$ref": "#/definitions/advanced_options"
+        },
+        {
+            "$ref": "#/definitions/misc"
+        }
+    ],
+    "resources": {
+        "recommended": {
+            "cpus": 5,
+            "memory": "12GB"
+        },
+        "minimum": {
+            "cpus": 100,
+            "memory": "124GB"
+        },
+        "run_time": "1 minutes per sample (depending on number of reads, length of reference, and available compute).",
+        "arm_support": true
+    }
+}
