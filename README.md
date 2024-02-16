@@ -9,8 +9,9 @@ conda activate artic_nf
 Dorado requires manual downloading, and you can obtain it from the following link
 https://github.com/nanoporetech/dorado.
 
-After the download, additional models need to be downloaded as indicated below.
+After the download, it needs to be uncompressed and additional models need to be downloaded as indicated below.
 ```
+tar -xvzf <path_to_dorado...tar.gz>
 <path_to_dorado_main_dir>/bin
 ./dorado download --directory model
 mv model ./../
