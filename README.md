@@ -96,9 +96,6 @@ The workflow can be run using two ways. Edit the file paths and other parameters
  nextflow main.nf -c nextflow.conf
 ```
 
-## Memory management
-This section is beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes each sample in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
-
 ### Alternate
 ```
 nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
@@ -121,6 +118,8 @@ nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --fastq_dir "raw_files/fastq" \
 -resume
 ```
-Change parameters, file/folder path accordigly 
+**Note:** Change parameters, file/folder path accordigly
 
+## Memory management
+This section is beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes each sample in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
 ![Alt text](/img/workflow.png)
