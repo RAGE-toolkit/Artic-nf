@@ -16,7 +16,8 @@ tar -xvzf <path_to_dorado...tar.gz>
 ./dorado download --directory model
 mv model ./../
 ```
-
+## Handling CONDA installation failure
+Follow the manual_package_install.txt if the conda installation fails.
 
 ## Installation (Apple Silicon [M2/M3])
 
@@ -35,7 +36,7 @@ import platform
 platform.machine()
 ```
 
-The output of above command should be **arm64**, otherwise, re-install the Miniforge3 and run the above command to check the platform.
+The output of above code should be **arm64**, otherwise, Download the appropriate version of the Miniforge and re-install and run the above command to check the platform.
 Once everything is set, run the below commands to install nextflow and and medaka.
 ```
 conda install nextflow=23.10.1
@@ -54,12 +55,17 @@ make
 make install
 ```
 
+## Installation for Mac (X86_64)
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
 CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
 conda activate artic_nf
 conda config --env --set subdir osx-64
 ```
+**Note:** Installation for Mac X86_64 method is not tested.
+
+## General information for All the Mac architecture (Apple silicon M1,M2,M3 and Intel X86_64)
+ 
 Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
 - Download the Dorado from https://github.com/nanoporetech/dorado"
 - Locate to bin directory inside dorado folder using terminal
@@ -73,9 +79,6 @@ The workflow also requires weeSAM to be present to generate the summary stats. T
 ```
 git clone https://github.com/centre-for-virus-research/weeSAM.git
 ```
-
-## Handling CONDA installation failure
-Follow the manual_package_install.txt if the conda installation fails.
 
 ## Running the workflow
 The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
