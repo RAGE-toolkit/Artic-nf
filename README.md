@@ -1,30 +1,56 @@
 # Artic-nf
 ## Installation (Linux/WSL)
 ```
-conda env create --name environment.yml
+git clone https://github.com/RAGE-toolkit/Artic-nf.git
+cd Artic-nf
+conda env create --file environment.yml
 conda activate artic_nf
 ```
+Dorado requires manual downloading, and you can obtain it from the following link
+https://github.com/nanoporetech/dorado.
+
+After the download, it needs to be uncompressed and additional models need to be downloaded as indicated below.
+```
+tar -xvzf <path_to_dorado...tar.gz>
+<path_to_dorado_main_dir>/bin
+./dorado download --directory model
+mv model ./../
+```
+
 
 ## Installation (Apple Silicon)
 ```
+git clone https://github.com/RAGE-toolkit/Artic-nf.git
+cd Artic-nf
 CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
 conda activate artic_nf
 conda config --env --set subdir osx-64
 ```
+Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
+- Download the Dorado from https://github.com/nanoporetech/dorado"
+- Locate to bin directory inside dorado folder using terminal
+- Execute the below step as mentioned
+```
+xattr -d com.apple.quarantine dorado
+```
 
+### Downloading other modules/software
 The workflow also requires weeSAM to be present to generate the summary stats. This need to be cloned seperately.
 ```
 git clone https://github.com/centre-for-virus-research/weeSAM.git
 ```
-If the above fails, then follow the manual_package_install.txt
 
+## Handling CONDA installation failure
+Follow the manual_package_install.txt if the conda installation fails.
+
+## Running the workflow
 The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
-## Pipeline can be run as follows
+### Regular way
 ```
  nextflow main.nf -c nextflow.conf
 ```
 
-## Alternatively you can run the below command to execute the pipeline (change the path accordingly)
+### Alternate
 ```
 nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --rawfile_type "fastq" \
@@ -46,5 +72,6 @@ nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --fastq_dir "raw_files/fastq" \
 -resume
 ```
+Change parameters, file/folder path accordigly 
 
 ![Alt text](/img/workflow.png)
