@@ -7,7 +7,9 @@ conda env create --file environment.yml
 conda activate artic_nf
 ```
 Dorado requires manual downloading, and you can obtain it from the following link
+```
 https://github.com/nanoporetech/dorado.
+```
 
 After the download, it needs to be uncompressed and additional models need to be downloaded as indicated below.
 ```
