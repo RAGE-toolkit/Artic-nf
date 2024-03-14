@@ -19,10 +19,8 @@ mv model ./../
 
 
 ## Installation (Apple Silicon [M2/M3])
-```
-For Mac M3 processor, make sure the Miniforge setup is supporting arm64.
 
-Cloning base directory as artic_nf to avoid loads of package installation.
+For Mac M3 processor, make sure the Miniforge setup is supporting arm64. Cloning base directory as artic_nf to avoid loads of package installation.
 
 ```
 conda create --name rage-nf --clone base
