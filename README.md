@@ -124,4 +124,4 @@ nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 This section is beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes multiple samples in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
 
 ## The workflow structure
-![Alt text](/img/workflow.html)
+![Alt text](/img/workflow.png)
