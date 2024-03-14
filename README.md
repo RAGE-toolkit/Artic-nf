@@ -19,7 +19,7 @@ mv model ./../
 ## Handling CONDA installation failure
 Follow the manual_package_install.txt if the conda installation fails.
 
-## Installation (Apple Silicon [M2/M3])
+## Installation (Apple Silicon M1,M2,M3)
 
 For Mac M3 processor, make sure the Miniforge setup is supporting arm64. Cloning base directory as artic_nf to avoid loads of package installation.
 
@@ -46,7 +46,7 @@ pip install medaka==1.8.2
 
 The workflow requires bcftools to be compiled manually. Which can be done with following steps.
 
-```
+shell```
 mamba install wget
 wget https://github.com/samtools/bcftools/releases/download/1.19/bcftools-1.19.tar.bz2
 tar -xvzf bcftools-1.19.tar.bz2
@@ -57,6 +57,7 @@ make install
 ```
 
 ## Installation for Mac (X86_64)
+shell```
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
 CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
@@ -71,6 +72,7 @@ Mac users may need to reset the attribute to enable the dorado basecaller execut
 - Download the Dorado from https://github.com/nanoporetech/dorado"
 - Locate to bin directory inside dorado folder using terminal
 - Execute the below step as mentioned
+  
 ```
 xattr -d com.apple.quarantine dorado
 ```
