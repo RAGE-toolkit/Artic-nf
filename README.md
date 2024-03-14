@@ -18,8 +18,34 @@ mv model ./../
 ```
 
 
-## Installation (Apple Silicon)
+## Installation (Apple Silicon [M2/M3])
 ```
+For Mac M3 processor, make sure the Miniforge setup is supporting arm64.
+
+Cloning base directory as artic_nf to avoid loads of package installation.
+
+```
+conda create --name rage-nf --clone base
+conda activate artic_nf
+```
+
+After the env activation, run below code to confirm python platfom.
+
+```
+python
+import platform
+platform.machine()
+```
+The output of above command should be **arm64**, otherwise, re-install the Miniforge3 and run the above command to check the platform.
+
+Once everything is set, run the below commands to install nextflow and and medaka.
+```
+conda install nextflow=23.10.1
+pip install medaka==1.8.2
+```
+
+The workflow requires bcftools to be compiled manually. Which can be done with following steps.
+
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
 CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
