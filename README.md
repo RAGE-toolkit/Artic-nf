@@ -16,8 +16,9 @@ tar -xvzf <path_to_dorado...tar.gz>
 ./dorado download --directory model
 mv model ./../
 ```
-## Handling CONDA installation failure
-Follow the manual_package_install.txt if the conda installation fails.
+
+### Handling CONDA installation failure
+Follow the **manual_package_install.txt** if the conda installation fails.
 
 ## Installation (Apple Silicon M1,M2,M3)
 
@@ -46,7 +47,7 @@ pip install medaka==1.8.2
 
 The workflow requires bcftools to be compiled manually. Which can be done with following steps.
 
-shell```
+```
 mamba install wget
 wget https://github.com/samtools/bcftools/releases/download/1.19/bcftools-1.19.tar.bz2
 tar -xvzf bcftools-1.19.tar.bz2
