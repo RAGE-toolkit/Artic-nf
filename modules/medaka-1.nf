@@ -21,7 +21,13 @@ new File(meta_file).eachLine { line ->
 
 align_trim = "${currDir}/scripts/align_trim.py"
 
-process MEDAKA {
+def osName = System.getProperty("os.name").toLowerCase()
+
+process MEDAKA_1 {
+
+	if (osName.contains("linux")) {
+		conda 'envs/medaka.yml'
+	}
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -30,7 +36,7 @@ process MEDAKA {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.2.hdf", emit: hdf
+	val "medaka/${sampleId}.1.hdf", emit: hdf
 	
 	script:
 	"""
@@ -39,7 +45,7 @@ process MEDAKA {
 --threads ${params.threads} \
 --chunk_len 800 \
 --chunk_ovlp 400 \
---RG 2 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
-${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf
+--RG 1 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
+${currDir}/${params.output_dir}/medaka/${sampleId}.1.hdf
 	"""
 	}

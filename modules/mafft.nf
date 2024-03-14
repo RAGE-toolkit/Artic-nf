@@ -8,27 +8,21 @@ if (!res_dir.exists()) {
         res_dir.mkdirs()
 }
 
-// creating mafft output dir
-def mafft_dir = "${currDir}/${params.output_dir}/mafft/"
-def mafft_res_dir = new File(mafft_dir)
-mafft_res_dir.mkdirs()
-
 process MAFFT {
+
+	conda 'envs/mafft.yml'
+
+	publishDir "${currDir}/${params.output_dir}/mafft/", mode: 'copy'
 	
 	input:
-	val item
+	val concat_fa
+	
+	output:
+	val "genome-aln.fasta", emit: mafft_fa
 
 	script:
 	"""
-	echo "mafft ${currDir}/${params.output_dir}/concatenate/${item} > ${mafft_res_dir}/genome-aln.fasta"
-	mafft ${currDir}/${params.output_dir}/concatenate/${item} > ${mafft_res_dir}/genome-aln.fasta
+	mafft ${currDir}/${params.output_dir}/concatenate/*.fasta \
+	> ${currDir}/${params.output_dir}/mafft/genome-aln.fasta
 	"""
 }
-
-/*
-fa_channel = Channel.fromPath("${currDir}/${params.output_dir}/concat/genome.fasta")
-workflow {
-	mafft_aln(fa_channel)
-}
-*/
-

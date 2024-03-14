@@ -1,3 +1,5 @@
+//summary_stats.nf
+
 nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir")
@@ -8,11 +10,13 @@ if (!res_dir.exists()) {
         res_dir.mkdirs()
 }
 
-weeSAM_path = "${params.weeSAM}/weeSAM"
+summary_stat_path = "${currDir}/scripts/summary_stats.py"
 
 process SUMMARY_STATS {
 
-	label "dorado_basecaller"
+	conda 'envs/datamash.yml'
+
+	label "summary_stats"
 
 	publishDir "${currDir}/${params.output_dir}/summary_stats/", mode: 'copy'
 	
@@ -20,12 +24,11 @@ process SUMMARY_STATS {
 	val item
 
 	output:
-	val "${item}.summary.txt", emit: summary 
-	val "${currDir}/${params.output_dir}/medaka", emit: summary_dir
+	val "summary_stats.txt", emit: summary 
 
 	script:
 	"""
-	$weeSAM_path --overwrite --bam ${currDir}/${params.output_dir}/${item} --out "${currDir}/${params.output_dir}/${item}.summary.txt"   
+	python ${summary_stat_path} -i ${currDir}/${params.output_dir}/medaka -o "${currDir}/${params.output_dir}/summary_stats/summary_stats.txt"   
 	"""
 }
 

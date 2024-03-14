@@ -1,4 +1,4 @@
-//medaka.nf
+//concat_for_muscle.nf
 
 nextflow.enable.dsl=2
 
@@ -19,27 +19,24 @@ new File(meta_file).eachLine { line ->
     hash[key] << values
 }
 
-align_trim = "${currDir}/scripts/align_trim.py"
+fasta_header = "${currDir}/scripts/fasta_header.py"
 
-process MEDAKA {
+process CONCAT_FOR_MUSCLE {
+
+	conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
 	input:
-	val input_bam
+	val input_vcf
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.2.hdf", emit: hdf
+	val "medaka/${sampleId}.muscle.in.fasta", emit: muscle_fa
 	
 	script:
 	"""
-	medaka consensus \
---model ${params.medaka_model} \
---threads ${params.threads} \
---chunk_len 800 \
---chunk_ovlp 400 \
---RG 2 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
-${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf
+cat ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+> ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta
 	"""
 	}

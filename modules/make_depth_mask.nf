@@ -1,4 +1,4 @@
-//medaka.nf
+//make_depth_mask.nf
 
 nextflow.enable.dsl=2
 
@@ -19,27 +19,28 @@ new File(meta_file).eachLine { line ->
     hash[key] << values
 }
 
-align_trim = "${currDir}/scripts/align_trim.py"
+make_depth_mask = "${currDir}/scripts/make_depth_mask.py"
 
-process MEDAKA {
+process MAKE_DEPTH_MASK {
+
+	conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
 	input:
-	val input_bam
+	val input_vcf
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.2.hdf", emit: hdf
+	val "medaka/${sampleId}.coverage_mask.txt", emit: coverage_mask
 	
 	script:
 	"""
-	medaka consensus \
---model ${params.medaka_model} \
---threads ${params.threads} \
---chunk_len 800 \
---chunk_ovlp 400 \
---RG 2 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
-${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf
+	python ${make_depth_mask} \
+--depth 50 \
+--store-rg-depths \
+${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
+${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt
 	"""
 	}

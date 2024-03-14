@@ -1,4 +1,4 @@
-//medaka.nf
+//medaka-2.nf
 
 nextflow.enable.dsl=2
 
@@ -21,12 +21,12 @@ new File(meta_file).eachLine { line ->
 
 align_trim = "${currDir}/scripts/align_trim.py"
 
-process MEDAKA {
+process MEDAKA_2 {
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
 	input:
-	val input_bam
+	val input_hdf
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:

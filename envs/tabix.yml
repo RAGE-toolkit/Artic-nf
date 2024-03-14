@@ -1,14 +1,14 @@
-name: artic_test_linux
+name: tabix
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - nextflow=23.10.0
-  - medaka
-  - pysam
+  - python=3.10
   - biopython
+  - tabix
+  - pyfaidx =0.6.0 
   - pandas
-  - pyarrow
+  - pysam
+  - samtools
   - pyvcf=0.6.8
-  - longshot

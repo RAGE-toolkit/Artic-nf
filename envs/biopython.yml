@@ -1,14 +1,11 @@
-name: artic_test_linux
+name: biopython
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - nextflow=23.10.0
-  - medaka
-  - pysam
+  - python=3.10
   - biopython
   - pandas
+  - samtools
   - pyarrow
-  - pyvcf=0.6.8
-  - longshot

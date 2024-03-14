@@ -1,4 +1,4 @@
-//medaka.nf
+//longshot.nf
 
 nextflow.enable.dsl=2
 
@@ -21,25 +21,30 @@ new File(meta_file).eachLine { line ->
 
 align_trim = "${currDir}/scripts/align_trim.py"
 
-process MEDAKA {
+process LONGSHOT {
+
+	errorStrategy 'ignore'
+
+	conda 'envs/longshot.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
 	input:
-	val input_bam
+	val input_vcf
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.2.hdf", emit: hdf
+	val "medaka/${sampleId}.merged.vcf", emit: vcf
 	
 	script:
 	"""
-	medaka consensus \
---model ${params.medaka_model} \
---threads ${params.threads} \
---chunk_len 800 \
---chunk_ovlp 400 \
---RG 2 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
-${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf
+	longshot -P 0 \
+-F \
+-A \
+--no_haps \
+--bam ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
+--ref ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+--out ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf \
+--potential_variants ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf.gz
 	"""
 	}

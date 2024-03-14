@@ -1,4 +1,4 @@
-//medaka.nf
+//medaka-2.nf
 
 nextflow.enable.dsl=2
 
@@ -19,27 +19,30 @@ new File(meta_file).eachLine { line ->
     hash[key] << values
 }
 
+def osName = System.getProperty("os.name").toLowerCase()
+
 align_trim = "${currDir}/scripts/align_trim.py"
 
-process MEDAKA {
+process MEDAKA_SNP_1 {
+
+	if (osName.contains("linux")) {
+		conda 'envs/medaka.yml'
+	}
+
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
 	input:
-	val input_bam
+	val input_hdf
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.2.hdf", emit: hdf
+	val "medaka/${sampleId}.1.vcf", emit: vcf
 	
 	script:
 	"""
-	medaka consensus \
---model ${params.medaka_model} \
---threads ${params.threads} \
---chunk_len 800 \
---chunk_ovlp 400 \
---RG 2 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
-${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf
+	medaka snp ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+${currDir}/${params.output_dir}/medaka/${sampleId}.1.hdf \
+${currDir}/${params.output_dir}/medaka/${sampleId}.1.vcf
 	"""
 	}

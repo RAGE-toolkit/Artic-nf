@@ -10,23 +10,19 @@ if (!res_dir.exists()) {
 
 process CONCAT {
 
+	conda 'envs/pyvcf.yml'
+
 	publishDir "${currDir}/${params.output_dir}/concatenate"
 
 	input:
-	val "medaka_dir"
+	val "consensus_seqs"
 
 	output:
 	val "concat_genome.fasta", emit: genome_fa
 
 	script:
 	"""
-	cat ${currDir}/${params.output_dir}/${medaka_dir}.consensus.fasta >> "${currDir}/${params.output_dir}/concatenate/concat_genome.fasta"
+	cat ${currDir}/${params.output_dir}/medaka/*.consensus.fasta >> "${currDir}/${params.output_dir}/concatenate/concat_genome.fasta"
 	"""	
 
-/*	"""
-	python ${currDir}/${params.script}/concat_seq.py \
-		-d ${currDir}/${params.output_dir}/${medaka_dir} \
-		-o ${currDir}/${params.output_dir}/concatenate/ -f "genome.fasta"
-	"""
-*/
 }

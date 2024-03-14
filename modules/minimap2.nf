@@ -19,7 +19,11 @@ new File(meta_file).eachLine { line ->
     hash[key] << values
 }
 
-process MEDAKA_DORADO{
+align_trim = "${currDir}/scripts/align_trim.py"
+
+process MINIMAP2 {
+
+	conda 'envs/minimap2.yml' 
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -29,19 +33,16 @@ process MEDAKA_DORADO{
 
 	output:
 	val "medaka/${sampleId}", emit: consensus
-	val "medaka/${sampleId}.sorted.bam", emit: bam
- 
+	val "medaka/${sampleId}.sorted.bam", emit: sorted_bam
+
 	script:
 	"""
-	artic minion --medaka \
-		--medaka-model ${params.medaka_model} \
-		--normalise ${params.medaka_normalise} \
-		--threads ${params.threads} \
-		--scheme-directory ${params.primer_schema} \
-		--no-frameshifts	\
-		--no-indels	\
-		--read-file ${currDir}/${params.fastq_dir}/${sampleId}_${item}${params.fq_extension} \
-		${scheme}/${version} ${currDir}/${params.output_dir}/medaka/${sampleId}
+	minimap2 -a -x map-ont -t ${params.threads} \
+	${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+	${currDir}/raw_files/fastq/${sampleId}_${item}.fastq |\
+	samtools view -bS -F 4 - |\
+	samtools sort -o ${currDir}/results/medaka/${sampleId}.sorted.bam &&\
+	samtools index ${currDir}/results/medaka/${sampleId}.sorted.bam
 	"""
-	// {params.scheme} medaka/{wildcards.sample}
-}
+	}
+

@@ -1,0 +1,9 @@
+name: bcftools
+channels:
+  - nanoporetech
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - bcftools=1.18
