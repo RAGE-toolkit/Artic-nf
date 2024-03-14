@@ -67,7 +67,7 @@ conda config --env --set subdir osx-64
 ```
 **Note:** Installation for Mac X86_64 method is not tested.
 
-## General information for All the Mac architecture (Apple silicon M1,M2,M3 and Intel X86_64)
+## General information for All the Mac architecture (M1,M2,M3 and Intel X86_64)
  
 Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
 - Download the Dorado from https://github.com/nanoporetech/dorado"
@@ -78,18 +78,18 @@ Mac users may need to reset the attribute to enable the dorado basecaller execut
 xattr -d com.apple.quarantine dorado
 ```
 
-### Downloading other modules/software
-The workflow also requires weeSAM to be present to generate the summary stats. This need to be cloned seperately.
-```
-git clone https://github.com/centre-for-virus-research/weeSAM.git
-```
-
 ## Running the workflow
 The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
 ### Regular way
 ```
  nextflow main.nf -c nextflow.conf
 ```
+
+## Memory management
+This section will be useful for those who are planning to run the workflow on laptop/small scale system. There are few setting which might
+help in system going out of memory. Generally the nextflow executes each sample parallelly. Therefore, might be a high chance of getting the out of memory error. You can set it at nextflow.config file where queueSize = 5 to 1 or 2 depending on your RAM capacity.
+
+This section is particularly beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes each sample in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
 
 ### Alternate
 ```
