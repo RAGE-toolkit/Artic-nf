@@ -97,10 +97,7 @@ The workflow can be run using two ways. Edit the file paths and other parameters
 ```
 
 ## Memory management
-This section will be useful for those who are planning to run the workflow on laptop/small scale system. There are few setting which might
-help in system going out of memory. Generally the nextflow executes each sample parallelly. Therefore, might be a high chance of getting the out of memory error. You can set it at nextflow.config file where queueSize = 5 to 1 or 2 depending on your RAM capacity.
-
-This section is particularly beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes each sample in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
+This section is beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes each sample in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
 
 ### Alternate
 ```
