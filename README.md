@@ -69,13 +69,22 @@ conda config --env --set subdir osx-64
 
 ## General information for All the Mac architecture (M1,M2,M3 and Intel X86_64)
  
-Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
+If you are planning to analysis the raw data (*.fast5 or *.pod5), the user needs to download the Guppy or Dorado to perform the basecalling and barcoding. 
+The Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
 - Download the Dorado from https://github.com/nanoporetech/dorado"
-- Locate to bin directory inside dorado folder using terminal
+- Locate to bin directory inside Dorado folder using terminal
 - Execute the below step as mentioned
-  
+
 ```
 xattr -d com.apple.quarantine dorado
+```
+Similarly, Guppy can be setup as mentioned below.
+- Download the Guppy from https://community.nanoporetech.com/downloads
+- Locate to bin directory inside Guppy folder using terminal
+- Execute the below step as mentioned
+
+```
+xattr -d com.apple.quarantine guppy
 ```
 
 ## Running the workflow
