@@ -7,7 +7,9 @@ conda env create --file environment.yml
 conda activate artic_nf
 ```
 Dorado requires manual downloading, and you can obtain it from the following link
+```
 https://github.com/nanoporetech/dorado.
+```
 
 After the download, it needs to be uncompressed and additional models need to be downloaded as indicated below.
 ```
@@ -17,8 +19,47 @@ tar -xvzf <path_to_dorado...tar.gz>
 mv model ./../
 ```
 
+### Handling CONDA installation failure
+Follow the **manual_package_install.txt** if the conda installation fails.
 
-## Installation (Apple Silicon)
+## Installation (Apple Silicon M1,M2,M3)
+
+For Mac M3 processor, make sure the Miniforge setup is supporting arm64. Cloning base directory as artic_nf to avoid loads of package installation.
+
+```
+conda create --name artic_nf --clone base
+conda activate artic_nf
+```
+
+Run below python code to confirm the platform. 
+
+```
+python
+import platform
+platform.machine()
+```
+
+The output of above code should be **arm64**, otherwise, Download the appropriate version of the Miniforge and re-install and run the above command to check the platform.
+Once everything is set, run the below commands to install nextflow and and medaka.
+
+```
+conda install nextflow=23.10.1
+pip install medaka==1.8.2
+```
+
+The workflow requires bcftools to be compiled manually. Which can be done with following steps.
+
+```
+mamba install wget
+wget https://github.com/samtools/bcftools/releases/download/1.19/bcftools-1.19.tar.bz2
+tar -xvzf bcftools-1.19.tar.bz2
+cd bcftools-1.19
+./configure
+make
+make install
+```
+
+## Installation for Mac (X86_64)
 ```
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
@@ -26,22 +67,27 @@ CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
 conda activate artic_nf
 conda config --env --set subdir osx-64
 ```
-Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
+**Note:** Installation for Mac X86_64 method is not tested.
+
+## General information for All the Mac architecture (M1,M2,M3 and Intel X86_64)
+ 
+If you are planning to analysis the raw data (*.fast5 or *.pod5), the user needs to download the Guppy or Dorado to perform the basecalling and barcoding. 
+The Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
 - Download the Dorado from https://github.com/nanoporetech/dorado"
-- Locate to bin directory inside dorado folder using terminal
+- Locate to bin directory inside Dorado folder using terminal
 - Execute the below step as mentioned
+
 ```
 xattr -d com.apple.quarantine dorado
 ```
+Similarly, Guppy can be setup as mentioned below.
+- Download the Guppy from https://community.nanoporetech.com/downloads
+- Locate to bin directory inside Guppy folder using terminal
+- Execute the below step as mentioned
 
-### Downloading other modules/software
-The workflow also requires weeSAM to be present to generate the summary stats. This need to be cloned seperately.
 ```
-git clone https://github.com/centre-for-virus-research/weeSAM.git
+xattr -d com.apple.quarantine guppy
 ```
-
-## Handling CONDA installation failure
-Follow the manual_package_install.txt if the conda installation fails.
 
 ## Running the workflow
 The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
@@ -72,6 +118,10 @@ nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --fastq_dir "raw_files/fastq" \
 -resume
 ```
-Change parameters, file/folder path accordigly 
+**Note:** Change parameters, file/folder path accordigly
 
+## Memory management
+This section is beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes multiple samples in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
+
+## The workflow structure
 ![Alt text](/img/workflow.png)
