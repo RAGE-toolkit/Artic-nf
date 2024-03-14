@@ -44,6 +44,16 @@ pip install medaka==1.8.2
 
 The workflow requires bcftools to be compiled manually. Which can be done with following steps.
 
+```
+mamba install wget
+wget https://github.com/samtools/bcftools/releases/download/1.19/bcftools-1.19.tar.bz2
+tar -xvzf bcftools-1.19.tar.bz2
+cd bcftools-1.19
+./configure
+make
+make install
+```
+
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
 CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
