@@ -23,19 +23,19 @@ mv model ./../
 For Mac M3 processor, make sure the Miniforge setup is supporting arm64. Cloning base directory as artic_nf to avoid loads of package installation.
 
 ```
-conda create --name rage-nf --clone base
+conda create --name artic_nf --clone base
 conda activate artic_nf
 ```
 
-After the env activation, run below code to confirm python platfom.
+Run below python code to confirm the platform. 
 
 ```
 python
 import platform
 platform.machine()
 ```
-The output of above command should be **arm64**, otherwise, re-install the Miniforge3 and run the above command to check the platform.
 
+The output of above command should be **arm64**, otherwise, re-install the Miniforge3 and run the above command to check the platform.
 Once everything is set, run the below commands to install nextflow and and medaka.
 ```
 conda install nextflow=23.10.1
