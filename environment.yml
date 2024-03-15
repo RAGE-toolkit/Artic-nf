@@ -1,4 +1,4 @@
-name: artic_test_linux
+name: artic_nf
 channels:
   - conda-forge
   - bioconda
