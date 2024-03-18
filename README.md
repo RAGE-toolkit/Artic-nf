@@ -1,7 +1,7 @@
 # Artic-nf
 The workflow is designed for ONT data analysis from scratch, handling raw files in fast5/pod5/fastq_pass formats to produce a consensus sequences from a given list of samples. 
 The basis of this workflow, including scripts and methodologies, is inspired by the resources available on [fieldbioinformatics](https://github.com/artic-network/fieldbioinformatics). 
-However, we've tailored these elements specifically to accommodate the analysis of Rabies virus data.
+However, we have tailored these elements specifically to support the analysis of Rabies virus data.
 
 ## Installation (Linux/WSL)
 ```
