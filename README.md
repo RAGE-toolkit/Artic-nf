@@ -63,7 +63,7 @@ make
 make install
 ```
 
-## Installation for Mac (X86_64)
+## Installation for Mac (x86_64)
 ```
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
