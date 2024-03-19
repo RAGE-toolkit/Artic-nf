@@ -43,7 +43,7 @@ import platform
 platform.machine()
 ```
 
-The output of above code should be **arm64**, otherwise, Download the appropriate version of the Miniforge and re-install and run the above command to check the platform.
+The output of above code should be **arm64**, otherwise, download the appropriate version of the Miniforge and re-install and run the above command to check the platform.
 Once everything is set, run the below commands to install nextflow and and medaka.
 
 ```
