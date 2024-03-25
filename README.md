@@ -23,9 +23,6 @@ tar -xvzf <path_to_dorado...tar.gz>
 mv model ./../
 ```
 
-### Handling CONDA installation failure
-Follow the **manual_package_install.txt** if the conda installation fails.
-
 ## Installation (Apple Silicon M1,M2,M3)
 
 For Mac M3 processor, make sure the Miniforge setup is supporting arm64. Cloning base directory as artic_nf to avoid loads of package installation.
