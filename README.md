@@ -60,7 +60,7 @@ make
 make install
 ```
 
-## Installation for Mac (x86_64)
+## Installation for Mac (x86_x64)
 ```
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
@@ -68,9 +68,9 @@ CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
 conda activate artic_nf
 conda config --env --set subdir osx-64
 ```
-**Note:** Installation for Mac X86_64 method is not tested.
+**Note:** Installation for Mac x86_x64 method is not tested.
 
-## General information for All the Mac architecture (M1,M2,M3 and Intel X86_64)
+## General information for All the Mac architecture (M1,M2,M3 and Intel x86_x64)
  
 If you are planning to analysis the raw data (*.fast5 or *.pod5), the user needs to download the Guppy or Dorado to perform the basecalling and barcoding. 
 The Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
