@@ -37,10 +37,10 @@ process MAKE_DEPTH_MASK {
 	script:
 	"""
 	python ${make_depth_mask} \
---depth 50 \
---store-rg-depths \
-${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
-${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt
+	--depth ${params.mask_depth} \
+	--store-rg-depths \
+	${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+	${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
+	${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt
 	"""
 	}
