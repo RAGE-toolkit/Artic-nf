@@ -1,4 +1,4 @@
-name: artic_nf
+name: artic-nf
 channels:
   - conda-forge
   - bioconda
