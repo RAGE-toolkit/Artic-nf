@@ -1,4 +1,4 @@
-name: rage-nf
+name: artic-nf
 channels:
   - conda-forge
   - bioconda
