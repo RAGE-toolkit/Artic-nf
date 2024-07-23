@@ -24,6 +24,14 @@ process GUPPY_BARCODER {
 		--require_barcodes_both_ends \
 		-i ${input_dir} \
 		-s "guppy_barcoder" \
-		--barcode_kits ${params.kit_name}
+		--barcode_kits ${params.kit_name} \
+		-x ${params.guppy_run_mode}
 	"""
 }
+
+//${guppy_path} --recursive \
+//    --require_barcodes_both_ends \
+//    -i ${input_dir} \
+//    -s "guppy_barcoder" \
+//    --barcode_kits ${params.kit_name}
+//    -x {params.guppy_run_mode} | tee guppy_barcoder.log 2>&1

@@ -1,17 +1,24 @@
-barcode	sampleId schema version
-barcode25 9-2021 rabvPeru2 V1
-barcode26 12-2021 rabvPeru2 V1
-barcode27 18-2021 rabvPeru2 V1
-barcode28 34-2021 rabvPeru2 V1
-barcode29 71-2021 rabvPeru2 V1
-barcode30 92-2021 rabvPeru2 V1
-barcode31 93-2021 rabvPeru2 V1
-barcode32 147-2021 rabvPeru2 V1
-barcode33 148-2021 rabvPeru2 V1
-barcode34 167-2021 rabvPeru2 V1
-barcode35 174-2021 rabvPeru2 V1
-barcode36 196-2021 rabvPeru2 V1
-barcode37 202-2021 rabvPeru2 V1
-barcode38 CNExt-2023 rabvPeru2 V1
-barcode39 187-2022 rabvPeru2 V1
-barcode40 negative-na rabvPeru2 V1
+﻿sampleId,barcode,schema,version
+IBCM4,barcode30,rabvNig,V1
+IBCM10,barcode31,rabvNig,V1
+IBCM16,barcode32,rabvNig,V1
+CD150,barcode33,rabvNig,V1
+CD695,barcode34,rabvNig,V1
+CD974,barcode35,rabvNig,V1
+G59,barcode36,rabvNig,V1
+G152,barcode37,rabvNig,V1
+G863,barcode38,rabvNig,V1
+IBCM6,barcode39,rabvNig,V1
+IBCM7,barcode40,rabvNig,V1
+G757,barcode41,rabvNig,V1
+G1248,barcode42,rabvNig,V1
+B250,barcode43,rabvNig,V1
+B253,barcode44,rabvNig,V1
+B261,barcode45,rabvNig,V1
+B238,barcode46,rabvNig,V1
+B268,barcode47,rabvNig,V1
+B236,barcode48,rabvNig,V1
+B266,barcode49,rabvNig,V1
+IBCM5,barcode50,rabvNig,V1
+NTC,barcode51,rabvNig,V1
+GP1,barcode52,rabvNig,V1

@@ -23,7 +23,13 @@ process GUPPY_BASECALLER {
 	${guppy_path} --recursive \
 		-c ${params.guppy_config} \
 		-i ${fast5_dir} \
-		-s "guppy_basecaller"
+		-s "guppy_basecaller" \
+		-x ${params.guppy_run_mode}
 	"""
-//-x ${params.guppy_run_mode}
 }
+
+//${guppy_path} --recursive \
+//    -c ${params.guppy_config} \
+//    -i ${fast5_dir} \
+//    -s "guppy_basecaller"
+//    -x {params.guppy_run_mode}
