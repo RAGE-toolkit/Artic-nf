@@ -31,6 +31,16 @@ After the above steps, the dorado directory will look like this
 
 ![Alt text](/img/dorado_dir_structure.png)
 
+Dorado path can be written in environment variable or in the nextflow.config file at dorado_dir params. Follow the below steps if you want to add the dorado path to systems environment variable.
+
+#### Adding dorado to environment variable
+```
+$vim ~/.bashrc
+# add the below two lines to .bashrc
+export PATH="$PATH:/home3/sk312p/task_dir/tools/dorado-0.7.2-linux-x64/bin"
+export DORADO_MODEL='/home3/sk312p/task_dir/tools/dorado-0.7.2-linux-x64/models'
+```
+
 ## Installation (Apple Silicon M1,M2,M3)
 
 For Mac M3 processor, make sure the Miniforge setup is supporting arm64. Cloning base directory as artic_nf to avoid loads of package installation.
