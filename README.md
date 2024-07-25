@@ -37,8 +37,8 @@ Dorado path can be written in environment variable or in the nextflow.config fil
 ```
 $vim ~/.bashrc
 # add the below two lines to .bashrc
-export PATH="$PATH:/home3/sk312p/task_dir/tools/dorado-0.7.2-linux-x64/bin"
-export DORADO_MODEL='/home3/sk312p/task_dir/tools/dorado-0.7.2-linux-x64/models'
+export PATH="$PATH:/home/<user>/<your_tool_directory>/dorado-0.7.2-linux-x64/bin"
+export DORADO_MODEL='/home/<user>/<your_tool_directory>/dorado-0.7.2-linux-x64/models'
 ```
 
 ## Installation (Apple Silicon M1,M2,M3)
