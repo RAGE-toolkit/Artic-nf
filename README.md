@@ -63,6 +63,8 @@ cd bcftools-1.19
 make
 make install
 ```
+The dorado directory will look like this 
+![Alt text](/img/dorado_dir_structure.png)
 
 ## Installation for Mac (x86_x64)
 ```
