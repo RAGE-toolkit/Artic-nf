@@ -8,7 +8,7 @@ However, we have tailored these elements specifically to support the analysis of
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
 conda env create --file environment.yml
-conda activate artic_nf
+conda activate artic-nf
 ```
 Dorado requires manual downloading, and you can obtain it from the following link
 ```
