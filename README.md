@@ -33,7 +33,7 @@ After the above steps, the dorado directory will look like this
 
 Dorado path can be written in environment variable or in the nextflow.config file at dorado_dir params. Follow the below steps if you want to add the dorado path to system's environment variable.
 
-#### Adding dorado to environment variable
+#### Adding dorado path to the environment variable
 ```
 $vim ~/.bashrc
 # add the below two lines to .bashrc
