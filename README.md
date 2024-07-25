@@ -15,12 +15,16 @@ Dorado requires manual downloading, and you can obtain it from the following lin
 https://github.com/nanoporetech/dorado.
 ```
 
-After the download, it needs to be uncompressed and additional models need to be downloaded as indicated below.
+After the download, it needs to be uncompressed and additional models need to be downloaded as indicated below. Assume that you have downloaded dorado version "dorado-0.7.2-linux-x64.tar.gz"
 ```
-tar -xvzf <path_to_dorado...tar.gz>
-<path_to_dorado_main_dir>/bin
-./dorado download --directory model
-mv model ./../
+$tar -xvzf dorado-0.7.2-linux-x64.tar.gz
+$cd dorado-0.7.2-linux-x64/bin/
+$./dorado download --model all
+$mkdir models
+$mv dna_r* models
+$mv dna_r* models
+$mv rna00* models
+mv models/ ./../
 ```
 
 ## Installation (Apple Silicon M1,M2,M3)
