@@ -26,6 +26,10 @@ $mv dna_r* models
 $mv rna00* models
 mv models/ ./../
 ```
+After the above steps, the dorado directory will look like this 
+
+
+![Alt text](/img/dorado_dir_structure.png)
 
 ## Installation (Apple Silicon M1,M2,M3)
 
@@ -63,8 +67,6 @@ cd bcftools-1.19
 make
 make install
 ```
-The dorado directory will look like this 
-![Alt text](/img/dorado_dir_structure.png)
 
 ## Installation for Mac (x86_x64)
 ```
