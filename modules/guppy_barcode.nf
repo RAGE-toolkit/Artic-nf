@@ -4,7 +4,16 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir")
 
-def guppy_path = "${params.guppy_dir}/bin/guppy_barcoder"
+def default_guppy_barcoder_path = "${params.guppy_dir}/bin/guppy_barcoder"
+
+def isGuppyBarcoderAvailable() {
+  def process = ['/bin/bash', '-c', 'source ~/.bashrc && echo $GUPPY_BARCODER'].execute()
+  process.waitFor()
+  def output = process.text.trim()
+  return output ? output : null
+  }
+
+def guppy_barcoder_executable = isGuppyBarcoderAvailable() ?: default_guppy_barcoder_path
 
 process GUPPY_BARCODER {
 
@@ -20,7 +29,7 @@ process GUPPY_BARCODER {
 
 	script:
 	"""
-	${guppy_path} --recursive \
+	${guppy_barcoder_executable} --recursive \
 		--require_barcodes_both_ends \
 		-i ${input_dir} \
 		-s "guppy_barcoder" \
@@ -29,9 +38,3 @@ process GUPPY_BARCODER {
 	"""
 }
 
-//${guppy_path} --recursive \
-//    --require_barcodes_both_ends \
-//    -i ${input_dir} \
-//    -s "guppy_barcoder" \
-//    --barcode_kits ${params.kit_name}
-//    -x {params.guppy_run_mode} | tee guppy_barcoder.log 2>&1

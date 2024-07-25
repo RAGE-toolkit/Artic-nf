@@ -6,19 +6,19 @@ def currDir = System.getProperty("user.dir");
 def res_dir = new File("${currDir}/${params.output_dir}")
 if (!res_dir.exists()) {
         res_dir.mkdirs()
-}
+	}
 
 //checking raw_file dir exists
 def raw_dir = new File("${currDir}/raw_files")
 if (!raw_dir.exists()) {
   raw_dir.mkdir()
-}
+	}
 
 //checking if fastq dir exists
 def fq_dir = new File("${currDir}/${params.fastq_dir}")
 if (!fq_dir.exists()) {
   fq_dir.mkdir()
-}
+	}
 
 //__________________________________________________________________________________________
 // load modules
@@ -65,17 +65,74 @@ println("Meta file		:" + meta_file);
 println("Basecaller		:" + "${params.basecaller}");
 println("Rawfile directory	:" + "${params.rawfile_dir}");
 println("Rawfile type		:" + "${params.rawfile_type}");
-println("Output base dir	:" + "${params.output_dir}");
+println("Output base dir		:" + "${params.output_dir}");
+
+def default_dorado_path = "${params.dorado_dir}/bin/dorado"
+def default_dorado_model_dir = "${params.dorado_dir}/model"
+
+def default_guppy_basecaller_path = "${params.guppy_dir}/bin/guppy_basecaller"
+def default_guppy_barcoder_path = "${params.guppy_dir}/bin/guppy_barcoder"
+def default_guppy_model_path = "${params.guppy_dir}/data/"
+
+def isDoradoAvailable() {
+	def process = 'which dorado'.execute()
+	process.waitFor()
+	return process.exitValue() == 0
+	}
+
+def isGuppyAvailable() {
+	def process = 'which guppy'.execute()
+	process.waitFor()
+	return process.exitValue() == 0
+	}
+
+def isDoradoModelAvailable() {
+	def process = ['/bin/bash', '-c', 'source ~/.bashrc && echo $DORADO_MODEL'].execute()
+	process.waitFor()
+	def output = process.text.trim()
+	return output ? output : null
+	}
+
+def isGuppyBasecallerAvailable() {
+  def process = ['/bin/bash', '-c', 'source ~/.bashrc && echo $GUPPY_BASECALLER'].execute()
+  process.waitFor()
+  def output = process.text.trim()
+  return output ? output : null
+	}
+
+def isGuppyBarcoderAvailable() {
+  def process = ['/bin/bash', '-c', 'source ~/.bashrc && echo $GUPPY_BARCODER'].execute()
+  process.waitFor()
+  def output = process.text.trim()
+  return output ? output : null
+	}
+
+def isGuppyModelAvailable() {
+  def process = ['/bin/bash', '-c', 'source ~/.bashrc && echo $GUPPY_MODEL'].execute()
+  process.waitFor()
+  def output = process.text.trim()
+  return output ? output : null
+	}
+
+def dorado_executable = isDoradoAvailable() ? 'dorado' : default_dorado_path
+def dorado_model_dir = isDoradoModelAvailable() ?: default_dorado_model_dir
+
+def guppy_basecaller_executable = isGuppyBasecallerAvailable() ?: default_guppy_basecaller_path
+def guppy_barcoder_executable = isGuppyBarcoderAvailable() ?: default_guppy_barcoder_path
+def guppy_model_dir = isGuppyModelAvailable() ?: default_guppy_model_path
 
 if ("${params.basecaller}" == "Guppy") {
-  println("Basecaller path	:" + "${params.guppy_dir}");
-}
+  println("Basecaller path		:" + "${guppy_basecaller_executable}");
+	println("Model path		:" + "${guppy_model_dir}/${params.guppy_config}");
+	}
 else {
-  println("Basecaller path	:" +  "${params.dorado_dir}");
-}
+  println("Basecaller path		:" +  "${dorado_executable}");
+	println("Model path		:" + "${dorado_model_dir}/${params.dorado_config}");
+	}
 
 rawfile_dir = "${params.rawfile_dir}"
 
+// make the workflow check for basecaller, exit otherwise
 //__________________________________________________________________________________________
 workflow
 {
@@ -129,7 +186,6 @@ workflow
 		else {
 			GUPPY_BASECALLER(fast5_or_pod5_dir="${params.rawfile_dir}")
 			GUPPY_BARCODER(fastq_file=GUPPY_BASECALLER.out)
-			////GUPPY_BARCODER(fastq_file="/home3/sk312p/task_dir/projects/Artic_nf_add_guppy_rule/Artic-nf/results/guppy_basecaller")
 			PLEX_DIRS(input_dir=GUPPY_BARCODER.out, fq_channel)
 			MINIMAP2(input_dir=PLEX_DIRS.out.collect(), fq_channel)
 			ALIGN_TRIM_1(input_bam=MINIMAP2.out.sorted_bam.collect(), fq_channel)

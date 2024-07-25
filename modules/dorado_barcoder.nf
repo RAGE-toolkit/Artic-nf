@@ -1,4 +1,4 @@
-//guppy_basecaller.nf
+//dorado_barcoder.nf
 
 nextflow.enable.dsl=2
 
@@ -6,6 +6,14 @@ def currDir = System.getProperty("user.dir");
 
 def dorado_path = "${params.dorado_dir}/bin/dorado"
 def model_dir 	= "${params.dorado_dir}/model"
+
+def isDoradoAvailable() {
+    def process = 'which dorado'.execute()
+    process.waitFor()
+    return process.exitValue() == 0
+}
+
+def dorado_executable = isDoradoAvailable() ? 'dorado' : dorado_path
 
 process DORADO_BARCODER {
 
@@ -21,6 +29,6 @@ process DORADO_BARCODER {
 
 	script:
 	"""
-	${dorado_path} demux --kit-name ${params.kit_name} --emit-fastq --output-dir "dorado_barcoder" ${fastq_file}
+	${dorado_executable} demux --kit-name ${params.kit_name} --emit-fastq --output-dir "dorado_barcoder" ${fastq_file}
 	"""
 }
