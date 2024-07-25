@@ -88,7 +88,7 @@ conda config --env --set subdir osx-64
 ```
 **Note:** Installation for Mac x86_x64 method is not tested.
 
-## General information for All the Mac architecture (M1,M2,M3 and Intel x86_x64)
+## General information for all the Mac architecture (M1,M2,M3 and Intel x86_x64)
  
 If you are planning to analysis the raw data (*.fast5 or *.pod5), the user needs to download the Guppy or Dorado to perform the basecalling and barcoding. 
 The Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
