@@ -109,7 +109,7 @@ xattr -d com.apple.quarantine guppy
 ```
 
 ## Running the workflow
-The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.conf" and follow the below step. 
+The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.config" and follow the below step. 
 ### Regular way
 ```
  nextflow main.nf 
