@@ -1,0 +1,2348 @@
+2024-10-31 12:51:00,345 - DEBUG - primalscheme version 1.4.1
+2024-10-31 12:51:00,345 - INFO - References:
+ - Z00861838
+ - Z00861809
+ - MN726819
+ - KR906749
+ - KY210231
+ - KY210240
+ - KR906744
+ - KY210309
+ - KR906769
+ - SD750
+ - SD807
+ - KX148207
+ - MAL1020
+ - MT006
+ - LN001
+ - LN002
+ - BVL/479/21-10/05/2021-Blantyre-Dog
+ - 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+ - SD746
+ - KR906748
+2024-10-31 12:51:00,345 - INFO - Primary reference for coordinate system: Z00861838
+2024-10-31 12:51:00,345 - INFO - Considering primers from all references
+2024-10-31 12:51:00,346 - DEBUG - MuliplexScheme
+Prefix: EA_2024
+Amplicon size range: 665 - 735
+Target overlap: 0
+Primary only (pinned): False
+References:
+ - Z00861838
+ - Z00861809
+ - MN726819
+ - KR906749
+ - KY210231
+ - KY210240
+ - KR906744
+ - KY210309
+ - KR906769
+ - SD750
+ - SD807
+ - KX148207
+ - MAL1020
+ - MT006
+ - LN001
+ - LN002
+ - BVL/479/21-10/05/2021-Blantyre-Dog
+ - 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+ - SD746
+ - KR906748
+2024-10-31 12:51:00,346 - DEBUG - Region 1, pool 1, left_limit 0, slice_start 0, right_limit 11923
+2024-10-31 12:51:00,346 - DEBUG - Finding primers for slice 0 to 734
+2024-10-31 12:51:04,133 - DEBUG - Left limit reached
+2024-10-31 12:51:04,155 - DEBUG - Finding primers for slice 0 to 734
+2024-10-31 12:51:07,673 - DEBUG - Stepping right to 11 due to no suitable primers
+2024-10-31 12:51:07,689 - DEBUG - Finding primers for slice 11 to 745
+2024-10-31 12:51:11,511 - DEBUG - Stepping right to 22 due to no suitable primers
+2024-10-31 12:51:11,529 - DEBUG - Finding primers for slice 22 to 756
+2024-10-31 12:51:11,707 - DEBUG - Stepping right to 33
+2024-10-31 12:51:11,707 - DEBUG - Stepping right to 44 due to failed alignment
+2024-10-31 12:51:11,708 - DEBUG - Finding primers for slice 44 to 778
+2024-10-31 12:51:11,883 - DEBUG - Stepping right to 55
+2024-10-31 12:51:11,883 - DEBUG - Stepping right to 66 due to failed alignment
+2024-10-31 12:51:11,883 - DEBUG - Finding primers for slice 66 to 800
+2024-10-31 12:51:12,056 - DEBUG - Stepping right to 77
+2024-10-31 12:51:12,057 - DEBUG - Stepping right to 88 due to failed alignment
+2024-10-31 12:51:12,057 - DEBUG - Finding primers for slice 88 to 822
+2024-10-31 12:51:12,249 - DEBUG - Stepping right to 99
+2024-10-31 12:51:12,249 - DEBUG - Stepping right to 110 due to failed alignment
+2024-10-31 12:51:12,250 - DEBUG - Finding primers for slice 110 to 844
+2024-10-31 12:51:12,438 - DEBUG - Stepping right to 121
+2024-10-31 12:51:12,438 - DEBUG - Stepping right to 132 due to failed alignment
+2024-10-31 12:51:12,438 - DEBUG - Finding primers for slice 132 to 866
+2024-10-31 12:51:12,638 - DEBUG - Stepping right to 143
+2024-10-31 12:51:12,638 - DEBUG - Stepping right to 154 due to failed alignment
+2024-10-31 12:51:12,638 - DEBUG - Finding primers for slice 154 to 888
+2024-10-31 12:51:12,838 - DEBUG - Stepping right to 165
+2024-10-31 12:51:12,838 - DEBUG - Stepping right to 176 due to failed alignment
+2024-10-31 12:51:12,839 - DEBUG - Finding primers for slice 176 to 910
+2024-10-31 12:51:13,008 - DEBUG - Stepping right to 187
+2024-10-31 12:51:13,008 - DEBUG - Stepping right to 198 due to failed alignment
+2024-10-31 12:51:13,009 - DEBUG - Finding primers for slice 198 to 932
+2024-10-31 12:51:17,900 - DEBUG - Stepping right to 209 due to no suitable primers
+2024-10-31 12:51:17,915 - DEBUG - Finding primers for slice 209 to 943
+2024-10-31 12:51:22,068 - DEBUG - Stepping right to 220 due to no suitable primers
+2024-10-31 12:51:22,084 - DEBUG - Finding primers for slice 220 to 954
+2024-10-31 12:51:26,047 - DEBUG - Stepping right to 231 due to no suitable primers
+2024-10-31 12:51:26,063 - DEBUG - Finding primers for slice 231 to 965
+2024-10-31 12:51:26,214 - DEBUG - Stepping right to 242
+2024-10-31 12:51:26,214 - DEBUG - Stepping right to 253 due to failed alignment
+2024-10-31 12:51:26,214 - DEBUG - Finding primers for slice 253 to 987
+2024-10-31 12:51:29,104 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+GTATGCTCCTACCTGGCAGCAG Z00861838
+GTATGCTCCTACCTGGCAGCAG Z00861809
+GTATGCTCCTACCTGGCAGCAG MN726819
+GTATGTTCCTACCTGGCAGCAG KR906749
+GTATGTTCCTACCTGGCAGCAG KY210231
+GTATGTTCCTACCTGGCAGCAG KY210240
+GTATGTTCCTACCTGGCAGCAG KR906744
+GTATGTTCCTACCTGGCAGCAG KY210309
+GTATGTTCCTACCTGGCAGCAG KR906769
+GTATGTTCCTACCTGGCAGCAG SD750
+GTATGTTCCTACCTGGCAGCAG SD807
+GTATGTTCCTACCTGGCAGCAG KX148207
+GTATGTTCCTACCTGGCAGCAG MAL1020
+GTATGTTCCTACCTGGCAGCAG MT006
+GTATGTTCCTACCTGGCAGCAG LN001
+GTATGTTCCTACCTGGCAGCAG LN002
+GTATGTTCCTACCTGGCAGCAG BVL/479/21-10/05/2021-Blantyre-Dog
+GTATGTTCCTACCTGGCAGCAG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+***** **************** Cigar
+2024-10-31 12:51:29,105 - DEBUG - LEFT candidate 0: *picked, base pen 1.062, combined pen 4.062, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,107 - DEBUG - LEFT candidate 1: base pen 1.213, combined pen 4.213, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,108 - DEBUG - LEFT candidate 2: base pen 1.317, combined pen 4.317, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,109 - DEBUG - LEFT candidate 3: base pen 1.544, combined pen 4.544, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,110 - DEBUG - LEFT candidate 4: base pen 2.692, combined pen 5.692, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,111 - DEBUG - LEFT candidate 5: base pen 2.719, combined pen 5.719, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,113 - DEBUG - LEFT candidate 6: base pen 2.781, combined pen 5.781, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,114 - DEBUG - LEFT candidate 7: base pen 2.783, combined pen 5.783, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,115 - DEBUG - LEFT candidate 8: base pen 2.878, combined pen 5.878, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,116 - DEBUG - LEFT candidate 9: base pen 3.165, combined pen 6.165, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,117 - DEBUG - LEFT candidate 10: base pen 3.189, combined pen 6.189, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,118 - DEBUG - LEFT candidate 11: base pen 3.189, combined pen 6.189, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,119 - DEBUG - LEFT candidate 12: base pen 3.742, combined pen 6.742, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,120 - DEBUG - LEFT candidate 13: base pen 4.475, combined pen 7.475, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,121 - DEBUG - LEFT candidate 14: base pen 4.719, combined pen 7.719, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:29,123 - DEBUG - LEFT candidate 15: base pen 3.345, combined pen 9.345, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:51:29,124 - DEBUG - LEFT candidate 16: base pen 3.590, combined pen 9.590, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:51:29,125 - DEBUG - LEFT candidate 17: base pen 1.238, combined pen 10.238, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,126 - DEBUG - LEFT candidate 18: base pen 1.238, combined pen 10.238, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,127 - DEBUG - LEFT candidate 19: base pen 1.821, combined pen 10.821, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,129 - DEBUG - LEFT candidate 20: base pen 1.878, combined pen 10.878, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,130 - DEBUG - LEFT candidate 21: base pen 1.911, combined pen 10.911, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,131 - DEBUG - LEFT candidate 22: base pen 3.466, combined pen 12.466, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,132 - DEBUG - LEFT candidate 23: base pen 3.578, combined pen 12.578, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,133 - DEBUG - LEFT candidate 24: base pen 3.580, combined pen 12.580, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,135 - DEBUG - LEFT candidate 25: base pen 3.633, combined pen 12.633, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,136 - DEBUG - LEFT candidate 26: base pen 4.143, combined pen 13.143, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,137 - DEBUG - LEFT candidate 27: base pen 5.173, combined pen 14.173, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,138 - DEBUG - LEFT candidate 28: base pen 5.619, combined pen 14.619, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:51:29,140 - DEBUG - LEFT candidate 29: base pen 0.290, combined pen 17.290, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,141 - DEBUG - LEFT candidate 30: base pen 1.191, combined pen 18.191, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,142 - DEBUG - LEFT candidate 31: base pen 1.968, combined pen 18.968, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,143 - DEBUG - LEFT candidate 32: base pen 1.995, combined pen 18.995, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,144 - DEBUG - LEFT candidate 33: base pen 2.242, combined pen 19.242, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,145 - DEBUG - LEFT candidate 34: base pen 2.584, combined pen 19.584, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,147 - DEBUG - LEFT candidate 35: base pen 3.094, combined pen 20.094, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,148 - DEBUG - LEFT candidate 36: base pen 3.671, combined pen 20.671, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,149 - DEBUG - LEFT candidate 37: base pen 3.808, combined pen 20.808, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,150 - DEBUG - LEFT candidate 38: base pen 3.818, combined pen 20.818, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:29,152 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+GACTTCCCACTCAAGCCTAGTG Z00861838
+GACTTCCCACTCAAGCCTAGTG Z00861809
+GACTTCCCACTCAAGCCTAGTG MN726819
+GACTTCCCACTCAAGCCTAGTG KR906749
+GACTTCCCACTCAAGCCTAGTG KY210231
+GACTTCCCACTCAAGCCTAGTG KY210240
+GACTTCCCACTCAAGCCTAGTG KR906744
+GACTTCCCACTCAAGCCTAGCG KY210309
+GACTTCCCACTCAAGCCTAGTG KR906769
+GACTTCCCACTCAAGCCTAGTG SD750
+GACTTCCCACTCAAGCCTAGTG SD807
+GACTTCCCACTCAAGCCTAGTG KX148207
+GACTTCCCACTCAAGCCTAGTG MAL1020
+GACTTCCCACTCAAGCCTAGTG MT006
+GACTTCCCACTCAAGCCTAGTG LN001
+GACTTCCCACTCAAGCCTAGTG LN002
+GACTTCCCACTCAAGCCTAGTG BVL/479/21-10/05/2021-Blantyre-Dog
+GACTTCCCACTCAAGCCTAGTG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+************** ***** * Cigar
+2024-10-31 12:51:29,153 - DEBUG - RIGHT candidate 0: *picked, base pen 1.839, combined pen 3.839, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:51:29,155 - DEBUG - RIGHT candidate 1: base pen 3.930, combined pen 11.930, 1 max mismatch, 8 total mismatches.
+2024-10-31 12:51:29,163 - DEBUG - Region 2, pool 2, left_limit 299, slice_start 836, right_limit 11923
+2024-10-31 12:51:29,164 - DEBUG - Finding primers for slice 836 to 1570
+2024-10-31 12:51:32,732 - DEBUG - Picked MSA slice: Alignment with 21 rows and 30 columns
+CCATAAGAACTTTGAGGAAGAGATAAGAAG Z00861838
+CCATAAGAACTTTGAGGAAGAGATAAGAAG Z00861809
+CCATAAGAACTTTGAGGAAGAGATAAGAAG MN726819
+CCATAAGAACTTTGAGGAAGAAATAAGAAG KR906749
+CCATAAGAACTTTGAGGAAGAGATAAGGAG KY210231
+CCATAAGAACTTTGAGGAAGAGATAAGAAG KY210240
+CCATAAGAACTTTGAGGAAGAGATAAGAAG KR906744
+CCATAAGAACTTTGAGGAAGAGATAAGAAG KY210309
+CCATAAGAACTTTGAGGAAGAGATAAGAAG KR906769
+CCATAAGAACTTTGAGGAAGAGATAAGAAG SD750
+CCATAAGAACTTTGAGGAAGAGATAAGAAG SD807
+CCATAAGAACTTTGAGGAAGAGATAAGAAG KX148207
+CCATAAGAACTTTGAGGAAGAGATAAGAAG MAL1020
+CCATAAGAACTTTGAGGAAGAGATAAGAAG MT006
+CCATAAGAACTTTGAGGAAGAGATAAGAAG LN001
+CCATAAGAACTTTGAGGAAGAGATAAGAAG LN002
+CCATAAGAACTTTGAGGAAGAGATAAGAAG BVL/479/21-10/05/2021-Blantyre-Dog
+CCATAAGAACTTTGAGGAAGAGATAAGAAG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+****************** ** ***** ** Cigar
+2024-10-31 12:51:32,733 - DEBUG - LEFT candidate 0: *picked, base pen 7.395, combined pen 10.395, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:32,735 - DEBUG - LEFT candidate 1: base pen 7.451, combined pen 10.451, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:32,736 - DEBUG - LEFT candidate 2: base pen 7.863, combined pen 10.863, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:32,738 - DEBUG - LEFT candidate 3: base pen 8.000, combined pen 11.000, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:32,739 - DEBUG - LEFT candidate 4: base pen 7.451, combined pen 11.451, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:32,741 - DEBUG - LEFT candidate 5: base pen 7.653, combined pen 11.653, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:51:32,742 - DEBUG - LEFT candidate 6: base pen 5.935, combined pen 15.935, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:51:32,743 - DEBUG - LEFT candidate 7: base pen 7.378, combined pen 17.378, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:51:32,745 - DEBUG - LEFT candidate 8: base pen 7.640, combined pen 17.640, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:51:32,746 - DEBUG - LEFT candidate 9: base pen 7.433, combined pen 24.433, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:51:32,748 - DEBUG - LEFT candidate 10: base pen 7.863, combined pen 24.863, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:51:32,749 - DEBUG - LEFT candidate 11: base pen 7.846, combined pen 26.846, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:51:32,751 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+CTCGGATTGACAAAGATCTTGC Z00861838
+CTCGGATTGACGAAGATCTTGC Z00861809
+CTCGGATTGACAAAGATCTTGC MN726819
+CTCGGATTGACGAAGATCTTGC KR906749
+CTCGGATTGACGAAGATCTTGC KY210231
+CTCGGATTGACGAAGATCTTGC KY210240
+CTCGGATTGACGAAGATCTTGC KR906744
+CTCGGATTGACGAAGATCTTGC KY210309
+CTCGGATTGACGAAGATCTTGC KR906769
+CTCGGATTGACGAAGATCTTGC SD750
+CTCGGATTGACGAAGATCTTGC SD807
+CTCGGATTGACGAAGATCTTGC KX148207
+CTCGGATTGACGAAGATCTTGC MAL1020
+CTCGGGTTGACGAAGATCTTGC MT006
+CTCGGATTGACGAAGATCTTGC LN001
+CTCGGATTGACGAAGATCTTGC LN002
+CTAGGATTGACGAAGATCTTGC BVL/479/21-10/05/2021-Blantyre-Dog
+CTCGGATTGACGAAGATCTTGC 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+** ** ***** ********** Cigar
+2024-10-31 12:51:32,752 - DEBUG - RIGHT candidate 0: *picked, base pen 2.724, combined pen 7.724, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:51:32,764 - DEBUG - Region 3, pool 1, left_limit 963, slice_start 1412, right_limit 11923
+2024-10-31 12:51:32,764 - DEBUG - Finding primers for slice 1412 to 2146
+2024-10-31 12:51:32,959 - DEBUG - Stepping left to 1401 due to failed alignment
+2024-10-31 12:51:32,959 - DEBUG - Finding primers for slice 1401 to 2135
+2024-10-31 12:51:33,151 - DEBUG - Stepping left to 1390 due to failed alignment
+2024-10-31 12:51:33,152 - DEBUG - Finding primers for slice 1390 to 2124
+2024-10-31 12:51:38,744 - DEBUG - Stepping left to 1379 due to no suitable primers
+2024-10-31 12:51:38,768 - DEBUG - Finding primers for slice 1379 to 2113
+2024-10-31 12:51:38,883 - DEBUG - Stepping left to 1368 due to failed alignment
+2024-10-31 12:51:38,883 - DEBUG - Finding primers for slice 1368 to 2102
+2024-10-31 12:51:39,069 - DEBUG - Stepping left to 1357 due to failed alignment
+2024-10-31 12:51:39,069 - DEBUG - Finding primers for slice 1357 to 2091
+2024-10-31 12:51:43,990 - DEBUG - Stepping left to 1346 due to no suitable primers
+2024-10-31 12:51:43,999 - DEBUG - Finding primers for slice 1346 to 2080
+2024-10-31 12:51:48,571 - DEBUG - Stepping left to 1335 due to no suitable primers
+2024-10-31 12:51:48,577 - DEBUG - Finding primers for slice 1335 to 2069
+2024-10-31 12:51:52,673 - DEBUG - Stepping left to 1324 due to no suitable primers
+2024-10-31 12:51:52,678 - DEBUG - Finding primers for slice 1324 to 2058
+2024-10-31 12:51:56,306 - DEBUG - Stepping left to 1313 due to no suitable primers
+2024-10-31 12:51:56,312 - DEBUG - Finding primers for slice 1313 to 2047
+2024-10-31 12:52:00,006 - DEBUG - Stepping left to 1302 due to no suitable primers
+2024-10-31 12:52:00,015 - DEBUG - Finding primers for slice 1302 to 2036
+2024-10-31 12:52:00,218 - DEBUG - Stepping left to 1291 due to failed alignment
+2024-10-31 12:52:00,218 - DEBUG - Finding primers for slice 1291 to 2025
+2024-10-31 12:52:00,339 - DEBUG - Stepping left to 1280 due to failed alignment
+2024-10-31 12:52:00,339 - DEBUG - Finding primers for slice 1280 to 2014
+2024-10-31 12:52:05,070 - DEBUG - Stepping left to 1269 due to no suitable primers
+2024-10-31 12:52:05,088 - DEBUG - Finding primers for slice 1269 to 2003
+2024-10-31 12:52:10,500 - DEBUG - Stepping left to 1258 due to no suitable primers
+2024-10-31 12:52:10,524 - DEBUG - Finding primers for slice 1258 to 1992
+2024-10-31 12:52:16,035 - DEBUG - Picked MSA slice: Alignment with 21 rows and 23 columns
+GAAACCAGAAGTCCAGAAGCTGT Z00861838
+GAAACCAGAAGTCCAGAAGCTGT Z00861809
+GAAACCAGAAGTCCAGAAGCTGT MN726819
+GAAACCAGAAGTCCAGAAGCTGT KR906749
+GAAACCAGAAGTCCAGAAGCGGT KY210231
+GAAACCAGAAGTCCAGAAGCTGT KY210240
+GAAACCAGAAGTCCAGAAGCTGT KR906744
+GAAACCAGAAGTCCAGAAGCTGT KY210309
+GAAACCAGAAGTCCAGAAGCTGT KR906769
+GAAACCAGAAGTCCAGAAGCTGT SD750
+GAAACCAGAAGTCCAGANGCTGT SD807
+GAAACCAGAAGTCCAGAAGCTGT KX148207
+GAAACCAGAAGTCCAGAAGCTGT MAL1020
+GAAACCAGAAGTCCAGAAGCTGT MT006
+GAAACCAGAAGTCCAGAAGCTGT LN001
+GAAACCAGAAGTCCAGAAGCTGT LN002
+GAAACCAGAAGTCCAGAAGCTGT BVL/479/21-10/05/2021-Blantyre-Dog
+GAAACCAGAAGTCCAGAAGCTGT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+***************** ** ** Cigar
+2024-10-31 12:52:16,037 - DEBUG - LEFT candidate 0: *picked, base pen 0.935, combined pen 2.935, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:16,038 - DEBUG - LEFT candidate 1: base pen 0.935, combined pen 2.935, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:16,039 - DEBUG - LEFT candidate 2: base pen 2.743, combined pen 3.743, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:52:16,040 - DEBUG - LEFT candidate 3: base pen 0.935, combined pen 3.935, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:16,041 - DEBUG - LEFT candidate 4: base pen 2.888, combined pen 4.888, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:16,043 - DEBUG - LEFT candidate 5: base pen 3.242, combined pen 5.242, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:16,044 - DEBUG - LEFT candidate 6: base pen 3.420, combined pen 6.420, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:16,046 - DEBUG - Picked MSA slice: Alignment with 21 rows and 20 columns
+TCTCGACCCGTGGTTTGGGT Z00861838
+TCTCGACCAGTGGTTTGGGT Z00861809
+TCTCGACCAGTGGTTTGGGT MN726819
+TCTCGACCAGTGGTTTGGGT KR906749
+TCTCGACCAGTGGTTTGGGT KY210231
+TCTCGACCAGTGGTTTGGGT KY210240
+TCTCGACTAGTGGTTTGGGT KR906744
+TCTCGACCAGTGGTTTGGGT KY210309
+TCTCGACCAGTGGTTTGGGT KR906769
+TCTCGACCAGTGGTTTGGGT SD750
+TCTCGACCAGTGGTTTGGGT SD807
+TCTCGACCAGTGGTTTGGGT KX148207
+TCTCGACCAGTGGTTTGGGT MAL1020
+TCTCGACCAGTGGTTTGGGT MT006
+TCTCGACCAGTNGTTTGGGT LN001
+TCTCGACCAGTGGTTTGGGT LN002
+TCTCGACCAGTGGTTTGGGT BVL/479/21-10/05/2021-Blantyre-Dog
+TCTCGACCAGTGGTTTGGGT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+*******  ** ******** Cigar
+2024-10-31 12:52:16,047 - DEBUG - RIGHT candidate 0: *picked, base pen 2.138, combined pen 6.138, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:16,079 - DEBUG - Region 4, pool 2, left_limit 1539, slice_start 1843, right_limit 11923
+2024-10-31 12:52:16,079 - DEBUG - Finding primers for slice 1843 to 2577
+2024-10-31 12:52:19,030 - DEBUG - Stepping left to 1832 due to no suitable primers
+2024-10-31 12:52:19,036 - DEBUG - Finding primers for slice 1832 to 2566
+2024-10-31 12:52:21,374 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+TGAGGTCAGGAGAAAGATTCCT Z00861838
+TGAGGTCAGGAGAAAGATTCCT Z00861809
+TGAGGTCAGGAGAAAGATTCCT MN726819
+TGAGGTCAGGAGAAAGGTTCCT KR906749
+TGAGGTCAGGAGAAAGGTTCCT KY210231
+TGAGGTCAGGAGAAAGGTTCCT KY210240
+TGAGGTCAGGAGAAAGGTTCCT KR906744
+TGAGGTCAGGAGAAAGGTTCCT KY210309
+TGAGGTCAGGAGAAAGGTTCCT KR906769
+TGAGGTCAGGAGAAAGGTTCCT SD750
+TGAGGTCAGGAGAAAGGTTCCT SD807
+TGAGGTCAGGAGAAAGGTTCCT KX148207
+TGAGGTCAGGAGAAAGGTTCCT MAL1020
+TGAGGTCAGGAGAAAGGTTCCT MT006
+TGAGGTCAGGAGAAAGGTTCCT LN001
+TGAGGTCAGGAGAAAGGTTCCT LN002
+TGAGGTCAGGAGAAAGGTTCCT BVL/479/21-10/05/2021-Blantyre-Dog
+TGAGGTCAGGAGAAAGGTTCCT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**************** ***** Cigar
+2024-10-31 12:52:21,375 - DEBUG - LEFT candidate 0: *picked, base pen 0.769, combined pen 4.769, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,376 - DEBUG - LEFT candidate 1: base pen 0.987, combined pen 4.987, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,378 - DEBUG - LEFT candidate 2: base pen 2.168, combined pen 6.168, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,379 - DEBUG - LEFT candidate 3: base pen 2.439, combined pen 6.439, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,380 - DEBUG - LEFT candidate 4: base pen 2.779, combined pen 6.779, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,381 - DEBUG - LEFT candidate 5: base pen 3.006, combined pen 7.006, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,383 - DEBUG - LEFT candidate 6: base pen 4.902, combined pen 8.902, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,386 - DEBUG - LEFT candidate 7: base pen 1.918, combined pen 20.918, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,387 - DEBUG - LEFT candidate 8: base pen 2.005, combined pen 21.005, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,388 - DEBUG - LEFT candidate 9: base pen 5.223, combined pen 21.223, 1 max mismatch, 16 total mismatches.
+2024-10-31 12:52:21,390 - DEBUG - LEFT candidate 10: base pen 5.585, combined pen 21.585, 1 max mismatch, 16 total mismatches.
+2024-10-31 12:52:21,391 - DEBUG - LEFT candidate 11: base pen 3.471, combined pen 22.471, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,392 - DEBUG - LEFT candidate 12: base pen 3.633, combined pen 22.633, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,394 - DEBUG - LEFT candidate 13: base pen 3.633, combined pen 22.633, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,395 - DEBUG - LEFT candidate 14: base pen 3.634, combined pen 22.634, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,396 - DEBUG - LEFT candidate 15: base pen 3.717, combined pen 22.717, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,398 - DEBUG - LEFT candidate 16: base pen 3.937, combined pen 22.937, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,399 - DEBUG - LEFT candidate 17: base pen 4.287, combined pen 23.287, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,400 - DEBUG - LEFT candidate 18: base pen 4.515, combined pen 23.515, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,402 - DEBUG - LEFT candidate 19: base pen 4.518, combined pen 23.518, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,403 - DEBUG - LEFT candidate 20: base pen 4.612, combined pen 23.612, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,405 - DEBUG - LEFT candidate 21: base pen 4.848, combined pen 23.848, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,406 - DEBUG - LEFT candidate 22: base pen 4.950, combined pen 23.950, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,408 - DEBUG - LEFT candidate 23: base pen 4.950, combined pen 23.950, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,409 - DEBUG - LEFT candidate 24: base pen 4.951, combined pen 23.951, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,410 - DEBUG - LEFT candidate 25: base pen 4.980, combined pen 23.980, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,412 - DEBUG - LEFT candidate 26: base pen 5.181, combined pen 24.181, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,413 - DEBUG - LEFT candidate 27: base pen 5.419, combined pen 24.419, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,414 - DEBUG - LEFT candidate 28: base pen 5.628, combined pen 24.628, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,416 - DEBUG - LEFT candidate 29: base pen 5.823, combined pen 24.823, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,417 - DEBUG - LEFT candidate 30: base pen 5.823, combined pen 24.823, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,419 - DEBUG - LEFT candidate 31: base pen 5.823, combined pen 24.823, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,420 - DEBUG - LEFT candidate 32: base pen 5.827, combined pen 24.827, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,422 - DEBUG - LEFT candidate 33: base pen 5.907, combined pen 24.907, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,423 - DEBUG - LEFT candidate 34: base pen 5.907, combined pen 24.907, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,424 - DEBUG - LEFT candidate 35: base pen 5.923, combined pen 24.923, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,426 - DEBUG - LEFT candidate 36: base pen 5.923, combined pen 24.923, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,427 - DEBUG - LEFT candidate 37: base pen 5.927, combined pen 24.927, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,429 - DEBUG - LEFT candidate 38: base pen 6.185, combined pen 25.185, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,430 - DEBUG - LEFT candidate 39: base pen 6.232, combined pen 25.232, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,432 - DEBUG - LEFT candidate 40: base pen 6.256, combined pen 25.256, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,433 - DEBUG - LEFT candidate 41: base pen 6.340, combined pen 25.340, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,435 - DEBUG - LEFT candidate 42: base pen 6.530, combined pen 25.530, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,436 - DEBUG - LEFT candidate 43: base pen 6.532, combined pen 25.532, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,437 - DEBUG - LEFT candidate 44: base pen 3.583, combined pen 25.583, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,439 - DEBUG - LEFT candidate 45: base pen 6.605, combined pen 25.605, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,440 - DEBUG - LEFT candidate 46: base pen 6.646, combined pen 25.646, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,442 - DEBUG - LEFT candidate 47: base pen 6.687, combined pen 25.687, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,443 - DEBUG - LEFT candidate 48: base pen 3.717, combined pen 25.717, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,444 - DEBUG - LEFT candidate 49: base pen 6.825, combined pen 25.825, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,446 - DEBUG - LEFT candidate 50: base pen 4.001, combined pen 26.001, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,447 - DEBUG - LEFT candidate 51: base pen 7.012, combined pen 26.012, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,448 - DEBUG - LEFT candidate 52: base pen 7.242, combined pen 26.242, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,450 - DEBUG - LEFT candidate 53: base pen 7.242, combined pen 26.242, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,451 - DEBUG - LEFT candidate 54: base pen 7.463, combined pen 26.463, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,453 - DEBUG - LEFT candidate 55: base pen 7.855, combined pen 26.855, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:52:21,456 - DEBUG - Picked MSA slice: Alignment with 21 rows and 25 columns
+GTCCTCATCCCTACAGTTTTTCACT Z00861838
+GTCCTCATCCCTACAGTTTTTCACT Z00861809
+GTCCTCATCCCTACAGTTTTTCACT MN726819
+GTCCTCATCCCTACAGTTTTTCACT KR906749
+GTCCTCATCCCTACAGTTTTTCACT KY210231
+GTCCTCATCCCTACAGTTTTTCACT KY210240
+GTCCTCATCCCTACAGTTTTTCACT KR906744
+GTCCTCATCCCTACAGTTTTTCACT KY210309
+GTCCTCATCCCTACAGTTTTTCACT KR906769
+GTCCTCATCCCTACAGTTTTTCACT SD750
+GTCCTCATCCCTACAGTTTTTCACT SD807
+GTCCTCATCCCTACAGTTTTTCACT KX148207
+GTCCTCATCCCTACAGTTTTTCACT MAL1020
+GTCCTCATCCCTACAGTTTTTCACT MT006
+GTCCTCATCCCTACAGTTTTTCACT LN001
+GTCCTCATCCCTACAGTTTTTCACT LN002
+GTCCTCATCCCTACAGTTTTTCACT BVL/479/21-10/05/2021-Blantyre-Dog
+GTCCTCATCCCTACAGTTTTTCACT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+************************* Cigar
+2024-10-31 12:52:21,457 - DEBUG - RIGHT candidate 0: *picked, base pen 2.903, combined pen 2.903, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,458 - DEBUG - RIGHT candidate 1: base pen 2.958, combined pen 2.958, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,459 - DEBUG - RIGHT candidate 2: base pen 4.063, combined pen 4.063, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,461 - DEBUG - RIGHT candidate 3: base pen 4.508, combined pen 4.508, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,462 - DEBUG - RIGHT candidate 4: base pen 4.589, combined pen 4.589, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,463 - DEBUG - RIGHT candidate 5: base pen 4.714, combined pen 4.714, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,465 - DEBUG - RIGHT candidate 6: base pen 2.903, combined pen 4.903, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:21,466 - DEBUG - RIGHT candidate 7: base pen 2.958, combined pen 4.958, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:21,467 - DEBUG - RIGHT candidate 8: base pen 5.208, combined pen 5.208, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,468 - DEBUG - RIGHT candidate 9: base pen 1.410, combined pen 5.410, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,470 - DEBUG - RIGHT candidate 10: base pen 1.714, combined pen 5.714, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,471 - DEBUG - RIGHT candidate 11: base pen 2.903, combined pen 5.903, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:52:21,472 - DEBUG - RIGHT candidate 12: base pen 3.147, combined pen 6.147, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:52:21,474 - DEBUG - RIGHT candidate 13: base pen 6.204, combined pen 6.204, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,475 - DEBUG - RIGHT candidate 14: base pen 6.289, combined pen 6.289, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,476 - DEBUG - RIGHT candidate 15: base pen 6.299, combined pen 6.299, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,477 - DEBUG - RIGHT candidate 16: base pen 3.454, combined pen 6.454, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:52:21,479 - DEBUG - RIGHT candidate 17: base pen 2.493, combined pen 6.493, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,480 - DEBUG - RIGHT candidate 18: base pen 4.589, combined pen 6.589, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:21,481 - DEBUG - RIGHT candidate 19: base pen 6.602, combined pen 6.602, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,483 - DEBUG - RIGHT candidate 20: base pen 4.715, combined pen 6.715, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:21,484 - DEBUG - RIGHT candidate 21: base pen 5.105, combined pen 7.105, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:21,485 - DEBUG - RIGHT candidate 22: base pen 4.229, combined pen 7.229, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:52:21,487 - DEBUG - RIGHT candidate 23: base pen 7.964, combined pen 7.964, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:52:21,488 - DEBUG - RIGHT candidate 24: base pen 6.204, combined pen 8.204, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:52:21,490 - DEBUG - RIGHT candidate 25: base pen 4.403, combined pen 8.403, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,491 - DEBUG - RIGHT candidate 26: base pen 6.204, combined pen 10.204, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:52:21,492 - DEBUG - RIGHT candidate 27: base pen 4.473, combined pen 22.473, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:52:21,494 - DEBUG - RIGHT candidate 28: base pen 4.479, combined pen 22.479, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:52:21,495 - DEBUG - RIGHT candidate 29: base pen 4.749, combined pen 22.749, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:52:21,497 - DEBUG - RIGHT candidate 30: base pen 6.232, combined pen 24.232, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:52:21,498 - DEBUG - RIGHT candidate 31: base pen 7.964, combined pen 25.964, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:52:21,506 - DEBUG - Region 5, pool 1, left_limit 1968, slice_start 2410, right_limit 11923
+2024-10-31 12:52:21,506 - DEBUG - Finding primers for slice 2410 to 3144
+2024-10-31 12:52:28,179 - DEBUG - Stepping left to 2399 due to no suitable primers
+2024-10-31 12:52:28,224 - DEBUG - Finding primers for slice 2399 to 3133
+2024-10-31 12:52:34,866 - DEBUG - Stepping left to 2388 due to no suitable primers
+2024-10-31 12:52:34,906 - DEBUG - Finding primers for slice 2388 to 3122
+2024-10-31 12:52:40,236 - DEBUG - Stepping left to 2377 due to no suitable primers
+2024-10-31 12:52:40,264 - DEBUG - Finding primers for slice 2377 to 3111
+2024-10-31 12:52:44,494 - DEBUG - Stepping left to 2366 due to no suitable primers
+2024-10-31 12:52:44,513 - DEBUG - Finding primers for slice 2366 to 3100
+2024-10-31 12:52:44,703 - DEBUG - Stepping left to 2355 due to failed alignment
+2024-10-31 12:52:44,703 - DEBUG - Finding primers for slice 2355 to 3089
+2024-10-31 12:52:44,894 - DEBUG - Stepping left to 2344 due to failed alignment
+2024-10-31 12:52:44,894 - DEBUG - Finding primers for slice 2344 to 3078
+2024-10-31 12:52:48,144 - DEBUG - Stepping left to 2333 due to no suitable primers
+2024-10-31 12:52:48,164 - DEBUG - Finding primers for slice 2333 to 3067
+2024-10-31 12:52:52,419 - DEBUG - Stepping left to 2322 due to no suitable primers
+2024-10-31 12:52:52,433 - DEBUG - Finding primers for slice 2322 to 3056
+2024-10-31 12:52:52,623 - DEBUG - Stepping left to 2311 due to failed alignment
+2024-10-31 12:52:52,623 - DEBUG - Finding primers for slice 2311 to 3045
+2024-10-31 12:52:52,811 - DEBUG - Stepping left to 2300 due to failed alignment
+2024-10-31 12:52:52,811 - DEBUG - Finding primers for slice 2300 to 3034
+2024-10-31 12:52:53,003 - DEBUG - Stepping left to 2289 due to failed alignment
+2024-10-31 12:52:53,004 - DEBUG - Finding primers for slice 2289 to 3023
+2024-10-31 12:52:53,206 - DEBUG - Stepping left to 2278 due to failed alignment
+2024-10-31 12:52:53,206 - DEBUG - Finding primers for slice 2278 to 3012
+2024-10-31 12:52:53,445 - DEBUG - Stepping left to 2267 due to failed alignment
+2024-10-31 12:52:53,445 - DEBUG - Finding primers for slice 2267 to 3001
+2024-10-31 12:52:53,656 - DEBUG - Stepping left to 2256 due to failed alignment
+2024-10-31 12:52:53,657 - DEBUG - Finding primers for slice 2256 to 2990
+2024-10-31 12:52:53,824 - DEBUG - Stepping left to 2245 due to failed alignment
+2024-10-31 12:52:53,824 - DEBUG - Finding primers for slice 2245 to 2979
+2024-10-31 12:52:54,051 - DEBUG - Stepping left to 2234 due to failed alignment
+2024-10-31 12:52:54,051 - DEBUG - Finding primers for slice 2234 to 2968
+2024-10-31 12:52:54,336 - DEBUG - Stepping left to 2223 due to failed alignment
+2024-10-31 12:52:54,336 - DEBUG - Finding primers for slice 2223 to 2957
+2024-10-31 12:52:54,546 - DEBUG - Stepping left to 2212 due to failed alignment
+2024-10-31 12:52:54,547 - DEBUG - Finding primers for slice 2212 to 2946
+2024-10-31 12:52:54,756 - DEBUG - Stepping left to 2201 due to failed alignment
+2024-10-31 12:52:54,756 - DEBUG - Finding primers for slice 2201 to 2935
+2024-10-31 12:52:54,964 - DEBUG - Stepping left to 2190 due to failed alignment
+2024-10-31 12:52:54,965 - DEBUG - Finding primers for slice 2190 to 2924
+2024-10-31 12:52:55,192 - DEBUG - Stepping left to 2179 due to failed alignment
+2024-10-31 12:52:55,192 - DEBUG - Finding primers for slice 2179 to 2913
+2024-10-31 12:52:55,416 - DEBUG - Stepping left to 2168 due to failed alignment
+2024-10-31 12:52:55,416 - DEBUG - Finding primers for slice 2168 to 2902
+2024-10-31 12:52:55,614 - DEBUG - Stepping left to 2157 due to failed alignment
+2024-10-31 12:52:55,615 - DEBUG - Finding primers for slice 2157 to 2891
+2024-10-31 12:52:55,867 - DEBUG - Stepping left to 2146 due to failed alignment
+2024-10-31 12:52:55,867 - DEBUG - Finding primers for slice 2146 to 2880
+2024-10-31 12:52:56,117 - DEBUG - Stepping left to 2135 due to failed alignment
+2024-10-31 12:52:56,117 - DEBUG - Finding primers for slice 2135 to 2869
+2024-10-31 12:52:56,327 - DEBUG - Stepping left to 2124 due to failed alignment
+2024-10-31 12:52:56,328 - DEBUG - Finding primers for slice 2124 to 2858
+2024-10-31 12:52:56,535 - DEBUG - Stepping left to 2113 due to failed alignment
+2024-10-31 12:52:56,535 - DEBUG - Finding primers for slice 2113 to 2847
+2024-10-31 12:52:56,742 - DEBUG - Stepping left to 2102 due to failed alignment
+2024-10-31 12:52:56,742 - DEBUG - Finding primers for slice 2102 to 2836
+2024-10-31 12:52:56,949 - DEBUG - Stepping left to 2091 due to failed alignment
+2024-10-31 12:52:56,949 - DEBUG - Finding primers for slice 2091 to 2825
+2024-10-31 12:52:57,134 - DEBUG - Stepping left to 2080 due to failed alignment
+2024-10-31 12:52:57,134 - DEBUG - Finding primers for slice 2080 to 2814
+2024-10-31 12:52:57,312 - DEBUG - Stepping left to 2069 due to failed alignment
+2024-10-31 12:52:57,312 - DEBUG - Finding primers for slice 2069 to 2803
+2024-10-31 12:52:57,490 - DEBUG - Stepping left to 2058 due to failed alignment
+2024-10-31 12:52:57,490 - DEBUG - Finding primers for slice 2058 to 2792
+2024-10-31 12:52:57,671 - DEBUG - Stepping left to 2047 due to failed alignment
+2024-10-31 12:52:57,672 - DEBUG - Finding primers for slice 2047 to 2781
+2024-10-31 12:53:02,448 - DEBUG - Stepping left to 2036 due to no suitable primers
+2024-10-31 12:53:02,457 - DEBUG - Finding primers for slice 2036 to 2770
+2024-10-31 12:53:02,657 - DEBUG - Stepping left to 2025 due to failed alignment
+2024-10-31 12:53:02,657 - DEBUG - Finding primers for slice 2025 to 2759
+2024-10-31 12:53:08,573 - DEBUG - Stepping left to 2014 due to no suitable primers
+2024-10-31 12:53:08,586 - DEBUG - Finding primers for slice 2014 to 2748
+2024-10-31 12:53:14,982 - DEBUG - Stepping left to 2003 due to no suitable primers
+2024-10-31 12:53:14,998 - DEBUG - Finding primers for slice 2003 to 2737
+2024-10-31 12:53:15,191 - DEBUG - Stepping left to 1992 due to failed alignment
+2024-10-31 12:53:15,191 - DEBUG - Finding primers for slice 1992 to 2726
+2024-10-31 12:53:15,401 - DEBUG - Stepping left to 1981 due to failed alignment
+2024-10-31 12:53:15,401 - DEBUG - Finding primers for slice 1981 to 2715
+2024-10-31 12:53:20,568 - DEBUG - Stepping left to 1970 due to no suitable primers
+2024-10-31 12:53:20,581 - DEBUG - Finding primers for slice 1970 to 2704
+2024-10-31 12:53:20,787 - DEBUG - Left limit reached
+2024-10-31 12:53:20,787 - DEBUG - Finding primers for slice 2410 to 3144
+2024-10-31 12:53:27,716 - DEBUG - Stepping right to 2421 due to no suitable primers
+2024-10-31 12:53:27,757 - DEBUG - Finding primers for slice 2421 to 3155
+2024-10-31 12:53:32,692 - DEBUG - Stepping right to 2432 due to no suitable primers
+2024-10-31 12:53:32,713 - DEBUG - Finding primers for slice 2432 to 3166
+2024-10-31 12:53:38,135 - DEBUG - Stepping right to 2443 due to no suitable primers
+2024-10-31 12:53:38,152 - DEBUG - Finding primers for slice 2443 to 3177
+2024-10-31 12:53:42,299 - DEBUG - Picked MSA slice: Alignment with 21 rows and 26 columns
+AAAAACAGGCAACACCACTGATAAAA Z00861838
+AAAAACAGGCAACACCACTGATAAAA Z00861809
+AAAAACAGGCAACACCACTGATAAAA MN726819
+AAAAACAGGCAACACCACTGATAAAA KR906749
+AAAAACAGGCAACACCACTGATAAAA KY210231
+AAAAACAGGCAACACCACTGATAAAA KY210240
+AAAAACAGGCAACACCACTGATAAAA KR906744
+AAAAACAGGCAACACCACTGATAAAA KY210309
+AAAAACAGGCAACACCACTGATAAAA KR906769
+AAAAACAGGCAACACCACTGATAAAA SD750
+AAAAACAGGCAACACCACTGATAAAA SD807
+AAAAACAGGCAACACCACTGATAAAA KX148207
+AAAAACAGGCAACACCACTGATAAAA MAL1020
+AAAAACAGGCAACACCACTGATAAAA MT006
+AAAAACAGGCAACACCACTGATAAAA LN001
+AAAAACAGGCAACATCACTGATAAAA LN002
+AAAAACAGGCAACACCACTGATAAAA BVL/479/21-10/05/2021-Blantyre-Dog
+AAAAACAGGCAACACCACTGATAAAA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+******* ****** *********** Cigar
+2024-10-31 12:53:42,301 - DEBUG - LEFT candidate 0: *picked, base pen 5.110, combined pen 7.110, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,302 - DEBUG - LEFT candidate 1: base pen 5.322, combined pen 7.322, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,303 - DEBUG - LEFT candidate 2: base pen 5.322, combined pen 7.322, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,304 - DEBUG - LEFT candidate 3: base pen 5.376, combined pen 7.376, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,306 - DEBUG - LEFT candidate 4: base pen 5.664, combined pen 7.664, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,307 - DEBUG - LEFT candidate 5: base pen 5.664, combined pen 7.664, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,308 - DEBUG - LEFT candidate 6: base pen 5.664, combined pen 7.664, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,309 - DEBUG - LEFT candidate 7: base pen 5.671, combined pen 7.671, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,310 - DEBUG - LEFT candidate 8: base pen 6.031, combined pen 8.031, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,312 - DEBUG - LEFT candidate 9: base pen 6.526, combined pen 8.526, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:53:42,314 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+CCCGTGTGTTCTCTCCTCCAGA Z00861838
+CCCGTGTGTTCTCTCCTCCAGA Z00861809
+CCCGTGTGTTCTCTCCTCCAGA MN726819
+CCCGTATGTTCTCTCCTCCAGA KR906749
+CCCGTATGTTCTCTCCTCTAGA KY210231
+CCCGTATGTTCTCTCCTCCAGA KY210240
+CCCGTATGTTCTCTCCTCCAGA KR906744
+CCCGTATGTTCTCTCCTCCAGA KY210309
+CCCGTATGTTCTCTCCTCCAGA KR906769
+CCCGTATGTTCTCTCCTCNAGA SD750
+CCCGTATGTTCTCTCCTCCAGA SD807
+CCCGTATGTTCTCTCCTCCAGA KX148207
+CCCGTATGTTCTCTCCTCCAGA MAL1020
+CCCGTATTTTCTCTCCTCCAGA MT006
+CCCGTATGTTCTCTCCTCCAGA LN001
+CCCGTATGTTCTCTCCTCCAGA LN002
+CCCGTATGTTCTCTCCTCCAGA BVL/479/21-10/05/2021-Blantyre-Dog
+CCCGTATGTTCTCTCCTCCAGA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+***** * ********** *** Cigar
+2024-10-31 12:53:42,315 - DEBUG - RIGHT candidate 0: *picked, base pen 1.168, combined pen 8.168, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:53:42,326 - DEBUG - Region 6, pool 2, left_limit 2540, slice_start 3035, right_limit 11923
+2024-10-31 12:53:42,326 - DEBUG - Finding primers for slice 3035 to 3769
+2024-10-31 12:53:44,476 - DEBUG - Stepping left to 3024 due to no suitable primers
+2024-10-31 12:53:44,480 - DEBUG - Finding primers for slice 3024 to 3758
+2024-10-31 12:53:46,788 - DEBUG - Stepping left to 3013 due to no suitable primers
+2024-10-31 12:53:46,793 - DEBUG - Finding primers for slice 3013 to 3747
+2024-10-31 12:53:49,331 - DEBUG - Stepping left to 3002 due to no suitable primers
+2024-10-31 12:53:49,338 - DEBUG - Finding primers for slice 3002 to 3736
+2024-10-31 12:53:51,863 - DEBUG - Stepping left to 2991 due to no suitable primers
+2024-10-31 12:53:51,870 - DEBUG - Finding primers for slice 2991 to 3725
+2024-10-31 12:53:52,052 - DEBUG - Stepping left to 2980 due to failed alignment
+2024-10-31 12:53:52,052 - DEBUG - Finding primers for slice 2980 to 3714
+2024-10-31 12:53:52,233 - DEBUG - Stepping left to 2969 due to failed alignment
+2024-10-31 12:53:52,233 - DEBUG - Finding primers for slice 2969 to 3703
+2024-10-31 12:53:52,425 - DEBUG - Stepping left to 2958 due to failed alignment
+2024-10-31 12:53:52,425 - DEBUG - Finding primers for slice 2958 to 3692
+2024-10-31 12:53:52,608 - DEBUG - Stepping left to 2947 due to failed alignment
+2024-10-31 12:53:52,608 - DEBUG - Finding primers for slice 2947 to 3681
+2024-10-31 12:53:52,704 - DEBUG - Stepping left to 2936 due to failed alignment
+2024-10-31 12:53:52,704 - DEBUG - Finding primers for slice 2936 to 3670
+2024-10-31 12:53:52,886 - DEBUG - Stepping left to 2925 due to failed alignment
+2024-10-31 12:53:52,887 - DEBUG - Finding primers for slice 2925 to 3659
+2024-10-31 12:53:53,079 - DEBUG - Stepping left to 2914 due to failed alignment
+2024-10-31 12:53:53,079 - DEBUG - Finding primers for slice 2914 to 3648
+2024-10-31 12:53:53,286 - DEBUG - Stepping left to 2903 due to failed alignment
+2024-10-31 12:53:53,286 - DEBUG - Finding primers for slice 2903 to 3637
+2024-10-31 12:53:53,466 - DEBUG - Stepping left to 2892 due to failed alignment
+2024-10-31 12:53:53,466 - DEBUG - Finding primers for slice 2892 to 3626
+2024-10-31 12:53:53,660 - DEBUG - Stepping left to 2881 due to failed alignment
+2024-10-31 12:53:53,660 - DEBUG - Finding primers for slice 2881 to 3615
+2024-10-31 12:53:53,858 - DEBUG - Stepping left to 2870 due to failed alignment
+2024-10-31 12:53:53,858 - DEBUG - Finding primers for slice 2870 to 3604
+2024-10-31 12:53:54,045 - DEBUG - Stepping left to 2859 due to failed alignment
+2024-10-31 12:53:54,045 - DEBUG - Finding primers for slice 2859 to 3593
+2024-10-31 12:53:54,230 - DEBUG - Stepping left to 2848 due to failed alignment
+2024-10-31 12:53:54,231 - DEBUG - Finding primers for slice 2848 to 3582
+2024-10-31 12:53:54,420 - DEBUG - Stepping left to 2837 due to failed alignment
+2024-10-31 12:53:54,420 - DEBUG - Finding primers for slice 2837 to 3571
+2024-10-31 12:53:58,511 - DEBUG - Stepping left to 2826 due to no suitable primers
+2024-10-31 12:53:58,525 - DEBUG - Finding primers for slice 2826 to 3560
+2024-10-31 12:54:03,818 - DEBUG - Stepping left to 2815 due to no suitable primers
+2024-10-31 12:54:03,841 - DEBUG - Finding primers for slice 2815 to 3549
+2024-10-31 12:54:08,705 - DEBUG - Stepping left to 2804 due to no suitable primers
+2024-10-31 12:54:08,726 - DEBUG - Finding primers for slice 2804 to 3538
+2024-10-31 12:54:08,923 - DEBUG - Stepping left to 2793 due to failed alignment
+2024-10-31 12:54:08,923 - DEBUG - Finding primers for slice 2793 to 3527
+2024-10-31 12:54:13,980 - DEBUG - Stepping left to 2782 due to no suitable primers
+2024-10-31 12:54:13,995 - DEBUG - Finding primers for slice 2782 to 3516
+2024-10-31 12:54:14,182 - DEBUG - Stepping left to 2771 due to failed alignment
+2024-10-31 12:54:14,183 - DEBUG - Finding primers for slice 2771 to 3505
+2024-10-31 12:54:19,994 - DEBUG - Stepping left to 2760 due to no suitable primers
+2024-10-31 12:54:20,010 - DEBUG - Finding primers for slice 2760 to 3494
+2024-10-31 12:54:24,871 - DEBUG - Stepping left to 2749 due to no suitable primers
+2024-10-31 12:54:24,888 - DEBUG - Finding primers for slice 2749 to 3483
+2024-10-31 12:54:28,963 - DEBUG - Picked MSA slice: Alignment with 21 rows and 26 columns
+AGAATGATTGGGTTAGTCAAAGTTGT Z00861838
+AGAATGATTGGGTTAGTCAAAGTTGT Z00861809
+AGAATGATTGGGTTAGTCAAAGTTGT MN726819
+AGGATGATTGGGTTGGTCAAAGTTGT KR906749
+AGGATGATTGGGTTAGTCAAAGTTGT KY210231
+AGGATGATTGGGTTAGTCAAAGTTGT KY210240
+AGGATGATTGGGTTAGTCAAAGTTGT KR906744
+AGGATGATTGGGTTAGTCAAAGTTGT KY210309
+AGGATGATTGGGTTAGTCAAAGTTGT KR906769
+AGGATGATTGGGTTAGTCAAAGTTGT SD750
+AGGATGATTGGGTTAGTCAAAGTTGT SD807
+AGGATGATTGGGTTAGTCAAAGTTGT KX148207
+AGGATGATTGGGTTAGTAAAAGTTGT MAL1020
+AGGATGATTGGGTTAGTCAAAGTTGT MT006
+AGGATGATTGGGTTAGTCAAAGTTGT LN001
+AGGATGATTGGGTTAGTCAAAGTTGT LN002
+AGGATGATTGGGTTAGTCAAAGTTGT BVL/479/21-10/05/2021-Blantyre-Dog
+AGGATGATTGGGTTAGTCAAAGTTGT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+** *********** ** ******** Cigar
+2024-10-31 12:54:28,964 - DEBUG - LEFT candidate 0: *picked, base pen 4.591, combined pen 9.591, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,966 - DEBUG - LEFT candidate 1: base pen 5.140, combined pen 10.140, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,967 - DEBUG - LEFT candidate 2: base pen 5.213, combined pen 10.213, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,968 - DEBUG - LEFT candidate 3: base pen 5.687, combined pen 10.687, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,970 - DEBUG - LEFT candidate 4: base pen 5.904, combined pen 10.904, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,971 - DEBUG - LEFT candidate 5: base pen 6.035, combined pen 11.035, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,972 - DEBUG - LEFT candidate 6: base pen 6.156, combined pen 11.156, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,973 - DEBUG - LEFT candidate 7: base pen 6.458, combined pen 11.458, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,975 - DEBUG - LEFT candidate 8: base pen 7.195, combined pen 12.195, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,976 - DEBUG - LEFT candidate 9: base pen 7.218, combined pen 12.218, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,977 - DEBUG - LEFT candidate 10: base pen 7.218, combined pen 12.218, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,979 - DEBUG - LEFT candidate 11: base pen 7.992, combined pen 12.992, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,981 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+ATTGTTTGGGCAGCTCAGATGA Z00861838
+ATTGTTTGGGCAGCTCAGATGA Z00861809
+ATTGTTTGGGCAGCTCAGATGA MN726819
+ATTGTTTGGGCAGCTGAGATGA KR906749
+ATTGTTTGGGCAGCTGAGATGA KY210231
+ATTGTTTGGGCAGCTGAGATGA KY210240
+ATTGTTTGGGCAGCTGAGATGA KR906744
+ATTGTTTGGGCAGCTGAGATGA KY210309
+ATTGTTTGGGCAGCTGAGATGA KR906769
+ATTGTTTGGGCAGCTGAGATGA SD750
+ATTGTTTGGGCAGCTGAGATGA SD807
+ATTGTTTGGGCAGCTGAGATGA KX148207
+ATTGTTTGGGCAGCTGAGATGA MAL1020
+ATTGTTTGGGCAGCTGAGATGA MT006
+ATTGTTTGGGCAGCTGAGATGA LN001
+ATTGTTTGGGCAGCTGAGATGA LN002
+ATTGTTTGGGCAGCTGAGATGA BVL/479/21-10/05/2021-Blantyre-Dog
+ATTATTTGGGCAGCTGAGATGA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+*** *********** ****** Cigar
+2024-10-31 12:54:28,982 - DEBUG - RIGHT candidate 0: *picked, base pen 1.429, combined pen 5.429, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,983 - DEBUG - RIGHT candidate 1: base pen 1.429, combined pen 5.429, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,984 - DEBUG - RIGHT candidate 2: base pen 2.081, combined pen 6.081, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,985 - DEBUG - RIGHT candidate 3: base pen 2.362, combined pen 6.362, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,986 - DEBUG - RIGHT candidate 4: base pen 2.455, combined pen 6.455, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,987 - DEBUG - RIGHT candidate 5: base pen 2.685, combined pen 6.685, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,988 - DEBUG - RIGHT candidate 6: base pen 2.778, combined pen 6.778, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,989 - DEBUG - RIGHT candidate 7: base pen 3.013, combined pen 7.013, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,991 - DEBUG - RIGHT candidate 8: base pen 2.620, combined pen 7.620, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,992 - DEBUG - RIGHT candidate 9: base pen 2.685, combined pen 7.685, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,993 - DEBUG - RIGHT candidate 10: base pen 3.769, combined pen 7.769, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,994 - DEBUG - RIGHT candidate 11: base pen 4.036, combined pen 8.036, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,995 - DEBUG - RIGHT candidate 12: base pen 3.235, combined pen 8.235, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:28,996 - DEBUG - RIGHT candidate 13: base pen 4.391, combined pen 8.391, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:28,997 - DEBUG - RIGHT candidate 14: base pen 5.875, combined pen 9.875, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:54:29,016 - DEBUG - Region 7, pool 1, left_limit 3162, slice_start 3326, right_limit 11923
+2024-10-31 12:54:29,016 - DEBUG - Finding primers for slice 3326 to 4060
+2024-10-31 12:54:29,151 - DEBUG - Stepping left to 3315 due to failed alignment
+2024-10-31 12:54:29,151 - DEBUG - Finding primers for slice 3315 to 4049
+2024-10-31 12:54:29,270 - DEBUG - Stepping left to 3304 due to failed alignment
+2024-10-31 12:54:29,270 - DEBUG - Finding primers for slice 3304 to 4038
+2024-10-31 12:54:29,465 - DEBUG - Stepping left to 3293 due to failed alignment
+2024-10-31 12:54:29,465 - DEBUG - Finding primers for slice 3293 to 4027
+2024-10-31 12:54:29,681 - DEBUG - Stepping left to 3282 due to failed alignment
+2024-10-31 12:54:29,681 - DEBUG - Finding primers for slice 3282 to 4016
+2024-10-31 12:54:29,868 - DEBUG - Stepping left to 3271 due to failed alignment
+2024-10-31 12:54:29,868 - DEBUG - Finding primers for slice 3271 to 4005
+2024-10-31 12:54:30,049 - DEBUG - Stepping left to 3260 due to failed alignment
+2024-10-31 12:54:30,049 - DEBUG - Finding primers for slice 3260 to 3994
+2024-10-31 12:54:30,239 - DEBUG - Stepping left to 3249 due to failed alignment
+2024-10-31 12:54:30,239 - DEBUG - Finding primers for slice 3249 to 3983
+2024-10-31 12:54:35,007 - DEBUG - Stepping left to 3238 due to no suitable primers
+2024-10-31 12:54:35,035 - DEBUG - Finding primers for slice 3238 to 3972
+2024-10-31 12:54:40,918 - DEBUG - Stepping left to 3227 due to no suitable primers
+2024-10-31 12:54:40,942 - DEBUG - Finding primers for slice 3227 to 3961
+2024-10-31 12:54:41,146 - DEBUG - Stepping left to 3216 due to failed alignment
+2024-10-31 12:54:41,146 - DEBUG - Finding primers for slice 3216 to 3950
+2024-10-31 12:54:44,684 - DEBUG - Picked MSA slice: Alignment with 21 rows and 25 columns
+CGCTGCATTTTATCAGAGTCAAGTT Z00861838
+CGCTGCATTTTATCAGAGTCAAGTT Z00861809
+CGCTGCATTTTATCAGAGTCAAGTT MN726819
+CGCTGCATTTTATCAAAGTCAAGTT KR906749
+CGCTGCATTTTATCAAAGTCAAGTT KY210231
+CGCTGCATTTTATCAAAGTCAAGTT KY210240
+CGCTGCATTTTATCAAAGTCAAGTT KR906744
+CGCTGCATTTTATCAAAGTCAAGTT KY210309
+CGCTGCATTTTATCAAAGTCAAGTT KR906769
+CGCTGCATTTTATCAAAGTCAAGTT SD750
+CGCTGCATTTTATCAAAGTCAAGTT SD807
+CGCTGCATTTTATCAAAGTCAAGTT KX148207
+CGCTGCATTTTATCAAAGTCAAGTT MAL1020
+CGCTGCATTTTATCAAAGTCAAGTT MT006
+CGCTGCATTTTATCAAAGTCAAGTT LN001
+CGCTGCATTTTATCAAAGTCAAGTT LN002
+CGCTGCATTTTATCAAAGTCAAGTT BVL/479/21-10/05/2021-Blantyre-Dog
+CGCTGCATTTTATCAAAGTCAAGTT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+*************** ********* Cigar
+2024-10-31 12:54:44,686 - DEBUG - LEFT candidate 0: *picked, base pen 6.814, combined pen 9.814, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:54:44,688 - DEBUG - LEFT candidate 1: base pen 7.375, combined pen 10.375, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:54:44,689 - DEBUG - LEFT candidate 2: base pen 7.522, combined pen 10.522, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:54:44,691 - DEBUG - LEFT candidate 3: base pen 7.582, combined pen 10.582, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:54:44,692 - DEBUG - LEFT candidate 4: base pen 7.821, combined pen 10.821, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:54:44,694 - DEBUG - LEFT candidate 5: base pen 7.782, combined pen 12.782, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:54:44,695 - DEBUG - LEFT candidate 6: base pen 3.967, combined pen 20.967, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:54:44,696 - DEBUG - LEFT candidate 7: base pen 4.225, combined pen 21.225, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:54:44,698 - DEBUG - LEFT candidate 8: base pen 5.078, combined pen 22.078, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:54:44,700 - DEBUG - LEFT candidate 9: base pen 5.308, combined pen 22.308, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:54:44,701 - DEBUG - LEFT candidate 10: base pen 6.691, combined pen 23.691, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:54:44,703 - DEBUG - Picked MSA slice: Alignment with 21 rows and 21 columns
+AGATGTCCCTAGTCTCGGATT Z00861838
+AGATGTCCCTAGTCTCGGATT Z00861809
+AGATGTCCCTAGTCTCGGATT MN726819
+AGACGTCCCTAGTCTCGGATT KR906749
+AGACGTCCCTAGTCTAGGATT KY210231
+AGACGTCCCTAGTCTCGGATT KY210240
+AGACGTCCCTAGTCTCGGATT KR906744
+AGATGTCCCTAGTCTCGGATT KY210309
+GGACGTCCCTAGTCTCGGATT KR906769
+AGACGTCCCTAGTCTCGGATT SD750
+AGACGTCCCTAGTCTCGGATT SD807
+AGACGTCCCTAGTCTCGGATT KX148207
+AGACGTCCCTAGTCTCGGATT MAL1020
+AGACGTCCCTAGTCTCGGATT MT006
+AGACGTCCCTAGTCTCGGATT LN001
+AGACGTCCCCAGTCTCGGATT LN002
+AGACGTCCCTAGTCTCGGATT BVL/479/21-10/05/2021-Blantyre-Dog
+AGACGTCCCTAGTCTCGGATT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+ ** ***** ***** ***** Cigar
+2024-10-31 12:54:44,705 - DEBUG - RIGHT candidate 0: *picked, base pen 3.193, combined pen 11.193, 1 max mismatch, 8 total mismatches.
+2024-10-31 12:54:44,706 - DEBUG - RIGHT candidate 1: base pen 1.336, combined pen 11.336, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:54:44,707 - DEBUG - RIGHT candidate 2: base pen 1.388, combined pen 11.388, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:54:44,708 - DEBUG - RIGHT candidate 3: base pen 0.795, combined pen 11.795, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,710 - DEBUG - RIGHT candidate 4: base pen 0.938, combined pen 11.938, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,711 - DEBUG - RIGHT candidate 5: base pen 1.434, combined pen 12.434, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,712 - DEBUG - RIGHT candidate 6: base pen 2.479, combined pen 12.479, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:54:44,714 - DEBUG - RIGHT candidate 7: base pen 0.808, combined pen 12.808, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,715 - DEBUG - RIGHT candidate 8: base pen 2.891, combined pen 12.891, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:54:44,716 - DEBUG - RIGHT candidate 9: base pen 2.992, combined pen 12.992, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:54:44,717 - DEBUG - RIGHT candidate 10: base pen 2.227, combined pen 13.227, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,719 - DEBUG - RIGHT candidate 11: base pen 2.858, combined pen 13.858, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,720 - DEBUG - RIGHT candidate 12: base pen 2.888, combined pen 13.888, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,721 - DEBUG - RIGHT candidate 13: base pen 3.155, combined pen 14.155, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,723 - DEBUG - RIGHT candidate 14: base pen 3.248, combined pen 14.248, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,724 - DEBUG - RIGHT candidate 15: base pen 3.887, combined pen 14.887, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,725 - DEBUG - RIGHT candidate 16: base pen 3.050, combined pen 15.050, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,727 - DEBUG - RIGHT candidate 17: base pen 4.427, combined pen 15.427, 1 max mismatch, 11 total mismatches.
+2024-10-31 12:54:44,742 - DEBUG - Region 8, pool 2, left_limit 3453, slice_start 3810, right_limit 11923
+2024-10-31 12:54:44,742 - DEBUG - Finding primers for slice 3810 to 4544
+2024-10-31 12:54:49,814 - DEBUG - Stepping left to 3799 due to no suitable primers
+2024-10-31 12:54:49,829 - DEBUG - Finding primers for slice 3799 to 4533
+2024-10-31 12:54:54,258 - DEBUG - Stepping left to 3788 due to no suitable primers
+2024-10-31 12:54:54,280 - DEBUG - Finding primers for slice 3788 to 4522
+2024-10-31 12:54:59,797 - DEBUG - Picked MSA slice: Alignment with 21 rows and 23 columns
+TTGGATCCATATGACAAATCCCT Z00861838
+TTGGATCCATATGACAAATCCCT Z00861809
+TTGGATCCATATGACAAATCCCT MN726819
+TTAGACCCATATGACAAATCCCT KR906749
+TTAGACCCATATGACAAATCCCT KY210231
+TTGGACCCATATGACAAATCCCT KY210240
+TTGGACCCATATGACAAAACCCT KR906744
+TTGGACCCATATGACAAATCCCT KY210309
+TTGGACCCATATGACAAATCCCT KR906769
+TTGGACCCATATGACAAATCCCT SD750
+TTGGACCCATATGACAAATCCCT SD807
+TTGGACCCATATGACAAATCCCT KX148207
+TTAGACCCATATGACAAATCCCT MAL1020
+TTGGACCCATATGACAAATCCCT MT006
+TTGGACCCATATGACAAATCCCT LN001
+TTGGACCCATATGACAAATCCCT LN002
+TTGGACCCATATGACAAATCCCT BVL/479/21-10/05/2021-Blantyre-Dog
+TTGGACCCATATGACAAATCCCT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+** ** ***********  **** Cigar
+2024-10-31 12:54:59,799 - DEBUG - LEFT candidate 0: *picked, base pen 4.343, combined pen 12.343, 1 max mismatch, 8 total mismatches.
+2024-10-31 12:54:59,800 - DEBUG - LEFT candidate 1: base pen 3.973, combined pen 12.973, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:54:59,802 - DEBUG - LEFT candidate 2: base pen 4.028, combined pen 13.028, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:54:59,804 - DEBUG - Picked MSA slice: Alignment with 21 rows and 20 columns
+GGATTAGAACATGGCCGTCA Z00861838
+GGATCAGAACATGGCCGTCA Z00861809
+GGATTAGAACATGGCCGTCA MN726819
+GGATTAGAACATGGCCGTCA KR906749
+GGATTAGAACATGGCCGTCA KY210231
+GGATTAGAACATGGCCGTCA KY210240
+GGATTAGAACATGGCCGTCA KR906744
+GGATTAGAACATGGCCGTCA KY210309
+GGATTAGAACATGGCCGTCA KR906769
+GGATTAGAACATGGCCGTCA SD750
+GGATTAGAACATGGCCGTCA SD807
+GGATTAGAACATGGCCGTCA KX148207
+GGATTAGAACATGGCCGTCA MAL1020
+GGATTAGAACATGGCCGTCA MT006
+GGATCAAAACATGGCCGTCA LN001
+GGATTAGAACATGGCCGTCA LN002
+GGATTAGAACATGGCCGTCA BVL/479/21-10/05/2021-Blantyre-Dog
+GGATTAGAACATGGCCGTCA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**** * ************* Cigar
+2024-10-31 12:54:59,805 - DEBUG - RIGHT candidate 0: *picked, base pen 3.751, combined pen 22.751, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:54:59,806 - DEBUG - RIGHT candidate 1: base pen 3.752, combined pen 22.752, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:54:59,826 - DEBUG - Region 9, pool 1, left_limit 3936, slice_start 4367, right_limit 11923
+2024-10-31 12:54:59,826 - DEBUG - Finding primers for slice 4367 to 5101
+2024-10-31 12:55:05,502 - DEBUG - Stepping left to 4356 due to no suitable primers
+2024-10-31 12:55:05,527 - DEBUG - Finding primers for slice 4356 to 5090
+2024-10-31 12:55:05,759 - DEBUG - Stepping left to 4345 due to failed alignment
+2024-10-31 12:55:05,759 - DEBUG - Finding primers for slice 4345 to 5079
+2024-10-31 12:55:05,973 - DEBUG - Stepping left to 4334 due to failed alignment
+2024-10-31 12:55:05,974 - DEBUG - Finding primers for slice 4334 to 5068
+2024-10-31 12:55:11,386 - DEBUG - Stepping left to 4323 due to no suitable primers
+2024-10-31 12:55:11,406 - DEBUG - Finding primers for slice 4323 to 5057
+2024-10-31 12:55:11,587 - DEBUG - Stepping left to 4312 due to failed alignment
+2024-10-31 12:55:11,588 - DEBUG - Finding primers for slice 4312 to 5046
+2024-10-31 12:55:11,772 - DEBUG - Stepping left to 4301 due to failed alignment
+2024-10-31 12:55:11,773 - DEBUG - Finding primers for slice 4301 to 5035
+2024-10-31 12:55:11,932 - DEBUG - Stepping left to 4290 due to failed alignment
+2024-10-31 12:55:11,932 - DEBUG - Finding primers for slice 4290 to 5024
+2024-10-31 12:55:12,119 - DEBUG - Stepping left to 4279 due to failed alignment
+2024-10-31 12:55:12,119 - DEBUG - Finding primers for slice 4279 to 5013
+2024-10-31 12:55:12,309 - DEBUG - Stepping left to 4268 due to failed alignment
+2024-10-31 12:55:12,309 - DEBUG - Finding primers for slice 4268 to 5002
+2024-10-31 12:55:12,497 - DEBUG - Stepping left to 4257 due to failed alignment
+2024-10-31 12:55:12,497 - DEBUG - Finding primers for slice 4257 to 4991
+2024-10-31 12:55:12,681 - DEBUG - Stepping left to 4246 due to failed alignment
+2024-10-31 12:55:12,681 - DEBUG - Finding primers for slice 4246 to 4980
+2024-10-31 12:55:12,879 - DEBUG - Stepping left to 4235 due to failed alignment
+2024-10-31 12:55:12,879 - DEBUG - Finding primers for slice 4235 to 4969
+2024-10-31 12:55:13,074 - DEBUG - Stepping left to 4224 due to failed alignment
+2024-10-31 12:55:13,074 - DEBUG - Finding primers for slice 4224 to 4958
+2024-10-31 12:55:13,261 - DEBUG - Stepping left to 4213 due to failed alignment
+2024-10-31 12:55:13,261 - DEBUG - Finding primers for slice 4213 to 4947
+2024-10-31 12:55:13,444 - DEBUG - Stepping left to 4202 due to failed alignment
+2024-10-31 12:55:13,444 - DEBUG - Finding primers for slice 4202 to 4936
+2024-10-31 12:55:13,632 - DEBUG - Stepping left to 4191 due to failed alignment
+2024-10-31 12:55:13,632 - DEBUG - Finding primers for slice 4191 to 4925
+2024-10-31 12:55:21,080 - DEBUG - Stepping left to 4180 due to no suitable primers
+2024-10-31 12:55:21,134 - DEBUG - Finding primers for slice 4180 to 4914
+2024-10-31 12:55:29,296 - DEBUG - Stepping left to 4169 due to no suitable primers
+2024-10-31 12:55:29,350 - DEBUG - Finding primers for slice 4169 to 4903
+2024-10-31 12:55:29,568 - DEBUG - Stepping left to 4158 due to failed alignment
+2024-10-31 12:55:29,568 - DEBUG - Finding primers for slice 4158 to 4892
+2024-10-31 12:55:29,788 - DEBUG - Stepping left to 4147 due to failed alignment
+2024-10-31 12:55:29,788 - DEBUG - Finding primers for slice 4147 to 4881
+2024-10-31 12:55:32,827 - DEBUG - Picked MSA slice: Alignment with 21 rows and 21 columns
+CACGACTTTCGCTCGGATGAA Z00861838
+CACGACTTTCGCTCGGATGAA Z00861809
+CACGACTTTCGCTCGGATGAA MN726819
+CACGACTTTCGCTCGGATGAA KR906749
+CACGACTTTCGCTCGGATGAA KY210231
+CACGACTTTCGCTCGGATGAA KY210240
+CACGACTTTCGCTCGGATGAA KR906744
+CACGACTTTCGCTCGGATGAA KY210309
+CACGACTTTCGCTCGGATGAA KR906769
+CACGACTTTCGCTCGGATGAA SD750
+CACGACTTTCGCTCGGATGAA SD807
+CACGACTTTCGCTCGGATGAA KX148207
+CACGACTTTCGCTCGGATGAA MAL1020
+CACGACTTTCGCTCGGATGAA MT006
+CACGACTTTCGCTCGGATGAA LN001
+CACGACTTTCGCTCGGATGAA LN002
+CACGACTTTCGCTCGGATGAA BVL/479/21-10/05/2021-Blantyre-Dog
+CACGACTTTCGCTCGGATGAA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+********************* Cigar
+2024-10-31 12:55:32,828 - DEBUG - LEFT candidate 0: *picked, base pen 1.166, combined pen 1.166, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:55:32,829 - DEBUG - LEFT candidate 1: base pen 1.203, combined pen 1.203, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:55:32,830 - DEBUG - LEFT candidate 2: base pen 1.328, combined pen 1.328, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:55:32,831 - DEBUG - LEFT candidate 3: base pen 0.987, combined pen 1.987, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,833 - DEBUG - LEFT candidate 4: base pen 1.000, combined pen 2.000, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,834 - DEBUG - LEFT candidate 5: base pen 2.101, combined pen 2.101, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:55:32,835 - DEBUG - LEFT candidate 6: base pen 2.954, combined pen 2.954, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:55:32,836 - DEBUG - LEFT candidate 7: base pen 3.055, combined pen 3.055, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:55:32,837 - DEBUG - LEFT candidate 8: base pen 2.225, combined pen 3.225, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,838 - DEBUG - LEFT candidate 9: base pen 3.453, combined pen 3.453, 0 max mismatches, 0 total mismatches.
+2024-10-31 12:55:32,839 - DEBUG - LEFT candidate 10: base pen 2.747, combined pen 3.747, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,840 - DEBUG - LEFT candidate 11: base pen 2.640, combined pen 4.640, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,842 - DEBUG - LEFT candidate 12: base pen 4.050, combined pen 5.050, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,843 - DEBUG - LEFT candidate 13: base pen 4.051, combined pen 5.051, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,844 - DEBUG - LEFT candidate 14: base pen 3.254, combined pen 5.254, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,845 - DEBUG - LEFT candidate 15: base pen 4.365, combined pen 5.365, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,846 - DEBUG - LEFT candidate 16: base pen 4.702, combined pen 5.702, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,848 - DEBUG - LEFT candidate 17: base pen 4.831, combined pen 5.831, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,849 - DEBUG - LEFT candidate 18: base pen 4.831, combined pen 6.831, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:55:32,850 - DEBUG - LEFT candidate 19: base pen 1.433, combined pen 8.433, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:55:32,851 - DEBUG - LEFT candidate 20: base pen 3.504, combined pen 8.504, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:55:32,853 - DEBUG - LEFT candidate 21: base pen 3.961, combined pen 8.961, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:55:32,854 - DEBUG - LEFT candidate 22: base pen 2.366, combined pen 9.366, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:55:32,855 - DEBUG - LEFT candidate 23: base pen 4.726, combined pen 9.726, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:55:32,856 - DEBUG - LEFT candidate 24: base pen 3.460, combined pen 10.460, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:55:32,857 - DEBUG - LEFT candidate 25: base pen 5.637, combined pen 10.637, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:55:32,859 - DEBUG - LEFT candidate 26: base pen 6.667, combined pen 11.667, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:55:32,860 - DEBUG - LEFT candidate 27: base pen 4.417, combined pen 13.417, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:55:32,861 - DEBUG - LEFT candidate 28: base pen 2.179, combined pen 15.179, 1 max mismatch, 13 total mismatches.
+2024-10-31 12:55:32,862 - DEBUG - LEFT candidate 29: base pen 6.263, combined pen 15.263, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:55:32,863 - DEBUG - LEFT candidate 30: base pen 5.611, combined pen 15.611, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:55:32,865 - DEBUG - LEFT candidate 31: base pen 5.816, combined pen 15.816, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:55:32,866 - DEBUG - LEFT candidate 32: base pen 4.634, combined pen 19.634, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:55:32,867 - DEBUG - LEFT candidate 33: base pen 7.055, combined pen 22.055, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:55:32,869 - DEBUG - LEFT candidate 34: base pen 1.583, combined pen 39.583, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:55:32,870 - DEBUG - LEFT candidate 35: base pen 2.471, combined pen 40.471, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:55:32,872 - DEBUG - Picked MSA slice: Alignment with 21 rows and 24 columns
+CTCCCATGAAGATATGACCTTCCC Z00861838
+CTCCCATGAAGATATGACCTTCCC Z00861809
+CTCCCATGAAGATATGACCTTCCC MN726819
+CTCCCATGAAGATATGACCTTCCC KR906749
+CTCCCATGAAGATATGACTTTCCC KY210231
+CTCCCATGAAGATATGACCTTCCC KY210240
+CTCCCATGAAGATATGACCTTCCC KR906744
+CTCCCATGAAGATATGACCTTCCC KY210309
+CTCCCATGAAGATATGACCTTCCC KR906769
+CTCCCATGAAGATATGACCTTCCC SD750
+CTCCCNTGAAGATATGACCTTCCC SD807
+CTCCCATGAAGATATGACCTTCCC KX148207
+CTCCCATGAAGATATAACCTTCCC MAL1020
+CTCCCATGAAGATATGACCTTCCC MT006
+CTCCCATGAAGATATGACCTTCCC LN001
+CTCCCATGAAGATATGACCTTCCC LN002
+CTCCCATGAAGATATGACCTTCCC BVL/479/21-10/05/2021-Blantyre-Dog
+CTCCCATGAAGATATGACCTTCCC 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+***** ********* ** ***** Cigar
+2024-10-31 12:55:32,873 - DEBUG - RIGHT candidate 0: *picked, base pen 1.826, combined pen 4.826, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,875 - DEBUG - RIGHT candidate 1: base pen 2.108, combined pen 5.108, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,876 - DEBUG - RIGHT candidate 2: base pen 1.669, combined pen 5.669, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,877 - DEBUG - RIGHT candidate 3: base pen 1.937, combined pen 5.937, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,878 - DEBUG - RIGHT candidate 4: base pen 1.966, combined pen 5.966, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,880 - DEBUG - RIGHT candidate 5: base pen 1.310, combined pen 6.310, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,881 - DEBUG - RIGHT candidate 6: base pen 3.690, combined pen 6.690, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,882 - DEBUG - RIGHT candidate 7: base pen 3.722, combined pen 6.722, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,883 - DEBUG - RIGHT candidate 8: base pen 3.880, combined pen 6.880, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,885 - DEBUG - RIGHT candidate 9: base pen 4.070, combined pen 7.070, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,886 - DEBUG - RIGHT candidate 10: base pen 4.082, combined pen 7.082, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,887 - DEBUG - RIGHT candidate 11: base pen 4.170, combined pen 7.170, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,888 - DEBUG - RIGHT candidate 12: base pen 3.733, combined pen 7.733, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,890 - DEBUG - RIGHT candidate 13: base pen 3.877, combined pen 7.877, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,891 - DEBUG - RIGHT candidate 14: base pen 4.074, combined pen 8.074, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,892 - DEBUG - RIGHT candidate 15: base pen 3.224, combined pen 8.224, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:55:32,893 - DEBUG - RIGHT candidate 16: base pen 5.279, combined pen 8.279, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,895 - DEBUG - RIGHT candidate 17: base pen 5.396, combined pen 8.396, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,896 - DEBUG - RIGHT candidate 18: base pen 5.421, combined pen 8.421, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,897 - DEBUG - RIGHT candidate 19: base pen 5.937, combined pen 8.937, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,899 - DEBUG - RIGHT candidate 20: base pen 6.456, combined pen 9.456, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,900 - DEBUG - RIGHT candidate 21: base pen 6.988, combined pen 9.988, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,901 - DEBUG - RIGHT candidate 22: base pen 7.005, combined pen 10.005, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,903 - DEBUG - RIGHT candidate 23: base pen 7.035, combined pen 10.035, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,904 - DEBUG - RIGHT candidate 24: base pen 7.237, combined pen 10.237, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,906 - DEBUG - RIGHT candidate 25: base pen 7.752, combined pen 10.752, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:55:32,907 - DEBUG - RIGHT candidate 26: base pen 7.542, combined pen 14.542, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:55:32,909 - DEBUG - RIGHT candidate 27: base pen 7.542, combined pen 14.542, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:55:32,910 - DEBUG - RIGHT candidate 28: base pen 7.752, combined pen 14.752, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:55:32,912 - DEBUG - RIGHT candidate 29: base pen 7.489, combined pen 15.489, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:55:32,928 - DEBUG - Region 10, pool 2, left_limit 4492, slice_start 4728, right_limit 11923
+2024-10-31 12:55:32,929 - DEBUG - Finding primers for slice 4728 to 5462
+2024-10-31 12:55:38,256 - DEBUG - Stepping left to 4717 due to no suitable primers
+2024-10-31 12:55:38,286 - DEBUG - Finding primers for slice 4717 to 5451
+2024-10-31 12:55:43,850 - DEBUG - Stepping left to 4706 due to no suitable primers
+2024-10-31 12:55:43,879 - DEBUG - Finding primers for slice 4706 to 5440
+2024-10-31 12:55:44,028 - DEBUG - Stepping left to 4695 due to failed alignment
+2024-10-31 12:55:44,028 - DEBUG - Finding primers for slice 4695 to 5429
+2024-10-31 12:55:51,078 - DEBUG - Stepping left to 4684 due to no suitable primers
+2024-10-31 12:55:51,107 - DEBUG - Finding primers for slice 4684 to 5418
+2024-10-31 12:55:51,304 - DEBUG - Stepping left to 4673 due to failed alignment
+2024-10-31 12:55:51,304 - DEBUG - Finding primers for slice 4673 to 5407
+2024-10-31 12:55:58,524 - DEBUG - Stepping left to 4662 due to no suitable primers
+2024-10-31 12:55:58,547 - DEBUG - Finding primers for slice 4662 to 5396
+2024-10-31 12:56:06,619 - DEBUG - Stepping left to 4651 due to no suitable primers
+2024-10-31 12:56:06,658 - DEBUG - Finding primers for slice 4651 to 5385
+2024-10-31 12:56:06,867 - DEBUG - Stepping left to 4640 due to failed alignment
+2024-10-31 12:56:06,867 - DEBUG - Finding primers for slice 4640 to 5374
+2024-10-31 12:56:07,019 - DEBUG - Stepping left to 4629 due to failed alignment
+2024-10-31 12:56:07,019 - DEBUG - Finding primers for slice 4629 to 5363
+2024-10-31 12:56:07,228 - DEBUG - Stepping left to 4618 due to failed alignment
+2024-10-31 12:56:07,229 - DEBUG - Finding primers for slice 4618 to 5352
+2024-10-31 12:56:11,226 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+CCTGATGTGCACAAACAGGTCT Z00861838
+CCTGATGTGCACAAACAGGTCT Z00861809
+CCTGATGTGCACAAACAGGTCT MN726819
+CCTGATGTGCACAAACAGGTCT KR906749
+CCTGATGTGCACAAACAGGTCT KY210231
+CCTGATGTGCACAAACAGGTCT KY210240
+CCTGATGTGCACAAACAGGTCT KR906744
+CCTGATGTGCACAAACAGGTCT KY210309
+CCTGATGTGCACAAACAGGTCT KR906769
+CCTGATGTGCACAAACAGGTCT SD750
+CCTGATGTGCACAAACAGGTCT SD807
+CCTGATGTGCACAAACAGGTCT KX148207
+CCTGATGTGCACAAACAGGTCT MAL1020
+CCTGATGTGCACAAACAAGTCT MT006
+CCTGATGTGCACAAACAAGTCT LN001
+CCTGATGTGCACAAACAGGTCT LN002
+CCTGATGTGCACAAACAGGTCT BVL/479/21-10/05/2021-Blantyre-Dog
+CCTGATGTGCACAAACAGGTCT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+** ************** **** Cigar
+2024-10-31 12:56:11,227 - DEBUG - LEFT candidate 0: *picked, base pen 0.508, combined pen 4.508, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:56:11,228 - DEBUG - LEFT candidate 1: base pen 2.095, combined pen 6.095, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:56:11,230 - DEBUG - LEFT candidate 2: base pen 3.251, combined pen 7.251, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:56:11,231 - DEBUG - LEFT candidate 3: base pen 3.310, combined pen 7.310, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:56:11,232 - DEBUG - LEFT candidate 4: base pen 1.131, combined pen 20.131, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,233 - DEBUG - LEFT candidate 5: base pen 1.132, combined pen 20.132, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,234 - DEBUG - LEFT candidate 6: base pen 1.132, combined pen 20.132, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,235 - DEBUG - LEFT candidate 7: base pen 2.288, combined pen 21.288, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,236 - DEBUG - LEFT candidate 8: base pen 2.509, combined pen 21.509, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,237 - DEBUG - LEFT candidate 9: base pen 2.509, combined pen 21.509, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,238 - DEBUG - LEFT candidate 10: base pen 2.665, combined pen 21.665, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,239 - DEBUG - LEFT candidate 11: base pen 2.665, combined pen 21.665, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,241 - DEBUG - LEFT candidate 12: base pen 3.199, combined pen 22.199, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,242 - DEBUG - LEFT candidate 13: base pen 3.465, combined pen 22.465, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,243 - DEBUG - LEFT candidate 14: base pen 3.922, combined pen 22.922, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,244 - DEBUG - LEFT candidate 15: base pen 4.040, combined pen 23.040, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,245 - DEBUG - LEFT candidate 16: base pen 4.040, combined pen 23.040, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:56:11,247 - DEBUG - Picked MSA slice: Alignment with 21 rows and 21 columns
+AAGCTTAGATGACCCAGCCCT Z00861838
+AAGCTTAGATGACCCAGCCCT Z00861809
+AAGCTTAGATGACCCAGCCCT MN726819
+AAGCTTAGATGACCCAGCCCT KR906749
+AAGCTTAGATGACCCAGCCCT KY210231
+AAGCTTAGATGACCCAGCCCT KY210240
+AAGCTTAGATGACCCAGCCCC KR906744
+AAGCTTAGATGACCCAGCCCT KY210309
+AAGCTTAGATGACCCAGCCCT KR906769
+AAGCTTAGATGACCCAGCCCT SD750
+AAGCTTAGATGACCCAGCCCT SD807
+AAGCTTAGATGACCCAGCCCT KX148207
+AAGCTTAGATGACCCAGCCCT MAL1020
+AAGCTTAGATGACCCAACCCT MT006
+AAGCTTAGATGACCCAGCCCT LN001
+AAGCTTAGATGACCCAGCCCT LN002
+AAGCTTAGATGACCCAGCCCT BVL/479/21-10/05/2021-Blantyre-Dog
+AAGCTTAGATGACCCAGCCCT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+*** ************ ***  Cigar
+2024-10-31 12:56:11,248 - DEBUG - RIGHT candidate 0: *picked, base pen 1.005, combined pen 5.005, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:56:11,249 - DEBUG - RIGHT candidate 1: base pen 0.389, combined pen 6.389, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,250 - DEBUG - RIGHT candidate 2: base pen 2.639, combined pen 6.639, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:56:11,251 - DEBUG - RIGHT candidate 3: base pen 1.193, combined pen 7.193, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,252 - DEBUG - RIGHT candidate 4: base pen 1.246, combined pen 7.246, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:11,253 - DEBUG - RIGHT candidate 5: base pen 3.312, combined pen 7.312, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:56:11,255 - DEBUG - RIGHT candidate 6: base pen 2.429, combined pen 8.429, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,256 - DEBUG - RIGHT candidate 7: base pen 2.686, combined pen 8.686, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,257 - DEBUG - RIGHT candidate 8: base pen 3.029, combined pen 9.029, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,258 - DEBUG - RIGHT candidate 9: base pen 3.187, combined pen 9.187, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,259 - DEBUG - RIGHT candidate 10: base pen 4.412, combined pen 10.412, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,260 - DEBUG - RIGHT candidate 11: base pen 3.291, combined pen 11.291, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:56:11,262 - DEBUG - RIGHT candidate 12: base pen 4.467, combined pen 11.467, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:11,279 - DEBUG - Region 11, pool 1, left_limit 4857, slice_start 5211, right_limit 11923
+2024-10-31 12:56:11,279 - DEBUG - Finding primers for slice 5211 to 5945
+2024-10-31 12:56:18,898 - DEBUG - Stepping left to 5200 due to no suitable primers
+2024-10-31 12:56:18,923 - DEBUG - Finding primers for slice 5200 to 5934
+2024-10-31 12:56:19,116 - DEBUG - Stepping left to 5189 due to failed alignment
+2024-10-31 12:56:19,116 - DEBUG - Finding primers for slice 5189 to 5923
+2024-10-31 12:56:26,055 - DEBUG - Stepping left to 5178 due to no suitable primers
+2024-10-31 12:56:26,092 - DEBUG - Finding primers for slice 5178 to 5912
+2024-10-31 12:56:33,415 - DEBUG - Stepping left to 5167 due to no suitable primers
+2024-10-31 12:56:33,463 - DEBUG - Finding primers for slice 5167 to 5901
+2024-10-31 12:56:33,659 - DEBUG - Stepping left to 5156 due to failed alignment
+2024-10-31 12:56:33,659 - DEBUG - Finding primers for slice 5156 to 5890
+2024-10-31 12:56:33,812 - DEBUG - Stepping left to 5145 due to failed alignment
+2024-10-31 12:56:33,812 - DEBUG - Finding primers for slice 5145 to 5879
+2024-10-31 12:56:34,000 - DEBUG - Stepping left to 5134 due to failed alignment
+2024-10-31 12:56:34,000 - DEBUG - Finding primers for slice 5134 to 5868
+2024-10-31 12:56:34,180 - DEBUG - Stepping left to 5123 due to failed alignment
+2024-10-31 12:56:34,180 - DEBUG - Finding primers for slice 5123 to 5857
+2024-10-31 12:56:34,377 - DEBUG - Stepping left to 5112 due to failed alignment
+2024-10-31 12:56:34,378 - DEBUG - Finding primers for slice 5112 to 5846
+2024-10-31 12:56:34,568 - DEBUG - Stepping left to 5101 due to failed alignment
+2024-10-31 12:56:34,568 - DEBUG - Finding primers for slice 5101 to 5835
+2024-10-31 12:56:34,759 - DEBUG - Stepping left to 5090 due to failed alignment
+2024-10-31 12:56:34,759 - DEBUG - Finding primers for slice 5090 to 5824
+2024-10-31 12:56:34,905 - DEBUG - Stepping left to 5079 due to failed alignment
+2024-10-31 12:56:34,905 - DEBUG - Finding primers for slice 5079 to 5813
+2024-10-31 12:56:35,011 - DEBUG - Stepping left to 5068 due to failed alignment
+2024-10-31 12:56:35,011 - DEBUG - Finding primers for slice 5068 to 5802
+2024-10-31 12:56:40,686 - DEBUG - Picked MSA slice: Alignment with 21 rows and 20 columns
+AGTGACCAACGGTGCTTTCA Z00861838
+AGTGACCAACGGTGCTTTCA Z00861809
+AGTGACCAACGGTGCTTTCA MN726819
+AGTGACCAACGGTGCTTTCA KR906749
+AGTGACCAACGGTGCTTTCA KY210231
+AGTGACCAACGGTGCTTTCA KY210240
+AGTGACCAACGGTGCTTTCA KR906744
+AGTGACCAACGGTGCTTTCA KY210309
+AGTGACCAACGGTGCTTTCA KR906769
+AGTGACCAACGGTGCTTTCA SD750
+AGTGACCAACGGTGCTTTCA SD807
+AGTGACCAACGGTGCTTTCA KX148207
+AGTGACCAACGGTGCTTTCA MAL1020
+AGTGACCAACGGTGCTTTCA MT006
+AGTGACCAATGGTGCTTTCA LN001
+AGTGACCAACGGTGCTCTCA LN002
+AGTGACCAACGGTGCTTTCA BVL/479/21-10/05/2021-Blantyre-Dog
+AGTGACCAACGGTGCTTTCA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+********* ****** *** Cigar
+2024-10-31 12:56:40,687 - DEBUG - LEFT candidate 0: *picked, base pen 2.752, combined pen 5.752, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:56:40,689 - DEBUG - LEFT candidate 1: base pen 1.334, combined pen 6.334, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:40,690 - DEBUG - LEFT candidate 2: base pen 1.870, combined pen 6.870, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:40,691 - DEBUG - LEFT candidate 3: base pen 1.872, combined pen 6.872, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:40,692 - DEBUG - LEFT candidate 4: base pen 1.409, combined pen 7.409, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:40,693 - DEBUG - LEFT candidate 5: base pen 1.509, combined pen 7.509, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:40,694 - DEBUG - LEFT candidate 6: base pen 1.677, combined pen 7.677, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:40,695 - DEBUG - LEFT candidate 7: base pen 2.752, combined pen 7.752, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:40,697 - DEBUG - LEFT candidate 8: base pen 2.752, combined pen 7.752, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:40,698 - DEBUG - LEFT candidate 9: base pen 1.409, combined pen 8.409, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:40,699 - DEBUG - LEFT candidate 10: base pen 2.022, combined pen 9.022, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:40,700 - DEBUG - LEFT candidate 11: base pen 4.026, combined pen 9.026, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:40,701 - DEBUG - LEFT candidate 12: base pen 3.497, combined pen 9.497, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:40,702 - DEBUG - LEFT candidate 13: base pen 4.583, combined pen 9.583, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:56:40,703 - DEBUG - LEFT candidate 14: base pen 2.752, combined pen 9.752, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:56:40,706 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+TGGAGTAGAAATGGGCCAAGTC Z00861838
+TGGAGTAGAATTGGGCCAAGTC Z00861809
+TGGAGTAGAAATGGGCCAAGTC MN726819
+TGGAATAGAAATGGGCCAAGTC KR906749
+TGGAATAGAAATGGGCCAAGTC KY210231
+TGGAATAGAAATGGGCCAAGTC KY210240
+TGGAATAGAAATGGGCCAAGTC KR906744
+TGGAATAGAAATGGGCCAAGTC KY210309
+TGGAATAGAAATGGGCCAAGTC KR906769
+TGGAATAGAAATGGGCCAAGTC SD750
+TGGAATAGAAATGGGCCAAGTC SD807
+TGGAATAGAAATGGGCCAAGTC KX148207
+TGGAATAGAAATGGGCCAAGTC MAL1020
+TGGAATAGAAATGGGCCAAGTC MT006
+TGGAATAGAAATGGGCCAAGTC LN001
+TGGAATAGAAATGGGCCAAGTC LN002
+TGGAATAGAAATGGGCCAAGTC BVL/479/21-10/05/2021-Blantyre-Dog
+TGGAATAGAAATGGGCCAAGTC 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**** ***** *********** Cigar
+2024-10-31 12:56:40,707 - DEBUG - RIGHT candidate 0: *picked, base pen 1.580, combined pen 19.580, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:56:40,741 - DEBUG - Region 12, pool 2, left_limit 5337, slice_start 5657, right_limit 11923
+2024-10-31 12:56:40,741 - DEBUG - Finding primers for slice 5657 to 6391
+2024-10-31 12:56:40,936 - DEBUG - Stepping left to 5646 due to failed alignment
+2024-10-31 12:56:40,936 - DEBUG - Finding primers for slice 5646 to 6380
+2024-10-31 12:56:46,120 - DEBUG - Stepping left to 5635 due to no suitable primers
+2024-10-31 12:56:46,139 - DEBUG - Finding primers for slice 5635 to 6369
+2024-10-31 12:56:46,357 - DEBUG - Stepping left to 5624 due to failed alignment
+2024-10-31 12:56:46,358 - DEBUG - Finding primers for slice 5624 to 6358
+2024-10-31 12:56:50,520 - DEBUG - Stepping left to 5613 due to no suitable primers
+2024-10-31 12:56:50,537 - DEBUG - Finding primers for slice 5613 to 6347
+2024-10-31 12:56:55,754 - DEBUG - Stepping left to 5602 due to no suitable primers
+2024-10-31 12:56:55,771 - DEBUG - Finding primers for slice 5602 to 6336
+2024-10-31 12:57:00,283 - DEBUG - Stepping left to 5591 due to no suitable primers
+2024-10-31 12:57:00,312 - DEBUG - Finding primers for slice 5591 to 6325
+2024-10-31 12:57:00,517 - DEBUG - Stepping left to 5580 due to failed alignment
+2024-10-31 12:57:00,517 - DEBUG - Finding primers for slice 5580 to 6314
+2024-10-31 12:57:00,697 - DEBUG - Stepping left to 5569 due to failed alignment
+2024-10-31 12:57:00,698 - DEBUG - Finding primers for slice 5569 to 6303
+2024-10-31 12:57:04,609 - DEBUG - Picked MSA slice: Alignment with 21 rows and 24 columns
+GACCTTATCGGATGACTCTGACAG Z00861838
+GACCTTATCGGATGACTCTGACAG Z00861809
+GACCTTATCGGATGACTCTGACAG MN726819
+GACCTTATCGGATGACTCTGACAG KR906749
+GACCTTATCGGATGACTCTGACAG KY210231
+GACCTTATCGGATGACTCTGACAG KY210240
+GACCTTATCGGATGACTCTGACAG KR906744
+GACCTTATCGGATGACTCTGACAG KY210309
+GACCTTATCGGATGACTCTGACAG KR906769
+GACCTTATCGGATGACTCTGACAG SD750
+GACCTTATCGGATGACTCTGACAG SD807
+GACCTTATCGGATGACTCTGACAG KX148207
+GACCTTATCGGATGACTCTGACAG MAL1020
+GACCTTATCGGATGACTCTGACAG MT006
+GACCTTATCGGATGACTCTGACAG LN001
+GACCTTATCGGATGACTTTGACAG LN002
+GACCTTATCGGATGACTCTGACAG BVL/479/21-10/05/2021-Blantyre-Dog
+GACCTTATCGGATGACTCTGACAG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+********** ****** ****** Cigar
+2024-10-31 12:57:04,610 - DEBUG - LEFT candidate 0: *picked, base pen 1.844, combined pen 3.844, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:04,612 - DEBUG - LEFT candidate 1: base pen 1.926, combined pen 3.926, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:04,613 - DEBUG - LEFT candidate 2: base pen 1.926, combined pen 3.926, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:04,614 - DEBUG - LEFT candidate 3: base pen 3.535, combined pen 5.535, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:04,615 - DEBUG - LEFT candidate 4: base pen 3.542, combined pen 5.542, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:04,617 - DEBUG - LEFT candidate 5: base pen 3.694, combined pen 5.694, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:04,618 - DEBUG - LEFT candidate 6: base pen 3.697, combined pen 5.697, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:04,619 - DEBUG - LEFT candidate 7: base pen 3.614, combined pen 12.614, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:57:04,621 - DEBUG - LEFT candidate 8: base pen 3.870, combined pen 12.870, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:57:04,622 - DEBUG - LEFT candidate 9: base pen 3.995, combined pen 12.995, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:57:04,623 - DEBUG - LEFT candidate 10: base pen 5.434, combined pen 14.434, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:57:04,625 - DEBUG - LEFT candidate 11: base pen 1.844, combined pen 17.844, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:57:04,626 - DEBUG - LEFT candidate 12: base pen 3.996, combined pen 19.996, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:57:04,628 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+CATAGCCGGAGTTTCCACACAT Z00861838
+CATAGCCGGAGTTTCCACACAT Z00861809
+CATAGCCGGAGTTTCCACACAT MN726819
+CATAGCCGGAGTTTCCACACAT KR906749
+CATAGCCGGAGTTTCCACACAT KY210231
+CATAGCCGGAGTTTCCACACAT KY210240
+CATAGCCGGAGTTTCCACACAT KR906744
+CATAGCCGGAGTTTCCACACAT KY210309
+CATAGCCGGAGTTTCCACACAT KR906769
+CATAGCCGGAGTTTCCACACAT SD750
+CATAGCCGGAGTTTCCACACAT SD807
+CATAGCCGGAGTTTCCACACAT KX148207
+CATAGCCGGAGTTTCCACACAT MAL1020
+CATAGCCGGAGTTTCCACACAT MT006
+CATAGCCGGAGTTTCCACACAT LN001
+CATAGCCGGAGTTTCCACACAT LN002
+CATAGCCGGAGTTTCCACACAT BVL/479/21-10/05/2021-Blantyre-Dog
+CATAGCCGGAGTTTCCACACAT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+******* ************** Cigar
+2024-10-31 12:57:04,630 - DEBUG - RIGHT candidate 0: *picked, base pen 0.276, combined pen 1.276, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,631 - DEBUG - RIGHT candidate 1: base pen 0.276, combined pen 1.276, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,632 - DEBUG - RIGHT candidate 2: base pen 0.409, combined pen 1.409, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,633 - DEBUG - RIGHT candidate 3: base pen 0.928, combined pen 1.928, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,634 - DEBUG - RIGHT candidate 4: base pen 0.928, combined pen 1.928, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,636 - DEBUG - RIGHT candidate 5: base pen 1.450, combined pen 2.450, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,637 - DEBUG - RIGHT candidate 6: base pen 1.450, combined pen 2.450, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,638 - DEBUG - RIGHT candidate 7: base pen 1.562, combined pen 2.562, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,639 - DEBUG - RIGHT candidate 8: base pen 1.716, combined pen 2.716, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,641 - DEBUG - RIGHT candidate 9: base pen 1.896, combined pen 2.896, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,642 - DEBUG - RIGHT candidate 10: base pen 2.094, combined pen 3.094, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,643 - DEBUG - RIGHT candidate 11: base pen 2.094, combined pen 3.094, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,644 - DEBUG - RIGHT candidate 12: base pen 2.387, combined pen 3.387, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,645 - DEBUG - RIGHT candidate 13: base pen 2.638, combined pen 3.638, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,646 - DEBUG - RIGHT candidate 14: base pen 2.722, combined pen 3.722, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,647 - DEBUG - RIGHT candidate 15: base pen 2.754, combined pen 3.754, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,649 - DEBUG - RIGHT candidate 16: base pen 3.001, combined pen 4.001, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,650 - DEBUG - RIGHT candidate 17: base pen 3.227, combined pen 4.227, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,651 - DEBUG - RIGHT candidate 18: base pen 3.355, combined pen 4.355, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,652 - DEBUG - RIGHT candidate 19: base pen 3.719, combined pen 4.719, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,653 - DEBUG - RIGHT candidate 20: base pen 3.887, combined pen 4.887, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,654 - DEBUG - RIGHT candidate 21: base pen 4.296, combined pen 5.296, 1 max mismatch, 1 total mismatch.
+2024-10-31 12:57:04,656 - DEBUG - RIGHT candidate 22: base pen 1.303, combined pen 5.303, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:04,657 - DEBUG - RIGHT candidate 23: base pen 1.580, combined pen 5.580, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:04,658 - DEBUG - RIGHT candidate 24: base pen 1.808, combined pen 5.808, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:04,659 - DEBUG - RIGHT candidate 25: base pen 2.907, combined pen 6.907, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:04,661 - DEBUG - RIGHT candidate 26: base pen 3.310, combined pen 7.310, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:04,662 - DEBUG - RIGHT candidate 27: base pen 2.322, combined pen 15.322, 1 max mismatch, 13 total mismatches.
+2024-10-31 12:57:04,663 - DEBUG - RIGHT candidate 28: base pen 2.832, combined pen 15.832, 1 max mismatch, 13 total mismatches.
+2024-10-31 12:57:04,664 - DEBUG - RIGHT candidate 29: base pen 4.675, combined pen 17.675, 1 max mismatch, 13 total mismatches.
+2024-10-31 12:57:04,666 - DEBUG - RIGHT candidate 30: base pen 6.374, combined pen 19.374, 1 max mismatch, 13 total mismatches.
+2024-10-31 12:57:04,667 - DEBUG - RIGHT candidate 31: base pen 6.507, combined pen 19.507, 1 max mismatch, 13 total mismatches.
+2024-10-31 12:57:04,668 - DEBUG - RIGHT candidate 32: base pen 2.064, combined pen 21.064, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,670 - DEBUG - RIGHT candidate 33: base pen 2.064, combined pen 21.064, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,671 - DEBUG - RIGHT candidate 34: base pen 2.083, combined pen 21.083, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,672 - DEBUG - RIGHT candidate 35: base pen 2.084, combined pen 21.084, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,673 - DEBUG - RIGHT candidate 36: base pen 2.204, combined pen 21.204, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,675 - DEBUG - RIGHT candidate 37: base pen 3.186, combined pen 22.186, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,676 - DEBUG - RIGHT candidate 38: base pen 3.186, combined pen 22.186, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,677 - DEBUG - RIGHT candidate 39: base pen 3.436, combined pen 22.436, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,678 - DEBUG - RIGHT candidate 40: base pen 3.490, combined pen 22.490, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,680 - DEBUG - RIGHT candidate 41: base pen 3.649, combined pen 22.649, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,681 - DEBUG - RIGHT candidate 42: base pen 3.807, combined pen 22.807, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,682 - DEBUG - RIGHT candidate 43: base pen 3.816, combined pen 22.816, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,683 - DEBUG - RIGHT candidate 44: base pen 3.818, combined pen 22.818, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,684 - DEBUG - RIGHT candidate 45: base pen 3.841, combined pen 22.841, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,686 - DEBUG - RIGHT candidate 46: base pen 3.945, combined pen 22.945, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,687 - DEBUG - RIGHT candidate 47: base pen 4.104, combined pen 23.104, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,688 - DEBUG - RIGHT candidate 48: base pen 4.455, combined pen 23.455, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,689 - DEBUG - RIGHT candidate 49: base pen 4.468, combined pen 23.468, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,691 - DEBUG - RIGHT candidate 50: base pen 5.429, combined pen 24.429, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,692 - DEBUG - RIGHT candidate 51: base pen 5.752, combined pen 24.752, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:04,711 - DEBUG - Region 13, pool 1, left_limit 5784, slice_start 6167, right_limit 11923
+2024-10-31 12:57:04,711 - DEBUG - Finding primers for slice 6167 to 6901
+2024-10-31 12:57:11,119 - DEBUG - Stepping left to 6156 due to no suitable primers
+2024-10-31 12:57:11,144 - DEBUG - Finding primers for slice 6156 to 6890
+2024-10-31 12:57:16,978 - DEBUG - Stepping left to 6145 due to no suitable primers
+2024-10-31 12:57:17,008 - DEBUG - Finding primers for slice 6145 to 6879
+2024-10-31 12:57:21,882 - DEBUG - Stepping left to 6134 due to no suitable primers
+2024-10-31 12:57:21,897 - DEBUG - Finding primers for slice 6134 to 6868
+2024-10-31 12:57:25,418 - DEBUG - Stepping left to 6123 due to no suitable primers
+2024-10-31 12:57:25,433 - DEBUG - Finding primers for slice 6123 to 6857
+2024-10-31 12:57:29,349 - DEBUG - Picked MSA slice: Alignment with 21 rows and 25 columns
+GATCTTTTCTTGTCTCGCTTCAACT Z00861838
+GATCTTTTCTTGTCTCGCTTCAACT Z00861809
+GATCTTTTCTTGTCTCGCTTCAACT MN726819
+GATCTTTTCTTGTCTCGCTTCAACT KR906749
+GATCTTTTCTTGTCTCGCTTCAACT KY210231
+GATCTTTTCTTGTCTCGCTTCAACT KY210240
+GATCTTTTCTTGTCCCGCTTCAACT KR906744
+GATCTTTTCTTGTCTCGCTTCAACT KY210309
+GATCTTTTCTTGTCTCGCTTCAACT KR906769
+GATCTTTTCTTGTCTNGCTTCAACT SD750
+GATCTTTTCTTGTCTCGCTTCAACT SD807
+GATCTTTTCTTGTCTCGCTTCAACT KX148207
+GATCTTTTCTTGTCTCGCTTCAACT MAL1020
+GATCTTTTCTTGTCTCGCTTCAACT MT006
+GATCTTTTCTTGTCTCGCTTCAACT LN001
+GATCTTTTCTTGTCTCGCTTCAACT LN002
+GATCTTTTCTTGTCTCGCTTCAACT BVL/479/21-10/05/2021-Blantyre-Dog
+GATCTTTTCTTGTCTCGCTTCAACT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**************  ********* Cigar
+2024-10-31 12:57:29,350 - DEBUG - LEFT candidate 0: *homodimer tm 0.81, base pen 4.857, combined pen 6.857, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,352 - DEBUG - LEFT candidate 1: *picked, base pen 5.105, combined pen 7.105, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,353 - DEBUG - LEFT candidate 2: base pen 5.105, combined pen 7.105, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,354 - DEBUG - LEFT candidate 3: base pen 5.110, combined pen 7.110, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,356 - DEBUG - LEFT candidate 4: base pen 5.523, combined pen 7.523, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,357 - DEBUG - LEFT candidate 5: base pen 6.726, combined pen 8.726, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,358 - DEBUG - LEFT candidate 6: base pen 6.838, combined pen 8.838, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,360 - DEBUG - LEFT candidate 7: base pen 7.061, combined pen 9.061, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,361 - DEBUG - LEFT candidate 8: base pen 7.061, combined pen 9.061, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,362 - DEBUG - LEFT candidate 9: base pen 4.749, combined pen 9.749, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,363 - DEBUG - LEFT candidate 10: base pen 5.186, combined pen 10.186, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,365 - DEBUG - LEFT candidate 11: base pen 5.207, combined pen 10.207, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,366 - DEBUG - LEFT candidate 12: base pen 5.313, combined pen 10.313, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,368 - DEBUG - LEFT candidate 13: base pen 6.147, combined pen 11.147, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,369 - DEBUG - LEFT candidate 14: base pen 6.451, combined pen 11.451, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,371 - DEBUG - LEFT candidate 15: base pen 6.726, combined pen 11.726, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,372 - DEBUG - LEFT candidate 16: base pen 6.759, combined pen 11.759, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,373 - DEBUG - LEFT candidate 17: base pen 6.939, combined pen 11.939, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,375 - DEBUG - LEFT candidate 18: base pen 7.198, combined pen 12.198, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,376 - DEBUG - LEFT candidate 19: base pen 7.221, combined pen 12.221, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,378 - DEBUG - LEFT candidate 20: base pen 7.471, combined pen 12.471, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,379 - DEBUG - LEFT candidate 21: base pen 7.612, combined pen 12.612, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,380 - DEBUG - LEFT candidate 22: base pen 7.738, combined pen 12.738, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,383 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+GACGGGTCCATTGATTCAGGAA Z00861838
+GACGGGTCCATTGATTCAGGAA Z00861809
+GACGGGTCCATTGATTCAGGAA MN726819
+GACGGGTCCATTGATTCAGGAA KR906749
+GACGGGTCCATTGATTCAGGAA KY210231
+GAAGGGTCCATTGATTCAGGAA KY210240
+GACGGGTCCATCGATTCAGGAA KR906744
+GACGGGTCCATTGATTCAGGAA KY210309
+GACGGGTCCATTGATTCAGGAA KR906769
+GACGGGTCCATTGATTCAGGAA SD750
+GACGGGTCCATTGATTCAGGAA SD807
+GACGGGTCCATTGATTCAGGAA KX148207
+GACGGATCCATTGATTCAGGAA MAL1020
+GACGGGTCCATTGATTCAGGAA MT006
+GACGGGTCCATTGATTCAGGAA LN001
+GACGGGTCCATTGATTCAGGAA LN002
+GACGGGTCCATTGATTCAGGAA BVL/479/21-10/05/2021-Blantyre-Dog
+GACGGGTCCATTGATTCAGGAA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+** ** ***** ********** Cigar
+2024-10-31 12:57:29,384 - DEBUG - RIGHT candidate 0: *picked, base pen 0.924, combined pen 3.924, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,385 - DEBUG - RIGHT candidate 1: base pen 1.053, combined pen 4.053, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,386 - DEBUG - RIGHT candidate 2: base pen 1.053, combined pen 4.053, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,388 - DEBUG - RIGHT candidate 3: base pen 2.412, combined pen 4.412, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,389 - DEBUG - RIGHT candidate 4: base pen 1.554, combined pen 4.554, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,390 - DEBUG - RIGHT candidate 5: base pen 2.196, combined pen 5.196, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,391 - DEBUG - RIGHT candidate 6: base pen 3.208, combined pen 5.208, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:57:29,392 - DEBUG - RIGHT candidate 7: base pen 1.213, combined pen 5.213, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:29,393 - DEBUG - RIGHT candidate 8: base pen 1.274, combined pen 5.274, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:29,395 - DEBUG - RIGHT candidate 9: base pen 1.450, combined pen 5.450, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:29,396 - DEBUG - RIGHT candidate 10: base pen 2.667, combined pen 5.667, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,397 - DEBUG - RIGHT candidate 11: base pen 3.023, combined pen 6.023, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,398 - DEBUG - RIGHT candidate 12: base pen 1.188, combined pen 6.188, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,399 - DEBUG - RIGHT candidate 13: base pen 3.189, combined pen 6.189, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,400 - DEBUG - RIGHT candidate 14: base pen 2.639, combined pen 6.639, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:29,402 - DEBUG - RIGHT candidate 15: base pen 3.248, combined pen 7.248, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:29,403 - DEBUG - RIGHT candidate 16: base pen 4.327, combined pen 7.327, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:29,404 - DEBUG - RIGHT candidate 17: base pen 2.679, combined pen 7.679, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,405 - DEBUG - RIGHT candidate 18: base pen 2.802, combined pen 7.802, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,406 - DEBUG - RIGHT candidate 19: base pen 2.883, combined pen 7.883, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,408 - DEBUG - RIGHT candidate 20: base pen 3.151, combined pen 8.151, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,409 - DEBUG - RIGHT candidate 21: base pen 4.804, combined pen 8.804, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:57:29,410 - DEBUG - RIGHT candidate 22: base pen 4.050, combined pen 9.050, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,411 - DEBUG - RIGHT candidate 23: base pen 4.222, combined pen 9.222, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,413 - DEBUG - RIGHT candidate 24: base pen 4.679, combined pen 9.679, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:57:29,428 - DEBUG - Region 14, pool 2, left_limit 6294, slice_start 6705, right_limit 11923
+2024-10-31 12:57:29,429 - DEBUG - Finding primers for slice 6705 to 7439
+2024-10-31 12:57:29,541 - DEBUG - Stepping left to 6694 due to failed alignment
+2024-10-31 12:57:29,541 - DEBUG - Finding primers for slice 6694 to 7428
+2024-10-31 12:57:29,649 - DEBUG - Stepping left to 6683 due to failed alignment
+2024-10-31 12:57:29,649 - DEBUG - Finding primers for slice 6683 to 7417
+2024-10-31 12:57:29,848 - DEBUG - Stepping left to 6672 due to failed alignment
+2024-10-31 12:57:29,848 - DEBUG - Finding primers for slice 6672 to 7406
+2024-10-31 12:57:33,026 - DEBUG - Stepping left to 6661 due to no suitable primers
+2024-10-31 12:57:33,032 - DEBUG - Finding primers for slice 6661 to 7395
+2024-10-31 12:57:36,368 - DEBUG - Stepping left to 6650 due to no suitable primers
+2024-10-31 12:57:36,376 - DEBUG - Finding primers for slice 6650 to 7384
+2024-10-31 12:57:40,016 - DEBUG - Stepping left to 6639 due to no suitable primers
+2024-10-31 12:57:40,026 - DEBUG - Finding primers for slice 6639 to 7373
+2024-10-31 12:57:40,137 - DEBUG - Stepping left to 6628 due to failed alignment
+2024-10-31 12:57:40,137 - DEBUG - Finding primers for slice 6628 to 7362
+2024-10-31 12:57:44,375 - DEBUG - Stepping left to 6617 due to no suitable primers
+2024-10-31 12:57:44,387 - DEBUG - Finding primers for slice 6617 to 7351
+2024-10-31 12:57:44,601 - DEBUG - Stepping left to 6606 due to failed alignment
+2024-10-31 12:57:44,601 - DEBUG - Finding primers for slice 6606 to 7340
+2024-10-31 12:57:48,377 - DEBUG - Picked MSA slice: Alignment with 21 rows and 24 columns
+TAGCCAGGAGGATCCTTAGATGGG Z00861838
+TAGCCAGGAGGATCCTTAGATGGG Z00861809
+TAGCCAGGAGGATCCTTAGATGGG MN726819
+TAGCCAGGAGGATTCTTAGATGGG KR906749
+TAGCCAGGAGGATTCTTAGATGGG KY210231
+TAGCCAGGAGGATTCTTAGATGGG KY210240
+TAGCCAGGAGGATTCTTAGATGGG KR906744
+TAGCCAGGAGGATTCTTAGATGGG KY210309
+TAGCCAGGAGGATTCTTAGATGGG KR906769
+TAGCCAGGAGGATTCTTAGATGGG SD750
+TAGCCAGGAGGATTCTTAGATGGG SD807
+TAGCCAGGAGGATTCTTAGATGGG KX148207
+TAGCCAGGAGGATTCTTAGATGGG MAL1020
+TAGCCAGGAGGATTCTTAGATGGG MT006
+TAGCCAGGAGGATTCTTAGATGGG LN001
+TAGCCAGGAGGATTCTTAGATGGG LN002
+TAGCCAGGAGGATTCTTAGATGGG BVL/479/21-10/05/2021-Blantyre-Dog
+TAGCCAGGAGGATTCTTAGATGGG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+************* ********** Cigar
+2024-10-31 12:57:48,378 - DEBUG - LEFT candidate 0: *picked, base pen 1.665, combined pen 4.665, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:48,380 - DEBUG - LEFT candidate 1: base pen 2.003, combined pen 5.003, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:48,381 - DEBUG - LEFT candidate 2: base pen 2.621, combined pen 5.621, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:48,382 - DEBUG - LEFT candidate 3: base pen 2.800, combined pen 5.800, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:48,383 - DEBUG - LEFT candidate 4: base pen 3.823, combined pen 6.823, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:48,385 - DEBUG - LEFT candidate 5: base pen 4.279, combined pen 7.279, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:57:48,386 - DEBUG - LEFT candidate 6: base pen 2.502, combined pen 8.502, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:48,387 - DEBUG - LEFT candidate 7: base pen 1.683, combined pen 20.683, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,388 - DEBUG - LEFT candidate 8: base pen 3.600, combined pen 22.600, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,390 - DEBUG - LEFT candidate 9: base pen 3.635, combined pen 22.635, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,391 - DEBUG - LEFT candidate 10: base pen 4.067, combined pen 23.067, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,392 - DEBUG - LEFT candidate 11: base pen 4.067, combined pen 23.067, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,393 - DEBUG - LEFT candidate 12: base pen 4.067, combined pen 23.067, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,395 - DEBUG - LEFT candidate 13: base pen 4.379, combined pen 23.379, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,396 - DEBUG - LEFT candidate 14: base pen 4.661, combined pen 23.661, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,397 - DEBUG - LEFT candidate 15: base pen 5.474, combined pen 24.474, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,399 - DEBUG - LEFT candidate 16: base pen 1.014, combined pen 36.014, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:57:48,401 - DEBUG - Picked MSA slice: Alignment with 21 rows and 28 columns
+GAGAATACATCCTCTGTTGACTCTAATC Z00861838
+GAGAATACATCCTCTGTTGACTCTAATC Z00861809
+GAGAATACATCCTCTGTTGACTCTAATC MN726819
+GAGAATACATCCTCTGTTGACTCTAATC KR906749
+GAGAATACATCCTCTGTTGACTCTAATC KY210231
+GAGAATACATCCTCTGTTGACTCTAATC KY210240
+GAGAATACATCCTCTGTTGACTCTAATC KR906744
+GAGAATACATCCTCTGTTGACTCTAATC KY210309
+GAGAATACATCCTCTGTTGACTCTAATC KR906769
+GAGAATACATCCTCTGTTGACTCTAATC SD750
+GAGAATACATCCTCTGTTGACTCTAATC SD807
+GAGAATACATCCTCTGTTGATTCTAATC KX148207
+GAGAATACATCCTCTGTTGACTCTAATC MAL1020
+GAGAACACATCCTCTGTTGACTCTAATC MT006
+GAGAANACATCCTCTGTTGACTCTAATC LN001
+GAGAACACATCCTCTGTTGACTCTAATC LN002
+GAGAATACATCCTCTGTTGACTCTAATC BVL/479/21-10/05/2021-Blantyre-Dog
+GAGAACACATCCTCTGTTGACTCTAATC 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+***** ************** ******* Cigar
+2024-10-31 12:57:48,403 - DEBUG - RIGHT candidate 0: *picked, base pen 7.697, combined pen 13.697, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:48,415 - DEBUG - Region 15, pool 1, left_limit 6832, slice_start 7182, right_limit 11923
+2024-10-31 12:57:48,415 - DEBUG - Finding primers for slice 7182 to 7916
+2024-10-31 12:57:55,927 - DEBUG - Picked MSA slice: Alignment with 21 rows and 20 columns
+GGGCAAGGGCTTTTGGACTA Z00861838
+GGGCAAGGGCTTCTGGACTA Z00861809
+GGGCAAGGGCTTTTGGACTA MN726819
+GGGCAAGGGCTTTTGGACTA KR906749
+GGGCAAGGGCTCTTGGACTA KY210231
+GGGCAAGGGCTTTTGGACTA KY210240
+GGGCAAGGGCTTTTGGACTA KR906744
+GGGCAAGGGCTTTTGGACTA KY210309
+GGGCAAGGGCTTTTGGACTA KR906769
+GGGCAAGGGCTTTTGGACTA SD750
+GGGCAAGGGCTTTTGGACTA SD807
+GGGCAAGGGCTCTTGGACTA KX148207
+GGGCAAGGGNTTTTGGACTA MAL1020
+GGGCAAGGGCTTCTGGACTA MT006
+GGGCAAGGGCTTTTGGACTA LN001
+GGGCAAGGGCTTTTGGACTA LN002
+GGGCAAGGGCTTTTGGACTA BVL/479/21-10/05/2021-Blantyre-Dog
+GGGCAAGGGCTTTTGGACTA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+********* *  ******* Cigar
+2024-10-31 12:57:55,928 - DEBUG - LEFT candidate 0: *picked, base pen 3.463, combined pen 9.463, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,931 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+CATTGGTGGACACTGTCGACAT Z00861838
+CATTGGTGGACACTGTCGACAT Z00861809
+CATTGGTGGACACTGTTGACAT MN726819
+CATTGGTGGACACCGTCGACAT KR906749
+CATTGGTGGACACTGTTGACAT KY210231
+CATTGGTGGACACTGTCGACAT KY210240
+CATTGGTGGACACTGTCGACAT KR906744
+CATTGGTGGACACTGTCGACAT KY210309
+CATTGGTGGACACTGTCGACAT KR906769
+CATTGGTGGACACTGTCGACAT SD750
+CATTGGTGGACACNGTCGACAT SD807
+CATTGGTGGACACTGTCGACAT KX148207
+CATTGGTGGACACTGTCGACAT MAL1020
+CATTGGTGGACACTGTCGACAT MT006
+CATTGGTGGACACTGTCGACAT LN001
+CATTGGTGGACACTGTCGACAT LN002
+CATTAGTGGACACTGTCGACAT BVL/479/21-10/05/2021-Blantyre-Dog
+CATTGGTGGACACTGTCGACAT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**** ******** ** ***** Cigar
+2024-10-31 12:57:55,932 - DEBUG - RIGHT candidate 0: *picked, base pen 0.104, combined pen 6.104, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,934 - DEBUG - RIGHT candidate 1: base pen 1.692, combined pen 7.692, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,935 - DEBUG - RIGHT candidate 2: base pen 2.095, combined pen 8.095, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,936 - DEBUG - RIGHT candidate 3: base pen 2.158, combined pen 8.158, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,938 - DEBUG - RIGHT candidate 4: base pen 2.661, combined pen 8.661, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,939 - DEBUG - RIGHT candidate 5: base pen 2.762, combined pen 8.762, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,940 - DEBUG - RIGHT candidate 6: base pen 3.050, combined pen 9.050, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,941 - DEBUG - RIGHT candidate 7: base pen 3.277, combined pen 9.277, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,943 - DEBUG - RIGHT candidate 8: base pen 3.309, combined pen 9.309, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,944 - DEBUG - RIGHT candidate 9: base pen 3.309, combined pen 9.309, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,945 - DEBUG - RIGHT candidate 10: base pen 3.374, combined pen 9.374, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,946 - DEBUG - RIGHT candidate 11: base pen 3.465, combined pen 9.465, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,948 - DEBUG - RIGHT candidate 12: base pen 3.675, combined pen 9.675, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,949 - DEBUG - RIGHT candidate 13: base pen 4.199, combined pen 10.199, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:57:55,951 - DEBUG - RIGHT candidate 14: base pen 4.341, combined pen 11.341, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,952 - DEBUG - RIGHT candidate 15: base pen 4.521, combined pen 11.521, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,953 - DEBUG - RIGHT candidate 16: base pen 4.521, combined pen 11.521, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,955 - DEBUG - RIGHT candidate 17: base pen 4.606, combined pen 11.606, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,956 - DEBUG - RIGHT candidate 18: base pen 4.831, combined pen 11.831, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,958 - DEBUG - RIGHT candidate 19: base pen 4.466, combined pen 12.466, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,959 - DEBUG - RIGHT candidate 20: base pen 4.521, combined pen 12.521, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,960 - DEBUG - RIGHT candidate 21: base pen 4.660, combined pen 12.660, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,962 - DEBUG - RIGHT candidate 22: base pen 5.786, combined pen 12.786, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,963 - DEBUG - RIGHT candidate 23: base pen 6.089, combined pen 13.089, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,965 - DEBUG - RIGHT candidate 24: base pen 3.628, combined pen 13.628, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:57:55,966 - DEBUG - RIGHT candidate 25: base pen 3.851, combined pen 13.851, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:57:55,968 - DEBUG - RIGHT candidate 26: base pen 4.419, combined pen 14.419, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:57:55,969 - DEBUG - RIGHT candidate 27: base pen 7.754, combined pen 14.754, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:57:55,971 - DEBUG - RIGHT candidate 28: base pen 7.183, combined pen 16.183, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:57:55,995 - DEBUG - Region 16, pool 2, left_limit 7315, slice_start 7781, right_limit 11923
+2024-10-31 12:57:55,996 - DEBUG - Finding primers for slice 7781 to 8515
+2024-10-31 12:58:00,483 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+GGAAAACTCCCTTGTTTCGAGG Z00861838
+GGAAAACTCCCTTGTTTCGAGG Z00861809
+GGAAAACTCCCTTGTTTCGAGG MN726819
+GGAAAACTCCCTTGTTTCGAGG KR906749
+GGAAAACTCCCTTGTTTCGAGG KY210231
+GGAAAACTCCCTTGTTTCGAGG KY210240
+GGAAAACTCCCTTGTTTCGAGG KR906744
+GGAAAACTCCCTTGTTTCGAGG KY210309
+GGAAAACTCCCTTGTTTCGAGG KR906769
+GGAAAACTCCCTTGTTTCGAGG SD750
+GGAAAACTCCCTTGTTTCGAGG SD807
+GGAAGACTCCCTTGTTTCGAGG KX148207
+GGAAAACTCCCTTGTTTCGAGG MAL1020
+GGAAAACTCCCCTGTTTCGAGG MT006
+GGAAAACTCCCNTGTTTCGAGG LN001
+GGAAAACTCCCCTGTTTCGAGG LN002
+GGAAAACTCCCCTGTTTCGAGG BVL/479/21-10/05/2021-Blantyre-Dog
+GGAAAACTCCCCTGTTTCGAGG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**** ****** ********** Cigar
+2024-10-31 12:58:00,485 - DEBUG - LEFT candidate 0: *picked, base pen 2.747, combined pen 8.747, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:58:00,486 - DEBUG - LEFT candidate 1: base pen 1.965, combined pen 11.965, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,487 - DEBUG - LEFT candidate 2: base pen 2.800, combined pen 12.800, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,488 - DEBUG - LEFT candidate 3: base pen 3.944, combined pen 12.944, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:58:00,490 - DEBUG - LEFT candidate 4: base pen 3.251, combined pen 13.251, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,491 - DEBUG - LEFT candidate 5: base pen 3.393, combined pen 13.393, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,492 - DEBUG - LEFT candidate 6: base pen 3.562, combined pen 13.562, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,493 - DEBUG - LEFT candidate 7: base pen 3.614, combined pen 13.614, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,494 - DEBUG - LEFT candidate 8: base pen 3.651, combined pen 13.651, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,495 - DEBUG - LEFT candidate 9: base pen 3.876, combined pen 13.876, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,497 - DEBUG - LEFT candidate 10: base pen 3.995, combined pen 13.995, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,498 - DEBUG - LEFT candidate 11: base pen 5.078, combined pen 14.078, 1 max mismatch, 9 total mismatches.
+2024-10-31 12:58:00,499 - DEBUG - LEFT candidate 12: base pen 4.491, combined pen 14.491, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,500 - DEBUG - LEFT candidate 13: base pen 4.661, combined pen 14.661, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,502 - DEBUG - LEFT candidate 14: base pen 4.753, combined pen 14.753, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,503 - DEBUG - LEFT candidate 15: base pen 4.821, combined pen 14.821, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,504 - DEBUG - LEFT candidate 16: base pen 5.185, combined pen 15.185, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,505 - DEBUG - LEFT candidate 17: base pen 1.439, combined pen 15.439, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,506 - DEBUG - LEFT candidate 18: base pen 5.472, combined pen 15.472, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,507 - DEBUG - LEFT candidate 19: base pen 5.661, combined pen 15.661, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,509 - DEBUG - LEFT candidate 20: base pen 5.666, combined pen 15.666, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,510 - DEBUG - LEFT candidate 21: base pen 5.899, combined pen 15.899, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,511 - DEBUG - LEFT candidate 22: base pen 7.056, combined pen 17.056, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,513 - DEBUG - LEFT candidate 23: base pen 7.453, combined pen 17.453, 1 max mismatch, 10 total mismatches.
+2024-10-31 12:58:00,515 - DEBUG - Picked MSA slice: Alignment with 21 rows and 23 columns
+AGAAATCGAGGGAACAGAGGCTC Z00861838
+AGAAATCGAGGGAACAGAGGCTC Z00861809
+AGAAATCGAGGGAACAGAGGCTC MN726819
+AGAAATCGAGGAAACAGAGGCTC KR906749
+AGAAACCGAGGAAACAGAGGCTC KY210231
+AGAAACCGAGGAAACAGAGGCTC KY210240
+AGAAACCGAGGAAACAGAGGCTC KR906744
+AGAAACCGAGGAAACAGAGGCTC KY210309
+AGAAACCGAGGAAACAGAGGCTC KR906769
+AGAAACCGAGGAAACAGAGGCTC SD750
+AGAAACCGAGGAAACAGAGGCTC SD807
+AGAAACCGAGGAAACAGAGGCTC KX148207
+AGAAACCGAGGAAACAGAGGCTC MAL1020
+AGAAACCGAGGAAACAGAGGCTC MT006
+AGAAACCGAGGAAACAGAGGCTC LN001
+AGAAACCGAGGAAACAGAGGCTC LN002
+AGAAATCGAGGAAACAGAGGCTC BVL/479/21-10/05/2021-Blantyre-Dog
+AGAAATCGAGGAAACAGAGGCTC 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+***** ***** ***** ***** Cigar
+2024-10-31 12:58:00,516 - DEBUG - RIGHT candidate 0: *picked, base pen 1.690, combined pen 17.690, 1 max mismatch, 16 total mismatches.
+2024-10-31 12:58:00,517 - DEBUG - RIGHT candidate 1: base pen 1.195, combined pen 18.195, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:58:00,518 - DEBUG - RIGHT candidate 2: base pen 1.690, combined pen 18.690, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:58:00,519 - DEBUG - RIGHT candidate 3: base pen 2.048, combined pen 19.048, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:58:00,521 - DEBUG - RIGHT candidate 4: base pen 2.519, combined pen 19.519, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:58:00,522 - DEBUG - RIGHT candidate 5: base pen 3.681, combined pen 19.681, 1 max mismatch, 16 total mismatches.
+2024-10-31 12:58:00,523 - DEBUG - RIGHT candidate 6: base pen 4.160, combined pen 21.160, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:58:00,543 - DEBUG - Region 17, pool 1, left_limit 7908, slice_start 8363, right_limit 11923
+2024-10-31 12:58:00,544 - DEBUG - Finding primers for slice 8363 to 9097
+2024-10-31 12:58:00,724 - DEBUG - Stepping left to 8352 due to failed alignment
+2024-10-31 12:58:00,724 - DEBUG - Finding primers for slice 8352 to 9086
+2024-10-31 12:58:00,867 - DEBUG - Stepping left to 8341 due to failed alignment
+2024-10-31 12:58:00,867 - DEBUG - Finding primers for slice 8341 to 9075
+2024-10-31 12:58:06,292 - DEBUG - Stepping left to 8330 due to no suitable primers
+2024-10-31 12:58:06,323 - DEBUG - Finding primers for slice 8330 to 9064
+2024-10-31 12:58:11,946 - DEBUG - Stepping left to 8319 due to no suitable primers
+2024-10-31 12:58:11,965 - DEBUG - Finding primers for slice 8319 to 9053
+2024-10-31 12:58:15,679 - DEBUG - Stepping left to 8308 due to no suitable primers
+2024-10-31 12:58:15,690 - DEBUG - Finding primers for slice 8308 to 9042
+2024-10-31 12:58:20,298 - DEBUG - Stepping left to 8297 due to no suitable primers
+2024-10-31 12:58:20,311 - DEBUG - Finding primers for slice 8297 to 9031
+2024-10-31 12:58:24,623 - DEBUG - Stepping left to 8286 due to no suitable primers
+2024-10-31 12:58:24,642 - DEBUG - Finding primers for slice 8286 to 9020
+2024-10-31 12:58:28,440 - DEBUG - Stepping left to 8275 due to no suitable primers
+2024-10-31 12:58:28,453 - DEBUG - Finding primers for slice 8275 to 9009
+2024-10-31 12:58:31,695 - DEBUG - Stepping left to 8264 due to no suitable primers
+2024-10-31 12:58:31,710 - DEBUG - Finding primers for slice 8264 to 8998
+2024-10-31 12:58:35,981 - DEBUG - Stepping left to 8253 due to no suitable primers
+2024-10-31 12:58:35,991 - DEBUG - Finding primers for slice 8253 to 8987
+2024-10-31 12:58:40,180 - DEBUG - Stepping left to 8242 due to no suitable primers
+2024-10-31 12:58:40,195 - DEBUG - Finding primers for slice 8242 to 8976
+2024-10-31 12:58:44,639 - DEBUG - Stepping left to 8231 due to no suitable primers
+2024-10-31 12:58:44,646 - DEBUG - Finding primers for slice 8231 to 8965
+2024-10-31 12:58:49,114 - DEBUG - Stepping left to 8220 due to no suitable primers
+2024-10-31 12:58:49,123 - DEBUG - Finding primers for slice 8220 to 8954
+2024-10-31 12:58:54,079 - DEBUG - Stepping left to 8209 due to no suitable primers
+2024-10-31 12:58:54,085 - DEBUG - Finding primers for slice 8209 to 8943
+2024-10-31 12:58:59,161 - DEBUG - Stepping left to 8198 due to no suitable primers
+2024-10-31 12:58:59,171 - DEBUG - Finding primers for slice 8198 to 8932
+2024-10-31 12:59:04,403 - DEBUG - Stepping left to 8187 due to no suitable primers
+2024-10-31 12:59:04,412 - DEBUG - Finding primers for slice 8187 to 8921
+2024-10-31 12:59:09,353 - DEBUG - Stepping left to 8176 due to no suitable primers
+2024-10-31 12:59:09,363 - DEBUG - Finding primers for slice 8176 to 8910
+2024-10-31 12:59:09,560 - DEBUG - Stepping left to 8165 due to failed alignment
+2024-10-31 12:59:09,560 - DEBUG - Finding primers for slice 8165 to 8899
+2024-10-31 12:59:09,672 - DEBUG - Stepping left to 8154 due to failed alignment
+2024-10-31 12:59:09,672 - DEBUG - Finding primers for slice 8154 to 8888
+2024-10-31 12:59:09,870 - DEBUG - Stepping left to 8143 due to failed alignment
+2024-10-31 12:59:09,870 - DEBUG - Finding primers for slice 8143 to 8877
+2024-10-31 12:59:10,068 - DEBUG - Stepping left to 8132 due to failed alignment
+2024-10-31 12:59:10,068 - DEBUG - Finding primers for slice 8132 to 8866
+2024-10-31 12:59:14,381 - DEBUG - Stepping left to 8121 due to no suitable primers
+2024-10-31 12:59:14,388 - DEBUG - Finding primers for slice 8121 to 8855
+2024-10-31 12:59:14,586 - DEBUG - Stepping left to 8110 due to failed alignment
+2024-10-31 12:59:14,586 - DEBUG - Finding primers for slice 8110 to 8844
+2024-10-31 12:59:19,188 - DEBUG - Stepping left to 8099 due to no suitable primers
+2024-10-31 12:59:19,202 - DEBUG - Finding primers for slice 8099 to 8833
+2024-10-31 12:59:24,571 - DEBUG - Stepping left to 8088 due to no suitable primers
+2024-10-31 12:59:24,585 - DEBUG - Finding primers for slice 8088 to 8822
+2024-10-31 12:59:28,041 - DEBUG - Stepping left to 8077 due to no suitable primers
+2024-10-31 12:59:28,049 - DEBUG - Finding primers for slice 8077 to 8811
+2024-10-31 12:59:31,169 - DEBUG - Stepping left to 8066 due to no suitable primers
+2024-10-31 12:59:31,175 - DEBUG - Finding primers for slice 8066 to 8800
+2024-10-31 12:59:31,368 - DEBUG - Stepping left to 8055 due to failed alignment
+2024-10-31 12:59:31,368 - DEBUG - Finding primers for slice 8055 to 8789
+2024-10-31 12:59:34,856 - DEBUG - Stepping left to 8044 due to no suitable primers
+2024-10-31 12:59:34,865 - DEBUG - Finding primers for slice 8044 to 8778
+2024-10-31 12:59:35,055 - DEBUG - Stepping left to 8033 due to failed alignment
+2024-10-31 12:59:35,055 - DEBUG - Finding primers for slice 8033 to 8767
+2024-10-31 12:59:35,241 - DEBUG - Stepping left to 8022 due to failed alignment
+2024-10-31 12:59:35,241 - DEBUG - Finding primers for slice 8022 to 8756
+2024-10-31 12:59:35,431 - DEBUG - Stepping left to 8011 due to failed alignment
+2024-10-31 12:59:35,431 - DEBUG - Finding primers for slice 8011 to 8745
+2024-10-31 12:59:35,618 - DEBUG - Stepping left to 8000 due to failed alignment
+2024-10-31 12:59:35,618 - DEBUG - Finding primers for slice 8000 to 8734
+2024-10-31 12:59:35,805 - DEBUG - Stepping left to 7989 due to failed alignment
+2024-10-31 12:59:35,805 - DEBUG - Finding primers for slice 7989 to 8723
+2024-10-31 12:59:35,908 - DEBUG - Stepping left to 7978 due to failed alignment
+2024-10-31 12:59:35,909 - DEBUG - Finding primers for slice 7978 to 8712
+2024-10-31 12:59:38,972 - DEBUG - Stepping left to 7967 due to no suitable primers
+2024-10-31 12:59:38,976 - DEBUG - Finding primers for slice 7967 to 8701
+2024-10-31 12:59:42,403 - DEBUG - Stepping left to 7956 due to no suitable primers
+2024-10-31 12:59:42,407 - DEBUG - Finding primers for slice 7956 to 8690
+2024-10-31 12:59:45,860 - DEBUG - Picked MSA slice: Alignment with 21 rows and 24 columns
+GGCAGTCTTCCACTACCTGTTATT Z00861838
+GGCAGTCTTCCACTACCTGTTATT Z00861809
+GGCAGTCTTCCACTACCTGTTATT MN726819
+GGCAGTCTTCCACTACCTGTTATT KR906749
+GGCAGTCTTCCACTACCTGTTATT KY210231
+GGCAGTCTTCCACTACCTGTTATT KY210240
+GGCAGTCTTCCACTACCTGTTATT KR906744
+GGCAGTCTTCCACTACCTGTTATT KY210309
+GGCAGTCTTCCACTACCTGTTATT KR906769
+GGCAGTCTTCCACTACCTGTTATT SD750
+GGCAGTCTTCCACTACCTGTTATT SD807
+GGCAGTTTTCCACTACCTGTTATT KX148207
+GGCAGTCTTCCACTACCTGTTATT MAL1020
+GGCAGTCTTCCACTACCTGTTATT MT006
+GGCAGTCTTCCACTACCTGTTATT LN001
+GGCAGTCTTCCACTACCTGTTATT LN002
+GGCAGTCTTCCACTACCTGTTATT BVL/479/21-10/05/2021-Blantyre-Dog
+GGCAGTCTTTCACTACCTGTTATT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+****** ** ************** Cigar
+2024-10-31 12:59:45,861 - DEBUG - LEFT candidate 0: *picked, base pen 2.541, combined pen 4.541, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,862 - DEBUG - LEFT candidate 1: base pen 1.712, combined pen 4.712, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:45,863 - DEBUG - LEFT candidate 2: base pen 2.767, combined pen 4.767, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,864 - DEBUG - LEFT candidate 3: base pen 2.819, combined pen 4.819, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,866 - DEBUG - LEFT candidate 4: base pen 3.076, combined pen 5.076, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,867 - DEBUG - LEFT candidate 5: base pen 0.117, combined pen 5.117, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,868 - DEBUG - LEFT candidate 6: base pen 0.408, combined pen 5.408, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,869 - DEBUG - LEFT candidate 7: base pen 3.465, combined pen 5.465, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,870 - DEBUG - LEFT candidate 8: base pen 3.573, combined pen 5.573, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,871 - DEBUG - LEFT candidate 9: base pen 2.638, combined pen 5.638, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:45,872 - DEBUG - LEFT candidate 10: base pen 2.638, combined pen 5.638, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:45,873 - DEBUG - LEFT candidate 11: base pen 3.718, combined pen 5.718, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,875 - DEBUG - LEFT candidate 12: base pen 3.907, combined pen 5.907, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,876 - DEBUG - LEFT candidate 13: base pen 3.949, combined pen 5.949, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,877 - DEBUG - LEFT candidate 14: base pen 1.252, combined pen 6.252, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,878 - DEBUG - LEFT candidate 15: base pen 1.287, combined pen 6.287, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,879 - DEBUG - LEFT candidate 16: base pen 2.315, combined pen 6.315, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,880 - DEBUG - LEFT candidate 17: base pen 1.329, combined pen 6.329, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,882 - DEBUG - LEFT candidate 18: base pen 1.419, combined pen 6.419, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,883 - DEBUG - LEFT candidate 19: base pen 2.628, combined pen 6.628, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,884 - DEBUG - LEFT candidate 20: base pen 2.692, combined pen 6.692, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,885 - DEBUG - LEFT candidate 21: base pen 1.697, combined pen 6.697, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,886 - DEBUG - LEFT candidate 22: base pen 2.725, combined pen 6.725, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,887 - DEBUG - LEFT candidate 23: base pen 0.931, combined pen 6.931, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:45,888 - DEBUG - LEFT candidate 24: base pen 2.103, combined pen 7.103, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,890 - DEBUG - LEFT candidate 25: base pen 2.106, combined pen 7.106, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,891 - DEBUG - LEFT candidate 26: base pen 1.172, combined pen 7.172, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:45,892 - DEBUG - LEFT candidate 27: base pen 1.186, combined pen 7.186, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:45,893 - DEBUG - LEFT candidate 28: base pen 2.210, combined pen 7.210, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,894 - DEBUG - LEFT candidate 29: base pen 5.242, combined pen 7.242, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,896 - DEBUG - LEFT candidate 30: base pen 5.242, combined pen 7.242, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,897 - DEBUG - LEFT candidate 31: base pen 1.256, combined pen 7.256, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:45,898 - DEBUG - LEFT candidate 32: base pen 2.360, combined pen 7.360, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,899 - DEBUG - LEFT candidate 33: base pen 1.460, combined pen 7.460, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,900 - DEBUG - LEFT candidate 34: base pen 5.574, combined pen 7.574, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,901 - DEBUG - LEFT candidate 35: base pen 5.741, combined pen 7.741, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,903 - DEBUG - LEFT candidate 36: base pen 5.741, combined pen 7.741, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,904 - DEBUG - LEFT candidate 37: base pen 2.818, combined pen 7.818, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,905 - DEBUG - LEFT candidate 38: base pen 2.818, combined pen 7.818, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,906 - DEBUG - LEFT candidate 39: base pen 3.921, combined pen 7.921, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,908 - DEBUG - LEFT candidate 40: base pen 6.175, combined pen 8.175, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,909 - DEBUG - LEFT candidate 41: base pen 3.194, combined pen 8.194, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,910 - DEBUG - LEFT candidate 42: base pen 2.316, combined pen 8.316, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,911 - DEBUG - LEFT candidate 43: base pen 4.619, combined pen 8.619, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,912 - DEBUG - LEFT candidate 44: base pen 2.638, combined pen 8.638, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:45,913 - DEBUG - LEFT candidate 45: base pen 3.682, combined pen 8.682, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,914 - DEBUG - LEFT candidate 46: base pen 3.898, combined pen 8.898, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,915 - DEBUG - LEFT candidate 47: base pen 3.183, combined pen 9.183, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:45,917 - DEBUG - LEFT candidate 48: base pen 3.212, combined pen 9.212, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:45,918 - DEBUG - LEFT candidate 49: base pen 2.424, combined pen 9.424, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,919 - DEBUG - LEFT candidate 50: base pen 2.692, combined pen 9.692, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:45,920 - DEBUG - LEFT candidate 51: base pen 3.053, combined pen 11.053, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,921 - DEBUG - LEFT candidate 52: base pen 1.551, combined pen 18.551, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:45,922 - DEBUG - LEFT candidate 53: base pen 1.552, combined pen 18.552, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:45,923 - DEBUG - LEFT candidate 54: base pen 2.759, combined pen 19.759, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:45,924 - DEBUG - LEFT candidate 55: base pen 3.762, combined pen 20.762, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:45,926 - DEBUG - Picked MSA slice: Alignment with 21 rows and 21 columns
+AGGTGTCTGGGTCATCCGNTT Z00861838
+AGGTGTCTGGGTCATCCGGTT Z00861809
+AGGTGTCTGGGTCATCCGGTT MN726819
+AGGTGTCTGGGTCATCCGATT KR906749
+AGGTGTCTGGGTCATCCGATT KY210231
+AGGTGTCTGGGTCATCCGATT KY210240
+AGGTGTCTGGGTCATCCGATT KR906744
+AGGTGTCTGGGTCATCCGATT KY210309
+AGGTGTCTGGGTCATCCGATT KR906769
+AGGTGTCTGGGTCATCCGATT SD750
+AGGTGTCTGGGTCATCCGATT SD807
+AGGTGTCTGGGTCATCCGATT KX148207
+AGGTGTCTGGGTCATCCGATT MAL1020
+AGGTGTCTGGGTCATCCGATT MT006
+AGGTGTCTGGGTCATCCGATT LN001
+AGGTGTCTGGGTCATCNGATT LN002
+AGGTGTTTGGGTCATCCGATT BVL/479/21-10/05/2021-Blantyre-Dog
+AGGTGTCTGGGTCATCCGATT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+****** ********* * ** Cigar
+2024-10-31 12:59:45,927 - DEBUG - RIGHT candidate 0: *picked, base pen 0.990, combined pen 5.990, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,928 - DEBUG - RIGHT candidate 1: base pen 4.610, combined pen 6.610, 1 max mismatch, 2 total mismatches.
+2024-10-31 12:59:45,930 - DEBUG - RIGHT candidate 2: base pen 2.881, combined pen 7.881, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,931 - DEBUG - RIGHT candidate 3: base pen 3.185, combined pen 8.185, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,932 - DEBUG - RIGHT candidate 4: base pen 3.314, combined pen 8.314, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,933 - DEBUG - RIGHT candidate 5: base pen 3.394, combined pen 8.394, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,934 - DEBUG - RIGHT candidate 6: base pen 3.404, combined pen 8.404, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:45,939 - DEBUG - Region 18, pool 2, left_limit 8491, slice_start 8534, right_limit 11923
+2024-10-31 12:59:45,939 - DEBUG - Finding primers for slice 8534 to 9268
+2024-10-31 12:59:48,947 - DEBUG - Picked MSA slice: Alignment with 21 rows and 23 columns
+AAAACTCCCGGACGATAAGAAGG Z00861838
+AAAACTCCCGGACGATAAGAAGG Z00861809
+AAAACTCCCGGACGATAAGAAGG MN726819
+AAAACTCCCGGACGATAAGAAGG KR906749
+AAAACTCCCGGACGATAAGAAGG KY210231
+AAAACTCCCGGACGATAAGAAGG KY210240
+AAAACTCCCGGACGATAAGAAGG KR906744
+AAAACTCCCGGACGATAAGAAGG KY210309
+AAAACTCCCGGACGATAAGAAGG KR906769
+AAAACTCCCGGACGATAAGAAGG SD750
+AAAACTCCCGAACGATAAGAAGG SD807
+AAAACTCCCGGACGATAAGAAGG KX148207
+AAAACTCCCGGACGATAAGAAGG MAL1020
+AAAACTCCCGGACGATAAGAAGG MT006
+AAAACTCCCGNACGATAAGAAGG LN001
+AAAACTCCCGNACGATAAGAAGG LN002
+AAAACTCCCGGACGATAAGAAGG BVL/479/21-10/05/2021-Blantyre-Dog
+AAAACTCCCGGACGATAAGAAGG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+********** ************ Cigar
+2024-10-31 12:59:48,948 - DEBUG - LEFT candidate 0: *picked, base pen 1.689, combined pen 5.689, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:48,949 - DEBUG - LEFT candidate 1: base pen 1.973, combined pen 5.973, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:48,950 - DEBUG - LEFT candidate 2: base pen 2.523, combined pen 6.523, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:48,951 - DEBUG - LEFT candidate 3: base pen 2.596, combined pen 6.596, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:48,953 - DEBUG - LEFT candidate 4: base pen 2.187, combined pen 7.187, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,954 - DEBUG - LEFT candidate 5: base pen 0.286, combined pen 7.286, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:59:48,955 - DEBUG - LEFT candidate 6: base pen 3.496, combined pen 7.496, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:48,956 - DEBUG - LEFT candidate 7: base pen 3.673, combined pen 7.673, 1 max mismatch, 4 total mismatches.
+2024-10-31 12:59:48,957 - DEBUG - LEFT candidate 8: base pen 2.704, combined pen 7.704, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,958 - DEBUG - LEFT candidate 9: base pen 2.820, combined pen 7.820, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,960 - DEBUG - LEFT candidate 10: base pen 3.039, combined pen 8.039, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,961 - DEBUG - LEFT candidate 11: base pen 3.310, combined pen 8.310, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,962 - DEBUG - LEFT candidate 12: base pen 3.542, combined pen 8.542, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,963 - DEBUG - LEFT candidate 13: base pen 1.572, combined pen 8.572, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:59:48,964 - DEBUG - LEFT candidate 14: base pen 3.673, combined pen 8.673, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,965 - DEBUG - LEFT candidate 15: base pen 4.215, combined pen 9.215, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,967 - DEBUG - LEFT candidate 16: base pen 4.220, combined pen 9.220, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,968 - DEBUG - LEFT candidate 17: base pen 4.345, combined pen 9.345, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,969 - DEBUG - LEFT candidate 18: base pen 4.465, combined pen 9.465, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,970 - DEBUG - LEFT candidate 19: base pen 2.503, combined pen 9.503, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:59:48,971 - DEBUG - LEFT candidate 20: base pen 4.522, combined pen 9.522, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,972 - DEBUG - LEFT candidate 21: base pen 4.693, combined pen 9.693, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,973 - DEBUG - LEFT candidate 22: base pen 4.696, combined pen 9.696, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,975 - DEBUG - LEFT candidate 23: base pen 4.830, combined pen 9.830, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,976 - DEBUG - LEFT candidate 24: base pen 5.834, combined pen 10.834, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,977 - DEBUG - LEFT candidate 25: base pen 6.030, combined pen 11.030, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:48,978 - DEBUG - LEFT candidate 26: base pen 4.888, combined pen 11.888, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:59:48,979 - DEBUG - LEFT candidate 27: base pen 0.803, combined pen 18.803, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,980 - DEBUG - LEFT candidate 28: base pen 1.290, combined pen 19.290, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,981 - DEBUG - LEFT candidate 29: base pen 1.308, combined pen 19.308, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,982 - DEBUG - LEFT candidate 30: base pen 3.045, combined pen 21.045, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,983 - DEBUG - LEFT candidate 31: base pen 3.045, combined pen 21.045, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,985 - DEBUG - LEFT candidate 32: base pen 3.253, combined pen 21.253, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,986 - DEBUG - LEFT candidate 33: base pen 3.325, combined pen 21.325, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,987 - DEBUG - LEFT candidate 34: base pen 3.392, combined pen 21.392, 1 max mismatch, 18 total mismatches.
+2024-10-31 12:59:48,989 - DEBUG - Picked MSA slice: Alignment with 21 rows and 24 columns
+ACATGAAATCGTAGTTCTTCCCGT Z00861838
+ACATGAAATCGTAGTTCTTCCCGT Z00861809
+ACATGAAATCGTAGTTCTTCCCGT MN726819
+ACATGAAATCGTAGTTCTTCCCGT KR906749
+ACATGAAATCGTAGTTCTTCCCGT KY210231
+ACATGAAATCGTAGTTCTTCCCGT KY210240
+ACATGAAATCGTAGTTCTTCCCGT KR906744
+ACATGAAATCGTAGTTCTTCCCGT KY210309
+ACATGAAATCGTAGTTCTTCCCGT KR906769
+ACATGAAATCGTAGTTCTTCCCGT SD750
+ACATNAAATCGTAGTTCTTCCCGT SD807
+ACATGAAATCGTAGTTCTTCCCGT KX148207
+ACATGAAATCGTAGTTCTTCCCGT MAL1020
+ACATGAAATCGTAGTTCTTCCCGT MT006
+ACATGAAATCGTAGTTCTTCCCGT LN001
+ACATGAAATCATAGTTCTTCCCGT LN002
+ACATGAAATCGTAGTTCTTCCCGT BVL/479/21-10/05/2021-Blantyre-Dog
+ACATGAAATCGTAGTTCTTCCCGT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**** ***** ** ********** Cigar
+2024-10-31 12:59:48,990 - DEBUG - RIGHT candidate 0: *picked, base pen 3.381, combined pen 6.381, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:48,992 - DEBUG - RIGHT candidate 1: base pen 3.724, combined pen 6.724, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:48,993 - DEBUG - RIGHT candidate 2: base pen 3.745, combined pen 6.745, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:48,994 - DEBUG - RIGHT candidate 3: base pen 3.861, combined pen 6.861, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:48,995 - DEBUG - RIGHT candidate 4: base pen 5.296, combined pen 8.296, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:48,997 - DEBUG - RIGHT candidate 5: base pen 5.520, combined pen 8.520, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:48,998 - DEBUG - RIGHT candidate 6: base pen 2.679, combined pen 8.679, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:48,999 - DEBUG - RIGHT candidate 7: base pen 2.802, combined pen 8.802, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,000 - DEBUG - RIGHT candidate 8: base pen 2.922, combined pen 8.922, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,001 - DEBUG - RIGHT candidate 9: base pen 3.514, combined pen 9.514, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,003 - DEBUG - RIGHT candidate 10: base pen 3.743, combined pen 9.743, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,004 - DEBUG - RIGHT candidate 11: base pen 4.076, combined pen 10.076, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,005 - DEBUG - RIGHT candidate 12: base pen 4.201, combined pen 10.201, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,006 - DEBUG - RIGHT candidate 13: base pen 4.308, combined pen 10.308, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,007 - DEBUG - RIGHT candidate 14: base pen 4.650, combined pen 10.650, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,009 - DEBUG - RIGHT candidate 15: base pen 4.681, combined pen 10.681, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,010 - DEBUG - RIGHT candidate 16: base pen 4.991, combined pen 10.991, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,011 - DEBUG - RIGHT candidate 17: base pen 5.006, combined pen 11.006, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,012 - DEBUG - RIGHT candidate 18: base pen 5.298, combined pen 11.298, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,014 - DEBUG - RIGHT candidate 19: base pen 5.520, combined pen 11.520, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,015 - DEBUG - RIGHT candidate 20: base pen 5.985, combined pen 11.985, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,016 - DEBUG - RIGHT candidate 21: base pen 6.027, combined pen 12.027, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,017 - DEBUG - RIGHT candidate 22: base pen 6.597, combined pen 12.597, 1 max mismatch, 6 total mismatches.
+2024-10-31 12:59:49,028 - DEBUG - Region 19, pool 1, left_limit 8660, slice_start 9132, right_limit 11923
+2024-10-31 12:59:49,028 - DEBUG - Finding primers for slice 9132 to 9866
+2024-10-31 12:59:52,406 - DEBUG - Picked MSA slice: Alignment with 21 rows and 20 columns
+TCTGCCAGATACAGTGAAGG Z00861838
+TCTGCCAGATACAGTGAAGG Z00861809
+TCTGCCAGATACAGCGAAGG MN726819
+TCTGCCAGATACAGCGAAGG KR906749
+TCTGCCAGATACAGCGAAGG KY210231
+TCTGCCAGATACAGCGAAGG KY210240
+TCTGCCAGATACAGCGAAGG KR906744
+TCTGCCAGATACAGCGAAGG KY210309
+TCTGCCAGATACAGCGAAGG KR906769
+TCTGCCAGATACAGCGAAGG SD750
+TCTGCCAGATACAGCGAAGG SD807
+TCTGCCAGATACAGCGAAGG KX148207
+TCTGCCAGATACAGNGAAGG MAL1020
+TCTGCCAGATACAGCGAAGG MT006
+TCTGCCAGATACAGCGAAGG LN001
+TCTGCCAGATACAGCGAAGG LN002
+TCTGCCAGATACAGCGAAGG BVL/479/21-10/05/2021-Blantyre-Dog
+TCTGCCAGATACAGCGAAGG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+************** ***** Cigar
+2024-10-31 12:59:52,407 - DEBUG - LEFT candidate 0: *picked, base pen 4.890, combined pen 7.890, 1 max mismatch, 3 total mismatches.
+2024-10-31 12:59:52,409 - DEBUG - LEFT candidate 1: base pen 2.970, combined pen 7.970, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:52,410 - DEBUG - LEFT candidate 2: base pen 1.104, combined pen 8.104, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:52,411 - DEBUG - LEFT candidate 3: base pen 4.890, combined pen 9.890, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:52,412 - DEBUG - LEFT candidate 4: base pen 4.890, combined pen 11.890, 1 max mismatch, 5 total mismatches.
+2024-10-31 12:59:52,413 - DEBUG - LEFT candidate 5: base pen 0.291, combined pen 14.291, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,414 - DEBUG - LEFT candidate 6: base pen 0.291, combined pen 14.291, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,415 - DEBUG - LEFT candidate 7: base pen 0.805, combined pen 14.805, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,416 - DEBUG - LEFT candidate 8: base pen 1.296, combined pen 15.296, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,417 - DEBUG - LEFT candidate 9: base pen 2.483, combined pen 16.483, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,419 - DEBUG - LEFT candidate 10: base pen 2.503, combined pen 16.503, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,420 - DEBUG - LEFT candidate 11: base pen 2.503, combined pen 16.503, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,421 - DEBUG - LEFT candidate 12: base pen 3.045, combined pen 17.045, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,422 - DEBUG - LEFT candidate 13: base pen 3.309, combined pen 17.309, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,423 - DEBUG - LEFT candidate 14: base pen 3.309, combined pen 17.309, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,424 - DEBUG - LEFT candidate 15: base pen 3.489, combined pen 17.489, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,425 - DEBUG - LEFT candidate 16: base pen 3.872, combined pen 17.872, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,427 - DEBUG - LEFT candidate 17: base pen 2.963, combined pen 19.963, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,428 - DEBUG - LEFT candidate 18: base pen 1.450, combined pen 20.450, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:59:52,429 - DEBUG - LEFT candidate 19: base pen 2.092, combined pen 21.092, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:59:52,430 - DEBUG - LEFT candidate 20: base pen 2.394, combined pen 22.394, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,431 - DEBUG - LEFT candidate 21: base pen 2.995, combined pen 22.995, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,432 - DEBUG - LEFT candidate 22: base pen 4.037, combined pen 23.037, 1 max mismatch, 19 total mismatches.
+2024-10-31 12:59:52,435 - DEBUG - Picked MSA slice: Alignment with 21 rows and 27 columns
+AATATTTCTCCTCTAAGAGACGGTTCT Z00861838
+AATATTTCTCCTCTAAGAGACGGTTCT Z00861809
+AATATTTCTCCTCTAAGAGACGGTTCT MN726819
+AATATTTCTCCTCTAAGAGACGGCTCT KR906749
+AATATTTCTCCTCTAAGAGACGGCTCT KY210231
+AATATTTCTCCTCTAAGAGACGGTTCT KY210240
+AATATTTCTCCTCTAAGAGACGGTTCC KR906744
+AATATTTCTCCTCTAAGAGACGGTTCT KY210309
+AATATTTCTCCTCTAAGAGACGGCTCT KR906769
+AATATTTCTCCTCTAAGAGACGGCTCT SD750
+AATATTTCTCCTCTAAGAGACGGTTCT SD807
+AATATTTCTCCTCTAAGAGACGGTTCT KX148207
+AATATTTCTCCTCTAAGAGACGGCTCT MAL1020
+AATATTTCTCCTCTAAGAGACGGTTCT MT006
+AATATTTCTCCTCTAAGAGACGGTTCT LN001
+AATATTTCTCCTCTAAGAGACGGTTCT LN002
+AATATTTCTCCTCTAAGAGACGGTTCT BVL/479/21-10/05/2021-Blantyre-Dog
+AATATTTCTCCTCTAAGAGACGGTTCT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+*********************** **  Cigar
+2024-10-31 12:59:52,436 - DEBUG - RIGHT candidate 0: *picked, base pen 7.221, combined pen 15.221, 1 max mismatch, 7 total mismatches.
+2024-10-31 12:59:52,438 - DEBUG - RIGHT candidate 1: base pen 3.697, combined pen 17.697, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,439 - DEBUG - RIGHT candidate 2: base pen 4.628, combined pen 18.628, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,440 - DEBUG - RIGHT candidate 3: base pen 4.886, combined pen 18.886, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,441 - DEBUG - RIGHT candidate 4: base pen 6.399, combined pen 20.399, 1 max mismatch, 14 total mismatches.
+2024-10-31 12:59:52,443 - DEBUG - RIGHT candidate 5: base pen 6.681, combined pen 23.681, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,444 - DEBUG - RIGHT candidate 6: base pen 6.741, combined pen 23.741, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,446 - DEBUG - RIGHT candidate 7: base pen 7.754, combined pen 24.754, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,447 - DEBUG - RIGHT candidate 8: base pen 7.985, combined pen 24.985, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,449 - DEBUG - RIGHT candidate 9: base pen 6.954, combined pen 29.954, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,450 - DEBUG - RIGHT candidate 10: base pen 7.961, combined pen 30.961, 1 max mismatch, 17 total mismatches.
+2024-10-31 12:59:52,466 - DEBUG - Region 20, pool 2, left_limit 9261, slice_start 9718, right_limit 11923
+2024-10-31 12:59:52,466 - DEBUG - Finding primers for slice 9718 to 10452
+2024-10-31 12:59:57,612 - DEBUG - Stepping left to 9707 due to no suitable primers
+2024-10-31 12:59:57,628 - DEBUG - Finding primers for slice 9707 to 10441
+2024-10-31 13:00:02,705 - DEBUG - Stepping left to 9696 due to no suitable primers
+2024-10-31 13:00:02,714 - DEBUG - Finding primers for slice 9696 to 10430
+2024-10-31 13:00:06,718 - DEBUG - Stepping left to 9685 due to no suitable primers
+2024-10-31 13:00:06,728 - DEBUG - Finding primers for slice 9685 to 10419
+2024-10-31 13:00:10,794 - DEBUG - Stepping left to 9674 due to no suitable primers
+2024-10-31 13:00:10,806 - DEBUG - Finding primers for slice 9674 to 10408
+2024-10-31 13:00:14,703 - DEBUG - Stepping left to 9663 due to no suitable primers
+2024-10-31 13:00:14,712 - DEBUG - Finding primers for slice 9663 to 10397
+2024-10-31 13:00:18,753 - DEBUG - Stepping left to 9652 due to no suitable primers
+2024-10-31 13:00:18,762 - DEBUG - Finding primers for slice 9652 to 10386
+2024-10-31 13:00:23,416 - DEBUG - Stepping left to 9641 due to no suitable primers
+2024-10-31 13:00:23,424 - DEBUG - Finding primers for slice 9641 to 10375
+2024-10-31 13:00:29,336 - DEBUG - Stepping left to 9630 due to no suitable primers
+2024-10-31 13:00:29,355 - DEBUG - Finding primers for slice 9630 to 10364
+2024-10-31 13:00:34,958 - DEBUG - Stepping left to 9619 due to no suitable primers
+2024-10-31 13:00:34,969 - DEBUG - Finding primers for slice 9619 to 10353
+2024-10-31 13:00:39,125 - DEBUG - Picked MSA slice: Alignment with 21 rows and 23 columns
+TTCCCTGTCAACATATACGGCAA Z00861838
+TTCCCCGTCAACATATACGGCAA Z00861809
+TTCCCTGTCAACATATACGGCAA MN726819
+TTCCCTGTCAACATATACGGCAA KR906749
+TTCCCCGTCAACATATACGGCAA KY210231
+TTCCCTGTCAACATATACGGCAA KY210240
+TTCCCTGTCAACATATACGGCAA KR906744
+TTCCCTGTCAACATATACGGCAA KY210309
+TTCCCTGTCAACATATACGGCAA KR906769
+TTCCCCGTCAACATATACGGCAA SD750
+TTCCCTGTCAACATATATGGCAA SD807
+TTCCCTGTCAACATATACGGCAA KX148207
+TTCCCTGTCAACATATACGGCAA MAL1020
+TTCCCTGTCAACATATACGGCAA MT006
+TTCCCTGTCAACATATACGGCAA LN001
+TTCCCTGTCAACATATACGGCAA LN002
+TTCCCTGTCAACATATACGGCAA BVL/479/21-10/05/2021-Blantyre-Dog
+TTCCCTGTCAACATATACGGCAA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+***** *********** ***** Cigar
+2024-10-31 13:00:39,126 - DEBUG - LEFT candidate 0: *picked, base pen 3.182, combined pen 8.182, 1 max mismatch, 5 total mismatches.
+2024-10-31 13:00:39,127 - DEBUG - LEFT candidate 1: base pen 3.547, combined pen 8.547, 1 max mismatch, 5 total mismatches.
+2024-10-31 13:00:39,128 - DEBUG - LEFT candidate 2: base pen 3.547, combined pen 8.547, 1 max mismatch, 5 total mismatches.
+2024-10-31 13:00:39,129 - DEBUG - LEFT candidate 3: base pen 1.565, combined pen 8.565, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:00:39,131 - DEBUG - LEFT candidate 4: base pen 2.317, combined pen 9.317, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:00:39,132 - DEBUG - Picked MSA slice: Alignment with 21 rows and 20 columns
+TGGGCAGAGCAGACCCATTC Z00861838
+TGGGCAGAGCAGACCCATTC Z00861809
+TGGGCAGAGCAGACCCATTC MN726819
+TGAGCAGAGCAGACCCACTC KR906749
+TGAGCAGAGCAGACCCACTC KY210231
+TGAGCAGAGCAGACCCATTC KY210240
+TGAGCAGAGCAGACCCATTC KR906744
+TGAGCAGAGCAGACCCATTC KY210309
+TGAGCAGAGCAGACCCACTC KR906769
+TGAGCAGAGCAGACCCATTC SD750
+TGAGCAGAGCAGACCCATTC SD807
+TGAGCAGAGCAGACCCATTC KX148207
+TGAGCAGAGCAGACCCACTC MAL1020
+TGAGCAGAGCAGACCCATTC MT006
+TGAGCAGAGCAGACCCATTC LN001
+TGAGCAGAGCAGACCCATTC LN002
+TGAGCAGAGCAGACCCATTC BVL/479/21-10/05/2021-Blantyre-Dog
+TGAGCAGAGCAGACCCATTC 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+** ************** ** Cigar
+2024-10-31 13:00:39,134 - DEBUG - RIGHT candidate 0: *picked, base pen 4.469, combined pen 11.469, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:00:39,143 - DEBUG - Region 21, pool 1, left_limit 9850, slice_start 10202, right_limit 11923
+2024-10-31 13:00:39,143 - DEBUG - Finding primers for slice 10202 to 10936
+2024-10-31 13:00:39,299 - DEBUG - Stepping left to 10191 due to failed alignment
+2024-10-31 13:00:39,299 - DEBUG - Finding primers for slice 10191 to 10925
+2024-10-31 13:00:43,442 - DEBUG - Stepping left to 10180 due to no suitable primers
+2024-10-31 13:00:43,457 - DEBUG - Finding primers for slice 10180 to 10914
+2024-10-31 13:00:43,567 - DEBUG - Stepping left to 10169 due to failed alignment
+2024-10-31 13:00:43,567 - DEBUG - Finding primers for slice 10169 to 10903
+2024-10-31 13:00:51,854 - DEBUG - Stepping left to 10158 due to no suitable primers
+2024-10-31 13:00:51,906 - DEBUG - Finding primers for slice 10158 to 10892
+2024-10-31 13:00:58,369 - DEBUG - Stepping left to 10147 due to no suitable primers
+2024-10-31 13:00:58,398 - DEBUG - Finding primers for slice 10147 to 10881
+2024-10-31 13:00:58,583 - DEBUG - Stepping left to 10136 due to failed alignment
+2024-10-31 13:00:58,583 - DEBUG - Finding primers for slice 10136 to 10870
+2024-10-31 13:01:02,607 - DEBUG - Stepping left to 10125 due to no suitable primers
+2024-10-31 13:01:02,620 - DEBUG - Finding primers for slice 10125 to 10859
+2024-10-31 13:01:06,188 - DEBUG - Stepping left to 10114 due to no suitable primers
+2024-10-31 13:01:06,196 - DEBUG - Finding primers for slice 10114 to 10848
+2024-10-31 13:01:09,324 - DEBUG - Stepping left to 10103 due to no suitable primers
+2024-10-31 13:01:09,330 - DEBUG - Finding primers for slice 10103 to 10837
+2024-10-31 13:01:09,517 - DEBUG - Stepping left to 10092 due to failed alignment
+2024-10-31 13:01:09,517 - DEBUG - Finding primers for slice 10092 to 10826
+2024-10-31 13:01:09,780 - DEBUG - Stepping left to 10081 due to failed alignment
+2024-10-31 13:01:09,780 - DEBUG - Finding primers for slice 10081 to 10815
+2024-10-31 13:01:13,595 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+TGAGTTCTTTGATGAGGCAGGT Z00861838
+TGAGTTCTTTGATGAGGCAGGT Z00861809
+TGAGTTCTTTGATGAGGCAGGT MN726819
+TGAGCTCTTTGATGAGGCAGGT KR906749
+TGAGCTCTTTGATGAGGCAGGT KY210231
+TGAGCTCTTTGATGAGGCAGGT KY210240
+TGAGCTCTTTGATGAGGCAGGT KR906744
+TGAGCTCTTTGATGAGGCAGGT KY210309
+TGAGCTCTTTGATGAGGCAGGT KR906769
+TGAGCTCTTTGATGAGGCAGGT SD750
+TGAGCTCTTTGATGAGGCAGGT SD807
+TGAGCTCTTTGATGAGGCAGGT KX148207
+TGAGCTCTTTGATGAGGCAGGT MAL1020
+TGAGCTCTTTGATGAGGCAGGT MT006
+TGAGCTCTTTGATGAGGCAGGT LN001
+TGAGCTCTTTGATGAGGCAGGT LN002
+TGAGCTCTTTGATGAGGCAGGT BVL/479/21-10/05/2021-Blantyre-Dog
+TGAGCTCCTTGATGAGGCAGGT 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+**** ** ************** Cigar
+2024-10-31 13:01:13,597 - DEBUG - LEFT candidate 0: *picked, base pen 1.740, combined pen 6.740, 1 max mismatch, 5 total mismatches.
+2024-10-31 13:01:13,598 - DEBUG - LEFT candidate 1: base pen 0.791, combined pen 6.791, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:13,599 - DEBUG - LEFT candidate 2: base pen 2.639, combined pen 7.639, 1 max mismatch, 5 total mismatches.
+2024-10-31 13:01:13,600 - DEBUG - LEFT candidate 3: base pen 2.639, combined pen 7.639, 1 max mismatch, 5 total mismatches.
+2024-10-31 13:01:13,601 - DEBUG - LEFT candidate 4: base pen 3.383, combined pen 9.383, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:13,603 - DEBUG - Picked MSA slice: Alignment with 21 rows and 24 columns
+TCTGCATCACAAATAATGAGGTCA Z00861838
+TCTGCATCACAAATAATGAGGTCA Z00861809
+TCTGCATCACAAATAATGAGGTCA MN726819
+TCCGCATCACAAATAATAAGGTCA KR906749
+TCTGCATCACAAATAATGAGGTCA KY210231
+TCCGCATCACAAATAATGAGGTCA KY210240
+TCCGCATCACAAATAATGAGGTCA KR906744
+TCCGCATCACAAATAATGAGGTCA KY210309
+TCCGCATCACAAATAATGAGGTCA KR906769
+TCCGCATCACAAATAATGAGGTCA SD750
+TCCGCATCACAAATAATGAGGTCA SD807
+TCCGCATCACAAATAATGAGGTCA KX148207
+TCCGCATCACAAATAATGAGGTCA MAL1020
+TCCGCATCACAAATAATGAGGTCA MT006
+TCCGCATCACAAATAATGAGGTCA LN001
+TCCGCATCACAAATAATGAGGTCA LN002
+TCCGCATCACAAATAATGAGGTCA BVL/479/21-10/05/2021-Blantyre-Dog
+TCCGCATCACAAATAATGAGGTCA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+** ************** ****** Cigar
+2024-10-31 13:01:13,604 - DEBUG - RIGHT candidate 0: *picked, base pen 2.773, combined pen 9.773, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:13,606 - DEBUG - RIGHT candidate 1: base pen 4.109, combined pen 11.109, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:13,607 - DEBUG - RIGHT candidate 2: base pen 4.556, combined pen 11.556, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:13,608 - DEBUG - RIGHT candidate 3: base pen 4.566, combined pen 11.566, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:13,609 - DEBUG - RIGHT candidate 4: base pen 4.584, combined pen 11.584, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:13,611 - DEBUG - RIGHT candidate 5: base pen 5.681, combined pen 12.681, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:13,624 - DEBUG - Region 22, pool 2, left_limit 10327, slice_start 10675, right_limit 11923
+2024-10-31 13:01:13,624 - DEBUG - Finding primers for slice 10675 to 11409
+2024-10-31 13:01:17,232 - DEBUG - Picked MSA slice: Alignment with 21 rows and 27 columns
+GAGTGATAGATTTTGACTCCATCTGGG Z00861838
+GAGTGATAGATTTTGACTCCATCTGGG Z00861809
+GAGTGATAGATTTTGACTCTATCTGGG MN726819
+GAGTGATAGATTTTGACTCAATCTGGG KR906749
+GAGTGATAGATTTTGACTCAATCTGGG KY210231
+GAGTGATAGATTTTGACTCCATCTGGG KY210240
+GAGTGATAGATTTTGACTCAATCTGGG KR906744
+GAGTGATAGATTTTGACTCAATCTGGG KY210309
+GAGTGATAGATTTTGACTCCATCTGGG KR906769
+GAGTGATAGATTTTGACTCAATCTGGG SD750
+GAGTGATAGATTTTGACTCAATCTGGG SD807
+GAGTGATAGATTTTGACTCAATCTGGG KX148207
+GAGTGATAGATTTTGACTCAATCTGGG MAL1020
+GAGTGATAGATTTTGACTCAATCTGGG MT006
+GAGTGATAGATTTTGACTCAATCTGGG LN001
+GAGTGATAGATTTTGACTCAATCTGGG LN002
+GAGTGATAGATTTTGACTCAATCTGGG BVL/479/21-10/05/2021-Blantyre-Dog
+GAGTGATAGATTTTGACTCAATCTGGG 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+******* *********** ******* Cigar
+2024-10-31 13:01:17,233 - DEBUG - LEFT candidate 0: *picked, base pen 5.827, combined pen 11.827, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,235 - DEBUG - LEFT candidate 1: base pen 5.907, combined pen 11.907, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,236 - DEBUG - LEFT candidate 2: base pen 5.923, combined pen 11.923, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,237 - DEBUG - LEFT candidate 3: base pen 5.927, combined pen 11.927, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,239 - DEBUG - LEFT candidate 4: base pen 6.030, combined pen 12.030, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,240 - DEBUG - LEFT candidate 5: base pen 6.755, combined pen 12.755, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,241 - DEBUG - LEFT candidate 6: base pen 6.959, combined pen 12.959, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,243 - DEBUG - LEFT candidate 7: base pen 7.215, combined pen 13.215, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,244 - DEBUG - LEFT candidate 8: base pen 7.581, combined pen 13.581, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,245 - DEBUG - LEFT candidate 9: base pen 7.694, combined pen 13.694, 1 max mismatch, 6 total mismatches.
+2024-10-31 13:01:17,247 - DEBUG - Picked MSA slice: Alignment with 21 rows and 21 columns
+TTTGGGGTCAGACGGCGGATA Z00861838
+TTTGGGGTCAGACGGCGGATA Z00861809
+TTTGGGGTCAGACGGCGGATA MN726819
+TTTGGGATCAGACGGCGGATA KR906749
+TTTGGGATCAGACGGCGGATA KY210231
+TTTGGGATCAGACGGCGGATA KY210240
+TTTGGGATCAGACGGCGGATA KR906744
+TTTGGGATCAGACGGCGGATA KY210309
+TTTGGGATCAGACGGCGGATA KR906769
+TTTGGGATCAGACGGCGGATA SD750
+TTTGGGATCAGACGGCGGATA SD807
+TTTGGGATCAGACGGCGGATA KX148207
+TTTGGGATCAGACGGCGGATA MAL1020
+TTTGGGATCAGACGGCGGATA MT006
+TTTGGGATCAGACGGCGGATA LN001
+TTTGGGATCAGACGGCGGATA LN002
+TTTGGGATCAGACGGCGGATA BVL/479/21-10/05/2021-Blantyre-Dog
+TTTGGGATCAGACGGCGGATA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+****** ***** ******** Cigar
+2024-10-31 13:01:17,248 - DEBUG - RIGHT candidate 0: *picked, base pen 1.795, combined pen 5.795, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,250 - DEBUG - RIGHT candidate 1: base pen 1.974, combined pen 5.974, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,251 - DEBUG - RIGHT candidate 2: base pen 2.451, combined pen 6.451, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,252 - DEBUG - RIGHT candidate 3: base pen 2.471, combined pen 6.471, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,253 - DEBUG - RIGHT candidate 4: base pen 3.279, combined pen 7.279, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,254 - DEBUG - RIGHT candidate 5: base pen 3.441, combined pen 7.441, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,255 - DEBUG - RIGHT candidate 6: base pen 3.441, combined pen 7.441, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,256 - DEBUG - RIGHT candidate 7: base pen 3.602, combined pen 7.602, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,257 - DEBUG - RIGHT candidate 8: base pen 3.625, combined pen 7.625, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,258 - DEBUG - RIGHT candidate 9: base pen 3.699, combined pen 7.699, 1 max mismatch, 4 total mismatches.
+2024-10-31 13:01:17,259 - DEBUG - RIGHT candidate 10: base pen 1.194, combined pen 8.194, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:17,260 - DEBUG - RIGHT candidate 11: base pen 3.085, combined pen 10.085, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:17,261 - DEBUG - RIGHT candidate 12: base pen 1.423, combined pen 10.423, 1 max mismatch, 9 total mismatches.
+2024-10-31 13:01:17,262 - DEBUG - RIGHT candidate 13: base pen 3.448, combined pen 10.448, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:01:17,264 - DEBUG - RIGHT candidate 14: base pen 1.449, combined pen 10.449, 1 max mismatch, 9 total mismatches.
+2024-10-31 13:01:17,265 - DEBUG - RIGHT candidate 15: base pen 1.952, combined pen 10.952, 1 max mismatch, 9 total mismatches.
+2024-10-31 13:01:17,266 - DEBUG - RIGHT candidate 16: base pen 2.432, combined pen 11.432, 1 max mismatch, 9 total mismatches.
+2024-10-31 13:01:17,275 - DEBUG - Region 23, pool 1, left_limit 10804, slice_start 11188, right_limit 11923
+2024-10-31 13:01:17,276 - DEBUG - Finding primers for slice 11188 to 11922
+2024-10-31 13:01:20,161 - DEBUG - Stepping left to 11177 due to no suitable primers
+2024-10-31 13:01:20,169 - DEBUG - Finding primers for slice 11177 to 11911
+2024-10-31 13:01:20,320 - DEBUG - Stepping left to 11166 due to failed alignment
+2024-10-31 13:01:20,320 - DEBUG - Finding primers for slice 11166 to 11900
+2024-10-31 13:01:23,791 - DEBUG - Stepping left to 11155 due to no suitable primers
+2024-10-31 13:01:23,801 - DEBUG - Finding primers for slice 11155 to 11889
+2024-10-31 13:01:26,867 - DEBUG - Stepping left to 11144 due to no suitable primers
+2024-10-31 13:01:26,877 - DEBUG - Finding primers for slice 11144 to 11878
+2024-10-31 13:01:29,832 - DEBUG - Stepping left to 11133 due to no suitable primers
+2024-10-31 13:01:29,840 - DEBUG - Finding primers for slice 11133 to 11867
+2024-10-31 13:01:32,949 - DEBUG - Stepping left to 11122 due to no suitable primers
+2024-10-31 13:01:32,958 - DEBUG - Finding primers for slice 11122 to 11856
+2024-10-31 13:01:36,776 - DEBUG - Stepping left to 11111 due to no suitable primers
+2024-10-31 13:01:36,788 - DEBUG - Finding primers for slice 11111 to 11845
+2024-10-31 13:01:36,889 - DEBUG - Stepping left to 11100 due to failed alignment
+2024-10-31 13:01:36,889 - DEBUG - Finding primers for slice 11100 to 11834
+2024-10-31 13:01:37,086 - DEBUG - Stepping left to 11089 due to failed alignment
+2024-10-31 13:01:37,086 - DEBUG - Finding primers for slice 11089 to 11823
+2024-10-31 13:01:37,285 - DEBUG - Stepping left to 11078 due to failed alignment
+2024-10-31 13:01:37,285 - DEBUG - Finding primers for slice 11078 to 11812
+2024-10-31 13:01:41,157 - DEBUG - Stepping left to 11067 due to no suitable primers
+2024-10-31 13:01:41,170 - DEBUG - Finding primers for slice 11067 to 11801
+2024-10-31 13:01:45,376 - DEBUG - Stepping left to 11056 due to no suitable primers
+2024-10-31 13:01:45,392 - DEBUG - Finding primers for slice 11056 to 11790
+2024-10-31 13:01:45,497 - DEBUG - Stepping left to 11045 due to failed alignment
+2024-10-31 13:01:45,497 - DEBUG - Finding primers for slice 11045 to 11779
+2024-10-31 13:01:50,338 - DEBUG - Stepping left to 11034 due to no suitable primers
+2024-10-31 13:01:50,357 - DEBUG - Finding primers for slice 11034 to 11768
+2024-10-31 13:01:55,159 - DEBUG - Stepping left to 11023 due to no suitable primers
+2024-10-31 13:01:55,175 - DEBUG - Finding primers for slice 11023 to 11757
+2024-10-31 13:01:55,367 - DEBUG - Stepping left to 11012 due to failed alignment
+2024-10-31 13:01:55,368 - DEBUG - Finding primers for slice 11012 to 11746
+2024-10-31 13:01:59,107 - DEBUG - Stepping left to 11001 due to no suitable primers
+2024-10-31 13:01:59,118 - DEBUG - Finding primers for slice 11001 to 11735
+2024-10-31 13:02:02,600 - DEBUG - Stepping left to 10990 due to no suitable primers
+2024-10-31 13:02:02,608 - DEBUG - Finding primers for slice 10990 to 11724
+2024-10-31 13:02:05,748 - DEBUG - Stepping left to 10979 due to no suitable primers
+2024-10-31 13:02:05,755 - DEBUG - Finding primers for slice 10979 to 11713
+2024-10-31 13:02:05,945 - DEBUG - Stepping left to 10968 due to failed alignment
+2024-10-31 13:02:05,945 - DEBUG - Finding primers for slice 10968 to 11702
+2024-10-31 13:02:11,022 - DEBUG - Stepping left to 10957 due to no suitable primers
+2024-10-31 13:02:11,040 - DEBUG - Finding primers for slice 10957 to 11691
+2024-10-31 13:02:15,675 - DEBUG - Stepping left to 10946 due to no suitable primers
+2024-10-31 13:02:15,691 - DEBUG - Finding primers for slice 10946 to 11680
+2024-10-31 13:02:15,877 - DEBUG - Stepping left to 10935 due to failed alignment
+2024-10-31 13:02:15,877 - DEBUG - Finding primers for slice 10935 to 11669
+2024-10-31 13:02:18,724 - DEBUG - Picked MSA slice: Alignment with 21 rows and 20 columns
+TGTCACGAGCGTTCCCCTCA Z00861838
+TGTCACGAGCGTTCCCCTCA Z00861809
+TGTCACGAGCGTTCCCCTCA MN726819
+TGTCAAGAGCGTTCCCCTCA KR906749
+TGTCAAGAGCGTTCCCCTCA KY210231
+TGTCAAGAGCGTTCCCCTCA KY210240
+TGTCAAGAGCGTTCCCCTCA KR906744
+TGTCAAGAGCGTTCCCCTCA KY210309
+TGTCAAGGGCGTTCCCCTCA KR906769
+TGTCAAGAGCGTTCCCCTCA SD750
+TGTCAAGAGCGTTCCCCTCA SD807
+TGTCAAGAGCGTTCCCCTCA KX148207
+TGTCAAGAGCGTTCCCCTCA MAL1020
+TGTCAAGAGCGTTTCCCTCA MT006
+TGTCTAGAGCGTTCCCCTCA LN001
+TGTCAAGAGCGTTCCCCTCA LN002
+TGTCAAGAGCGTTCCCCTCA BVL/479/21-10/05/2021-Blantyre-Dog
+TGTCAAGAGCGTTCCCCTCA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+****  * ***** ****** Cigar
+2024-10-31 13:02:18,725 - DEBUG - LEFT candidate 0: *picked, base pen 2.272, combined pen 9.272, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:02:18,726 - DEBUG - LEFT candidate 1: base pen 2.302, combined pen 9.302, 1 max mismatch, 7 total mismatches.
+2024-10-31 13:02:18,727 - DEBUG - LEFT candidate 2: base pen 2.302, combined pen 11.302, 1 max mismatch, 8 total mismatches.
+2024-10-31 13:02:18,730 - DEBUG - Picked MSA slice: Alignment with 21 rows and 22 columns
+TCAACCTGATCCAGTGAGACGA Z00861838
+TCAACCTGATCCAGTGAGACGA Z00861809
+TCAACCTGATCCAGTGAGACGA MN726819
+TCAACCTGATCCAGTGAGACGA KR906749
+TCAACCTGATCCAGTGAGACGA KY210231
+TCAACCTGATCCAGTGAGACGA KY210240
+TCAACCTGATCCAGTGAGACGA KR906744
+TCAACCTGATCCAGTGAGACGA KY210309
+TCAACCTGATCCAGTGAGACGA KR906769
+TCAACCTGATCCAGTGAGACGA SD750
+TCANCCTGATCCAGTGAGACGA SD807
+TCAACCTGATCCAATGAGACGA KX148207
+TCAACCTGATCCAGTGAGACGA MAL1020
+TCAACCTGATCCAGTGAGACGA MT006
+TCAACCTGATCCAGTGAGACGA LN001
+TCAACCTGATCCAGTGAGACGA LN002
+TCAACCTGATCCAGTGAGACGA BVL/479/21-10/05/2021-Blantyre-Dog
+TCAACCTGATCCAGTGAGACGA 050121_Chimalilo1-05/01/2021-Thyolo-Dog
+...
+*** ********* ******** Cigar
+2024-10-31 13:02:18,731 - DEBUG - RIGHT candidate 0: *picked, base pen 0.002, combined pen 2.002, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,732 - DEBUG - RIGHT candidate 1: base pen 0.529, combined pen 2.529, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,733 - DEBUG - RIGHT candidate 2: base pen 1.676, combined pen 2.676, 1 max mismatch, 1 total mismatch.
+2024-10-31 13:02:18,734 - DEBUG - RIGHT candidate 3: base pen 1.207, combined pen 3.207, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,735 - DEBUG - RIGHT candidate 4: base pen 2.235, combined pen 3.235, 1 max mismatch, 1 total mismatch.
+2024-10-31 13:02:18,736 - DEBUG - RIGHT candidate 5: base pen 1.673, combined pen 3.673, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,737 - DEBUG - RIGHT candidate 6: base pen 1.691, combined pen 3.691, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,739 - DEBUG - RIGHT candidate 7: base pen 1.710, combined pen 3.710, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,740 - DEBUG - RIGHT candidate 8: base pen 1.973, combined pen 3.973, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,741 - DEBUG - RIGHT candidate 9: base pen 2.194, combined pen 4.194, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,742 - DEBUG - RIGHT candidate 10: base pen 2.196, combined pen 4.196, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,743 - DEBUG - RIGHT candidate 11: base pen 2.710, combined pen 4.710, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,744 - DEBUG - RIGHT candidate 12: base pen 3.289, combined pen 5.289, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,745 - DEBUG - RIGHT candidate 13: base pen 3.298, combined pen 5.298, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,747 - DEBUG - RIGHT candidate 14: base pen 3.676, combined pen 5.676, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,748 - DEBUG - RIGHT candidate 15: base pen 3.783, combined pen 5.783, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,749 - DEBUG - RIGHT candidate 16: base pen 3.864, combined pen 5.864, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,750 - DEBUG - RIGHT candidate 17: base pen 3.864, combined pen 5.864, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,751 - DEBUG - RIGHT candidate 18: base pen 3.865, combined pen 5.865, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,752 - DEBUG - RIGHT candidate 19: base pen 3.997, combined pen 5.997, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,753 - DEBUG - RIGHT candidate 20: base pen 4.014, combined pen 7.014, 1 max mismatch, 3 total mismatches.
+2024-10-31 13:02:18,754 - DEBUG - RIGHT candidate 21: base pen 5.525, combined pen 7.525, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,756 - DEBUG - RIGHT candidate 22: base pen 4.851, combined pen 7.851, 1 max mismatch, 3 total mismatches.
+2024-10-31 13:02:18,757 - DEBUG - RIGHT candidate 23: base pen 5.932, combined pen 7.932, 1 max mismatch, 2 total mismatches.
+2024-10-31 13:02:18,758 - DEBUG - RIGHT candidate 24: base pen 4.938, combined pen 7.938, 1 max mismatch, 3 total mismatches.
+2024-10-31 13:02:18,760 - DEBUG - RIGHT candidate 25: base pen 5.110, combined pen 8.110, 1 max mismatch, 3 total mismatches.
+2024-10-31 13:02:18,761 - DEBUG - RIGHT candidate 26: base pen 5.222, combined pen 8.222, 1 max mismatch, 3 total mismatches.
+2024-10-31 13:02:18,762 - DEBUG - RIGHT candidate 27: base pen 5.785, combined pen 8.785, 1 max mismatch, 3 total mismatches.
+2024-10-31 13:02:18,763 - DEBUG - RIGHT candidate 28: base pen 0.962, combined pen 19.962, 1 max mismatch, 19 total mismatches.
+2024-10-31 13:02:18,764 - DEBUG - RIGHT candidate 29: base pen 2.495, combined pen 21.495, 1 max mismatch, 19 total mismatches.
+2024-10-31 13:02:18,772 - INFO - Writing /outputs/f68467d0fb854164acc68c9a7c2192cc/EA_2024.primer.bed
+2024-10-31 13:02:18,774 - INFO - Writing /outputs/f68467d0fb854164acc68c9a7c2192cc/EA_2024.insert.bed
+2024-10-31 13:02:18,774 - INFO - Writing /outputs/f68467d0fb854164acc68c9a7c2192cc/EA_2024.primer.tsv
+2024-10-31 13:02:18,775 - INFO - Writing /outputs/f68467d0fb854164acc68c9a7c2192cc/EA_2024.reference.fasta
+2024-10-31 13:02:18,818 - INFO - Writing /outputs/f68467d0fb854164acc68c9a7c2192cc/EA_2024.plot.pdf
+2024-10-31 13:02:18,818 - INFO - Writing /outputs/f68467d0fb854164acc68c9a7c2192cc/EA_2024.plot.svg
+2024-10-31 13:02:18,966 - INFO - Writing /outputs/f68467d0fb854164acc68c9a7c2192cc/EA_2024.report.json
