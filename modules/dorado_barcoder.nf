@@ -29,6 +29,6 @@ process DORADO_BARCODER {
 
 	script:
 	"""
-	${dorado_executable} demux --kit-name ${params.kit_name} --emit-fastq --output-dir "dorado_barcoder" ${fastq_file}
+	${dorado_executable} demux --kit-name ${params.kit_name} --barcode-both-ends --emit-fastq --output-dir "dorado_barcoder" ${fastq_file}
 	"""
 }
