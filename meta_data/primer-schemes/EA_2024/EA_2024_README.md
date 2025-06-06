@@ -34,18 +34,23 @@ This folder contains the reference genome and associated primer scheme used for 
 
 ---
 
+<pre>
 ## 📁 File Contents
+
+```
 README.md                       # This documentation file
 reference.fasta                 # Modified reference genome (FASTA)
 primers.bed                     # Primer coordinates in BED format
 primer_schemes.tsv              # (Optional) Primer details
 meta_data/                      # Supporting metadata including alignment and reference modification
-└── primer-schemes/
-└── EA_2024/
-└── V1/
-└── reference_seq_detail/
-└── EA_general_align.fasta
----
+  └── primer-schemes/
+      └── EA_2024/
+          └── V1/
+              └── reference_seq_detail/
+                  └── EA_general_align.fasta
+```
+</pre>
+
 
 ## 🗂️ Version Notes
 
