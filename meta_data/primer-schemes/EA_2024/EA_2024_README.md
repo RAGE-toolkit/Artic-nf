@@ -34,7 +34,6 @@ This folder contains the reference genome and associated primer scheme used for 
 
 ---
 
-<pre>
 ## 📁 File Contents
 
 ```
