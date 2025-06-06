@@ -37,16 +37,30 @@ This folder contains the reference genome and associated primer scheme used for 
 ## 📁 File Contents
 
 ```
-README.md                       # This documentation file
-reference.fasta                 # Modified reference genome (FASTA)
-primers.bed                     # Primer coordinates in BED format
-primer_schemes.tsv              # (Optional) Primer details
-meta_data/                      # Supporting metadata including alignment and reference modification
-  └── primer-schemes/
-      └── EA_2024/
-          └── V1/
-              └── reference_seq_detail/
-                  └── EA_general_align.fasta
+EA_2024_README.md                    # This documentation file
+
+V1/                                  # Version 1 of the primer scheme
+├── EA_2024_notes.rtf                # Design notes and background
+├── EA_2024_primerDesign_referencePanel.fasta  # Input reference panel used in primer design
+├── EA_2024.insert.bed               # Amplicon insert regions
+├── EA_2024.log                      # Primer scheme generation log
+├── EA_2024.plot.pdf                 # Visual plot of amplicons (PDF)
+├── EA_2024.plot.svg                 # Visual plot of amplicons (SVG)
+├── EA_2024.primer.bed               # BED file of primer positions
+├── EA_2024.primer.tsv               # TSV file with primer sequences and metadata
+├── EA_2024.reference.fasta          # Final modified reference used for primer scheme
+├── EA_2024.report.json              # Summary report from primer design tool
+├── EA_2024.scheme.bed               # Combined primer scheme BED file
+
+└── reference_seq_detail/            # Supporting files for reference genome edits
+├── EA_general_align.fasta                       # Multiple alignment of regional sequences
+├── EA_genomeEnd_sequencesToSplice.consensus.fa  # Consensus used to patch genome ends
+├── EA_genomeEnd_sequencesToSplice.fa            # Raw sequences at genome end
+├── EA_genomeEnd_sequencesToSplice.fa.bak001     # Backup file (auto-generated)
+├── EA_genomeStart_sequencesToSplice.consensus.fa # Consensus used for genome start
+├── EA_genomeStart_sequencesToSplice.fa          # Raw sequences at genome start
+├── Z00861838_spliced.fasta                      # Example spliced reference
+└── Z00861838.fasta                              # Original unspliced reference
 ```
 </pre>
 
