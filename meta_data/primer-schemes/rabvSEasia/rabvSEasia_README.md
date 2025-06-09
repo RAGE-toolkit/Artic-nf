@@ -14,10 +14,13 @@ This folder contains the reference genome and associated primer scheme used for 
 
 ### 🔧 Primer Design
 
+A multiplex primer scheme was developed for rabies virus (RABV) circulating in Southeast Asia, with emphasis on Philippine lineages. Whole genome sequences (≥11,800 bp) were selected from RABV-GLUE [http://rabv-glue.cvr.gla.ac.uk/#/home] using filters for geographic and temporal diversity while avoiding redundancy (>99% identity). Sequences were cleaned by masking ambiguous bases and gaps to ensure compatibility with Primal Scheme.
+
+To account for limited full-genome data from the Philippines, a 99% consensus N-gene sequence — derived from numerous partial genomes — was included, with the remainder masked. This helped capture known regional diversity. The most complete Philippine genome was prioritised and used as the reference. The final design set included 10 whole genomes and 1 consensus partial genome  (SEasia_selectionPlusNconsensus_aln_masked_upper_spliced.fasta).  
+
 - Reference sequences used:  
-  KX148260, KX148263, N-gene 99% consensus sequence of [AB116581, AB116582, AB683592–AB683635], AB981664, KX148255, JN786878, KX148250, KX148254, EU293111, KX148248, KX148266  
-- Original reference panel file: `philippines_allseqN_nucleotide_99%consensus.fasta`  
-- The design was informed by regional N-gene sequences from the Philippines.
+  KX148260, KX148263, AB981664, KX148255, JN786878, KX148250, KX148254, EU293111, KX148248, KX148266  and  N-gene 99% consensus sequence of [AB116581, AB116582, AB683592–AB683635]
+- Original reference panel file: `primer_design/wholeGenome_sequences/SEasia_selectionPlusNconsensus_aln_masked_upper_spliced.fasta`  
 
 ---
 
@@ -26,40 +29,51 @@ This folder contains the reference genome and associated primer scheme used for 
 - **Scheme Name:** `rabvSEasia`  
 - **Amplicon Size:** ~400 bp  
 - **Number of Amplicons:** 41  
-- **File Format:** BED / TSV  
-- **Primer Files:**
-  - `rabvSEasia.scheme.bed`: Combined primer scheme in BED format  
-  - `multiplexPrimerScheme/rabvSEasia.bed`: BED file with primer coordinates  
-  - `multiplexPrimerScheme/rabvSEasia_primers.csv`: Primer metadata in CSV format  
-  - `rabvSEasia_primerSequences.fasta`: FASTA file of primer sequences  
+- **Format:** BED, TSV, FASTA  
+- **Key Files:**
+  - `rabvSEasia.scheme.bed`: Combined scheme BED file  
+  - `multiplexPrimerScheme/rabvSEasia.bed`: Primer coordinates  
+  - `multiplexPrimerScheme/rabvSEasia_primers.csv`: Primer metadata (CSV)  
+  - `rabvSEasia_primerSequences.fasta`: Primer sequences (FASTA)
+
 
 ---
 
 ## 📁 File Contents
 
 ```
-├── multiplexPrimerScheme
-│   ├── rabvSEasia_primers.csv             # Primer metadata in CSV format
-│   └── rabvSEasia.bed                     # BED file with primer positions
-├── Ngene_sequences
-│   ├── philippines_allseqN_nucleotide_99%consensus.fasta   # Consensus N-gene used for design
-│   └── philippines_allseqN_nucleotide_alignment.fasta      # N-gene sequence alignment
-├── Primer design notes.pdf                # Notes and context from original primer design
-├── rabvSEasia_primerSchemeVisual.png      # Visual representation of the primer scheme
-├── rabvSEasia_primerSequences.csv         # Primer metadata in CSV format (duplicate of above or reformatted)
-├── rabvSEasia_primerSequences.fasta       # FASTA file of primer sequences
-├── rabvSEasia_primerSequences.fasta.*     # Associated project files (Geneious or similar software)
-│   ├── .bck, .des, .prj, .sds, .ssp, .suf, .tis  # Software-generated files for sequence handling
-├── rabvSEasia.reference.dict              # Sequence dictionary (used by tools like GATK)
-├── rabvSEasia.reference.fasta             # Reference genome used for primer design
-├── rabvSEasia.reference.fasta.*           # Associated FASTA index and BWA mapping files
-│   ├── .amb, .ann, .bwt, .fai, .pac, .sa
-├── rabvSEasia.scheme.bed                  # Combined BED file of full primer scheme
-└── wholeGenome_sequences
-    ├── rabvSEasia_wgs_metadata.txt        # Metadata for whole genome sequences used
-    ├── SEasia_selectionPlusNconsensus_aln_masked_upper_spliced.fasta  # Processed alignment with N-gene consensus
-    ├── SEasia_wgs_nucleotide_alignment.fasta  # Whole genome sequence alignment
-    └── SEasia_wgs_RepresentativeSeq.pdf   # Summary or visual of selected representative sequences
+├── primer_design
+│   ├── multiplexPrimerScheme
+│   │   ├── rabvSEasia_primers.csv             # Primer metadata (CSV format)
+│   │   └── rabvSEasia.bed                     # Primer coordinates (BED format)
+│   ├── Ngene_sequences
+│   │   ├── philippines_allseqN_nucleotide_99%consensus.fasta   # N-gene consensus
+│   │   └── philippines_allseqN_nucleotide_alignment.fasta      # N-gene alignment
+│   ├── Primer design notes.pdf                # Detailed primer design rationale
+│   └── wholeGenome_sequences
+│       ├── rabvSEasia_wgs_metadata.txt        # Metadata for full genome selection
+│       ├── SEasia_selectionPlusNconsensus_aln_masked_upper_spliced.fasta  # Final design panel
+│       ├── SEasia_wgs_nucleotide_alignment.fasta   # WGS alignment for design
+│       └── SEasia_wgs_RepresentativeSeq.pdf   # Highlighted representative sequences
+├── rabvSEasia_primerSchemeVisual.png          # Visualisation of primer scheme
+├── rabvSEasia_primerSequences.csv             # Primer metadata (CSV)
+├── rabvSEasia_primerSequences.fasta           # Primer sequences (FASTA)
+├── rabvSEasia_primerSequences.fasta.bck       # Associated Geneious/sequence project files
+├── rabvSEasia_primerSequences.fasta.des
+├── rabvSEasia_primerSequences.fasta.prj
+├── rabvSEasia_primerSequences.fasta.sds
+├── rabvSEasia_primerSequences.fasta.ssp
+├── rabvSEasia_primerSequences.fasta.suf
+├── rabvSEasia_primerSequences.fasta.tis
+├── rabvSEasia.reference.dict                  # Reference dictionary (e.g., GATK)
+├── rabvSEasia.reference.fasta                 # Reference genome used in design
+├── rabvSEasia.reference.fasta.amb             # Indexed reference files (BWA)
+├── rabvSEasia.reference.fasta.ann
+├── rabvSEasia.reference.fasta.bwt
+├── rabvSEasia.reference.fasta.fai
+├── rabvSEasia.reference.fasta.pac
+├── rabvSEasia.reference.fasta.sa
+└── rabvSEasia.scheme.bed                      # Combined primer scheme (BED)
 ```
 
 ---
