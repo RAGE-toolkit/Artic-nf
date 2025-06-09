@@ -79,7 +79,8 @@ Primers were designed using a representative panel of 20 sequences chosen from a
 
 ## 📁 File Contents
 
-```plaintext
+```
+
 README.md                                # This documentation file
 
 V1/                                      # Version 1 of the EA_2024 scheme
@@ -132,10 +133,10 @@ V1/                                      # Version 1 of the EA_2024 scheme
 │   ├── EA_genomeStart_sequencesToSplice.fa            # Raw sequences for 5′ end
 │   ├── Z00861838_spliced.fasta                        # Intermediate test reference
 │   └── Z00861838.fasta                                # Base genome before modifications
+
 ```
 
 ---
-```
 
 ## 🗂️ Version Notes
 
