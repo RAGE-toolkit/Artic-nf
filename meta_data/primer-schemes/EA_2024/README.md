@@ -97,22 +97,22 @@ V1/                                      # Version 1 of the EA_2024 scheme
 ├── primer_design/                       # Primer design inputs and intermediate files
 │   ├── EA_2024_primerDesign_referencePanel.fasta      # Final panel of 20 reference sequences used for design
 │   ├── reference-seqs/                                 # Source data and intermediate alignments
-│   │   ├── EA_general_align.fasta                      # Multiple alignment of East African sequences
+│   │   ├── EA_general_align.fasta                      # Multiple alignment of East African sequences (Tanzania/Kenya)
 │   │   ├── EA_general_metadata_new_assignment_fig1.csv # Metadata used in reference selection
-│   │   ├── EA_Malawi_96cov_treemmer/                   # Malawi ≥96% coverage tree-reduced sequences
+│   │   ├── EA_Malawi_96cov_treemmer/                   # Tree-reduced panel from TZA,KEN,MWI sequences, considering only those with ≥96% genome coverage 
 │   │   │   ├── EA_Malawi.96cov.fasttree_trimmed_list_X_20
 │   │   │   ├── EA_Malawi.96cov.fasttree_trimmed_list_X_20_sequences.fasta
 │   │   │   └── EA_Malawi.96cov.fasttree_trimmed_tree_X_20
-│   │   ├── EA_Malawi_treemmer/                         # Tree-reduced panel from full Malawi set
+│   │   ├── EA_Malawi_treemmer/                         # Tree-reduced panel from TZA,KEN,MWI sequences, considering all sequences (not just xx coverage)
 │   │   │   ├── EA_Malawi.fasttree.newick_trimmed_list_X_20
 │   │   │   ├── EA_Malawi.fasttree.newick_trimmed_list_X_20_sequences.fasta
 │   │   │   └── EA_Malawi.fasttree.newick_trimmed_tree_X_20
-│   │   ├── EA_Malawi.96cov.aln.fasta                   # Full alignment for 96% coverage Malawi genomes
-│   │   ├── EA_Malawi.96cov.fasttree                    # Tree built from 96% coverage Malawi sequences
-│   │   ├── EA_Malawi.aln.fasta                         # Alignment of all Malawi sequences
-│   │   ├── EA_Malawi.fasttree                          # Full tree from Malawi sequences
+│   │   ├── EA_Malawi.96cov.aln.fasta                   # Full alignment for 96% coverage TZA,KEN,MWI genomes
+│   │   ├── EA_Malawi.96cov.fasttree                    # Tree built from 96% coverage TZA,KEN,MWI sequences
+│   │   ├── EA_Malawi.aln.fasta                         # Alignment of all TZA,KEN,MWI sequences
+│   │   ├── EA_Malawi.fasttree                          # Full tree from TZA,KEN,MWI sequences
 │   │   ├── EA_Malawi.fasttree.newick                   # Newick-format tree file
-│   │   ├── MWI-blantyre_1_104_unaligned_lowNprop.fasta # Raw input data
+│   │   ├── MWI-blantyre_1_104_unaligned_lowNprop.fasta # Raw input data from Malawi
 │   │   └── rabv_ea.reference.fasta                     # Previous reference used in `rabv_ea` scheme
 
 │   └── trimmed_trees/                                  # Tree files from Treemmer-reduced panels
@@ -131,7 +131,7 @@ V1/                                      # Version 1 of the EA_2024 scheme
 │   ├── EA_genomeEnd_sequencesToSplice.fa.bak001       # Backup
 │   ├── EA_genomeStart_sequencesToSplice.consensus.fa  # Consensus for 5′ end repair
 │   ├── EA_genomeStart_sequencesToSplice.fa            # Raw sequences for 5′ end
-│   ├── Z00861838_spliced.fasta                        # Intermediate test reference
+│   ├── Z00861838_spliced.fasta                        # Base genome after modifications (before renaming to generic EA_reference)
 │   └── Z00861838.fasta                                # Base genome before modifications
 
 ```
