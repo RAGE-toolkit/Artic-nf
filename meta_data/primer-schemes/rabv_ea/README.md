@@ -1,6 +1,6 @@
-# Primer Set: `rabv_ea`
+# 🇰🇪🇹🇿 Primer Set: `rabv_ea`
 
-This folder contains the reference genome and associated primer scheme used for amplicon-based sequencing and genome assembly for East Africa from 2020–2024.
+This folder contains the reference genome and associated primer scheme used for amplicon-based sequencing and genome assembly for East Africa (Tanzania/Kenya) from 2020–2024.
 
 **Important:** **DO NOT USE V1**. **V1** contained incorrect primer coordinates and has been replaced by **V2**, which includes the corrected coordinates.
 

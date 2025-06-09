@@ -1,4 +1,4 @@
-# Primer Set: `rabvSEasia`
+# 🇵🇭 Primer Set: `rabvSEasia`
 
 This folder contains the reference genome and associated primer scheme used for amplicon-based sequencing and genome assembly for Southeast Asia, developed with the Philippines in mind and designed in 2018.
 
