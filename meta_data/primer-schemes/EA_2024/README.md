@@ -14,7 +14,7 @@ This folder contains the reference genome and associated primer scheme used for 
 
 ### 🔧 Reference Genome Modifications
 
-The genome OR045981 was used as the starting reference but had unresolved regions (`N`s) at both ends. These were replaced using consensus sequences derived from East African genomes:
+The genome OR045981 was used as the starting reference but had unresolved regions (`N`s) at both ends. These missing regions were replaced by splicing in consensus sequence derived from East African genomes:
 
 - **5′ end:** 79 bp spliced in  
 - **3′ end:** 149 bp spliced in  
@@ -50,9 +50,6 @@ Primers were designed using a representative panel of 20 sequences chosen from a
   `BVL/479/21-10/05/2021-Blantyre-Dog`,  
   `050121_Chimalilo1-05/01/2021-Thyolo-Dog`, `MT006`, `KR906769`, `SD750`,  
   `KX148207`, `KR906744`, `KY210309`, `SD807`, `KY210240`, `MAL1020`
-
-> 📎 For design documentation and alignments, see:  
-> [SharePoint Link](https://gla.sharepoint.com/:f:/s/RAGE2/EkpaodWXNDpJhsA9SS_5i5sB8qBSbwXONia7R82HuQnRdw?e=Pfyayc)
 
 ---
 
