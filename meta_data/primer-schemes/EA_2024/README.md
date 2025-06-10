@@ -1,6 +1,6 @@
 # 🌍 Primer Set: `EA_2024`
 
-This folder contains the reference genome and associated primer scheme used for amplicon-based sequencing and genome assembly of rabies virus (RABV) circulating in East Africa. The `EA_2024` scheme replaces the previous `rabv_ea` set and incorporates the latest available sequencing data. It improves coverage of regional viral diversity by including sequences from Tanzania, Kenya, and — new in this version — Malawi, with contributions from Dr Stella Mazeri (University of Edinburgh).
+This folder contains the reference genome and associated primer scheme used for amplicon-based sequencing and genome assembly of rabies virus (RABV) circulating in East Africa. The `EA_2024` scheme replaces the previous `rabv_ea` set and incorporates the latest available sequencing data as per October 2024. It improves coverage of regional viral diversity by including sequences from Tanzania, Kenya, and — new in this version — Malawi, with contributions from Dr Stella Mazeri (University of Edinburgh).
 
 ---
 
@@ -137,4 +137,4 @@ V1/                                      # Version 1 of the EA_2024 scheme
 
 ## 🗂️ Version Notes
 
-- **V1**: Initial release of the `EA_2024` primer set and reference.
+- **V1** (October 2024): Initial release of the `EA_2024` primer set and reference.
