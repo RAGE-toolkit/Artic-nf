@@ -1,147 +1,221 @@
-# Artic-nf
-The workflow is designed for ONT data analysis the workflow handles raw files in fastq, fast5, pod5, and live basecalled (fastq_pass) formats to produce a consensus sequences from a given list of samples. 
-The basis of this workflow, including scripts and methodologies, is inspired by the resources available on [fieldbioinformatics](https://github.com/artic-network/fieldbioinformatics). 
-However, we have tailored these elements specifically to support the analysis of Rabies virus data.
+# 🧬 Artic-nf
 
-## Installation (Linux/WSL)
-```
+This workflow is designed for **Oxford Nanopore Technologies (ONT)** data analysis. It supports raw files in `.fastq`, `.fast5`, `.pod5`, and live basecalled `fastq_pass` formats and produces consensus genome sequences from a given list of samples.
+
+The pipeline is inspired by the [ARTIC Network’s fieldbioinformatics](https://github.com/artic-network/fieldbioinformatics), but is adapted specifically for **rabies virus** analysis.
+
+---
+
+## ⚙️ Installation (Linux/WSL)
+
+```bash
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
 conda env create --file environment.yml
 conda activate artic-nf
 ```
-Dorado must be downloaded manually from Oxford Nanopore, you can find it here:   
-https://github.com/nanoporetech/dorado
-Ensure you choose the version that matches your computer's operating system.
 
-After the download, copy the file to the artic-nf directory. It then needs to be uncompressed and additional models need to be downloaded as indicated below. Assume that you have downloaded dorado version "dorado-0.7.2-linux-x64.tar.gz"
-```
-$tar -xvzf dorado-0.7.2-linux-x64.tar.gz
-$cd dorado-0.7.2-linux-x64/bin/
-$./dorado download --model all
-$mkdir models
-$mv dna_r* models
-$mv rna00* models
+### 🧾 Dorado Setup
+
+Dorado must be downloaded manually from ONT:
+
+📥 [Dorado Download](https://github.com/nanoporetech/dorado)
+
+> Be sure to download the version that matches your **operating system and architecture**.
+
+---
+
+**⚠️ IMPORTANT:**  
+The commands below use `dorado-0.7.2-linux-x64.tar.gz` **as an example**.  
+✅ You **must replace** this with the actual filename of the Dorado version you downloaded.  
+❌ Do **not** copy-paste without checking the filename.
+
+---
+
+**Example (for dorado-0.7.2-linux-x64.tar.gz):**
+```bash
+tar -xvzf dorado-0.7.2-linux-x64.tar.gz
+cd dorado-0.7.2-linux-x64/bin/
+./dorado download --model all
+mkdir models
+mv dna_r* models
+mv rna00* models
 mv models/ ./../
 ```
-After the above steps, the dorado directory will look like this 
 
+Your final `dorado` directory structure should look like this:
 
-![Alt text](/img/dorado_dir_structure.png)
+![Dorado directory structure](/img/dorado_dir_structure.png)
 
-Dorado path can be written in environment variable or in the nextflow.config file at dorado_dir params. Follow the below steps if you want to add the dorado path to system's environment variable.
+### ➕ Add Dorado to Environment Variables
 
-#### Adding dorado path to the environment variable
+Edit `.bashrc`:
+
+```bash
+vim ~/.bashrc
 ```
-$vim ~/.bashrc
-# add the below two lines to .bashrc
+
+Add:
+```bash
 export PATH="$PATH:/home/<user>/<your_tool_directory>/dorado-0.7.2-linux-x64/bin"
 export DORADO_MODEL='/home/<user>/<your_tool_directory>/dorado-0.7.2-linux-x64/models'
 ```
 
-## Installation (Apple Silicon M1,M2,M3)
+---
 
-For Mac M3 processor, make sure the Miniforge setup is supporting arm64. Cloning base directory as artic_nf to avoid loads of package installation.
+## 🍏 Installation (macOS M1, M2, M3 – Apple Silicon)
 
-```
+Use a clean conda environment:
+
+```bash
 conda create --name artic_nf --clone base
 conda activate artic_nf
 ```
 
-Run below python code to confirm the platform. 
-
-```
+Verify architecture:
+```python
 python3
 import platform
 platform.machine()
 ```
 
-The output of above code should be **arm64**, otherwise, download the appropriate version of the Miniforge and re-install and run the above command to check the platform. 
+✔️ Output should be: `arm64`  
+❌ If not, reinstall Miniforge (arm64 build).
 
-Enter ctrl+d to exit python
+Exit Python with `Ctrl+D`.
 
-Once everything is set, run the below commands to install nextflow and and medaka.
+Install required tools:
 
-```
+```bash
 conda install nextflow=23.10.1
 pip install medaka==1.8.2
 ```
 
-The workflow requires bcftools to be compiled manually. Which can be done with following steps.
+Compile `bcftools`:
 
-```
+```bash
 mamba install wget
 wget https://github.com/samtools/bcftools/releases/download/1.19/bcftools-1.19.tar.bz2
-tar -xvzf bcftools-1.19.tar.bz2
+tar -xvjf bcftools-1.19.tar.bz2
 cd bcftools-1.19
 ./configure
 make
 make install
 ```
 
-## Installation for Mac (x86_x64)
-```
+---
+
+## 🍎 Installation (macOS Intel x86_64)
+
+```bash
 git clone https://github.com/RAGE-toolkit/Artic-nf.git
 cd Artic-nf
 CONDA_SUBDIR=osx-64 mamba env create -f environment.yml
 conda activate artic_nf
 conda config --env --set subdir osx-64
 ```
-**Note:** Installation for Mac x86_x64 method is not tested.
 
-## General information for all the Mac architecture (M1,M2,M3 and Intel x86_x64)
- 
-If you are planning to analysis the raw data (*.fast5 or *.pod5), the user needs to download the Guppy or Dorado to perform the basecalling and barcoding. 
-The Mac users may need to reset the attribute to enable the dorado basecaller execution. This can be done using following.
-- Download the Dorado from https://github.com/nanoporetech/dorado"
-- Locate to bin directory inside Dorado folder using terminal
-- Execute the below step as mentioned
+> ⚠️ This method is **not yet tested**.
 
-```
+---
+
+## 🔔 Important for All macOS Users (M1, M2, M3, and Intel)
+
+> 🛑 If you’re using macOS of any kind, **you must read this section** to configure basecalling tools properly!
+
+To analyse `.fast5` or `.pod5` raw data, you must manually install and enable execution of **Dorado** or **Guppy** basecallers.
+
+### 🧬 Dorado Setup (macOS)
+
+- Download from [https://github.com/nanoporetech/dorado](https://github.com/nanoporetech/dorado)
+- Navigate to `bin/` folder in Terminal:
+```bash
 xattr -d com.apple.quarantine dorado
 ```
-Similarly, Guppy can be setup as mentioned below.
-- Download the Guppy from https://community.nanoporetech.com/downloads
-- Locate to bin directory inside Guppy folder using terminal
-- Execute the below step as mentioned
 
-```
+### 🧬 Guppy Setup (Optional Alternative)
+
+- Download from [https://community.nanoporetech.com/downloads](https://community.nanoporetech.com/downloads)
+- Navigate to `bin/` folder in Terminal:
+```bash
 xattr -d com.apple.quarantine guppy
 ```
 
-## Running the workflow
-The workflow can be run using two ways. Edit the file paths and other parameters in "nextflow.config" and follow the below step. 
-### Regular way
-```
- nextflow main.nf 
+---
+
+## 🧪 Running the Workflow
+
+You can run the workflow by editing parameters in `nextflow.config` or by specifying them directly.
+
+### Option 1 – Regular run
+
+```bash
+nextflow main.nf
 ```
 
-### Alternate
-```
+### Option 2 – Custom arguments
+
+```bash
 nextflow main.nf --meta_file "meta_data/sample_sheet.csv" \
 --rawfile_type "fastq" \
---rawfile_dir "/home3/sk312p/task_dir/projects/Artic_nf_development_version/workshop/fastq_pass" \
---dorado_dir "/home3/sk312p/task_dir/tools/dorado-0.4.3-linux-x64" \
---primer_schema "/home3/sk312p/task_dir/projects/Artic_testing_Feb5/Artic-nf/meta_data/primer-schemes" \
+--rawfile_dir "/path/to/fastq_pass" \
+--dorado_dir "/path/to/dorado" \
+--primer_schema "/path/to/primer-schemes" \
 --kit_name "SQK-NBD114-24" \
 --output_dir "results" \
---weeSAM "/home3/sk312p/task_dir/tools/weeSAM" \
+--weeSAM "/path/to/weeSAM" \
 --dorado_config "dna_r10.4.1_e8.2_400bps_fast@v4.2.0" \
 --dorado_run_mode "cuda:0" \
 --seq_len 350 \
 --medaka_normalise 200 \
 --threads 5 \
---medaka_model \
-"r941_min_fast_g303" \
+--medaka_model "r941_min_fast_g303" \
 --fq_extension ".fastq" \
 --basecaller "Dorado" \
 --fastq_dir "raw_files/fastq" \
 -resume
 ```
-**Note:** Change parameters, file/folder path accordingly
 
-## Memory management
-This section is beneficial for individuals intending to execute the workflow on a laptop or a small-scale system. Adjustments in settings can prevent the system from running out of memory. Typically, Nextflow processes multiple samples in parallel, which significantly increases the likelihood of encountering out-of-memory errors. To avoid this, you can modify the **queueSize** parameter within the **nextflow.config** file. It is advisable to set the **queueSize** to 1 or 2, depending on the capacity of your RAM/CPU.
+> 🔧 Update all paths and arguments as needed.
 
-## The workflow structure
-![Alt text](/img/workflow.png)
+---
+
+## 🧠 Memory Management Tips
+
+For laptops or low-RAM systems:
+
+- Edit `nextflow.config`
+- Set `queueSize = 1` or `2` to reduce parallelism and prevent memory errors.
+
+---
+
+## 🧱 Workflow Overview
+
+![Workflow structure](/img/workflow.png)
+
+---
+
+## 🖥️ How to Check Your Operating System
+
+Before beginning installation:
+
+```bash
+uname -a
+```
+
+Or, for detailed system info:
+```bash
+hostnamectl
+```
+
+Use this to determine whether to follow instructions for:
+- Linux
+- macOS Intel (x86_64)
+- macOS Apple Silicon (arm64)
+- Windows (via WSL)
+
+---
+
+## 📝 License & Acknowledgements
+
+Based on the ARTIC Network's tools with modifications for rabies virus workflows. Developed by the RAGE Toolkit team.
