@@ -2,8 +2,7 @@
 
 This workflow is designed for **Oxford Nanopore Technologies (ONT)** data analysis. It supports raw files in `.fastq`, `.fast5`, `.pod5`, and live basecalled `fastq_pass` formats and produces consensus genome sequences from a given list of samples.
 
-The pipeline is inspired by the [ARTIC Network’s fieldbioinformatics](https://github.com/artic-network/fieldbioinformatics), but is adapted specifically for **rabies virus** analysis.
-
+This pipeline is based on the [ARTIC Network’s fieldbioinformatics](https://github.com/artic-network/fieldbioinformatics)toolkit, which we have adapted and customised specifically for **rabies virus** genome analysis.
 ---
 
 ## ⚙️ Installation (Linux/WSL)
