@@ -78,46 +78,70 @@ dorado-0.7.2-linux-x64/
 
 ### 🔗 Adding Dorado Path to Your Environment Variable
 
-To make Dorado available system-wide, you need to add its binary and model directories to your shell’s environment variables.
+To make Dorado accessible from anywhere in your terminal, add its binary and model directories to your shell’s environment variables.
 
-#### 🕵️‍♀️ Step 1: Determine Your Shell
+---
 
-Run the following to find out which shell you're using:
+#### 🕵️ Step 1: Determine Your Shell
+
+Run the following command to check which shell you're using:
 
 ```bash
 echo $SHELL
 ```
 
 Typical outputs:
-- `/bin/bash` → edit `~/.bashrc` (or `~/.bash_profile` on macOS)
-- `/bin/zsh` → edit `~/.zshrc`
 
-> ⚠️ On **macOS**, `~/.bash_profile` is often used instead of `~/.bashrc`.
+| Output         | File to Edit        |
+|----------------|---------------------|
+| `/bin/bash`    | `~/.bashrc` (or `~/.bash_profile` on macOS) |
+| `/bin/zsh`     | `~/.zshrc`          |
 
-#### 🛠 Step 2: Add Dorado to Your Shell Profile
+---
 
-Edit the appropriate file (e.g., `~/.bash_profile`, `~/.bashrc`, or `~/.zshrc`) and add the following lines:
+#### 🛠 Step 2: Edit the File Using `vim`
+
+Use `vim` to open the correct file. For example:
+
+- **Linux (bash):**
+  ```bash
+  vim ~/.bashrc
+  ```
+- **macOS (bash):**
+  ```bash
+  vim ~/.bash_profile
+  ```
+- **macOS/Linux (zsh):**
+  ```bash
+  vim ~/.zshrc
+  ```
+
+Once inside `vim`, press `i` to enter **Insert mode**, then add the following lines (update the paths as needed):
 
 ```bash
 export PATH="$PATH:/home/<user>/path/to/dorado-x.y.z/bin"
 export DORADO_MODEL="/home/<user>/path/to/dorado-x.y.z/models"
 ```
 
-Replace `<user>` and paths with your actual directory structure.
+To save and exit:
+
+1. Press `Esc`
+2. Type `:wq`
+3. Press `Enter`
+
+---
 
 #### 🔁 Step 3: Apply the Changes
 
-After saving the file, run:
+After editing the file, apply the changes with:
 
 ```bash
-source ~/.bash_profile   # if you edited bash_profile
-# or
-source ~/.bashrc         # if you edited bashrc
-# or
-source ~/.zshrc          # if you use zsh
+source ~/.bashrc         # Linux
+source ~/.bash_profile   # macOS bash users
+source ~/.zshrc          # zsh users
 ```
 
-This ensures your changes take effect in your current terminal session.
+Your Dorado installation should now be available globally in the terminal.
 
 ---
 
