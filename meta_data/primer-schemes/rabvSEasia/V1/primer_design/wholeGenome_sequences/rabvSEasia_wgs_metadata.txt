@@ -1,0 +1,24 @@
+sequence.sequenceID	alignment.name	alignment.displayName	sequence.m49_country.id	sequence.m49_country.display_name	sequence.gb_place_sampled	sequence.collection_year	sequence.earliest_collection_year	sequence.latest_collection_year	sequence.gb_length	sequence.gb_create_date	sequence.gb_update_date	sequence.host	sequence.gb_pubmed_id	sequence.isolate
+AB981663	AL_Asian_SEA3	Asian SEA3	LAO	Lao	Champasak	2011	2011	2011	11924	29-Apr-2015	29-Apr-2015	Canis lupus familiaris brain	25825907	Lao2
+AB981664	AL_Asian_SEA3	Asian SEA3	LAO	Lao	Vientiane Capital	2011	2011	2011	11924	29-Apr-2015	29-Apr-2015	Canis lupus familiaris brain	25825907	Lao4
+EU293111	AL_Asian_SEA3	Asian SEA3	THA	Thailand	-	1983	1983	1983	11925	23-Apr-2008	23-Apr-2008	Homo sapiens	18446239	8764THA
+JN786877	AL_Asian_SEA3	Asian SEA3	THA	Thailand	-	-	-	2012	11923	14-Aug-2012	05-Nov-2012	-	22777181	QS-05
+JN786878	AL_Asian_SEA3	Asian SEA3	THA	Thailand	-	-	-	2012	11923	14-Aug-2012	05-Nov-2012	-	22777181	QS-BHK-P7
+KX148247	AL_Asian_SEA3	Asian SEA3	MMR	Myanmar	-	1999	1999	1999	11801	28-Nov-2016	28-Nov-2016	Canis familiaris	-	99009BIR
+KX148248	AL_Asian_SEA3	Asian SEA3	MMR	Myanmar	-	1999	1999	1999	11801	28-Nov-2016	28-Nov-2016	Canis familiaris	-	99015BIR
+KX148249	AL_Asian_SEA3	Asian SEA3	KHM	Cambodia	-	1998	1998	1998	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	02006CBG
+KX148250	AL_Asian_SEA3	Asian SEA3	KHM	Cambodia	-	1999	1999	1999	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	99016CBG
+KX148251	AL_Asian_SEA3	Asian SEA3	KHM	Cambodia	-	1998	1998	1998	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	99011CBG
+KX148252	AL_Asian_SEA3	Asian SEA3	KHM	Cambodia	-	1999	1999	1999	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	99008CBG
+KX148253	AL_Asian_SEA3	Asian SEA3	KHM	Cambodia	-	1998	1998	1998	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	99012CBG
+KX148254	AL_Asian_SEA3	Asian SEA3	VNM	Vietnam	-	2001	2001	2001	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	01016VNM
+KX148255	AL_Asian_SEA3	Asian SEA3	LAO	Lao	-	1999	1999	1999	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	99010LAO
+KX148256	AL_Asian_SEA3	Asian SEA3	LAO	Lao	-	2002	2002	2002	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	02004LAO
+KX148257	AL_Asian_SEA3	Asian SEA3	LAO	Lao	-	2002	2002	2002	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	02005LAO
+KX148258	AL_Asian_SEA3	Asian SEA3	LAO	Lao	-	2002	2002	2002	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	02003LAO
+KX148259	AL_Asian_SEA4	Asian SEA4	PHL	Philippines	-	1994	1994	1994	11803	28-Nov-2016	28-Nov-2016	Canis familiaris	-	94272PHI
+KX148260	AL_Asian_SEA4	Asian SEA4	PHL	Philippines	-	2004	2004	2004	11804	28-Nov-2016	28-Nov-2016	Canis familiaris	-	04030PHI
+KX148261	AL_Asian_SEA4	Asian SEA4	PHL	Philippines	-	1994	1994	1994	11800	28-Nov-2016	28-Nov-2016	Canis familiaris	-	94281PHI
+KX148262	AL_Asian_SEA4	Asian SEA4	PHL	Philippines	-	1994	1994	1994	11800	28-Nov-2016	28-Nov-2016	Canis familiaris	-	94278PHI
+KX148263	AL_Asian_SEA4	Asian SEA4	PHL	Philippines	-	1994	1994	1994	11800	28-Nov-2016	28-Nov-2016	Canis familiaris	-	94275PHI
+KX148266	AL_Asian_SEA1b	Asian SEA1b	IDN	Indonesia	-	2003	2003	2003	11802	28-Nov-2016	28-Nov-2016	Canis familiaris	-	03003INDO

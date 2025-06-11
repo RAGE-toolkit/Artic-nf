@@ -1,0 +1,42 @@
+sequence.sequenceID	alignment.name	alignment.displayName	sequence.m49_country.id	sequence.m49_country.display_name	sequence.gb_place_sampled	sequence.collection_year	sequence.earliest_collection_year	sequence.latest_collection_year	sequence.gb_length	sequence.gb_create_date	sequence.gb_update_date	sequence.host	sequence.gb_pubmed_id	sequence.isolate
+EU530698	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Juliaca, Puno"	1998	1998	1998	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN7314-98
+EU530699	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Juliaca, Puno"	1998	1998	1998	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN7456-98
+EU530700	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"J.D.Choquehuanca, Puno"	1998	1998	1998	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN8153-98
+EU530701	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Juliaca, Puno"	1998	1998	1998	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN8801-98
+EU530702	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Juli, Puno"	1999	1999	1999	264	5-Apr-08	26-Jul-16	Sus scrofa	-	PERPUN9807-99
+EU530703	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Zepita, Puno"	1999	1999	1999	264	5-Apr-08	26-Jul-16	Sus scrofa	-	PERPUN10104-99
+EU530704	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Kelluyo, Puno"	1999	1999	1999	264	5-Apr-08	26-Jul-16	Homo sapiens	-	PERPUN221-99
+EU530705	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Yunguyo, Puno"	1999	1999	1999	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN426-99
+EU530706	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Arapa, Puno"	1999	1999	1999	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN709-99
+EU530707	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Poccona, Puno"	1999	1999	1999	264	5-Apr-08	26-Jul-16	Homo sapiens	-	PERPUN1449-99
+EU530708	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Asillo, Puno"	2000	2000	2000	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN4384-00
+EU530709	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Azangaro, Puno"	2000	2000	2000	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN4387-00
+EU530710	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Orurillo, Puno"	2001	2001	2001	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN7012-01
+EU530711	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Yunguyo, Puno"	2001	2001	2001	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN7015-01
+EU530712	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Puno, Puno"	2001	2001	2001	264	5-Apr-08	26-Jul-16	Bos taurus	-	PERPUN22144-01
+EU530713	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Pomata, Puno"	2001	2001	2001	264	5-Apr-08	26-Jul-16	Bos taurus	-	PERPUN40781-01
+EU530714	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Desaguadero, Puno"	2001	2001	2001	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN40787-01
+EU530715	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Pomata, Puno"	2002	2002	2002	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN37476-02
+EU530716	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Juliaca, Puno"	2002	2002	2002	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN37478-02
+EU530717	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Desaguadero, Puno"	2003	2003	2003	264	5-Apr-08	26-Jul-16	llama	-	PERPUN5020-03
+EU530718	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Juliaca, Puno"	2003	2003	2003	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN37451-03
+EU530719	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Zepita, Puno"	2003	2003	2003	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN40095-03
+EU530720	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Juliaca, Puno"	2003	2003	2003	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN40097-03
+EU530721	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Zepita, Puno"	2003	2003	2003	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN40099-03
+EU530722	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Zepita, Puno"	2003	2003	2003	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPUN44494-03
+EU530723	AL_Cosmopolitan	Cosmopolitan	PER	Peru	"Desaguadero, Puno"	2003	2003	2003	264	5-Apr-08	26-Jul-16	Felis catus	-	PERPUN48182-03
+EU530725	AL_Cosmopolitan_AM3a	Cosmopolitan AM3a	PER	Peru	Madre de Dios	2000	2000	2000	264	5-Apr-08	26-Jul-16	Homo sapiens	-	PERMDD3851-00
+EU530726	AL_Cosmopolitan	Cosmopolitan	PER	Peru	Piura	2002	2002	2002	264	5-Apr-08	26-Jul-16	donkey	-	PERPIU28498-02
+EU530727	AL_Cosmopolitan	Cosmopolitan	PER	Peru	Piura	2002	2002	2002	264	5-Apr-08	26-Jul-16	Canis familiaris	-	PERPIU24938-02
+EU530728	AL_Cosmopolitan	Cosmopolitan	PER	Peru	Piura	2002	2002	2002	264	5-Apr-08	26-Jul-16	Capra hircus	-	PERPIU42208-02
+EU530729	AL_Cosmopolitan	Cosmopolitan	PER	Peru	Piura	2004	2004	2004	264	5-Apr-08	26-Jul-16	Vulpes vulpes	-	PERPIU32729-04
+FJ228498	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	2004	2004	2004	1350	8-Mar-09	24-Jul-16	Canis familiaris	-	4355Perudg2004
+FJ228499	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	2004	2004	2004	1350	8-Mar-09	24-Jul-16	Canis familiaris	-	4352Perudg2004
+FJ228500	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	2005	2005	2005	1350	8-Mar-09	24-Jul-16	Homo sapiens	-	1475peruhm2005
+FJ228501	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	2004	2004	2004	1350	8-Mar-09	24-Jul-16	Vulpes vulpes	-	26200PeruFx2004
+KF831540	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	1985	1985	1985	220	7-Jan-14	7-Jan-14	Canis familiaris	-	LIMADOG
+KF831564	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	1985	1985	1985	543	7-Jan-14	7-Jan-14	Canis familiaris	-	LIMADOG
+KU938752	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	2011	2011	2011	1350	3-Oct-16	3-Oct-16	Desmodus rotundus	27621441	201101787@2011Puno
+KU938829	AL_Cosmopolitan	Cosmopolitan	PER	Peru	-	2012	2012	2012	1350	3-Oct-16	3-Oct-16	Desmodus rotundus	27621441	201203037@2012Puno
+KU938904	AL_Cosmopolitan_AM3a	Cosmopolitan AM3a	PER	Peru	-	1999	1999	1999	1350	3-Oct-16	3-Oct-16	Desmodus rotundus	27621441	676@1999MadreDeDios
+KU963490	AL_Cosmopolitan	Cosmopolitan	-	-	-	-	-	2016	1350	6-Nov-16	6-Nov-16	Canis familiaris	-	SN3-PeruDog

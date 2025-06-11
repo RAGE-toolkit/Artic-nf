@@ -1,0 +1,194 @@
+
+You are using a proportion of Invariable sites estimate, although I don't
+like it. The likelihood epsilon "-f e" will be automatically lowered to 0.001
+to avoid unfavorable effects caused by simultaneous optimization of alpha and P-Invar
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530701.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530705.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530706.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530712.Cosmopolitan.Bos are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530716.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530718.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530719.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530700.Cosmopolitan.Canis and EU530720.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530702.Cosmopolitan.Sus and EU530703.Cosmopolitan.Sus are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530702.Cosmopolitan.Sus and EU530704.Cosmopolitan.Homo are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530702.Cosmopolitan.Sus and EU530707.Cosmopolitan.Homo are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530702.Cosmopolitan.Sus and EU530709.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530702.Cosmopolitan.Sus and EU530711.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530713.Cosmopolitan.Bos and EU530714.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530713.Cosmopolitan.Bos and EU530717.Cosmopolitan.llama are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530713.Cosmopolitan.Bos and EU530721.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530713.Cosmopolitan.Bos and EU530722.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530713.Cosmopolitan.Bos and EU530723.Cosmopolitan.Felis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530726.Cosmopolitan.donkey and EU530727.Cosmopolitan.Canis are exactly identical
+
+
+IMPORTANT WARNING: Sequences EU530726.Cosmopolitan.donkey and EU530728.Cosmopolitan.Capra are exactly identical
+
+IMPORTANT WARNING
+Found 20 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates removed is printed to file peru_nonBatClade_n40+outgrp_aln.fasta.reduced
+
+
+This is RAxML version 8.0.0 released by Alexandros Stamatakis on Dec 13 2013.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+David Dao         (KIT)
+Charlie Taylor    (UF)
+
+
+Alignment has 167 distinct alignment patterns
+
+Found 0 invariant alignment patterns that correspond to 0 columns 
+Proportion of gaps and completely undetermined characters in this alignment: 93.80%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 10 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA+P-Invar model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA+P-Invar Model parameters will be estimated up to an accuracy of 0.0010000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 167
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+/Users/kirstyn/NGS_tools/raxmlHPC-AVX-v8/raxml -f a -T 4 -m GTRGAMMAI -p 12345 -x 12345 -# 10 -s peru_nonBatClade_n40+outgrp_aln.fasta -n peru_1 
+
+
+
+Time for BS model parameter optimization 0.806604
+Bootstrap[0]: Time 3.422006 seconds, bootstrap likelihood -17860.082773, best rearrangement setting 13
+Bootstrap[1]: Time 3.661295 seconds, bootstrap likelihood -17969.726337, best rearrangement setting 13
+Bootstrap[2]: Time 2.993188 seconds, bootstrap likelihood -18022.431476, best rearrangement setting 12
+Bootstrap[3]: Time 3.510276 seconds, bootstrap likelihood -17747.622700, best rearrangement setting 15
+Bootstrap[4]: Time 3.221582 seconds, bootstrap likelihood -17750.354486, best rearrangement setting 10
+Bootstrap[5]: Time 2.900163 seconds, bootstrap likelihood -17878.694975, best rearrangement setting 10
+Bootstrap[6]: Time 1.437345 seconds, bootstrap likelihood -17808.372092, best rearrangement setting 6
+Bootstrap[7]: Time 3.158084 seconds, bootstrap likelihood -17915.373353, best rearrangement setting 14
+Bootstrap[8]: Time 2.041997 seconds, bootstrap likelihood -17913.142490, best rearrangement setting 5
+Bootstrap[9]: Time 2.152503 seconds, bootstrap likelihood -17974.550079, best rearrangement setting 7
+
+
+Overall Time for 10 Rapid Bootstraps 28.629587 seconds
+Average Time per Rapid Bootstrap 2.862959 seconds
+
+Starting ML Search ...
+
+Fast ML optimization finished
+
+Fast ML search Time: 16.888625 seconds
+
+Slow ML Search 0 Likelihood: -17888.339578
+Slow ML Search 1 Likelihood: -17888.339531
+Slow ML optimization finished
+
+Slow ML search Time: 39.645697 seconds
+Thorough ML search Time: 21.695394 seconds
+
+Final ML Optimization Likelihood: -17888.330685
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 2.073429
+invar: 0.545795
+Tree-Length: 0.681261
+rate A <-> C: 1.505542
+rate A <-> G: 9.408059
+rate A <-> T: 0.647293
+rate C <-> G: 0.218005
+rate C <-> T: 13.450515
+rate G <-> T: 1.000000
+
+freq pi(A): 0.267752
+freq pi(C): 0.235070
+freq pi(G): 0.244920
+freq pi(T): 0.252257
+
+
+ML search took 78.256956 secs or 0.021738 hours
+
+Combined Bootstrap and ML search took 106.887137 secs or 0.029691 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /Users/kirstyn/RAxML_bestTree.peru_1
+
+
+
+Found 1 tree in File /Users/kirstyn/RAxML_bestTree.peru_1
+
+Program execution info written to /Users/kirstyn/RAxML_info.peru_1
+All 10 bootstrapped trees written to: /Users/kirstyn/RAxML_bootstrap.peru_1
+
+Best-scoring ML tree written to: /Users/kirstyn/RAxML_bestTree.peru_1
+
+Best-scoring ML tree with support values written to: /Users/kirstyn/RAxML_bipartitions.peru_1
+
+Best-scoring ML tree with support values as branch labels written to: /Users/kirstyn/RAxML_bipartitionsBranchLabels.peru_1
+
+Overall execution time for full ML analysis: 106.895782 secs or 0.029693 hours or 0.001237 days
+
