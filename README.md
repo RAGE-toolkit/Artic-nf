@@ -76,14 +76,48 @@ dorado-0.7.2-linux-x64/
 │   └── rna00...
 ```
 
-### 🔗 Add Dorado to Environment Variable
+### 🔗 Adding Dorado Path to Your Environment Variable
+
+To make Dorado available system-wide, you need to add its binary and model directories to your shell’s environment variables.
+
+#### 🕵️‍♀️ Step 1: Determine Your Shell
+
+Run the following to find out which shell you're using:
 
 ```bash
-vim ~/.bashrc
-# Add the following lines:
-export PATH="$PATH:/home/<user>/path/to/dorado-0.7.2-linux-x64/bin"
-export DORADO_MODEL='/home/<user>/path/to/dorado-0.7.2-linux-x64/models'
+echo $SHELL
 ```
+
+Typical outputs:
+- `/bin/bash` → edit `~/.bashrc` (or `~/.bash_profile` on macOS)
+- `/bin/zsh` → edit `~/.zshrc`
+
+> ⚠️ On **macOS**, `~/.bash_profile` is often used instead of `~/.bashrc`.
+
+#### 🛠 Step 2: Add Dorado to Your Shell Profile
+
+Edit the appropriate file (e.g., `~/.bash_profile`, `~/.bashrc`, or `~/.zshrc`) and add the following lines:
+
+```bash
+export PATH="$PATH:/home/<user>/path/to/dorado-x.y.z/bin"
+export DORADO_MODEL="/home/<user>/path/to/dorado-x.y.z/models"
+```
+
+Replace `<user>` and paths with your actual directory structure.
+
+#### 🔁 Step 3: Apply the Changes
+
+After saving the file, run:
+
+```bash
+source ~/.bash_profile   # if you edited bash_profile
+# or
+source ~/.bashrc         # if you edited bashrc
+# or
+source ~/.zshrc          # if you use zsh
+```
+
+This ensures your changes take effect in your current terminal session.
 
 ---
 
