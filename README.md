@@ -12,14 +12,14 @@ conda activate artic-nf
 ```
 Dorado must be downloaded manually from Oxford Nanopore, you can find it here:   
 https://github.com/nanoporetech/dorado
+Ensure you choose the version that matches your computer's operating system.
 
-After the download, it needs to be uncompressed and additional models need to be downloaded as indicated below. Assume that you have downloaded dorado version "dorado-0.7.2-linux-x64.tar.gz"
+After the download, copy the file to the artic-nf directory. It then needs to be uncompressed and additional models need to be downloaded as indicated below. Assume that you have downloaded dorado version "dorado-0.7.2-linux-x64.tar.gz"
 ```
 $tar -xvzf dorado-0.7.2-linux-x64.tar.gz
 $cd dorado-0.7.2-linux-x64/bin/
 $./dorado download --model all
 $mkdir models
-$mv dna_r* models
 $mv dna_r* models
 $mv rna00* models
 mv models/ ./../
@@ -51,12 +51,15 @@ conda activate artic_nf
 Run below python code to confirm the platform. 
 
 ```
-python
+python3
 import platform
 platform.machine()
 ```
 
-The output of above code should be **arm64**, otherwise, download the appropriate version of the Miniforge and re-install and run the above command to check the platform.
+The output of above code should be **arm64**, otherwise, download the appropriate version of the Miniforge and re-install and run the above command to check the platform. 
+
+Enter ctrl+d to exit python
+
 Once everything is set, run the below commands to install nextflow and and medaka.
 
 ```
