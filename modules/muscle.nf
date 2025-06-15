@@ -23,7 +23,9 @@ process MUSCLE {
 
 	maxForks 1
 
-	conda 'envs/muscle.yml'
+	errorStrategy 'ignore'
+
+	//conda 'envs/muscle.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -36,7 +38,17 @@ process MUSCLE {
 	
 	script:
 	"""
-	muscle -align ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta \
--output ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.out.fasta
+	# Check muscle version
+	version=\$(muscle -version 2>&1 | head -n 1)
+
+	if echo "\$version" | grep -q "3.8"; then
+		echo "Using MUSCLE v3 syntax"
+		muscle -in ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta \
+		 -out ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.out.fasta
+	else
+		echo "Using MUSCLE v5 syntax"
+		muscle -align ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta \
+		-output ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.out.fasta
+  fi
 	"""
 	}

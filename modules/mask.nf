@@ -23,7 +23,8 @@ mask = "${currDir}/scripts/mask.py"
 
 process MASK {
 
-	conda 'envs/pyvcf.yml'
+	errorStrategy 'ignore'
+	//conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -36,9 +37,11 @@ process MASK {
 	
 	script:
 	"""
-	python ${mask} ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt \
-${currDir}/${params.output_dir}/medaka/${sampleId}.fail.vcf \
-${currDir}/${params.output_dir}/medaka/${sampleId}.preconsensus.fasta
+	set -e
+	(
+		python ${mask} ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.fail.vcf \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.preconsensus.fasta ) || echo "mask" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

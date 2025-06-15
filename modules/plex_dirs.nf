@@ -4,14 +4,13 @@ nextflow.enable.dsl=2
 
 def currDir = System.getProperty("user.dir");
 
-script_path = "${currDir}/scripts/directory_plex.py"
+script_path = "${projectDir}/scripts/directory_plex.py"
 process PLEX_DIRS {
-
-	conda 'envs/biopython.yml'
+	//conda 'envs/biopython.yml'
 
 	label 'plex_dirs'
 
-	publishDir "${currDir}/${params.fastq_dir}", mode: 'copy'
+	publishDir "${projectDir}/${params.fastq_dir}", mode: 'copy'
 
 	input:
 	val input_dir
@@ -27,6 +26,6 @@ process PLEX_DIRS {
 		--skip_quality_check \
 		-min ${params.seq_len} \
 		-d ${input_dir}/${item} \
-		-o "${currDir}/${params.fastq_dir}/${sample_id}_${item}${params.fq_extension}"
+		-o "${projectDir}/${params.fastq_dir}/${sample_id}_${item}${params.fq_extension}"
 	"""
 }

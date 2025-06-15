@@ -25,8 +25,10 @@ align_trim = "${currDir}/scripts/align_trim.py"
 
 process MEDAKA_SNP_1 {
 
+	errorStrategy 'ignore'
+
 	if (osName.contains("linux")) {
-		conda 'envs/medaka.yml'
+		//conda 'envs/medaka.yml'
 	}
 
 
@@ -41,8 +43,10 @@ process MEDAKA_SNP_1 {
 	
 	script:
 	"""
-	medaka snp ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-${currDir}/${params.output_dir}/medaka/${sampleId}.1.hdf \
-${currDir}/${params.output_dir}/medaka/${sampleId}.1.vcf
+	set -e
+	(
+		medaka snp ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.1.hdf \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.1.vcf ) || echo "medaka-snp-1" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

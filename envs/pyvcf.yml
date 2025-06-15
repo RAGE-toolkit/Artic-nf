@@ -9,4 +9,4 @@ dependencies:
   - pandas
   - pysam
   - samtools
-  - pyvcf=0.6.8
+  - cyvcf2

@@ -24,9 +24,11 @@ mask = "${currDir}/scripts/mask.py"
 def osName = System.getProperty("os.name").toLowerCase()
 
 process BCFTOOLS_CONSENSUS {
+
+	errorStrategy 'ignore'
 	
 	if (osName.contains("linux")) {
-			conda 'envs/medaka.yml'
+			//conda 'envs/medaka.yml'
 		}
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
@@ -40,9 +42,11 @@ process BCFTOOLS_CONSENSUS {
 	
 	script:
 	"""
-bcftools consensus -f ${currDir}/${params.output_dir}/medaka/${sampleId}.preconsensus.fasta \
-${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf.gz \
--m ${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt \
--o ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta
+	set -e
+	(
+		bcftools consensus -f ${currDir}/${params.output_dir}/medaka/${sampleId}.preconsensus.fasta \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf.gz \
+		-m ${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt \
+		-o ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ) || echo "bcftools-consensus" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

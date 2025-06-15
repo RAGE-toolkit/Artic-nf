@@ -23,7 +23,9 @@ fasta_header = "${currDir}/scripts/fasta_header.py"
 
 process CONCAT_FOR_MUSCLE {
 
-	conda 'envs/pyvcf.yml'
+	errorStrategy 'ignore'
+
+	//conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -36,7 +38,9 @@ process CONCAT_FOR_MUSCLE {
 	
 	script:
 	"""
-cat ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-> ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta
+	set -e
+	(
+		cat ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+	> ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta ) || echo "concat-for_muscle" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

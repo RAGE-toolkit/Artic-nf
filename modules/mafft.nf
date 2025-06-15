@@ -10,7 +10,7 @@ if (!res_dir.exists()) {
 
 process MAFFT {
 
-	conda 'envs/mafft.yml'
+	//conda 'envs/mafft.yml'
 
 	publishDir "${currDir}/${params.output_dir}/mafft/", mode: 'copy'
 	

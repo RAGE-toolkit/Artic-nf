@@ -23,7 +23,8 @@ make_depth_mask = "${currDir}/scripts/make_depth_mask.py"
 
 process MAKE_DEPTH_MASK {
 
-	conda 'envs/pyvcf.yml'
+	errorStrategy 'ignore'
+	//conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -36,11 +37,13 @@ process MAKE_DEPTH_MASK {
 	
 	script:
 	"""
-	python ${make_depth_mask} \
-	--depth ${params.mask_depth} \
-	--store-rg-depths \
-	${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-	${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
-	${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt
+	set -e
+	(
+		python ${make_depth_mask} \
+		--depth ${params.mask_depth} \
+		--store-rg-depths \
+		${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt ) || echo "make-depth-mask" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

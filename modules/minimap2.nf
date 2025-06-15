@@ -23,7 +23,7 @@ align_trim = "${currDir}/scripts/align_trim.py"
 
 process MINIMAP2 {
 
-	conda 'envs/minimap2.yml' 
+	//conda 'envs/minimap2.yml' 
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 

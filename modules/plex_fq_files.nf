@@ -7,7 +7,7 @@ def currDir = System.getProperty("user.dir");
 script_path = "${currDir}/scripts/single_fastq_plex.py"
 process PLEX_FQ_FILES {
 
-	conda 'envs/biopython.yml'
+	//conda 'envs/biopython.yml'
 
 	label 'plex_dirs'
 

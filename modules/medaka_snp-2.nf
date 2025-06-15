@@ -25,8 +25,10 @@ def osName = System.getProperty("os.name").toLowerCase()
 
 process MEDAKA_SNP_2 {
 
+	errorStrategy 'ignore'
+
 	if (osName.contains("linux")) {
-		conda 'envs/medaka.yml'
+		//conda 'envs/medaka.yml'
 	}
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
@@ -40,8 +42,10 @@ process MEDAKA_SNP_2 {
 	
 	script:
 	"""
-	medaka snp ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf \
-${currDir}/${params.output_dir}/medaka/${sampleId}.2.vcf
+	set -e
+	(
+		medaka snp ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.2.vcf ) || echo "medaka-snp-2" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

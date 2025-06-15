@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 import pandas as pd
-import vcf
+#import vcf
+from cyvcf2 import VCF, Writer
 import sys
 import subprocess
 import csv
@@ -142,8 +143,8 @@ if __name__ == "__main__":
 
     bedfile = read_bed_file(sys.argv[1])
 
-    vcf_reader = vcf.Reader(filename=sys.argv[2])
-    vcf_writer = vcf.Writer(sys.stdout, vcf_reader)
+    vcf_reader = VCF(filename=sys.argv[2]) #vcf.Reader(filename=sys.argv[2])
+    vcf_writer = Writer('-', vcf_reader) #vcf.Writer(sys.stdout, vcf_reader)
     for record in vcf_reader:
         v = overlaps(bedfile, record.POS)
         if v:

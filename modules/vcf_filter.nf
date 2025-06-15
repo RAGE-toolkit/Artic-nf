@@ -23,7 +23,9 @@ vcf_filter = "${currDir}/scripts/vcf_filter.py"
 
 process VCF_FILTER {
 
-	conda 'envs/tabix.yml'
+	errorStrategy 'ignore'
+
+	//conda 'envs/tabix.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -37,12 +39,14 @@ process VCF_FILTER {
 	
 	script:
 	"""
-	python ${vcf_filter} \
---medaka \
-${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf \
-${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf \
-${currDir}/${params.output_dir}/medaka/${sampleId}.fail.vcf \
-&& bgzip -f ${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf \
-&& tabix -p vcf ${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf.gz
+	set -e
+	(
+		python ${vcf_filter} \
+		--medaka \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.fail.vcf \
+		&& bgzip -f ${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf \
+		&& tabix -p vcf ${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf.gz ) || echo "vcf_filter" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

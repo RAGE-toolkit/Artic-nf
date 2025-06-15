@@ -23,7 +23,9 @@ fasta_header = "${currDir}/scripts/fasta_header.py"
 
 process FASTA_HEADER {
 
-	conda 'envs/pyvcf.yml'
+	errorStrategy 'ignore'
+
+	//conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -36,7 +38,8 @@ process FASTA_HEADER {
 	
 	script:
 	"""
-	python ${fasta_header} ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta \
-${sampleId}
+	set -e
+	(
+		python ${fasta_header} ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ${sampleId} ) || echo "fasta-header" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

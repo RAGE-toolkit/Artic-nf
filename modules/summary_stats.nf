@@ -14,7 +14,7 @@ summary_stat_path = "${currDir}/scripts/summary_stats.py"
 
 process SUMMARY_STATS {
 
-	conda 'envs/datamash.yml'
+	//conda 'envs/datamash.yml'
 
 	label "summary_stats"
 

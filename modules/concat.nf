@@ -10,7 +10,7 @@ if (!res_dir.exists()) {
 
 process CONCAT {
 
-	conda 'envs/pyvcf.yml'
+	//conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}/concatenate"
 

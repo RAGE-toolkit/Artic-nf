@@ -25,8 +25,10 @@ def osName = System.getProperty("os.name").toLowerCase()
 
 process MEDAKA_1 {
 
+	errorStrategy 'ignore'
+
 	if (osName.contains("linux")) {
-		conda 'envs/medaka.yml'
+		//conda 'envs/medaka.yml'
 	}
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
@@ -40,12 +42,14 @@ process MEDAKA_1 {
 	
 	script:
 	"""
-	medaka consensus \
---model ${params.medaka_model} \
---threads ${params.threads} \
---chunk_len 800 \
---chunk_ovlp 400 \
---RG 1 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
-${currDir}/${params.output_dir}/medaka/${sampleId}.1.hdf
+	set -e
+  (
+		medaka consensus \
+		--model ${params.medaka_model} \
+		--threads ${params.threads} \
+		--chunk_len 800 \
+		--chunk_ovlp 400 \
+		--RG 1 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
+		${currDir}/${params.output_dir}/medaka/${sampleId}.1.hdf ) || echo "medaka-1" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

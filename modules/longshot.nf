@@ -25,7 +25,7 @@ process LONGSHOT {
 
 	errorStrategy 'ignore'
 
-	conda 'envs/longshot.yml'
+	//conda 'envs/longshot.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -38,13 +38,15 @@ process LONGSHOT {
 	
 	script:
 	"""
-	longshot -P 0 \
--F \
--A \
---no_haps \
---bam ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
---ref ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
---out ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf \
---potential_variants ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf.gz
+	set -e
+	(
+		longshot -P 0 \
+		-F \
+		-A \
+		--no_haps \
+		--bam ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
+		--ref ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+		--out ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf \
+		--potential_variants ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf.gz ) || echo "longshot" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

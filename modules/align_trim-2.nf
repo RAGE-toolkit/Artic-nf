@@ -23,7 +23,9 @@ align_trim = "${currDir}/scripts/align_trim.py"
 
 process ALIGN_TRIM_2 {
 
-	conda 'envs/pyvcf.yml'
+	errorStrategy 'ignore'
+
+	//conda 'envs/pyvcf.yml'
 
 	publishDir "${currDir}/${params.output_dir}", mode: 'copy'
 
@@ -37,14 +39,16 @@ process ALIGN_TRIM_2 {
 
 	script:
 	"""
-	python ${align_trim} \
---normalise 200 \
-${params.primer_schema}/${scheme}/${version}/${scheme}.scheme.bed \
---report ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.txt \
-< ${currDir}/${params.output_dir}/medaka/${sampleId}.sorted.bam \
-2> ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.er \
-| samtools sort -T ${params.output_dir}/medaka/${sampleId} \
--o ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
-&& samtools index ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam
+	set -e
+  	(
+		python ${align_trim} \
+		--normalise 200 \
+		${params.primer_schema}/${scheme}/${version}/${scheme}.scheme.bed \
+		--report ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.txt \
+		< ${currDir}/${params.output_dir}/medaka/${sampleId}.sorted.bam \
+		2> ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.er \
+		| samtools sort -T ${params.output_dir}/medaka/${sampleId} \
+		-o ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
+		&& samtools index ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam ) || echo "align-trim-2" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}
