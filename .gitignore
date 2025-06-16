@@ -19,3 +19,6 @@ node_modules/
 
 # OS generated files
 Thumbs.db
+
+# Files/folders downloaded for user 
+dorado-*/
