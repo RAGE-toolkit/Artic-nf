@@ -13,7 +13,7 @@ Click below to jump directly to the install instructions for your operating syst
 - [🔧 Linux / WSL](#installation-linuxwsl)
 - [🍎 macOS (M1/M2/M3)](#installation-apple-silicon-m1-m2-m3)
 - [🍏 macOS (Intel x86_x64)](#installation-for-mac-x86_x64)
-- [💡 General Instructions for All Mac Users](#general-information-for-all-mac-architectures-m1-m2-m3-and-intel)
+- [💡 General Instructions for All Mac Users](#-general-information-for-all-mac-architectures-m1-m2-m3-and-intel)
 
 Running the pipeline:
 
