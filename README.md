@@ -17,7 +17,7 @@ Click below to jump directly to the install instructions for your operating syst
 
 Running the pipeline:
 
-- [Go to heading](#running-the-workflow)
+- [🚀 Running the pipeline](#running-the-workflow)
 
 ---
 
