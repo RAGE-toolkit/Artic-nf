@@ -11,7 +11,7 @@ This pipeline is based on the [ARTIC Network’s fieldbioinformatics](https://gi
 Click below to jump directly to the install instructions for your operating system:
 
 - [🔧 Linux / WSL](#installation-linuxwsl)
-- [🍎 macOS (M1/M2/M3)](#installation-apple-silicon-m1m2m3)
+- [🍎 macOS (M1/M2/M3)](#installation-apple-silicon-m1-m2-m3)
 - [🍏 macOS (Intel x86_x64)](#installation-for-mac-x86_x64)
 - [💡 General Instructions for All Mac Users](#general-information-for-all-the-mac-architecture-m1m2m3-and-intel-x86_x64)
 
