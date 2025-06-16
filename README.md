@@ -15,6 +15,10 @@ Click below to jump directly to the install instructions for your operating syst
 - [🍏 macOS (Intel x86_x64)](#installation-for-mac-x86_x64)
 - [💡 General Instructions for All Mac Users](#general-information-for-all-the-mac-architecture-m1m2m3-and-intel-x86_x64)
 
+Running the pipeline:
+
+- [🚀 Running the pipeline](###Running-the-Workflow)
+
 ---
 
 ## ❓ Check Your Operating System
