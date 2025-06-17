@@ -152,7 +152,7 @@ Your Dorado installation should now be available globally in the terminal.
 ## Installation (Apple Silicon M1, M2, M3)
 
 ### Docker setup
-Docker is a recommened option for running the workflow. The conda sometime failes to get all the dependencies installed. 
+Docker is a recommened option for running the workflow for Apple Silicon (tested on M3 chips). The conda sometime failes to get all the dependencies installed. 
 
 #### Setup for Docker
 Download Docker Desktop from https://www.docker.com/products/docker-desktop/, then install and launch the application.
