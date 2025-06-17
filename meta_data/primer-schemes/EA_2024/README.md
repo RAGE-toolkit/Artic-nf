@@ -7,14 +7,14 @@ This folder contains the reference genome and associated primer scheme used for 
 ## 📌 Reference Genome
 
 - **Virus:** Rabies virus  
-- **Accession:** OR045981  
+- **Accession:** OR045981 (id:Z00861838)
 - **Source:** NCBI GenBank  
 - **Length:** 11,695 bp (original)  
 - **File:** `EA_2024.reference.fasta`  
 
 ### 🔧 Reference Genome Modifications
 
-The genome OR045981 was used as the starting reference but had unresolved regions (`N`s) at both ends. These missing regions were replaced by splicing in consensus sequence derived from East African genomes:
+A 51% consensus sequence of the sequence panel used in primer design was generated. Any ambiguous bases (Ns) in the consensus were replaced with the base call in genome Z00861838 (accession OR045981, as the primary seq in primer design). Since this genome had unresolved regions (`N`s) at both ends missing regions were replaced by splicing in consensus sequence derived from all available East African genomes:
 
 - **5′ end:** 79 bp spliced in  
 - **3′ end:** 149 bp spliced in  
@@ -32,8 +32,13 @@ Details of sequences used:
   Consensus:  
   `V1/reference_seq_detail/EA_genomeEnd_sequencesToSplice.consensus.fa`
 
+
 The final modified reference used in primer design is:  
 `V1/EA_2024.reference.fasta`
+
+### 🔧 Other Modifications
+
+It was noted that primer positions in original bed files were incorrect once the modified reference genome was produced. Hence, this were corrected manually.
 
 ---
 
