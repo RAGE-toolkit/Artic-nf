@@ -151,6 +151,29 @@ Your Dorado installation should now be available globally in the terminal.
 
 ## Installation (Apple Silicon M1, M2, M3)
 
+### Docker setup
+Docker is a recommened option for running the workflow. The conda sometime failes to get all the dependencies installed. 
+
+#### Setup for Docker
+Download Docker Desktop from https://www.docker.com/products/docker-desktop/, then install and launch the application.
+
+#### Download and setting up the environment
+```bash
+git clone https://github.com/RAGE-toolkit/Artic-nf.git
+cd Artic-nf
+conda env create --file environment.yml
+conda activate artic-nf
+```
+
+#### Running the test data
+It's a good practice to check if the workflow is functioning properly before running actual samples. The following simple steps will help you verify whether the workflow is working correctly.
+
+```shell
+nextflow main.nf -profile docker
+```
+
+## Conda setup
+
 ⚠️ **Make sure your Miniforge or Conda setup supports `arm64`.**
 
 Clone the base environment:
