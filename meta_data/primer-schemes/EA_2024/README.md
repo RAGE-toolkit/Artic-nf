@@ -83,58 +83,57 @@ Primers were designed using a representative panel of 20 sequences chosen from a
 
 ```
 
-README.md                                # This documentation file
-
-V1/                                      # Version 1 of the EA_2024 scheme
-├── EA_2024.insert.bed                   # Amplicon regions excluding primer sites
-├── EA_2024.log                          # Log from primer scheme generation
-├── EA_2024.plot.pdf                     # Visual layout of primers (PDF format)
-├── EA_2024.plot.svg                     # Visual layout of primers (SVG format)
-├── EA_2024.primer.bed                   # BED file listing primer coordinates
-├── EA_2024.primer.tsv                   # TSV file with primer names and sequences
-├── EA_2024.reference.fasta              # Final reference genome used for scheme
-├── EA_2024.report.json                  # Summary report from primer design
-├── EA_2024.scheme.bed                   # Combined primer BED file for use in pipelines
-
-├── primer_design/                       # Primer design inputs and intermediate files
-│   ├── EA_2024_primerDesign_referencePanel.fasta      # Final panel of 20 reference sequences used for design
-│   ├── reference-seqs/                                 # Source data and intermediate alignments
-│   │   ├── EA_general_align.fasta                      # Multiple alignment of East African sequences (Tanzania/Kenya)
-│   │   ├── EA_general_metadata_new_assignment_fig1.csv # Metadata used in reference selection
-│   │   ├── EA_Malawi_96cov_treemmer/                   # Tree-reduced panel from TZA,KEN,MWI sequences, considering only those with ≥96% genome coverage 
-│   │   │   ├── EA_Malawi.96cov.fasttree_trimmed_list_X_20
-│   │   │   ├── EA_Malawi.96cov.fasttree_trimmed_list_X_20_sequences.fasta
-│   │   │   └── EA_Malawi.96cov.fasttree_trimmed_tree_X_20
-│   │   ├── EA_Malawi_treemmer/                         # Tree-reduced panel from TZA,KEN,MWI sequences, considering all sequences (not just xx coverage)
-│   │   │   ├── EA_Malawi.fasttree.newick_trimmed_list_X_20
-│   │   │   ├── EA_Malawi.fasttree.newick_trimmed_list_X_20_sequences.fasta
-│   │   │   └── EA_Malawi.fasttree.newick_trimmed_tree_X_20
-│   │   ├── EA_Malawi.96cov.aln.fasta                   # Full alignment for 96% coverage TZA,KEN,MWI genomes
-│   │   ├── EA_Malawi.96cov.fasttree                    # Tree built from 96% coverage TZA,KEN,MWI sequences
-│   │   ├── EA_Malawi.aln.fasta                         # Alignment of all TZA,KEN,MWI sequences
-│   │   ├── EA_Malawi.fasttree                          # Full tree from TZA,KEN,MWI sequences
-│   │   ├── EA_Malawi.fasttree.newick                   # Newick-format tree file
-│   │   ├── MWI-blantyre_1_104_unaligned_lowNprop.fasta # Raw input data from Malawi
-│   │   └── rabv_ea.reference.fasta                     # Previous reference used in `rabv_ea` scheme
-
-│   └── trimmed_trees/                                  # Tree files from Treemmer-reduced panels
-│       └── EA_trimmed_20reps/
-│           ├── Tree_EA_Ml.newick
-│           ├── Tree_EA_Ml.newick_res_1_LD
-│           ├── Tree_EA_Ml.newick_res_1_TLD.pdf
-│           ├── Tree_EA_Ml.newick_trimmed_list_X_20
-│           ├── Tree_EA_Ml.newick_trimmed_tree_X_20
-│           └── Tree_EA_Ml.tree
-
-├── reference_seq_detail/                # Details of genome end repairs
-│   ├── EA_general_align.fasta                         # Full East African alignment
-│   ├── EA_genomeEnd_sequencesToSplice.consensus.fa    # Consensus for 3′ end repair
-│   ├── EA_genomeEnd_sequencesToSplice.fa              # Raw sequences for 3′ end
-│   ├── EA_genomeEnd_sequencesToSplice.fa.bak001       # Backup
-│   ├── EA_genomeStart_sequencesToSplice.consensus.fa  # Consensus for 5′ end repair
-│   ├── EA_genomeStart_sequencesToSplice.fa            # Raw sequences for 5′ end
-│   ├── Z00861838_spliced.fasta                        # Base genome after modifications (before renaming to generic EA_reference)
-│   └── Z00861838.fasta                                # Base genome before modifications
+.
+├── README.md                         # Overview and instructions for the primer design project
+└── V1
+    ├── EA_2024.insert.bed            # BED file showing insert regions between primers
+    ├── EA_2024.log                   # Log file recording details of primer design run
+    ├── EA_2024.plot.pdf              # Primer positions visualisation (PDF)
+    ├── EA_2024.plot.svg              # Primer positions visualisation (SVG)
+    ├── EA_2024.primer.bed.txt        # BED format table of designed primers
+    ├── EA_2024.primer.sequences.fasta# FASTA of designed primer sequences
+    ├── EA_2024.primer.tsv            # Tab-delimited table of primers with metadata
+    ├── EA_2024.reference.fasta       # Reference genome used for primer design
+    ├── EA_2024.report.json           # JSON report of design metrics and summary
+    ├── EA_2024.scheme.bed            # Final primer scheme (BED format)
+    ├── primer_design
+    │   ├── EA_2024_primerDesign_referencePanel_with51consensus.fasta  # Ref panel incl. their consensus sequence 
+    │   ├── EA_2024_primerDesign_referencePanel.fasta                  # Main reference panel
+    │   ├── EA_2024.51consensus.ambiguousbasemodification.fasta        # Ref panel consensus with ambiguous bases handled
+    │   ├── reference-seqs
+    │   │   ├── EA_general_align.fasta               # All East Africa RABV sequence alignment
+    │   │   ├── EA_general_metadata_new_assignment_fig1.csv  # Metadata for sequences
+    │   │   ├── EA_Malawi_96cov_treemmer # Tremmer analysis of East Africa sequences with at least 96% genome cov
+    │   │   │   ├── EA_Malawi.96cov.fasttree_trimmed_list_X_20          # List of selected reference sequences for primer design (after Tremmer)
+    │   │   │   ├── EA_Malawi.96cov.fasttree_trimmed_list_X_20_sequences.fasta # FASTA of selected sequences
+    │   │   │   └── EA_Malawi.96cov.fasttree_trimmed_tree_X_20          # Trimmed phylogenetic tree
+    │   │   ├── EA_Malawi_treemmer # Tremmer analysis of East Africa sequences with any genome cov
+    │   │   │   ├── EA_Malawi.fasttree.newick_trimmed_list_X_20         # List of selected sequences
+    │   │   │   ├── EA_Malawi.fasttree.newick_trimmed_list_X_20_sequences.fasta # FASTA of selected sequences
+    │   │   │   └── EA_Malawi.fasttree.newick_trimmed_tree_X_20         # Trimmed phylogenetic tree
+    │   │   ├── EA_Malawi.96cov.aln.fasta          # Alignment of 96cov East africa + Malawi sequences
+    │   │   ├── EA_Malawi.96cov.fasttree           # Fasttree tree for 96cov
+    │   │   ├── EA_Malawi.aln.fasta                # General alignment of East africa + Malawi sequences
+    │   │   ├── EA_Malawi.fasttree                 # Phylogenetic tree of East africa + Malawi sequences
+    │   │   ├── EA_Malawi.fasttree.newick          # Newick format tree of East africa + Malawi sequences
+    │   │   └── MWI-blantyre_1_104_unaligned_lowNprop.fasta  # Unaligned low-N-content sequences
+    │   └── trimmed_trees
+    │       └── EA_trimmed_20reps
+    │           ├── Tree_EA_Ml.newick               # Main tree (Newick)
+    │           ├── Tree_EA_Ml.newick_res_1_LD      # LD-resolved tree
+    │           ├── Tree_EA_Ml.newick_res_1_TLD.pdf # Visualisation of resolved tree (PDF)
+    │           ├── Tree_EA_Ml.newick_trimmed_list_X_20   # List of selected sequences
+    │           ├── Tree_EA_Ml.newick_trimmed_tree_X_20   # Trimmed tree (Newick)
+    │           └── Tree_EA_Ml.tree                 # General tree object (format unspecified)
+    └── reference_seq_detail
+        ├── EA_general_align.fasta                  # General sequence alignment
+        ├── EA_genomeEnd_sequencesToSplice.consensus.fa    # Consensus FASTA for genome ends
+        ├── EA_genomeEnd_sequencesToSplice.fa       # Genome end sequences to splice
+        ├── EA_genomeEnd_sequencesToSplice.fa.bak001 # Backup of genome end sequences
+        ├── EA_genomeStart_sequencesToSplice.consensus.fa  # Consensus FASTA for genome start
+        ├── EA_genomeStart_sequencesToSplice.fa     # Genome start sequences to splice
+        ├── Z00861838_spliced.fasta                 # Spliced sequence for sample Z00861838
+        └── Z00861838.fasta                         # Original sequence for sample Z00861838
 
 ```
 
