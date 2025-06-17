@@ -154,7 +154,6 @@ Your Dorado installation should now be available globally in the terminal.
 ### Docker setup
 Docker is a recommened option for running the workflow for Apple Silicon (tested on M3 chips). The conda sometime failes to get all the dependencies installed. 
 
-#### Setup for Docker
 Download Docker Desktop from https://www.docker.com/products/docker-desktop/, then install and launch the application.
 
 #### Download and setting up the environment
@@ -171,6 +170,16 @@ It's a good practice to check if the workflow is functioning properly before run
 ```shell
 nextflow main.nf -profile docker
 ```
+
+#### Output from the workflow
+If the workflow completes successfully without any errors, a results directory will be generated in your working directory. This folder will contain several subdirectories, including:
+
+- medaka:– contains consensus sequences, aligned and trimmed bam files, variant files and other log files.
+- concat:– holds concatenated sequences for downstream analysis.
+- mafft:– includes multiple sequence alignments produced using MAFFT.
+- summary_stats:– provides an overall summary report of each processed sample, including metrics such as read counts, coverage, and other similar information.
+
+These outputs help confirm that the workflow ran correctly and allow you to review the quality and completeness of the sample processing before moving on to full-scale analysis.
 
 ## Conda setup
 
