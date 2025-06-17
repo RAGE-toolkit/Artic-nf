@@ -166,7 +166,7 @@ conda activate artic-nf
 ```
 
 #### Running the test data
-It's a good practice to check if the workflow is functioning properly before running actual samples. The following simple steps will help you verify whether the workflow is working correctly.
+It's a good practice to check if the workflow is functioning properly before running actual samples. The following simple step will help you verify whether the workflow is working correctly.
 
 ```shell
 nextflow main.nf -profile docker
