@@ -47,7 +47,9 @@ include	{ CONCAT_FOR_MUSCLE	} from './modules/concat_for_muscle.nf'
 include	{ MUSCLE	} from './modules/muscle.nf'
 include { CONCAT	} from './modules/concat.nf'
 include { MAFFT	} from './modules/mafft.nf'
-include	{ SUMMARY_STATS	} from './modules/summary_stats.nf'
+include	{ SUMMARY_STATS } from './modules/summary_stats.nf'
+include { REPORT } from './modules/report.nf'
+
 //__________________________________________________________________________________________
 // load meta data
 meta_file = "$currDir/${params.meta_file}";
@@ -157,6 +159,7 @@ workflow
 		CONCAT(input_fasta=MUSCLE.out.muscle_op_fasta.collect())
 		MAFFT(concat_fa=CONCAT.out.genome_fa.collect())
 		SUMMARY_STATS(item=MAFFT.out.mafft_fa.collect())
+		REPORT(summary_file=SUMMARY_STATS.out.summary)
 	}
 	else {
 		if (params.basecaller == "Dorado") {
@@ -182,6 +185,7 @@ workflow
 			CONCAT(input_fasta=MUSCLE.out.muscle_op_fasta.collect())
 			MAFFT(concat_fa=CONCAT.out.genome_fa.collect())
 			SUMMARY_STATS(item=MAFFT.out.mafft_fa.collect())
+			REPORT(summary_file=SUMMARY_STATS.out.summary)
 		}
 		else {
 			GUPPY_BASECALLER(fast5_or_pod5_dir="${params.rawfile_dir}")
@@ -206,6 +210,7 @@ workflow
 			CONCAT(input_fasta=MUSCLE.out.muscle_op_fasta.collect())
 			MAFFT(concat_fa=CONCAT.out.genome_fa.collect())
 			SUMMARY_STATS(item=MAFFT.out.mafft_fa.collect())
+			REPORT(summary_file=SUMMARY_STATS.out.summary)
 			}
 	}
 }
