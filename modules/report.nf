@@ -28,7 +28,8 @@ process REPORT {
 
 	script:
 	"""
-	python ${report_path} --alignreport_dir ${currDir}/${params.output_dir}/medaka --summary_stats_file ${currDir}/${params.output_dir}/summary_stats/$summary_file --output_dir ${currDir}/${params.output_dir}/report    """
+	python ${report_path} --alignreport_dir ${currDir}/${params.output_dir}/medaka --summary_stats_file ${currDir}/${params.output_dir}/summary_stats/$summary_file --output_dir ${currDir}/${params.output_dir}/report    
+	"""
 }
 
 
