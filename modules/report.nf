@@ -21,14 +21,14 @@ process REPORT {
 	publishDir "${currDir}/${params.output_dir}/report/", mode: 'copy'
 	
 	input:
-	path summary_file 
+	val summary_file 
 
 	output:
 	val "combined_summary_report.html", emit: report 
 
 	script:
 	"""
-	python ${report_path} --alignreport_dir ${currDir}/${params.output_dir}/medaka --summary_stats_file $summary_file --output_dir ${currDir}/${params.output_dir}/report    """
+	python ${report_path} --alignreport_dir ${currDir}/${params.output_dir}/medaka --summary_stats_file ${currDir}/${params.output_dir}/summary_stats/$summary_file --output_dir ${currDir}/${params.output_dir}/report    """
 }
 
 
