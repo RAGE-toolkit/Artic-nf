@@ -1,7 +1,7 @@
-import pandas as pd
-import numpy as np
 import os
 import re
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
@@ -65,11 +65,19 @@ def plot_primer_products_static(aln_df):
     return pio.to_html(fig, include_plotlyjs='cdn', full_html=False)
 
 def proportion_correctly_paired(aln_df):
+    '''
     summary = (
         aln_df['CorrectlyPaired']
         .value_counts()
         .reset_index()
         .rename(columns={'index': 'CorrectlyPaired', 'CorrectlyPaired': 'n'})
+        .sort_values(by='CorrectlyPaired')
+    )
+    '''
+    summary = (
+        aln_df.groupby('CorrectlyPaired')
+        .size()
+        .reset_index(name='n')
         .sort_values(by='CorrectlyPaired')
     )
     summary['proportion'] = summary['n'] / summary['n'].sum()
@@ -131,37 +139,37 @@ def generate_report(alignreport_dir, summary_stats_file, output_dir="summary_rep
         html_sections.append(section)
 
     for filepath in alignreport_files:
-        sample_id = os.path.basename(filepath).replace(".txt", "")
-        aln_df = pd.read_csv(filepath, sep='\t')
+        if ".alignreport.txt" in filepath:
+            sample_id = os.path.basename(filepath).replace(".txt", "")
+            aln_df = pd.read_csv(filepath, sep='\t')
+            if aln_df.empty:
+                print(f"Skipping empty file: {filepath}")
+                continue
 
-        if aln_df.empty:
-            print(f"Skipping empty file: {filepath}")
-            continue
+            primer_plot_html = plot_primer_products_static(aln_df)
+            summary_df = aln_df['CorrectlyPaired'].value_counts().to_dict()
+            total = sum(summary_df.values())
+            correct = summary_df.get(1, 0)
+            proportion_correct = correct / total if total > 0 else 0
 
-        primer_plot_html = plot_primer_products_static(aln_df)
-        summary_df = aln_df['CorrectlyPaired'].value_counts().to_dict()
-        total = sum(summary_df.values())
-        correct = summary_df.get(1, 0)
-        proportion_correct = correct / total if total > 0 else 0
+            if proportion_correct >= 0.8:
+                proportion_tag = f"<p style='color:green; font-weight:bold;'>✔ Good Library: {proportion_correct:.1%} correctly paired</p>"
+            else:
+                proportion_tag = f"<p style='color:red; font-weight:bold;'>✘ Poor Library: Only {proportion_correct:.1%} correctly paired</p>"
 
-        if proportion_correct >= 0.8:
-            proportion_tag = f"<p style='color:green; font-weight:bold;'>✔ Good Library: {proportion_correct:.1%} correctly paired</p>"
-        else:
-            proportion_tag = f"<p style='color:red; font-weight:bold;'>✘ Poor Library: Only {proportion_correct:.1%} correctly paired</p>"
+            proportion_table_html = proportion_correctly_paired(aln_df) + proportion_tag
+            histogram_html = plot_product_size_histogram(aln_df)
 
-        proportion_table_html = proportion_correctly_paired(aln_df) + proportion_tag
-        histogram_html = plot_product_size_histogram(aln_df)
-
-        nav_links.append(f'<a href="#primer-{sample_id}">Primer: {sample_id}</a>')
-        html_sections.append(f"""
-        <div id="primer-{sample_id}" style="margin: 50px 0;">
-            <h2>Primer Product Coverage — {sample_id}</h2>
-            {primer_plot_html}
-            <h3>Correctly Paired Summary</h3>
-            {proportion_table_html}
-            <h3>Product Size Distribution</h3>
-            {histogram_html}
-        </div>
+            nav_links.append(f'<a href="#primer-{sample_id}">Primer: {sample_id}</a>')
+            html_sections.append(f"""
+            <div id="primer-{sample_id}" style="margin: 50px 0;">
+             <h2>Primer Product Coverage — {sample_id}</h2>
+             {primer_plot_html}
+             <h3>Correctly Paired Summary</h3>
+             {proportion_table_html}
+             <h3>Product Size Distribution</h3>
+             {histogram_html}
+          </div>
 <hr style=\"margin-top: 40px; border: 0; border-top: 2px dashed #ccc;\"/>
         """)
 
