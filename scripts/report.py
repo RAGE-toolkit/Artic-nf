@@ -12,6 +12,24 @@ from glob import glob
 import base64
 from io import BytesIO
 
+COLUMN_DESCRIPTIONS = {
+    "total_reads": "Total number of reads sequenced in the sample.",
+    "mapped_reads": "Number of reads that successfully mapped to the reference genome.",
+    "meanReads": "Mean read depth across the entire genome, including uncovered positions.",
+    "sd_reads": "Standard deviation of the read depth across all genomic positions.",
+    "median_reads": "Median read depth across the genome.",
+    "min_reads": "Minimum depth observed at any position in the genome.",
+    "max_reads": "Maximum depth observed at any position in the genome.",
+    "basesCovered_1": "Number of bases covered by at least 1 reads.",
+    "basesCovered_5": "Number of bases covered by at least 5 reads.",
+    "basesCovered_20": "Number of bases covered by at least 20 reads.",
+		"basesCovered_100": "Number of bases covered by at least 100 reads.",
+		"basesCovered_200": "Number of bases covered by at least 200 reads..",
+		"nonMaskedConsensusCov": "Number of unmasked bases in the final consensus sequence.",
+}
+
+column_names = {"total_reads": "Total reads", "mapped_reads" : "Mapped reads", "meanReads": "Mean reads", "sd_reads": "Standard deviation", "median_reads": "Median reads", "min_reads": "Minimum reads", "basesCovered_1": "Bases covered 1x", "basesCovered_5": "Bases covered 5x", "basesCovered_20": "Bases covered 20x", "basesCovered_100": "Bases covered 100x", "basesCovered_200": "Bases covered 200x", "nonMaskedConsensusCov": "Nonmasked consensus coverage"}
+
 def extract_lab(row):
     if row['CorrectlyPaired'] == 1:
         match = re.search(r'_(\d+)_LEFT|_RIGHT', str(row['Primer1']))
@@ -30,10 +48,9 @@ def plot_primer_products_static(aln_df):
         .reset_index(name='Count')
     )
     filtered = grouped[(grouped['size'] >= 300)]
-
-    fig = go.Figure()
     filtered['log10_count'] = np.log10(filtered['Count'])
 
+    fig = go.Figure()
     for _, row in filtered.iterrows():
         fig.add_trace(go.Scatter(
             x=[row['Start'], row['End']],
@@ -65,15 +82,6 @@ def plot_primer_products_static(aln_df):
     return pio.to_html(fig, include_plotlyjs='cdn', full_html=False)
 
 def proportion_correctly_paired(aln_df):
-    '''
-    summary = (
-        aln_df['CorrectlyPaired']
-        .value_counts()
-        .reset_index()
-        .rename(columns={'index': 'CorrectlyPaired', 'CorrectlyPaired': 'n'})
-        .sort_values(by='CorrectlyPaired')
-    )
-    '''
     summary = (
         aln_df.groupby('CorrectlyPaired')
         .size()
@@ -120,19 +128,18 @@ def generate_report(alignreport_dir, summary_stats_file, output_dir="summary_rep
 
     alignreport_files = sorted(glob(os.path.join(alignreport_dir, "*.txt")))
     numeric_cols = [col for col in df_summary.select_dtypes(include='number').columns if col != "sample_id"]
-    nav_links = [f'<a href="#plot-{col}">{col}</a>' for col in numeric_cols]
+    nav_links = [f'<a href="#plot-{col}">{column_names.get(col, col)}</a>' for col in numeric_cols]
     html_sections = []
 
     for col in numeric_cols:
-        fig = px.bar(df_summary, x="sample_id", y=col, title=f"{col} per sample",
+        fig = px.bar(df_summary, x="sample_id", y=col,
                      color_discrete_sequence=["#2a9d8f"])
         fig.update_layout(xaxis_tickangle=-45, width=1400)
         fig_html = pio.to_html(fig, include_plotlyjs='cdn', full_html=False)
         section = f"""
         <div id="plot-{col}" style="margin: 30px 0; padding: 20px; border: 1px solid #ccc; border-radius: 10px;
                                     box-shadow: 2px 2px 12px rgba(0,0,0,0.1); background-color: #f9f9f9;">
-            <h3>{col}</h3>
-            <p>This plot shows <strong>{col}</strong> for each sample.</p>
+            <p>{COLUMN_DESCRIPTIONS.get(col, f"This plot shows <strong>{col}</strong> for each sample.")}</p>
             <div style="overflow-x:auto;"><div style="min-width: 1400px;">{fig_html}</div></div>
         </div>
         """
@@ -153,14 +160,16 @@ def generate_report(alignreport_dir, summary_stats_file, output_dir="summary_rep
             proportion_correct = correct / total if total > 0 else 0
 
             if proportion_correct >= 0.8:
+                status_symbol = "✅"
                 proportion_tag = f"<p style='color:green; font-weight:bold;'>✔ Good Library: {proportion_correct:.1%} correctly paired</p>"
             else:
+                status_symbol = "❌"
                 proportion_tag = f"<p style='color:red; font-weight:bold;'>✘ Poor Library: Only {proportion_correct:.1%} correctly paired</p>"
 
             proportion_table_html = proportion_correctly_paired(aln_df) + proportion_tag
             histogram_html = plot_product_size_histogram(aln_df)
 
-            nav_links.append(f'<a href="#primer-{sample_id}">Primer: {sample_id}</a>')
+            nav_links.append(f'<a href="#primer-{sample_id}">{status_symbol} Primer: {sample_id}</a>')
             html_sections.append(f"""
             <div id="primer-{sample_id}" style="margin: 50px 0;">
              <h2>Primer Product Coverage — {sample_id}</h2>
@@ -170,7 +179,7 @@ def generate_report(alignreport_dir, summary_stats_file, output_dir="summary_rep
              <h3>Product Size Distribution</h3>
              {histogram_html}
           </div>
-<hr style=\"margin-top: 40px; border: 0; border-top: 2px dashed #ccc;\"/>
+<hr style="margin-top: 40px; border: 0; border-top: 2px dashed #ccc;"/>
         """)
 
     final_html = f"""
