@@ -40,3 +40,7 @@ scripts/__pycache__/.*
 # History files
 .Rhistory
 .Rapp.history
+
+# Snakemake files
+**/.snakemake*
+**/.snakemake/
