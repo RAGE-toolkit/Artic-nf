@@ -44,3 +44,6 @@ scripts/__pycache__/.*
 # Snakemake files
 **/.snakemake*
 **/.snakemake/
+
+# Ignore user-generated files for rampart
+**/rampart/annotations/**
