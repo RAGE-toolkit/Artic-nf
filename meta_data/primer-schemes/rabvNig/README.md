@@ -14,7 +14,9 @@ This folder contains the reference genome and associated primer scheme used for 
 
 ### 🔧 Primer Design
 
-The primer scheme was designed based on the only publicly available genome sequence for dog RABV in Nigeria: KC196743 (dog, Nigeria, 2011), classified as Africa 2 clade in RABV_GLUE.
+RABV-GLUE was used to identify publicly available RABV genomes from Nigeria, revealing two sequences: KC196743 (dog, 2011) and KX148201 (dog, 2016), which belonged to different minor clades—Africa-2 and Cosmopolitan AF1a, respectively. To assess the broader diversity of RABV in the region, a larger dataset comprising 287 additional sequences from Nigeria was analysed. The majority of these sequences clustered within the Africa-2 minor clade, indicating that the AF1a clade is uncommon in this context.
+
+Primers were therefore designed using KC196743 as a reference representative of the dominant Africa-2 clade. To incorporate additional sequence diversity, a 75% consensus sequence was generated from KC196743 and the 287 partial sequences, and this consensus was used as a secondary reference for primer design.
 
 ---
 
