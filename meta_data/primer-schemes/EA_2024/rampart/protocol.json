@@ -1,0 +1,9 @@
+{
+    "name": "Rabies protocol",
+    "description": "Amplicon based sequencing of rabies virus.",
+    "url": "https://wellcomeopenresearch.org/articles/5-3",
+    "annotationOptions":{
+        "minimum_identity": "50",
+	"barcode_set":"all"
+        }
+  }
