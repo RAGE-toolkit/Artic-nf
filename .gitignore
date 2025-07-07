@@ -35,3 +35,8 @@ results/
 **/__pycache__/
 **/*.pyc
 scripts/__pycache__/.*
+.Rproj.user
+
+# History files
+.Rhistory
+.Rapp.history
