@@ -33,15 +33,15 @@ process MASK {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.preconsensus.fasta", emit: preconsensus
+	val "medaka/${params.run_name}_${sampleId}.preconsensus.fasta", emit: preconsensus
 	
 	script:
 	"""
 	set -e
 	(
 		python ${mask} ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.fail.vcf \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.preconsensus.fasta ) || echo "mask" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.coverage_mask.txt \
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.fail.vcf \
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.preconsensus.fasta ) || echo "mask" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

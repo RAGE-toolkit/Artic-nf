@@ -40,6 +40,6 @@ process FASTA_HEADER {
 	"""
 	set -e
 	(
-		python ${fasta_header} ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ${sampleId} ) || echo "fasta-header" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		python ${fasta_header} ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.consensus.fasta ${sampleId} ) || echo "fasta-header" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

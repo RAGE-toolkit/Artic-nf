@@ -23,7 +23,7 @@ align_trim = "${currDir}/scripts/align_trim.py"
 
 process ALIGN_TRIM_2 {
 
-	errorStrategy 'ignore'
+	//errorStrategy 'ignore'
 
 	//conda 'envs/pyvcf.yml'
 
@@ -34,21 +34,22 @@ process ALIGN_TRIM_2 {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.alignreport.txt", emit: align_report
-  val "medaka/${sampleId}.primertrimmed.rg.sorted.bam", emit: primertrimmed_bam
+	val "medaka/${params.run_name}_${sampleId}.alignreport.txt", emit: align_report
+  val "medaka/${params.run_name}_${sampleId}.primertrimmed.rg.sorted.bam", emit: primertrimmed_bam
 
 	script:
 	"""
-	set -e
-  	(
+	#set -e
+  #	(
 		python ${align_trim} \
 		--normalise 200 \
 		${params.primer_schema}/${scheme}/${version}/${scheme}.scheme.bed \
-		--report ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.txt \
-		< ${currDir}/${params.output_dir}/medaka/${sampleId}.sorted.bam \
-		2> ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.er \
-		| samtools sort -T ${params.output_dir}/medaka/${sampleId} \
-		-o ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
-		&& samtools index ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam ) || echo "align-trim-2" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		--report ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.alignreport.txt \
+		< ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.sorted.bam \
+		2> ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.alignreport.er \
+		| samtools sort -T ${params.output_dir}/medaka/${params.run_name}_${sampleId} \
+		-o ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.primertrimmed.rg.sorted.bam \
+		&& samtools index ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.primertrimmed.rg.sorted.bam 
+		#) || echo "align-trim-2" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

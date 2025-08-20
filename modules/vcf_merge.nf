@@ -35,19 +35,19 @@ process VCF_MERGE {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.merged.vcf.gz.tbi", emit: vcf
+	val "medaka/${params.run_name}_${sampleId}.merged.vcf.gz.tbi", emit: vcf
 	
 	script:
 	"""
 	set -e
 	(
-		python "${vcf_merge}" "${currDir}/${params.output_dir}/medaka/${sampleId}" \
+		python "${vcf_merge}" "${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}" \
 		"${params.primer_schema}/${scheme}/${version}/${scheme}.scheme.bed" \
-		"2:${currDir}/${params.output_dir}/medaka/${sampleId}.2.vcf" \
-		"1:${currDir}/${params.output_dir}/medaka/${sampleId}.1.vcf" \
-		2> "${currDir}/${params.output_dir}/medaka/${sampleId}.primersitereport.txt" && \
-		bgzip -f "${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf" && \
-		tabix -f -p vcf "${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf.gz" ) || echo "vcf_merge" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		"2:${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.2.vcf" \
+		"1:${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.1.vcf" \
+		2> "${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.primersitereport.txt" && \
+		bgzip -f "${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.merged.vcf" && \
+		tabix -f -p vcf "${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.merged.vcf.gz" ) || echo "vcf_merge" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}
 

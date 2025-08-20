@@ -38,7 +38,7 @@ process MEDAKA_1 {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.1.hdf", emit: hdf
+	val "medaka/${params.run_name}_${sampleId}.1.hdf", emit: hdf
 	
 	script:
 	"""
@@ -49,7 +49,7 @@ process MEDAKA_1 {
 		--threads ${params.threads} \
 		--chunk_len 800 \
 		--chunk_ovlp 400 \
-		--RG 1 ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.1.hdf ) || echo "medaka-1" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		--RG 1 ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.trimmed.rg.sorted.bam \
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.1.hdf ) || echo "medaka-1" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

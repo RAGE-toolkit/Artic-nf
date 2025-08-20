@@ -38,14 +38,14 @@ process MEDAKA_SNP_2 {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.2.vcf", emit: vcf
+	val "medaka/${params.run_name}_${sampleId}.2.vcf", emit: vcf
 	
 	script:
 	"""
 	set -e
 	(
 		medaka snp ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.2.hdf \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.2.vcf ) || echo "medaka-snp-2" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.2.hdf \
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.2.vcf ) || echo "medaka-snp-2" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

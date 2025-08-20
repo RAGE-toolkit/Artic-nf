@@ -34,13 +34,13 @@ process ALIGN_TRIM_1 {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.alignreport.txt", emit: align_report
-  val "medaka/${sampleId}.trimmed.rg.sorted.bam", emit: trimmed_bam
+	val "medaka/${params.run_name}_${sampleId}.alignreport.txt", emit: align_report
+  val "medaka/${params.run_name}_${sampleId}.trimmed.rg.sorted.bam", emit: trimmed_bam
 
 	script:
 	"""
 	set -e
   (
-	python ${align_trim} --normalise 200 ${params.primer_schema}/${scheme}/${version}/${scheme}.scheme.bed --start --report ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.txt  < ${currDir}/${params.output_dir}/medaka/${sampleId}.sorted.bam 2> ${currDir}/${params.output_dir}/medaka/${sampleId}.alignreport.er | samtools sort -T ${params.output_dir}/medaka/${sampleId} -o ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam && samtools index ${currDir}/${params.output_dir}/medaka/${sampleId}.trimmed.rg.sorted.bam ) || echo "align-trim-1" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+	python ${align_trim} --normalise 200 ${params.primer_schema}/${scheme}/${version}/${scheme}.scheme.bed --start --report ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.alignreport.txt  < ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.sorted.bam 2> ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.alignreport.er | samtools sort -T ${params.output_dir}/medaka/${params.run_name}_${sampleId} -o ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.trimmed.rg.sorted.bam && samtools index ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.trimmed.rg.sorted.bam ) || echo "align-trim-1" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

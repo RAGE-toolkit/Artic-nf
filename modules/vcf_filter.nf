@@ -34,8 +34,8 @@ process VCF_FILTER {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.pass.vcf", emit: pass_vcf
-	val "medaka/${sampleId}.fail.vcf", emit: fail_vcf
+	val "medaka/${params.run_name}_${sampleId}.pass.vcf", emit: pass_vcf
+	val "medaka/${params.run_name}_${sampleId}.fail.vcf", emit: fail_vcf
 	
 	script:
 	"""
@@ -43,10 +43,10 @@ process VCF_FILTER {
 	(
 		python ${vcf_filter} \
 		--medaka \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.fail.vcf \
-		&& bgzip -f ${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf \
-		&& tabix -p vcf ${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf.gz ) || echo "vcf_filter" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.merged.vcf \
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.pass.vcf \
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.fail.vcf \
+		&& bgzip -f ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.pass.vcf \
+		&& tabix -p vcf ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.pass.vcf.gz ) || echo "vcf_filter" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

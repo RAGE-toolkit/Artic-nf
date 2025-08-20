@@ -34,7 +34,7 @@ process MUSCLE {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.muscle.out.fasta", emit: muscle_op_fasta
+	val "medaka/${params.run_name}_${sampleId}.muscle.out.fasta", emit: muscle_op_fasta
 	
 	script:
 	"""
@@ -43,12 +43,12 @@ process MUSCLE {
 
 	if echo "\$version" | grep -q "3.8"; then
 		echo "Using MUSCLE v3 syntax"
-		muscle -in ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta \
-		 -out ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.out.fasta
+		muscle -in ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.muscle.in.fasta \
+		 -out ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.muscle.out.fasta
 	else
 		echo "Using MUSCLE v5 syntax"
-		muscle -align ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta \
-		-output ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.out.fasta
+		muscle -align ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.muscle.in.fasta \
+		-output ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.muscle.out.fasta
   fi
 	"""
 	}

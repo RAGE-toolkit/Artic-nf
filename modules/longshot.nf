@@ -34,7 +34,7 @@ process LONGSHOT {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.merged.vcf", emit: vcf
+	val "medaka/${params.run_name}_${sampleId}.merged.vcf", emit: vcf
 	
 	script:
 	"""
@@ -44,9 +44,9 @@ process LONGSHOT {
 		-F \
 		-A \
 		--no_haps \
-		--bam ${currDir}/${params.output_dir}/medaka/${sampleId}.primertrimmed.rg.sorted.bam \
+		--bam ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.primertrimmed.rg.sorted.bam \
 		--ref ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-		--out ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf \
-		--potential_variants ${currDir}/${params.output_dir}/medaka/${sampleId}.merged.vcf.gz ) || echo "longshot" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		--out ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.merged.vcf \
+		--potential_variants ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.merged.vcf.gz ) || echo "longshot" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

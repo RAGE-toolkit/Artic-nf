@@ -34,13 +34,13 @@ process CONCAT_FOR_MUSCLE {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.muscle.in.fasta", emit: muscle_fa
+	val "medaka/${params.run_name}_${sampleId}.muscle.in.fasta", emit: muscle_fa
 	
 	script:
 	"""
 	set -e
 	(
-		cat ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
-	> ${currDir}/${params.output_dir}/medaka/${sampleId}.muscle.in.fasta ) || echo "concat-for_muscle" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		cat ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.consensus.fasta ${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
+	> ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.muscle.in.fasta ) || echo "concat-for_muscle" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

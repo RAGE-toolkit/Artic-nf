@@ -38,15 +38,15 @@ process BCFTOOLS_CONSENSUS {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}.consensus.fasta", emit: consensus_fa
+	val "medaka/${params.run_name}_${sampleId}.consensus.fasta", emit: consensus_fa
 	
 	script:
 	"""
 	set -e
 	(
-		bcftools consensus -f ${currDir}/${params.output_dir}/medaka/${sampleId}.preconsensus.fasta \
-		${currDir}/${params.output_dir}/medaka/${sampleId}.pass.vcf.gz \
-		-m ${currDir}/${params.output_dir}/medaka/${sampleId}.coverage_mask.txt \
-		-o ${currDir}/${params.output_dir}/medaka/${sampleId}.consensus.fasta ) || echo "bcftools-consensus" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
+		bcftools consensus -f ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.preconsensus.fasta \
+		${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.pass.vcf.gz \
+		-m ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.coverage_mask.txt \
+		-o ${currDir}/${params.output_dir}/medaka/${params.run_name}_${sampleId}.consensus.fasta ) || echo "bcftools-consensus" "${sampleId}" >> ${currDir}/${params.output_dir}/medaka/failed_samples.txt
 	"""
 	}

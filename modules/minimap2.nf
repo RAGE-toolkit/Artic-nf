@@ -32,8 +32,8 @@ process MINIMAP2 {
 	tuple val(sampleId), val(item), val(scheme), val(version)
 
 	output:
-	val "medaka/${sampleId}", emit: consensus
-	val "medaka/${sampleId}.sorted.bam", emit: sorted_bam
+	val "medaka/${params.run_name}_${sampleId}", emit: consensus
+	val "medaka/${params.run_name}_${sampleId}.sorted.bam", emit: sorted_bam
 
 	script:
 	"""
@@ -41,8 +41,8 @@ process MINIMAP2 {
 	${params.primer_schema}/${scheme}/${version}/${scheme}.reference.fasta \
 	${currDir}/raw_files/fastq/${sampleId}_${item}.fastq |\
 	samtools view -bS -F 4 - |\
-	samtools sort -o ${currDir}/results/medaka/${sampleId}.sorted.bam &&\
-	samtools index ${currDir}/results/medaka/${sampleId}.sorted.bam
+	samtools sort -o ${currDir}/results/medaka/${params.run_name}_${sampleId}.sorted.bam &&\
+	samtools index ${currDir}/results/medaka/${params.run_name}_${sampleId}.sorted.bam
 	"""
 	}
 
