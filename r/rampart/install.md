@@ -18,3 +18,10 @@ $mamba install biopython
 #running the test run
 $rampart --protocol ~/Documents/GitHub/Artic-nf/meta_data/primer-schemes/rabvPeru2/V1/ --basecalledPath ~/Documents/GitHub/Artic-nf/test_data/fastq_pass
 ```
+
+Rampart for Ubuntu 
+```shell
+$conda create -n artic-rampart -y nodejs=12
+$conda activate artic-rampart
+$conda install -y artic-network::rampart
+```
