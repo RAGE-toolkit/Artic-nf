@@ -1,7 +1,7 @@
 Rampart installation for MacOS arm64
 ```shell
 #create and activate environment
-$conda env create -name artic-rampart
+$conda create --name artic-rampart
 $conda activate artic-rampart
 
 #Other dependencies and rampart 
