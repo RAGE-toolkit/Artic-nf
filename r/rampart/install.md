@@ -1,4 +1,4 @@
-Rampart installation for MacOS arm64
+# Rampart installation for MacOS arm64
 ```shell
 #create and activate environment
 $conda create --name artic-rampart
@@ -19,7 +19,7 @@ $mamba install biopython
 $rampart --protocol ~/Documents/GitHub/Artic-nf/meta_data/primer-schemes/rabvPeru2/V1/ --basecalledPath ~/Documents/GitHub/Artic-nf/test_data/fastq_pass
 ```
 
-Rampart for Ubuntu 
+# Rampart for Ubuntu 
 ```shell
 clone Artic-nf
 $cp Artic-nf/meta_data/primer-schemes/rabvPeru2/V1/rabvPeru2.reference.fasta Artic-nf/meta_data/primer-schemes/rabvPeru2/V1/references.fasta
