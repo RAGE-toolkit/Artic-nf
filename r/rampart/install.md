@@ -21,7 +21,15 @@ $rampart --protocol ~/Documents/GitHub/Artic-nf/meta_data/primer-schemes/rabvPer
 
 Rampart for Ubuntu 
 ```shell
+clone Artic-nf
+$cp Artic-nf/meta_data/primer-schemes/rabvPeru2/V1/rabvPeru2.reference.fasta Artic-nf/meta_data/primer-schemes/rabvPeru2/V1/references.fasta
+ 
+#Works on python 3.10 (not tested on other python)
+ 
 $conda create -n artic-rampart -y nodejs=12
 $conda activate artic-rampart
 $conda install -y artic-network::rampart
+$conda install snakemake=5.10 # must be <5.11
+$conda install minimap2 # any version
+$conda install biopython
 ```
