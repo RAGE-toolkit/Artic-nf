@@ -47,3 +47,7 @@ scripts/__pycache__/.*
 
 # Ignore user-generated files for rampart
 **/rampart/annotations/**
+
+# Ignore Malawi data as unpublised
+/meta_data/primer-schemes/EA_2024/V1/primer_design/reference-seqs/
+/malawi
